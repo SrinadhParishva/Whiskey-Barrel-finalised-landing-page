@@ -1,0 +1,77 @@
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/llms.txt"
+  to = "/llms.txt"
+  status = 200
+
+[[redirects]]
+  from = "/llms-full.txt"
+  to = "/llms-full.txt"
+  status = 200
+
+[[redirects]]
+  from = "http://whiskeybarrel.store/*"
+  to = "https://whiskeybarrel.store/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.whiskeybarrel.store/*"
+  to = "https://whiskeybarrel.store/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.whiskeybarrel.store/*"
+  to = "https://whiskeybarrel.store/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://fifa-kc-whiskeybarrel.netlify.app/*"
+  to = "https://whiskeybarrel.store/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://fifa-kc-whiskeybarrel.netlify.app/*"
+  to = "https://whiskeybarrel.store/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/llms-full.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"

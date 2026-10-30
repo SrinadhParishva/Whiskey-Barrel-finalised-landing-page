@@ -1,0 +1,41 @@
+# Whiskey Barrel
+
+> Premier neighborhood liquor and smoke shop in Shawnee, Kansas, offering a curated collection of rare bourbon, fine whiskey, 100% agave tequila, Kansas City craft beer, fine wine, and smoke shop accessories.
+
+## Store Overview
+
+- **Business Name**: Whiskey Barrel
+- **Tagline**: Spirits · People · Good Company
+- **Address**: 12205 W 63rd St, Shawnee, KS 66216 (at Shawnee Mission Parkway & 63rd St)
+- **Phone**: +1 (913) 400-2339
+- **Email**: WB@rkmgmt.net
+- **Website**: https://whiskeybarrel.store/
+- **Area Served**: Shawnee, KS; Overland Park; Lenexa; Merriam; Johnson County; and the greater Kansas City metropolitan area.
+- **Store Hours**:
+  - Monday – Thursday: 9:00 AM – 10:00 PM
+  - Friday – Saturday: 9:00 AM – 11:00 PM
+  - Sunday: 9:00 AM – 8:00 PM
+- **Payment Accepted**: Cash, Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, Contactless Payments.
+- **Features**: In-person walk-in shopping, wheelchair-accessible entrance, dedicated parking facilities, smoke shop.
+
+## Curated Beverage Selections
+
+- [Whiskey & Bourbon](https://whiskeybarrel.store/#cat-whiskey): Rare and allocated bourbons, single barrel releases, Kentucky straight bourbon, rye whiskey, Irish whiskey, Scotch, and Japanese whiskies.
+- [Tequila & Agave Spirits](https://whiskeybarrel.store/#cat-tequila): Blanco, reposado, añejo, and extra añejo 100% blue agave tequilas and artisanal mezcals.
+- [Craft Beer & Seltzers](https://whiskeybarrel.store/#cat-beer): Local Kansas City craft brews, regional IPAs, stouts, chilled lagers, ciders, and ready-to-drink canned cocktails.
+- [Wine Cellar](https://whiskeybarrel.store/#cat-wine): Red, white, and sparkling wines including Cabernet Sauvignon, Pinot Noir, Chardonnay, Sauvignon Blanc, and Prosecco.
+- [Rum](https://whiskeybarrel.store/#cat-rum): Spiced, dark, aged, and white rums for sipping or classic cocktails.
+- [Vodka](https://whiskeybarrel.store/#cat-vodka): Premium domestic and imported vodkas.
+- [Smoke Shop & Cigars](https://whiskeybarrel.store/#cat-cigar): Curated cigars, tobacco products, and smoking accessories.
+
+## Store Information & Help
+
+- [Store Location & Directions](https://whiskeybarrel.store/#store-info): Interactive Google Maps directions to 12205 W 63rd St in Shawnee, KS.
+- [Frequently Asked Questions](https://whiskeybarrel.store/#faq): Real-time store availability checks, Sunday hours, payment methods, and transit guidance.
+
+## Optional & System Files
+
+- [Full Content Dump](https://whiskeybarrel.store/llms-full.txt): Comprehensive markdown text dump of the Whiskey Barrel landing page and inventory FAQs.
+- [XML Sitemap](https://whiskeybarrel.store/sitemap.xml): Search engine sitemap index.
+- [Robots Policy](https://whiskeybarrel.store/robots.txt): Crawler and user-agent access policy.
+

@@ -2147,3 +2147,114 @@ button {
     height: 18px;
   }
 }
+
+
+/* Hero Local Introduction Callout */
+.hero-local-intro {
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #beb5a7;
+  max-width: 580px;
+  margin-bottom: 20px;
+  background: rgba(18, 16, 14, 0.65);
+  border-left: 2px solid var(--gold-primary);
+  padding: 10px 14px;
+  border-radius: 0 4px 4px 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+/* About / Local Selection Guide Section */
+.about-store-section {
+  padding: 56px 0 48px 0;
+  background: linear-gradient(180deg, rgba(10, 9, 7, 0.96) 0%, rgba(14, 12, 10, 1) 100%);
+  border-top: 1px solid rgba(212, 163, 89, 0.16);
+  border-bottom: 1px solid rgba(212, 163, 89, 0.16);
+}
+
+.about-store-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.about-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about-title {
+  font-family: var(--font-serif-brand);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
+.about-lead {
+  font-size: 0.96rem;
+  color: #c4baa9;
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.about-card {
+  background: rgba(17, 15, 13, 0.85);
+  border: 1px solid rgba(212, 163, 89, 0.22);
+  border-radius: 8px;
+  padding: 28px 24px;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.about-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(212, 163, 89, 0.45);
+}
+
+.about-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(212, 163, 89, 0.12);
+  border: 1px solid rgba(212, 163, 89, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-primary);
+  margin-bottom: 18px;
+}
+
+.about-card-title {
+  font-family: var(--font-serif-brand);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+
+.about-card-text {
+  font-size: 0.88rem;
+  color: #beb5a7;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
