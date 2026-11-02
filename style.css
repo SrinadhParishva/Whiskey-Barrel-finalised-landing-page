@@ -825,6 +825,81 @@ button {
   stroke: var(--gold-primary);
 }
 
+/* Subpage Navigation Bar */
+.subpage-nav-bar {
+  background-color: #080706;
+  border-bottom: 1px solid rgba(212, 163, 89, 0.2);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.subpage-nav-container {
+  max-width: var(--site-max-w);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 54px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.subpage-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* About Hero Header */
+.about-hero-section {
+  position: relative;
+  background: radial-gradient(circle at center 30%, rgba(212, 163, 89, 0.12) 0%, transparent 70%), linear-gradient(180deg, #090807 0%, #110e0b 60%, #0c0a08 100%);
+  border-bottom: 1px solid rgba(212, 163, 89, 0.18);
+  padding: 64px 0 54px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-pretitle {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-hero-title {
+  font-family: var(--font-serif-hero);
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+  font-weight: 600;
+  color: var(--text-white);
+  line-height: 1.18;
+  margin-bottom: 14px;
+}
+
+.about-hero-sub {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #dfd7cc;
+  max-width: 620px;
+  margin: 0 auto 20px auto;
+}
+
 /* ==================== ABOUT & SHAWNEE LIQUOR GUIDE (SEO EXPANDED CONTENT) ==================== */
 .about-seo-section {
   background-color: #0c0a08;
@@ -1527,6 +1602,32 @@ button {
 .footer-instagram-btn:hover .instagram-icon {
   stroke: var(--gold-light);
   transform: scale(1.08);
+}
+
+.footer-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-nav-link {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all var(--transition-fast);
+  padding: 6px 14px;
+  border: 1px solid rgba(212, 163, 89, 0.35);
+  border-radius: 4px;
+  background: rgba(22, 19, 16, 0.45);
+}
+
+.footer-nav-link:hover {
+  color: var(--text-white);
+  border-color: var(--gold-primary);
+  background: rgba(212, 163, 89, 0.18);
+  transform: translateY(-1px);
 }
 
 .footer-compliance {
@@ -2906,7 +3007,33 @@ button {
     font-size: 0.74rem;
   }
 
-  .footer-compliance {
+  .footer-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-nav-link {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--gold-primary);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all var(--transition-fast);
+  padding: 6px 14px;
+  border: 1px solid rgba(212, 163, 89, 0.35);
+  border-radius: 4px;
+  background: rgba(22, 19, 16, 0.45);
+}
+
+.footer-nav-link:hover {
+  color: var(--text-white);
+  border-color: var(--gold-primary);
+  background: rgba(212, 163, 89, 0.18);
+  transform: translateY(-1px);
+}
+
+.footer-compliance {
     font-size: 0.72rem;
   }
 
