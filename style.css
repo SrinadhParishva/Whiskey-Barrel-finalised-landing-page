@@ -825,6 +825,176 @@ button {
   stroke: var(--gold-primary);
 }
 
+/* ==================== ABOUT & SHAWNEE LIQUOR GUIDE (SEO EXPANDED CONTENT) ==================== */
+.about-seo-section {
+  background-color: #0c0a08;
+  border-top: 1px solid rgba(212, 163, 89, 0.16);
+  padding: 72px 0 68px 0;
+  position: relative;
+}
+
+.about-seo-header {
+  text-align: center;
+  max-width: 1040px;
+  margin: 0 auto 46px auto;
+}
+
+.about-seo-pretitle {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-seo-title {
+  font-family: var(--font-serif-hero);
+  font-size: clamp(1.9rem, 2.7vw, 2.45rem);
+  font-weight: 600;
+  color: var(--text-white);
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.about-seo-lead {
+  font-size: 1.02rem;
+  line-height: 1.78;
+  color: #ede6dc;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.about-seo-sublead {
+  font-size: 0.94rem;
+  line-height: 1.72;
+  color: #c4bbb0;
+  text-align: left;
+}
+
+.about-seo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+  margin-bottom: 30px;
+}
+
+.about-seo-card {
+  background: linear-gradient(145deg, rgba(22, 19, 16, 0.78) 0%, rgba(14, 12, 10, 0.92) 100%);
+  border: 1px solid rgba(212, 163, 89, 0.22);
+  border-radius: 8px;
+  padding: 34px 30px;
+  transition: all var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.about-seo-card:hover {
+  border-color: rgba(212, 163, 89, 0.55);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 16px rgba(212, 163, 89, 0.14);
+  transform: translateY(-3px);
+}
+
+.about-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--gold-primary);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.about-card-icon {
+  width: 17px;
+  height: 17px;
+  stroke: var(--gold-primary);
+  flex-shrink: 0;
+}
+
+.about-card-title {
+  font-family: var(--font-serif-brand);
+  font-size: 1.22rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+  line-height: 1.35;
+}
+
+.about-seo-card p {
+  font-size: 0.92rem;
+  line-height: 1.74;
+  color: #c7beaf;
+  margin-bottom: 14px;
+}
+
+.about-seo-card p:last-child {
+  margin-bottom: 0;
+}
+
+.about-seo-details-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.about-details-col {
+  background: rgba(18, 15, 12, 0.65);
+  border: 1px solid rgba(212, 163, 89, 0.18);
+  border-radius: 8px;
+  padding: 28px 28px;
+}
+
+.about-col-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.gold-bullet {
+  color: var(--gold-primary);
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.about-col-header h4 {
+  font-family: var(--font-serif-brand);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+}
+
+.about-details-col p {
+  font-size: 0.9rem;
+  line-height: 1.72;
+  color: #c7beaf;
+  margin-bottom: 12px;
+}
+
+.about-details-col p:last-child {
+  margin-bottom: 0;
+}
+
+.about-inline-phone {
+  color: var(--gold-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.about-inline-phone:hover {
+  color: var(--gold-light);
+}
+
 /* ==================== FREQUENTLY ASKED QUESTIONS (FAQ) ==================== */
 .faq-section {
   background-color: #0b0908;
@@ -2442,6 +2612,73 @@ button {
     stroke: var(--gold-primary);
     width: 11px;
     height: 11px;
+  }
+
+  /* --- ABOUT & SHAWNEE LIQUOR GUIDE --- */
+  .about-seo-section {
+    padding: 44px 0 40px 0;
+  }
+
+  .about-seo-header {
+    margin-bottom: 28px;
+  }
+
+  .about-seo-title {
+    font-size: clamp(1.45rem, 5.2vw, 1.95rem);
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+
+  .about-seo-lead {
+    font-size: 0.92rem;
+    line-height: 1.68;
+    margin-bottom: 14px;
+  }
+
+  .about-seo-sublead {
+    font-size: 0.88rem;
+    line-height: 1.64;
+  }
+
+  .about-seo-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+
+  .about-seo-card {
+    padding: 22px 18px;
+    border-radius: 6px;
+  }
+
+  .about-card-title {
+    font-size: 1.12rem;
+    margin-bottom: 12px;
+  }
+
+  .about-seo-card p {
+    font-size: 0.86rem;
+    line-height: 1.64;
+    margin-bottom: 12px;
+  }
+
+  .about-seo-details-block {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-details-col {
+    padding: 20px 18px;
+    border-radius: 6px;
+  }
+
+  .about-col-header h4 {
+    font-size: 0.98rem;
+  }
+
+  .about-details-col p {
+    font-size: 0.86rem;
+    line-height: 1.64;
   }
 
   /* --- FAQ SECTION --- */
