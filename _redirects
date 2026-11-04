@@ -2,6 +2,12 @@
 /sitemap.xml /sitemap.xml 200
 /llms.txt /llms.txt 200
 /llms-full.txt /llms-full.txt 200
+
+# Clean URL 301 Redirects for legacy .html URLs
+/index.html / 301
+/about.html /about 301
+
+# Clean URL Rewrite
 /about /about.html 200
 
 # Force HTTPS and Canonical Domain

@@ -697,6 +697,61 @@ button {
   color: rgba(255, 255, 255, 0.16);
 }
 
+.featured-intro-text {
+  max-width: 980px;
+  margin-bottom: 24px;
+}
+
+.featured-intro-text p {
+  font-size: 0.92rem;
+  line-height: 1.68;
+  color: #c4bbb0;
+}
+
+.featured-concierge-banner {
+  margin-top: 36px;
+  background: linear-gradient(135deg, rgba(22, 18, 14, 0.85) 0%, rgba(14, 12, 10, 0.95) 100%);
+  border: 1px solid rgba(212, 163, 89, 0.28);
+  border-radius: 8px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.concierge-content {
+  flex: 1;
+}
+
+.concierge-title {
+  font-family: var(--font-serif-brand);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.concierge-desc {
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #beb5a7;
+}
+
+@media (max-width: 768px) {
+  .featured-concierge-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 18px;
+  }
+  .featured-concierge-banner .btn-outline-gold {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* 5-Column Product Grid */
 .products-grid {
   display: grid;
@@ -1498,6 +1553,36 @@ button {
 
 .map-frame:hover .map-hover-hint {
   opacity: 1;
+}
+
+.store-service-area-bar {
+  grid-column: 1 / -1;
+  background: rgba(18, 15, 12, 0.65);
+  border: 1px solid rgba(212, 163, 89, 0.2);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 14px;
+}
+
+.service-area-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.service-area-header h4 {
+  font-family: var(--font-serif-brand);
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.06em;
+}
+
+.store-service-area-bar p {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #c4bbb0;
 }
 
 /* ==================== FOOTER ==================== */
