@@ -792,7 +792,49 @@ const PRODUCTS_DATA = {
 // Track currently displayed modal product ID for next/prev navigation
 let currentModalProductId = null;
 
+/**
+ * Protect email addresses from scrapers while maintaining full mailto and display functionality
+ */
+function initEmailProtection() {
+  const emailLinks = document.querySelectorAll('.email-addr[data-user][data-domain]');
+  emailLinks.forEach(link => {
+    const user = link.getAttribute('data-user');
+    const domain = link.getAttribute('data-domain');
+    if (user && domain) {
+      const email = `${user}@${domain}`;
+      link.href = `mailto:${email}`;
+      link.textContent = email;
+    }
+  });
+
+  // Dynamically populate OpenGraph business email meta tag for JS-capable clients
+  if (!document.querySelector('meta[property="business:contact_data:email"]')) {
+    const ogEmail = document.createElement('meta');
+    ogEmail.setAttribute('property', 'business:contact_data:email');
+    ogEmail.content = 'WB' + '@' + 'rkmgmt.net';
+    document.head.appendChild(ogEmail);
+  }
+
+  // Dynamically populate Schema.org JSON-LD email property for JS-capable crawlers
+  const schemaScript = document.querySelector('script[type="application/ld+json"]');
+  if (schemaScript) {
+    try {
+      const data = JSON.parse(schemaScript.textContent);
+      if (data && data['@graph'] && Array.isArray(data['@graph'])) {
+        const store = data['@graph'].find(item => item['@type'] === 'LiquorStore');
+        if (store && !store.email) {
+          store.email = 'WB' + '@' + 'rkmgmt.net';
+          schemaScript.textContent = JSON.stringify(data);
+        }
+      }
+    } catch (e) {
+      // Ignore JSON parse errors if any
+    }
+  }
+}
+
 function initApp() {
+  initEmailProtection();
   initCategoryFilter();
   initStoreStatus();
   initCardInteractions();

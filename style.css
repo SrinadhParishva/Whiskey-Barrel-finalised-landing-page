@@ -1570,6 +1570,10 @@ button {
   font-size: 0.8rem;
 }
 
+.email-addr[data-user][data-domain]:empty::before {
+  content: attr(data-user) "@" attr(data-domain);
+}
+
 /* Map Visual Column */
 .map-visual-block {
   display: flex;
