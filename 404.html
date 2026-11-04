@@ -8,10 +8,10 @@
   <meta name="robots" content="noindex, follow">
 
   <!-- Favicon & Touch Icons -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png?v=8">
+  <link rel="shortcut icon" href="favicon.png?v=8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=8">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png?v=8">
 
   <!-- Google Fonts (Non-render-blocking Asynchronous Load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,15 +22,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   </noscript>
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.min.css?v=8">
+  <!-- Critical 404 Styles for Instant Rendering -->
+  <style>
+:root{--bg-dark:#0a0907;--bg-card:#110f0d;--bg-card-hover:#161411;--bg-nav:#080706;--bg-footer:#050403;--gold-primary:#d4a359;--gold-light:#f5d48b;--gold-deep:#b88636;--gold-border:rgba(212,163,89,0.22);--gold-border-bright:rgba(212,163,89,0.65);--gold-glow:rgba(212,163,89,0.16);--text-main:#f5efe6;--text-white:#ffffff;--text-gold:#d0a064;--text-muted:#9e9588;--text-dim:#7a7266;--font-serif-brand:'Cinzel',Georgia,serif;--font-serif-hero:'Playfair Display',Georgia,serif;--font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;--site-max-w:1540px;--transition-fast:0.2s cubic-bezier(0.16,1,0.3,1);--transition-smooth:0.3s cubic-bezier(0.16,1,0.3,1)}*{margin:0;padding:0;box-sizing:border-box}html{font-size:16px;scroll-behavior:smooth;background-color:var(--bg-dark);color:var(--text-main);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{min-height:100vh;background-color:var(--bg-dark);color:var(--text-main);overflow-x:hidden;overflow-y:auto;line-height:1.5}a{color:inherit;text-decoration:none}button{font-family:inherit;cursor:pointer;border:none;background:none}body.error-page-body{min-height:100vh;background-color:#0a0907;color:#f5efe6;font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;background-image:radial-gradient(circle at 50% 30%,rgba(212,163,89,0.08) 0%,transparent 60%)}.error-card{max-width:520px;width:100%;background:#110f0d;border:1px solid rgba(212,163,89,0.28);border-radius:14px;padding:44px 32px;box-shadow:0 16px 48px rgba(0,0,0,0.55)}.error-logo-pic{display:inline-block;margin-bottom:20px}.error-logo-img{width:72px;height:72px;border-radius:50%;object-fit:cover;filter:drop-shadow(0 4px 16px rgba(212,163,89,0.45))}.error-brand-name{font-family:'Cinzel',Georgia,serif;font-size:1.1rem;letter-spacing:0.16em;color:#f5d48b;margin-bottom:18px}.error-code{font-family:'Cinzel',Georgia,serif;font-size:4rem;font-weight:700;color:#d4a359;line-height:1;margin-bottom:12px}.error-title{font-family:'Cinzel',Georgia,serif;font-size:1.4rem;color:#ffffff;margin-bottom:12px}.error-desc{font-size:0.95rem;line-height:1.6;color:#beb5a7;margin-bottom:28px}.error-actions{display:flex;flex-direction:column;gap:12px}.error-card .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:6px;font-size:0.86rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s ease;cursor:pointer}.error-card .btn-primary{background:linear-gradient(135deg,#d4a359 0%,#b88636 100%);color:#080706;border:1px solid #f5d48b;box-shadow:none}.error-card .btn-primary:hover{background:linear-gradient(135deg,#f5d48b 0%,#d4a359 100%);box-shadow:0 4px 18px rgba(212,163,89,0.4);transform:translateY(-1px)}.error-card .btn-outline{background:transparent;color:#f5d48b;border:1px solid rgba(212,163,89,0.4)}.error-card .btn-outline:hover{background:rgba(212,163,89,0.1);border-color:#f5d48b;color:#f5d48b}
+  </style>
+
+  <!-- Optimized Non-Render-Blocking Stylesheet Delivery -->
+  <link rel="preload" as="style" href="style.min.css?v=8">
+  <link rel="stylesheet" href="style.min.css?v=8" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.min.css?v=8"></noscript>
 </head>
 
 <body class="error-page-body">
   <div class="error-card">
     <picture class="error-logo-pic">
-      <source srcset="assets/logo_web.webp" type="image/webp">
-      <img src="assets/logo_web.png" alt="Whiskey Barrel" class="error-logo-img" width="400" height="400" decoding="async">
+      <source srcset="assets/logo_web.webp?v=8" type="image/webp">
+      <img src="assets/logo_web.png?v=8" alt="Whiskey Barrel" class="error-logo-img" width="400" height="400" decoding="async">
     </picture>
     <div class="error-brand-name">WHISKEY BARREL</div>
     <div class="error-code">404</div>
