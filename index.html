@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,7 +54,8 @@
   <meta property="og:url" content="https://whiskeybarrel.store/">
   <meta property="og:description"
     content="Shawnee's neighborhood destination for curated bourbon, fine whiskey, craft beer, tequila, and wine. Located at 12205 W 63rd St, Shawnee, KS.">
-  <meta property="og:image" content="assets/hero_storefront_night.webp">
+  <meta property="og:image" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
+  <meta property="og:image:secure_url" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
   <meta property="og:image:alt" content="Whiskey Barrel Liquor Storefront in Shawnee, KS">
   <meta property="og:image:type" content="image/webp">
   <meta property="og:image:width" content="1200">
@@ -78,10 +79,12 @@
   <meta name="twitter:url" content="https://whiskeybarrel.store/">
   <meta name="twitter:description"
     content="Shawnee's neighborhood liquor store offering a curated selection of bourbon, whiskey, fine wine, craft beer, and spirits.">
-  <meta name="twitter:image" content="assets/hero_storefront_night.webp">
+  <meta name="twitter:image" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
   <meta name="twitter:image:alt" content="Whiskey Barrel Storefront in Shawnee, KS">
 
   <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
@@ -103,8 +106,8 @@
         "Whiskey Barrel Spirits & Wine"
       ],
       "description": "Shawnee, Kansas's premier neighborhood liquor store featuring a curated collection of rare whiskey, bourbon, tequila, craft beer, fine wine, and ready-to-drink cocktails.",
-      "image": "assets/hero_storefront_night.webp",
-      "logo": "assets/logo_web.png",
+      "image": "https://whiskeybarrel.store/assets/hero_storefront_night.webp",
+      "logo": "https://whiskeybarrel.store/assets/logo_web.png",
       "telephone": "+1-913-400-2339",
       "email": "WB@rkmgmt.net",
       "priceRange": "$",
@@ -249,10 +252,10 @@
     rel="stylesheet">
 
   <!-- Preload Critical Above-The-Fold Hero Background -->
-  <link rel="preload" as="image" href="assets/hero_storefront_night.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero_storefront_night.webp" type="image/webp" fetchpriority="high">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
@@ -268,7 +271,7 @@
     <div class="hero-container">
       <!-- Top Brand Header -->
       <div class="hero-brand" id="brand-header">
-        <a href="/" class="brand-link" title="Whiskey Barrel Homepage">
+        <a href="./" class="brand-link" title="Whiskey Barrel Homepage">
           <picture class="brand-logo-picture">
             <source srcset="assets/logo_web.webp" type="image/webp">
             <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400">
@@ -324,7 +327,7 @@
             <span>CALL STORE</span>
           </a>
 
-          <a href="/about" class="btn btn-outline" id="btn-about-hero">
+          <a href="about.html" class="btn btn-outline" id="btn-about-hero">
             <span>ABOUT US</span>
           </a>
           <a href="#faq" class="btn btn-outline" id="btn-faq-hero">
@@ -1821,7 +1824,7 @@
         </div>
       </div>
       <div class="footer-nav">
-        <a href="/about" class="footer-nav-link">About Whiskey Barrel</a>
+        <a href="about.html" class="footer-nav-link">About Whiskey Barrel</a>
       </div>
       <div class="footer-social">
         <a href="https://www.instagram.com/whiskeybarrelusa?stkn=MTczeDAzcjF1Z2FpdA%3D%3D" target="_blank"
@@ -1908,7 +1911,7 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="app.js"></script>
+  <script src="app.js?v=6"></script>
 </body>
 
 </html>

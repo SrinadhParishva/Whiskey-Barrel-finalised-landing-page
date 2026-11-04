@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Whiskey Barrel</title>
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background-color: #0a0907;
+      color: #f5efe6;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      background-image: radial-gradient(circle at 50% 30%, rgba(212, 163, 89, 0.08) 0%, transparent 60%);
+    }
+
+    .error-card {
+      max-width: 520px;
+      width: 100%;
+      background: #110f0d;
+      border: 1px solid rgba(212, 163, 89, 0.28);
+      border-radius: 14px;
+      padding: 44px 32px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+    }
+
+    .error-logo-pic {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .error-logo-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: drop-shadow(0 4px 16px rgba(212, 163, 89, 0.45));
+    }
+
+    .error-brand-name {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.16em;
+      color: #f5d48b;
+      margin-bottom: 18px;
+    }
+
+    .error-code {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #d4a359;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .error-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .error-desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #beb5a7;
+      margin-bottom: 28px;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 24px;
+      border-radius: 6px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #d4a359 0%, #b88636 100%);
+      color: #080706;
+      border: 1px solid #f5d48b;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #f5d48b 0%, #d4a359 100%);
+      box-shadow: 0 4px 18px rgba(212, 163, 89, 0.4);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #f5d48b;
+      border: 1px solid rgba(212, 163, 89, 0.4);
+    }
+
+    .btn-outline:hover {
+      background: rgba(212, 163, 89, 0.1);
+      border-color: #f5d48b;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-card">
+    <picture class="error-logo-pic">
+      <source srcset="assets/logo_web.webp" type="image/webp">
+      <img src="assets/logo_web.png" alt="Whiskey Barrel" class="error-logo-img" width="400" height="400">
+    </picture>
+    <div class="error-brand-name">WHISKEY BARREL</div>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-desc">The page you are looking for does not exist or may have been moved. Return to our homepage to explore our curated selection of spirits, fine wine, craft beer, and cigars.</p>
+    <div class="error-actions">
+      <a href="./" class="btn btn-primary">Return to Homepage</a>
+      <a href="about.html" class="btn btn-outline">About Our Store</a>
+    </div>
+  </div>
+</body>
+
+</html>
+
