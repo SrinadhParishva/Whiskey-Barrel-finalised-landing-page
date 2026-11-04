@@ -708,6 +708,11 @@ button {
   color: rgba(255, 255, 255, 0.16);
 }
 
+.notice-highlight {
+  color: #dfa85b;
+  font-weight: 700;
+}
+
 .featured-intro-text {
   max-width: 980px;
   margin-bottom: 24px;
@@ -790,6 +795,23 @@ button {
   border-color: rgba(212, 163, 89, 0.45);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7), 0 0 12px var(--gold-glow);
   transform: translateY(-2px);
+}
+
+.product-card.is-hidden {
+  display: none !important;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.product-card.is-fade-in {
+  animation: cardFadeIn 0.2s ease forwards;
 }
 
 /* Visual left half */
@@ -904,6 +926,10 @@ button {
   backdrop-filter: blur(10px);
 }
 
+.subpage-nav-bar .hero-brand {
+  margin-bottom: 0;
+}
+
 .subpage-nav-container {
   max-width: var(--site-max-w);
   width: 100%;
@@ -941,6 +967,10 @@ button {
   z-index: 2;
 }
 
+.about-hero-container .hero-location-badge {
+  margin-bottom: 0;
+}
+
 .about-hero-pretitle {
   display: inline-block;
   font-size: 0.74rem;
@@ -974,6 +1004,10 @@ button {
   border-top: 1px solid rgba(212, 163, 89, 0.16);
   padding: 72px 0 68px 0;
   position: relative;
+}
+
+.about-seo-section .faq-cta-bar {
+  margin-top: 40px;
 }
 
 .about-seo-header {
@@ -1444,6 +1478,28 @@ button {
   display: none;
 }
 
+.live-status-badge.status-open {
+  color: #81c784;
+  border-color: rgba(76, 175, 80, 0.35);
+  background: rgba(46, 125, 50, 0.15);
+}
+
+.live-status-badge.status-open .pulse-dot {
+  background-color: #4caf50;
+  box-shadow: 0 0 6px #4caf50;
+}
+
+.live-status-badge.status-closed {
+  color: #dfa85b;
+  border-color: rgba(212, 163, 89, 0.35);
+  background: rgba(212, 163, 89, 0.1);
+}
+
+.live-status-badge.status-closed .pulse-dot {
+  background-color: #d4a359;
+  box-shadow: 0 0 6px #d4a359;
+}
+
 /* Location Block */
 .location-block {
   border-right: 1px solid rgba(255, 255, 255, 0.06);
@@ -1740,6 +1796,10 @@ button {
   font-size: 0.72rem;
   color: var(--text-dim);
   letter-spacing: 0.04em;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 /* ==================== PRODUCT DETAILS MODAL ==================== */
@@ -2414,6 +2474,121 @@ button {
   background-color: #4caf50;
   box-shadow: 0 0 6px rgba(76, 175, 80, 0.6);
   flex-shrink: 0;
+}
+
+/* ==================== 404 ERROR PAGE STYLES ==================== */
+body.error-page-body {
+  min-height: 100vh;
+  background-color: #0a0907;
+  color: #f5efe6;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  background-image: radial-gradient(circle at 50% 30%, rgba(212, 163, 89, 0.08) 0%, transparent 60%);
+}
+
+.error-card {
+  max-width: 520px;
+  width: 100%;
+  background: #110f0d;
+  border: 1px solid rgba(212, 163, 89, 0.28);
+  border-radius: 14px;
+  padding: 44px 32px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+}
+
+.error-logo-pic {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.error-logo-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 4px 16px rgba(212, 163, 89, 0.45));
+}
+
+.error-brand-name {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.16em;
+  color: #f5d48b;
+  margin-bottom: 18px;
+}
+
+.error-code {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #d4a359;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.error-title {
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.error-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #beb5a7;
+  margin-bottom: 28px;
+}
+
+.error-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.error-card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.error-card .btn-primary {
+  background: linear-gradient(135deg, #d4a359 0%, #b88636 100%);
+  color: #080706;
+  border: 1px solid #f5d48b;
+  box-shadow: none;
+}
+
+.error-card .btn-primary:hover {
+  background: linear-gradient(135deg, #f5d48b 0%, #d4a359 100%);
+  box-shadow: 0 4px 18px rgba(212, 163, 89, 0.4);
+  transform: translateY(-1px);
+}
+
+.error-card .btn-outline {
+  background: transparent;
+  color: #f5d48b;
+  border: 1px solid rgba(212, 163, 89, 0.4);
+}
+
+.error-card .btn-outline:hover {
+  background: rgba(212, 163, 89, 0.1);
+  border-color: #f5d48b;
+  color: #f5d48b;
 }
 
 /* ==================== RESPONSIVE DESIGN ==================== */

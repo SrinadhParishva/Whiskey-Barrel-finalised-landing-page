@@ -860,7 +860,7 @@ function initCategoryFilter() {
       if (noticeElement) {
         if (targetCategory === 'gin' || targetCategory === 'cigar') {
           noticeElement.innerHTML = `
-            <span class="notice-text" style="color: #dfa85b; font-weight: 700;">COMING SOON</span>
+            <span class="notice-text notice-highlight">COMING SOON</span>
             <span class="notice-divider">|</span>
             <span class="notice-text">CALL (913) 400-2339 TO INQUIRE ABOUT UPCOMING ARRIVALS</span>
           `;
@@ -877,13 +877,13 @@ function initCategoryFilter() {
       cards.forEach(card => {
         const cardCat = card.getAttribute('data-category');
         if (cardCat === targetCategory || targetCategory === 'all') {
-          card.style.display = 'flex';
-          card.style.opacity = '0';
-          setTimeout(() => {
-            card.style.opacity = '1';
-          }, 50);
+          card.classList.remove('is-hidden');
+          card.classList.remove('is-fade-in');
+          void card.offsetWidth;
+          card.classList.add('is-fade-in');
         } else {
-          card.style.display = 'none';
+          card.classList.remove('is-fade-in');
+          card.classList.add('is-hidden');
         }
       });
     });
@@ -926,18 +926,12 @@ function initStoreStatus() {
 
     if (currentTotalMinutes >= openTotalMinutes && currentTotalMinutes < closeTotalMinutes) {
       statusMsg.textContent = `Open Now · Closes at ${closeText}`;
-      pulseDot.style.backgroundColor = '#4caf50';
-      pulseDot.style.boxShadow = '0 0 6px #4caf50';
-      statusPill.style.color = '#81c784';
-      statusPill.style.borderColor = 'rgba(76, 175, 80, 0.35)';
-      statusPill.style.background = 'rgba(46, 125, 50, 0.15)';
+      statusPill.classList.add('status-open');
+      statusPill.classList.remove('status-closed');
     } else {
       statusMsg.textContent = 'Closed Now · Opens at 9 AM';
-      pulseDot.style.backgroundColor = '#d4a359';
-      pulseDot.style.boxShadow = '0 0 6px #d4a359';
-      statusPill.style.color = '#dfa85b';
-      statusPill.style.borderColor = 'rgba(212, 163, 89, 0.35)';
-      statusPill.style.background = 'rgba(212, 163, 89, 0.1)';
+      statusPill.classList.add('status-closed');
+      statusPill.classList.remove('status-open');
     }
   } catch (e) {
     console.error('Error calculating store status:', e);
@@ -1149,7 +1143,7 @@ function openProductModal(productId) {
   `;
 
   modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.body.classList.add('modal-open');
   modalContent.scrollTop = 0;
   const modalInfoCol = modalContent.querySelector('.modal-info-col');
   if (modalInfoCol) modalInfoCol.scrollTop = 0;
@@ -1169,7 +1163,7 @@ function closeProductModal(event) {
   const modal = document.getElementById('productModal');
   if (modal) {
     modal.classList.remove('open');
-    document.body.style.overflow = '';
+    document.body.classList.remove('modal-open');
     currentModalProductId = null;
   }
 }
@@ -1202,7 +1196,7 @@ function openCallStorePopup() {
   const triggerBtn = document.getElementById('btn-call-hero');
   if (popup) {
     popup.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('modal-open');
     if (triggerBtn) {
       triggerBtn.setAttribute('aria-expanded', 'true');
     }
@@ -1224,7 +1218,7 @@ function closeCallStorePopup(event) {
     popup.classList.remove('open');
     const prodModal = document.getElementById('productModal');
     if (!prodModal || !prodModal.classList.contains('open')) {
-      document.body.style.overflow = '';
+      document.body.classList.remove('modal-open');
     }
     if (triggerBtn) {
       triggerBtn.setAttribute('aria-expanded', 'false');
