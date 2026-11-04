@@ -13,10 +13,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Non-render-blocking Asynchronous Load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  </noscript>
 
   <style>
     * {
@@ -143,7 +147,7 @@
   <div class="error-card">
     <picture class="error-logo-pic">
       <source srcset="assets/logo_web.webp" type="image/webp">
-      <img src="assets/logo_web.png" alt="Whiskey Barrel" class="error-logo-img" width="400" height="400">
+      <img src="assets/logo_web.png" alt="Whiskey Barrel" class="error-logo-img" width="400" height="400" decoding="async">
     </picture>
     <div class="error-brand-name">WHISKEY BARREL</div>
     <div class="error-code">404</div>

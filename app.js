@@ -792,14 +792,20 @@ const PRODUCTS_DATA = {
 // Track currently displayed modal product ID for next/prev navigation
 let currentModalProductId = null;
 
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
   initCategoryFilter();
   initStoreStatus();
   initCardInteractions();
   initModalListeners();
   initCallStorePopup();
   initFaqAccordion();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 
 /**
  * Filter featured selection cards by category & handle category carousel
@@ -821,13 +827,15 @@ function initCategoryFilter() {
       }
     });
 
-    // Mouse wheel horizontal scroll on category track
-    track.addEventListener('wheel', (e) => {
-      if (e.deltaY !== 0 && track.scrollWidth > track.clientWidth) {
-        e.preventDefault();
-        track.scrollLeft += e.deltaY;
-      }
-    }, { passive: false });
+    // Mouse wheel horizontal scroll on category track (desktop/fine pointer only)
+    if (window.matchMedia('(pointer: fine)').matches) {
+      track.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0 && track.scrollWidth > track.clientWidth) {
+          e.preventDefault();
+          track.scrollLeft += e.deltaY;
+        }
+      }, { passive: false });
+    }
   }
 
   // Category Item Click Handler

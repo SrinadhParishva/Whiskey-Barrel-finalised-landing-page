@@ -5,6 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Resource Hints & Critical Preloads for Mobile PageSpeed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Fonts (Non-render-blocking Asynchronous Load) -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Production Minified Stylesheet -->
+  <link rel="stylesheet" href="style.min.css?v=7">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5BYZYPMKQ"></script>
   <script>
@@ -126,15 +146,7 @@
 }
   </script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
@@ -146,7 +158,7 @@
         <a href="./" class="brand-link" title="Return to Whiskey Barrel Homepage">
           <picture class="brand-logo-picture">
             <source srcset="assets/logo_web.webp" type="image/webp">
-            <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400">
+            <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400" fetchpriority="high" decoding="async">
           </picture>
           <div class="brand-text-group">
             <span class="brand-name">WHISKEY BARREL</span>
@@ -434,7 +446,7 @@
         <a href="https://www.google.com/maps/place/Whiskey+Barrel/@39.0143816,-94.7279887,15z/data=!4m15!1m8!3m7!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!2sWhiskey+Barrel!8m2!3d39.0141541!4d-94.727787!10e5!16s%2Fg%2F11spn4_7qy!3m5!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!8m2!3d39.0141541!4d-94.727787!16s%2Fg%2F11spn4_7qy?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer" class="map-card-link" title="Open in Google Maps">
           <div class="map-frame">
-            <img src="assets/map_hd.jpg" alt="Map graphic showing 12205 W 63rd St, Shawnee, KS 66216" class="map-preview-img" width="716" height="208" loading="lazy">
+            <img src="assets/map_hd.jpg" alt="Map graphic showing 12205 W 63rd St, Shawnee, KS 66216" class="map-preview-img" width="716" height="208" loading="lazy" decoding="async">
             <div class="map-hover-hint">
               <span>Open in Google Maps &UpperRightArrow;</span>
             </div>
@@ -451,7 +463,7 @@
       <div class="footer-brand">
         <picture class="footer-logo-picture">
           <source srcset="assets/logo_web.webp" type="image/webp">
-          <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="footer-barrel-icon" width="400" height="400" loading="lazy">
+          <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="footer-barrel-icon" width="400" height="400" loading="lazy" decoding="async">
         </picture>
         <div class="footer-text-group">
           <span class="footer-brand-title">WHISKEY BARREL</span>
@@ -536,7 +548,7 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="app.js?v=6"></script>
+  <script src="app.min.js?v=7" defer></script>
 </body>
 
 </html>

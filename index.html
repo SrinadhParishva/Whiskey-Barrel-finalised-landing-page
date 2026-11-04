@@ -5,6 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Resource Hints & Critical Preloads for Mobile PageSpeed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preload" as="image" href="assets/hero_storefront_night.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Google Fonts (Non-render-blocking Asynchronous Load) -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Production Minified Stylesheet -->
+  <link rel="stylesheet" href="style.min.css?v=7">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5BYZYPMKQ"></script>
   <script>
@@ -244,18 +265,7 @@
 }
   </script>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
 
-  <!-- Preload Critical Above-The-Fold Hero Background -->
-  <link rel="preload" as="image" href="assets/hero_storefront_night.webp" type="image/webp" fetchpriority="high">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=6">
 </head>
 
 <body>
@@ -274,7 +284,7 @@
         <a href="./" class="brand-link" title="Whiskey Barrel Homepage">
           <picture class="brand-logo-picture">
             <source srcset="assets/logo_web.webp" type="image/webp">
-            <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400">
+            <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400" fetchpriority="high" decoding="async">
           </picture>
           <div class="brand-text-group">
             <span class="brand-name">WHISKEY BARREL</span>
@@ -357,7 +367,7 @@
           <!-- 1: Whiskey (Active by default) -->
           <button class="cat-item-btn active" data-category="whiskey" id="cat-whiskey" aria-label="Shop Whiskey">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_whiskey.png" alt="Whiskey category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_whiskey.png" alt="Whiskey category" class="cat-circle-img" width="164" height="164" loading="eager" decoding="async">
             </div>
             <span class="cat-item-name">Whiskey</span>
             <span class="cat-active-line"></span>
@@ -366,7 +376,7 @@
           <!-- 2: Rum -->
           <button class="cat-item-btn" data-category="rum" id="cat-rum" aria-label="Shop Rum">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_rum.png" alt="Rum category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_rum.png" alt="Rum category" class="cat-circle-img" width="164" height="164" loading="eager" decoding="async">
             </div>
             <span class="cat-item-name">Rum</span>
             <span class="cat-active-line"></span>
@@ -375,7 +385,7 @@
           <!-- 3: Beer -->
           <button class="cat-item-btn" data-category="beer" id="cat-beer" aria-label="Shop Beer">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_beer.png" alt="Beer category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_beer.png" alt="Beer category" class="cat-circle-img" width="164" height="164" loading="eager" decoding="async">
             </div>
             <span class="cat-item-name">Beer</span>
             <span class="cat-active-line"></span>
@@ -384,7 +394,7 @@
           <!-- 4: Vodka -->
           <button class="cat-item-btn" data-category="vodka" id="cat-vodka" aria-label="Shop Vodka">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_vodka.png" alt="Vodka category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_vodka.png" alt="Vodka category" class="cat-circle-img" width="164" height="164" loading="lazy" decoding="async">
             </div>
             <span class="cat-item-name">Vodka</span>
             <span class="cat-active-line"></span>
@@ -393,7 +403,7 @@
           <!-- 5: Gin (Coming Soon) -->
           <button class="cat-item-btn" data-category="gin" id="cat-gin" aria-label="Shop Gin">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_gin.png" alt="Gin category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_gin.png" alt="Gin category" class="cat-circle-img" width="164" height="164" loading="lazy" decoding="async">
               <span class="cat-coming-soon-badge">COMING SOON</span>
             </div>
             <span class="cat-item-name">Gin</span>
@@ -403,7 +413,7 @@
           <!-- 6: Wine -->
           <button class="cat-item-btn" data-category="wine" id="cat-wine" aria-label="Shop Wine">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_wine.png" alt="Wine category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_wine.png" alt="Wine category" class="cat-circle-img" width="164" height="164" loading="lazy" decoding="async">
             </div>
             <span class="cat-item-name">Wine</span>
             <span class="cat-active-line"></span>
@@ -412,7 +422,7 @@
           <!-- 7: Tequila -->
           <button class="cat-item-btn" data-category="tequila" id="cat-tequila" aria-label="Shop Tequila">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_tequila.png" alt="Tequila category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_tequila.png" alt="Tequila category" class="cat-circle-img" width="164" height="164" loading="lazy" decoding="async">
             </div>
             <span class="cat-item-name">Tequila</span>
             <span class="cat-active-line"></span>
@@ -421,7 +431,7 @@
           <!-- 8: Cigar (Coming Soon) -->
           <button class="cat-item-btn" data-category="cigar" id="cat-cigar" aria-label="Shop Cigars">
             <div class="cat-circle-frame">
-              <img src="assets/cat_item_cigar.png" alt="Cigars category" class="cat-circle-img" width="164" height="164" loading="eager">
+              <img src="assets/cat_item_cigar.png" alt="Cigars category" class="cat-circle-img" width="164" height="164" loading="lazy" decoding="async">
               <span class="cat-coming-soon-badge">COMING SOON</span>
             </div>
             <span class="cat-item-name">Cigar</span>
@@ -465,7 +475,7 @@
         <!-- Card 1: fireball -->
         <article class="product-card" data-category="whiskey" data-product-id="fireball">
           <div class="card-visual">
-            <img src="assets/whiskey_fireball.webp" alt="Fireball Cinnamon Whisky bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_fireball.webp" alt="Fireball Cinnamon Whisky bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Fireball<br>Cinnamon Whisky</h3>
@@ -488,7 +498,7 @@
         <!-- Card 3: jackdaniels -->
         <article class="product-card" data-category="whiskey" data-product-id="jackdaniels">
           <div class="card-visual">
-            <img src="assets/whiskey_jackdaniels.webp" alt="Jack Daniel's Old No. 7 Whiskey bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_jackdaniels.webp" alt="Jack Daniel's Old No. 7 Whiskey bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Jack Daniel's<br>Old No. 7 Whiskey</h3>
@@ -511,7 +521,7 @@
         <!-- Card 4: elijahcraig -->
         <article class="product-card" data-category="whiskey" data-product-id="elijahcraig">
           <div class="card-visual">
-            <img src="assets/whiskey_elijahcraig.webp" alt="Elijah Craig Small Batch Bourbon bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_elijahcraig.webp" alt="Elijah Craig Small Batch Bourbon bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Elijah Craig<br>Small Batch Bourbon</h3>
@@ -534,7 +544,7 @@
         <!-- Card 5: fourroses -->
         <article class="product-card" data-category="whiskey" data-product-id="fourroses">
           <div class="card-visual">
-            <img src="assets/whiskey_fourroses.webp" alt="Four Roses Kentucky Bourbon bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_fourroses.webp" alt="Four Roses Kentucky Bourbon bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Four Roses<br>Kentucky Bourbon</h3>
@@ -557,7 +567,7 @@
         <!-- Card 6: dewars -->
         <article class="product-card" data-category="whiskey" data-product-id="dewars">
           <div class="card-visual">
-            <img src="assets/whiskey_dewars.webp" alt="Dewar's White Label Scotch bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_dewars.webp" alt="Dewar's White Label Scotch bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Dewar's<br>White Label Scotch</h3>
@@ -580,7 +590,7 @@
         <!-- Card 7: makersmark -->
         <article class="product-card" data-category="whiskey" data-product-id="makersmark">
           <div class="card-visual">
-            <img src="assets/whiskey_makersmark.webp" alt="Maker's Mark Bourbon Whisky bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_makersmark.webp" alt="Maker's Mark Bourbon Whisky bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Maker's Mark<br>Bourbon Whisky</h3>
@@ -603,7 +613,7 @@
         <!-- Card 8: johnniewalker -->
         <article class="product-card" data-category="whiskey" data-product-id="johnniewalker">
           <div class="card-visual">
-            <img src="assets/whiskey_johnniewalker.webp" alt="Johnnie Walker Black Label 50ML bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_johnniewalker.webp" alt="Johnnie Walker Black Label 50ML bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Johnnie Walker<br>Black Label 50ML</h3>
@@ -626,7 +636,7 @@
         <!-- Card 9: jimbeam -->
         <article class="product-card" data-category="whiskey" data-product-id="jimbeam">
           <div class="card-visual">
-            <img src="assets/whiskey_jimbeam.webp" alt="Jim Beam Devil's Cut Bourbon bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_jimbeam.webp" alt="Jim Beam Devil's Cut Bourbon bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Jim Beam<br>Devil's Cut Bourbon</h3>
@@ -649,7 +659,7 @@
         <!-- Card 10: jameson -->
         <article class="product-card" data-category="whiskey" data-product-id="jameson">
           <div class="card-visual">
-            <img src="assets/whiskey_jameson.webp" alt="Jameson Irish Whiskey bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_jameson.webp" alt="Jameson Irish Whiskey bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Jameson<br>Irish Whiskey</h3>
@@ -672,7 +682,7 @@
         <!-- Card 11: knobcreek -->
         <article class="product-card" data-category="whiskey" data-product-id="knobcreek">
           <div class="card-visual">
-            <img src="assets/whiskey_knobcreek.webp" alt="Knob Creek Smoked Maple bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_knobcreek.webp" alt="Knob Creek Smoked Maple bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Knob Creek<br>Smoked Maple</h3>
@@ -695,7 +705,7 @@
         <!-- Card 12: crownroyal -->
         <article class="product-card" data-category="whiskey" data-product-id="crownroyal">
           <div class="card-visual">
-            <img src="assets/whiskey_crownroyal.webp" alt="Crown Royal KC Limited Edition bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_crownroyal.webp" alt="Crown Royal KC Limited Edition bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Crown Royal<br>KC Limited Edition</h3>
@@ -718,7 +728,7 @@
         <!-- Card 13: bluenote -->
         <article class="product-card" data-category="whiskey" data-product-id="bluenote">
           <div class="card-visual">
-            <img src="assets/whiskey_bluenote.webp" alt="Blue Note Crossroads Whiskey bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_bluenote.webp" alt="Blue Note Crossroads Whiskey bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Blue Note<br>Crossroads Whiskey</h3>
@@ -741,7 +751,7 @@
         <!-- Card 14: bulleitrye -->
         <article class="product-card" data-category="whiskey" data-product-id="bulleitrye">
           <div class="card-visual">
-            <img src="assets/whiskey_bulleitrye.webp" alt="Bulleit Rye Straight Whiskey bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_bulleitrye.webp" alt="Bulleit Rye Straight Whiskey bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Bulleit Rye<br>Straight Whiskey</h3>
@@ -764,7 +774,7 @@
         <!-- Card 15: woodford -->
         <article class="product-card" data-category="whiskey" data-product-id="woodford">
           <div class="card-visual">
-            <img src="assets/whiskey_woodford.webp" alt="Woodford Reserve Distiller's Select bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_woodford.webp" alt="Woodford Reserve Distiller's Select bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Woodford Reserve<br>Distiller's Select</h3>
@@ -787,7 +797,7 @@
         <!-- Card 16: wildturkey -->
         <article class="product-card" data-category="whiskey" data-product-id="wildturkey">
           <div class="card-visual">
-            <img src="assets/whiskey_wildturkey.webp" alt="Wild Turkey 101 Kentucky Bourbon bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/whiskey_wildturkey.webp" alt="Wild Turkey 101 Kentucky Bourbon bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Wild Turkey 101<br>Kentucky Bourbon</h3>
@@ -810,7 +820,7 @@
         <!-- Card 18: malibu -->
         <article class="product-card" data-category="rum" data-product-id="malibu" style="display: none;">
           <div class="card-visual">
-            <img src="assets/rum_malibu.webp" alt="Malibu Black Coconut Rum bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/rum_malibu.webp" alt="Malibu Black Coconut Rum bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Malibu Black<br>Coconut Rum</h3>
@@ -833,7 +843,7 @@
         <!-- Card 19: bacardi -->
         <article class="product-card" data-category="rum" data-product-id="bacardi" style="display: none;">
           <div class="card-visual">
-            <img src="assets/rum_bacardi.webp" alt="Bacardí Rum Punch Ready bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/rum_bacardi.webp" alt="Bacardí Rum Punch Ready bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Bacardí<br>Rum Punch Ready</h3>
@@ -856,7 +866,7 @@
         <!-- Card 20: titos -->
         <article class="product-card" data-category="vodka" data-product-id="titos" style="display: none;">
           <div class="card-visual">
-            <img src="assets/vodka_titos.webp" alt="Tito's Handmade Vodka bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/vodka_titos.webp" alt="Tito's Handmade Vodka bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Tito's<br>Handmade Vodka</h3>
@@ -879,7 +889,7 @@
         <!-- Card 21: absolut -->
         <article class="product-card" data-category="vodka" data-product-id="absolut" style="display: none;">
           <div class="card-visual">
-            <img src="assets/vodka_absolut.webp" alt="Absolut Swedish Vodka bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/vodka_absolut.webp" alt="Absolut Swedish Vodka bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Absolut<br>Swedish Vodka</h3>
@@ -902,7 +912,7 @@
         <!-- Card 22: greygoose -->
         <article class="product-card" data-category="vodka" data-product-id="greygoose" style="display: none;">
           <div class="card-visual">
-            <img src="assets/vodka_greygoose.webp" alt="Grey Goose French Vodka bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/vodka_greygoose.webp" alt="Grey Goose French Vodka bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Grey Goose<br>French Vodka</h3>
@@ -925,7 +935,7 @@
         <!-- Card 23: smirnoff -->
         <article class="product-card" data-category="vodka" data-product-id="smirnoff" style="display: none;">
           <div class="card-visual">
-            <img src="assets/vodka_smirnoff.webp" alt="Smirnoff No. 21 Triple Distilled bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/vodka_smirnoff.webp" alt="Smirnoff No. 21 Triple Distilled bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Smirnoff No. 21<br>Triple Distilled</h3>
@@ -948,7 +958,7 @@
         <!-- Card 25: gin (Coming Soon) -->
         <article class="product-card" data-category="gin" data-product-id="gin" style="display: none;">
           <div class="card-visual">
-            <img src="assets/gin_coming_soon.webp" alt="Craft Gin Collection" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/gin_coming_soon.webp" alt="Craft Gin Collection" class="product-img" width="600" height="600" loading="lazy" decoding="async">
             <span class="card-coming-soon-tag">COMING SOON</span>
           </div>
           <div class="card-details">
@@ -972,7 +982,7 @@
         <!-- Card 26: cigar (Coming Soon) -->
         <article class="product-card" data-category="cigar" data-product-id="cigar" style="display: none;">
           <div class="card-visual">
-            <img src="assets/cigar_coming_soon.webp" alt="Premium Cigar Collection" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/cigar_coming_soon.webp" alt="Premium Cigar Collection" class="product-img" width="600" height="600" loading="lazy" decoding="async">
             <span class="card-coming-soon-tag">COMING SOON</span>
           </div>
           <div class="card-details">
@@ -996,7 +1006,7 @@
         <!-- Card 27: casamigos -->
         <article class="product-card" data-category="tequila" data-product-id="casamigos" style="display: none;">
           <div class="card-visual">
-            <img src="assets/tequila_casamigos_blanco.webp" alt="Casamigos Tequila Blanco bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/tequila_casamigos_blanco.webp" alt="Casamigos Tequila Blanco bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Casamigos<br>Tequila Blanco</h3>
@@ -1019,7 +1029,7 @@
         <!-- Card 28: patron -->
         <article class="product-card" data-category="tequila" data-product-id="patron" style="display: none;">
           <div class="card-visual">
-            <img src="assets/tequila_patron_reposado.webp" alt="Patrón Reposado Tequila bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/tequila_patron_reposado.webp" alt="Patrón Reposado Tequila bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Patrón<br>Reposado Tequila</h3>
@@ -1042,7 +1052,7 @@
         <!-- Card 29: espolon -->
         <article class="product-card" data-category="tequila" data-product-id="espolon" style="display: none;">
           <div class="card-visual">
-            <img src="assets/tequila_espolon_blanco.webp" alt="Espolòn Tequila Blanco bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/tequila_espolon_blanco.webp" alt="Espolòn Tequila Blanco bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Espolòn<br>Tequila Blanco</h3>
@@ -1065,7 +1075,7 @@
         <!-- Card 30: sauza -->
         <article class="product-card" data-category="tequila" data-product-id="sauza" style="display: none;">
           <div class="card-visual">
-            <img src="assets/tequila_sauza_gold.webp" alt="Sauza Tequila Gold bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/tequila_sauza_gold.webp" alt="Sauza Tequila Gold bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Sauza<br>Tequila Gold</h3>
@@ -1088,7 +1098,7 @@
         <!-- Card 31: joshcellars -->
         <article class="product-card" data-category="wine" data-product-id="joshcellars" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_joshcellars.webp" alt="Josh Cellars Cabernet Sauvignon bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_joshcellars.webp" alt="Josh Cellars Cabernet Sauvignon bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Josh Cellars<br>Cabernet Sauvignon</h3>
@@ -1111,7 +1121,7 @@
         <!-- Card 32: meiomi -->
         <article class="product-card" data-category="wine" data-product-id="meiomi" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_meiomi_pinotnoir.webp" alt="Meiomi Pinot Noir bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_meiomi_pinotnoir.webp" alt="Meiomi Pinot Noir bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Meiomi<br>Pinot Noir</h3>
@@ -1134,7 +1144,7 @@
         <!-- Card 33: barefootmoscato -->
         <article class="product-card" data-category="wine" data-product-id="barefootmoscato" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_barefoot_moscato.webp" alt="Barefoot on Tap Moscato Wine 3L box" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_barefoot_moscato.webp" alt="Barefoot on Tap Moscato Wine 3L box" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Barefoot on Tap<br>Moscato Wine</h3>
@@ -1157,7 +1167,7 @@
         <!-- Card 34: yellowtailshiraz -->
         <article class="product-card" data-category="wine" data-product-id="yellowtailshiraz" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_yellowtail_shiraz.webp" alt="[yellow tail] Shiraz 1.5L bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_yellowtail_shiraz.webp" alt="[yellow tail] Shiraz 1.5L bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">[yellow tail]<br>Shiraz 1.5L</h3>
@@ -1180,7 +1190,7 @@
         <!-- Card 35: apothicinferno -->
         <article class="product-card" data-category="wine" data-product-id="apothicinferno" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_apothic_inferno.webp" alt="Apothic Inferno Red Blend bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_apothic_inferno.webp" alt="Apothic Inferno Red Blend bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Apothic Inferno<br>Red Blend</h3>
@@ -1203,7 +1213,7 @@
         <!-- Card 36: botabox -->
         <article class="product-card" data-category="wine" data-product-id="botabox" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_botabox.webp" alt="Bota Box Premium Wine 3L box" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_botabox.webp" alt="Bota Box Premium Wine 3L box" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Bota Box<br>Premium Wine</h3>
@@ -1226,7 +1236,7 @@
         <!-- Card 37: kendalljackson -->
         <article class="product-card" data-category="wine" data-product-id="kendalljackson" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_kendalljackson.webp" alt="Kendall-Jackson Vintner's Reserve bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_kendalljackson.webp" alt="Kendall-Jackson Vintner's Reserve bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Kendall-Jackson<br>Vintner's Reserve</h3>
@@ -1249,7 +1259,7 @@
         <!-- Card 38: sutterhome -->
         <article class="product-card" data-category="wine" data-product-id="sutterhome" style="display: none;">
           <div class="card-visual">
-            <img src="assets/wine_sutterhome.webp" alt="Sutter Home California Wine bottle" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/wine_sutterhome.webp" alt="Sutter Home California Wine bottle" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Sutter Home<br>California Wine</h3>
@@ -1272,7 +1282,7 @@
         <!-- Card 39: modelo -->
         <article class="product-card" data-category="beer" data-product-id="modelo" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_modelo.webp" alt="Modelo Especial 24-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_modelo.webp" alt="Modelo Especial 24-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Modelo Especial<br>24-Pack Cans</h3>
@@ -1295,7 +1305,7 @@
         <!-- Card 40: michelobultra -->
         <article class="product-card" data-category="beer" data-product-id="michelobultra" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_michelobultra.webp" alt="Michelob ULTRA 12-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_michelobultra.webp" alt="Michelob ULTRA 12-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Michelob ULTRA<br>12-Pack Cans</h3>
@@ -1318,7 +1328,7 @@
         <!-- Card 41: millerlite -->
         <article class="product-card" data-category="beer" data-product-id="millerlite" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_millerlite.webp" alt="Miller Lite Aluminum 15-pack" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_millerlite.webp" alt="Miller Lite Aluminum 15-pack" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Miller Lite<br>Aluminum 15-Pack</h3>
@@ -1341,7 +1351,7 @@
         <!-- Card 42: coorslight -->
         <article class="product-card" data-category="beer" data-product-id="coorslight" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_coorslight.webp" alt="Coors Light 24-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_coorslight.webp" alt="Coors Light 24-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Coors Light<br>24-Pack Cans</h3>
@@ -1364,7 +1374,7 @@
         <!-- Card 43: budlight -->
         <article class="product-card" data-category="beer" data-product-id="budlight" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_budlight.webp" alt="Bud Light Aluminum 20-pack" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_budlight.webp" alt="Bud Light Aluminum 20-pack" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Bud Light<br>Aluminum 20-Pack</h3>
@@ -1387,7 +1397,7 @@
         <!-- Card 44: budweiser -->
         <article class="product-card" data-category="beer" data-product-id="budweiser" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_budweiser.webp" alt="Budweiser 24-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_budweiser.webp" alt="Budweiser 24-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Budweiser<br>24-Pack Cans</h3>
@@ -1410,7 +1420,7 @@
         <!-- Card 46: corona -->
         <article class="product-card" data-category="beer" data-product-id="corona" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_corona.webp" alt="Corona Extra 12-pack bottles" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_corona.webp" alt="Corona Extra 12-pack bottles" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Corona Extra<br>12-Pack Bottles</h3>
@@ -1433,7 +1443,7 @@
         <!-- Card 47: dosequis -->
         <article class="product-card" data-category="beer" data-product-id="dosequis" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_dosequis.webp" alt="Dos Equis Lager 12-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_dosequis.webp" alt="Dos Equis Lager 12-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Dos Equis Lager<br>12-Pack Cans</h3>
@@ -1456,7 +1466,7 @@
         <!-- Card 48: stellaartois -->
         <article class="product-card" data-category="beer" data-product-id="stellaartois" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_stellaartois.webp" alt="Stella Artois 12-pack cans" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_stellaartois.webp" alt="Stella Artois 12-pack cans" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Stella Artois<br>12-Pack Cans</h3>
@@ -1479,7 +1489,7 @@
         <!-- Card 49: guinness -->
         <article class="product-card" data-category="beer" data-product-id="guinness" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_guinness.webp" alt="Guinness Extra Stout 6-pack bottles" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_guinness.webp" alt="Guinness Extra Stout 6-pack bottles" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Guinness Extra<br>Stout 6-Pack</h3>
@@ -1502,7 +1512,7 @@
         <!-- Card 50: bluemoon -->
         <article class="product-card" data-category="beer" data-product-id="bluemoon" style="display: none;">
           <div class="card-visual">
-            <img src="assets/beer_bluemoon.webp" alt="Blue Moon Belgian White 12-pack bottles" class="product-img" width="600" height="600" loading="lazy">
+            <img src="assets/beer_bluemoon.webp" alt="Blue Moon Belgian White 12-pack bottles" class="product-img" width="600" height="600" loading="lazy" decoding="async">
           </div>
           <div class="card-details">
             <h3 class="product-name">Blue Moon Belgian<br>White 12-Pack</h3>
@@ -1799,7 +1809,7 @@
         <a href="https://www.google.com/maps/place/Whiskey+Barrel/@39.0143816,-94.7279887,15z/data=!4m15!1m8!3m7!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!2sWhiskey+Barrel!8m2!3d39.0141541!4d-94.727787!10e5!16s%2Fg%2F11spn4_7qy!3m5!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!8m2!3d39.0141541!4d-94.727787!16s%2Fg%2F11spn4_7qy?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
             rel="noopener noreferrer" class="map-card-link" title="Open in Google Maps">
           <div class="map-frame">
-            <img src="assets/map_hd.jpg" alt="Map graphic showing 12205 W 63rd St, Shawnee, KS 66216" class="map-preview-img" width="716" height="208" loading="lazy">
+            <img src="assets/map_hd.jpg" alt="Map graphic showing 12205 W 63rd St, Shawnee, KS 66216" class="map-preview-img" width="716" height="208" loading="lazy" decoding="async">
             <div class="map-hover-hint">
               <span>Open in Google Maps &UpperRightArrow;</span>
             </div>
@@ -1816,7 +1826,7 @@
       <div class="footer-brand">
         <picture class="footer-logo-picture">
           <source srcset="assets/logo_web.webp" type="image/webp">
-          <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="footer-barrel-icon" width="400" height="400" loading="lazy">
+          <img src="assets/logo_web.png" alt="Whiskey Barrel logo" class="footer-barrel-icon" width="400" height="400" loading="lazy" decoding="async">
         </picture>
         <div class="footer-text-group">
           <span class="footer-brand-title">WHISKEY BARREL</span>
@@ -1911,7 +1921,7 @@
   </div>
 
   <!-- JavaScript -->
-  <script src="app.js?v=6"></script>
+  <script src="app.min.js?v=7" defer></script>
 </body>
 
 </html>

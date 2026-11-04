@@ -781,6 +781,8 @@ button {
   position: relative;
   transition: all var(--transition-fast);
   cursor: pointer;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 146px;
 }
 
 .product-card:hover {
@@ -1142,6 +1144,8 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 68px 0 64px 0;
   position: relative;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 700px;
 }
 
 .faq-container {
@@ -1353,6 +1357,8 @@ button {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   padding: 34px 0 38px 0;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 .store-info-container {
@@ -1601,6 +1607,8 @@ button {
   background-color: var(--bg-footer);
   padding: 22px 0 24px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 240px;
 }
 
 .footer-container {
