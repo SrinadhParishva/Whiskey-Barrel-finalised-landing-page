@@ -6,7 +6,7 @@
 
 - **Business Name**: Whiskey Barrel
 - **Tagline**: Spirits · People · Good Company
-- **Address**: 12205 W 63rd St, Shawnee, KS 66216 (at Shawnee Mission Parkway & 63rd St)
+- **Address**: 12205 Shawnee Mission Parkway, Shawnee, KS 66216
 - **Phone**: +1 (913) 400-2339
 - **Email**: WB@rkmgmt.net
 - **Website**: https://whiskeybarrel.store/
@@ -31,7 +31,7 @@
 ## Store Information & Help
 
 - [About Whiskey Barrel](https://whiskeybarrel.store/about): Store story, curated bourbon collection, wine cellar, Kansas City craft beer, artisanal tequila, and smoke shop essentials.
-- [Store Location & Directions](https://whiskeybarrel.store/#store-info): Interactive Google Maps directions to 12205 W 63rd St in Shawnee, KS.
+- [Store Location & Directions](https://whiskeybarrel.store/#store-info): Interactive Google Maps directions to 12205 Shawnee Mission Parkway, Shawnee, KS 66216.
 - [Frequently Asked Questions](https://whiskeybarrel.store/#faq): Real-time store availability checks, Sunday hours, payment methods, and transit guidance.
 
 ## Optional & System Files
