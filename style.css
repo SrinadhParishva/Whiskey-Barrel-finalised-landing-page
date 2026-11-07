@@ -2480,6 +2480,478 @@ body.modal-open {
   flex-shrink: 0;
 }
 
+
+/* ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== */
+html:not(.wb-age-verified) body {
+  overflow: hidden !important;
+}
+
+body.age-gate-locked {
+  overflow: hidden !important;
+  height: 100vh !important;
+}
+
+.age-gate-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(6, 5, 4, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+}
+
+html.wb-age-verified .age-gate-backdrop {
+  display: none !important;
+}
+
+.age-gate-backdrop.closing {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.age-gate-card {
+  background: linear-gradient(165deg, #181512 0%, #0e0c0a 100%);
+  border: 1px solid rgba(212, 163, 89, 0.42);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 34px 28px 28px;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 45px rgba(212, 163, 89, 0.16);
+  text-align: center;
+  overflow: hidden;
+}
+
+.age-gate-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), var(--gold-primary), transparent);
+}
+
+.age-gate-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.age-gate-logo-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 163, 89, 0.45);
+  padding: 3px;
+  background: rgba(10, 9, 7, 0.8);
+  box-shadow: 0 0 20px rgba(212, 163, 89, 0.25);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-gate-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.age-gate-brand-name {
+  font-family: var(--font-serif-brand);
+  font-size: 1.22rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.age-gate-brand-tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Views switcher */
+.age-gate-view {
+  display: none;
+}
+
+.age-gate-view.active {
+  display: block;
+  animation: ageGateFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes ageGateFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.age-gate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(212, 163, 89, 0.1);
+  border: 1px solid rgba(212, 163, 89, 0.28);
+  border-radius: 30px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.age-gate-badge-icon {
+  width: 13px;
+  height: 13px;
+  color: var(--gold-primary);
+}
+
+.age-gate-title {
+  font-family: var(--font-serif-brand);
+  font-size: 1.45rem;
+  color: var(--text-white);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.age-gate-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.age-gate-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.age-gate-btn {
+  width: 100%;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.age-gate-btn .arrow {
+  transition: transform var(--transition-fast);
+}
+
+.age-gate-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* DOB form */
+.age-gate-dob-form {
+  margin-bottom: 16px;
+}
+
+.age-gate-dob-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.age-gate-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 85px;
+}
+
+.age-gate-field.year-field {
+  max-width: 110px;
+}
+
+.age-gate-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold-primary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.age-gate-input {
+  width: 100%;
+  height: 52px;
+  background: rgba(22, 19, 16, 0.85);
+  border: 1px solid rgba(212, 163, 89, 0.38);
+  border-radius: 8px;
+  color: var(--text-white);
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  transition: all var(--transition-fast);
+  padding: 0;
+  -moz-appearance: textfield;
+}
+
+.age-gate-input::-webkit-outer-spin-button,
+.age-gate-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.age-gate-input:focus {
+  outline: none;
+  border-color: var(--gold-light);
+  background: #1a1612;
+  box-shadow: 0 0 14px rgba(212, 163, 89, 0.4);
+}
+
+.age-gate-input.input-error {
+  border-color: #e05d5d;
+  box-shadow: 0 0 10px rgba(224, 93, 93, 0.35);
+}
+
+.age-gate-sep {
+  font-size: 1.4rem;
+  color: rgba(212, 163, 89, 0.5);
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.age-gate-error {
+  min-height: 20px;
+  font-size: 0.78rem;
+  color: #ff7b7b;
+  margin-bottom: 12px;
+  font-weight: 500;
+  display: none;
+}
+
+.age-gate-error.show {
+  display: block;
+}
+
+.age-gate-remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.age-gate-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.age-gate-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.age-gate-custom-checkbox {
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(212, 163, 89, 0.5);
+  border-radius: 4px;
+  background: rgba(22, 19, 16, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.age-gate-checkbox:checked + .age-gate-custom-checkbox {
+  background: var(--gold-primary);
+  border-color: var(--gold-light);
+}
+
+.age-gate-checkbox:checked + .age-gate-custom-checkbox::after {
+  content: '';
+  width: 5px;
+  height: 9px;
+  border: solid #12100e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.age-gate-checkbox:focus-visible + .age-gate-custom-checkbox {
+  box-shadow: 0 0 0 2px rgba(212, 163, 89, 0.5);
+}
+
+.age-gate-checkbox-text {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.age-gate-back-link {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  padding: 6px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  margin-top: 4px;
+  font-family: inherit;
+}
+
+.age-gate-back-link:hover {
+  color: var(--gold-light);
+  text-decoration: underline;
+}
+
+/* Denied View */
+.age-gate-icon-denied {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: rgba(224, 93, 93, 0.12);
+  border: 1px solid rgba(224, 93, 93, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e05d5d;
+}
+
+.age-gate-icon-denied svg {
+  width: 32px;
+  height: 32px;
+}
+
+.age-gate-title.denied {
+  color: #ff9494;
+}
+
+.age-gate-denied-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(224, 93, 93, 0.15);
+  border: 1px solid rgba(224, 93, 93, 0.35);
+  color: #ff8585;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+
+.age-gate-desc.denied-text {
+  color: #ded6cc;
+  margin-bottom: 12px;
+}
+
+.age-gate-subtext {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+}
+
+.age-gate-footer-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(212, 163, 89, 0.15);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+
+.age-gate-lock-icon {
+  width: 12px;
+  height: 12px;
+  color: var(--gold-primary);
+  flex-shrink: 0;
+}
+
+.age-gate-footer-note .gold-link {
+  color: var(--gold-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.age-gate-footer-note .gold-link:hover {
+  color: var(--gold-light);
+}
+
+@media (max-width: 540px) {
+  .age-gate-backdrop {
+    padding: 14px;
+  }
+  .age-gate-card {
+    padding: 26px 18px 20px;
+    border-radius: 14px;
+  }
+  .age-gate-logo-box {
+    width: 62px;
+    height: 62px;
+  }
+  .age-gate-brand-name {
+    font-size: 1.1rem;
+  }
+  .age-gate-title {
+    font-size: 1.25rem;
+  }
+  .age-gate-desc {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+  .age-gate-btn {
+    height: 46px;
+    font-size: 0.78rem;
+  }
+  .age-gate-input {
+    height: 48px;
+    font-size: 1.15rem;
+  }
+}
+
 /* ==================== 404 ERROR PAGE STYLES ==================== */
 body.error-page-body {
   min-height: 100vh;
