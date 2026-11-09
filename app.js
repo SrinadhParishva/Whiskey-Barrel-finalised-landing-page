@@ -858,8 +858,19 @@ function initCategoryFilter() {
   const cards = document.querySelectorAll('.product-card');
   const track = document.getElementById('category-items-track');
   const nextBtn = document.getElementById('cat-nav-next');
+  const prevBtn = document.getElementById('cat-nav-prev');
 
   // Next Arrow Click Handler
+  if (track && prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      if (track.scrollLeft <= 15) {
+        track.scrollTo({ left: track.scrollWidth, behavior: 'smooth' });
+      } else {
+        track.scrollBy({ left: -260, behavior: 'smooth' });
+      }
+    });
+  }
+
   if (track && nextBtn) {
     nextBtn.addEventListener('click', () => {
       const maxScroll = track.scrollWidth - track.clientWidth;
@@ -1349,8 +1360,8 @@ function initFaqAccordion() {
 /**
  * Mandatory 21+ Age Verification Gate
  */
-const AGE_GATE_STORAGE_KEY = 'wb_age_verified';
-const AGE_GATE_DATE_KEY = 'wb_age_verified_date';
+const AGE_GATE_STORAGE_KEY = 'wb_age_verified_v2';
+const AGE_GATE_DATE_KEY = 'wb_age_verified_date_v2';
 const AGE_GATE_DENIED_KEY = 'wb_age_denied';
 const AGE_GATE_EXPIRY_DAYS = 30;
 
@@ -1433,34 +1444,69 @@ function initAgeGate() {
     });
   }
 
+  function grantAgeAccess() {
+    try {
+      if (!rememberCheckbox || rememberCheckbox.checked) {
+        localStorage.setItem(AGE_GATE_STORAGE_KEY, 'true');
+        localStorage.setItem(AGE_GATE_DATE_KEY, Date.now().toString());
+      } else {
+        localStorage.removeItem(AGE_GATE_STORAGE_KEY);
+        localStorage.removeItem(AGE_GATE_DATE_KEY);
+      }
+      sessionStorage.setItem(AGE_GATE_STORAGE_KEY, 'true');
+      sessionStorage.removeItem(AGE_GATE_DENIED_KEY);
+    } catch (err) {}
+
+    document.documentElement.classList.add('wb-age-verified');
+    document.body.classList.remove('age-gate-locked');
+    document.body.style.overflow = '';
+    document.body.style.overflowY = '';
+    document.documentElement.style.overflow = '';
+    document.documentElement.style.overflowY = '';
+
+    if (modal) {
+      modal.classList.add('closing');
+      setTimeout(() => {
+        modal.style.display = 'none';
+        modal.classList.remove('closing');
+        document.body.classList.remove('age-gate-locked');
+        document.body.style.overflow = '';
+        document.body.style.overflowY = '';
+      }, 300);
+    }
+  }
+
+  // Check if previously verified
+  if (isAgeVerified()) {
+    document.documentElement.classList.add('wb-age-verified');
+    modal.style.display = 'none';
+    document.body.classList.remove('age-gate-locked');
+    document.body.style.overflow = '';
+    document.body.style.overflowY = '';
+    return;
+  }
+
   // Check if previously denied
   if (isAgeDenied()) {
     document.body.classList.add('age-gate-locked');
     modal.style.display = 'flex';
     switchView(viewDenied);
-    return;
+  } else {
+    // First visit / unverified: display modal & lock scroll
+    document.body.classList.add('age-gate-locked');
+    modal.style.display = 'flex';
+    switchView(viewQuestion);
   }
 
-  // Check if already verified
-  if (isAgeVerified()) {
-    document.documentElement.classList.add('wb-age-verified');
-    modal.style.display = 'none';
-    document.body.classList.remove('age-gate-locked');
-    return;
-  }
-
-  // First visit / unverified: display modal & lock scroll
-  document.body.classList.add('age-gate-locked');
-  modal.style.display = 'flex';
-  switchView(viewQuestion);
-
-  // YES button clicked -> Switch to DOB view
+  // YES button clicked -> Require user to enter Date of Birth (2-step verification)
   if (btnYes) {
     btnYes.addEventListener('click', () => {
       clearError();
       switchView(viewDob);
       if (monthInput) {
-        setTimeout(() => monthInput.focus(), 80);
+        setTimeout(() => {
+          monthInput.focus();
+        }, 80);
       }
     });
   }
@@ -1471,7 +1517,19 @@ function initAgeGate() {
       try {
         sessionStorage.setItem(AGE_GATE_DENIED_KEY, 'true');
       } catch (e) {}
+      document.body.classList.add('age-gate-locked');
       switchView(viewDenied);
+    });
+  }
+
+  // Return to verification from Denied view
+  const btnDeniedBack = document.getElementById('btnAgeDeniedBack');
+  if (btnDeniedBack) {
+    btnDeniedBack.addEventListener('click', () => {
+      try {
+        sessionStorage.removeItem(AGE_GATE_DENIED_KEY);
+      } catch (e) {}
+      switchView(viewQuestion);
     });
   }
 
@@ -1604,28 +1662,11 @@ function initAgeGate() {
 
       if (age >= 21) {
         // AGE 21+ VERIFIED: Grant access
-        const remember = rememberCheckbox ? rememberCheckbox.checked : true;
-        try {
-          if (remember) {
-            localStorage.setItem(AGE_GATE_STORAGE_KEY, 'true');
-            localStorage.setItem(AGE_GATE_DATE_KEY, Date.now().toString());
-          } else {
-            sessionStorage.setItem(AGE_GATE_STORAGE_KEY, 'true');
-          }
-        } catch (err) {}
-
         if (submitBtn) {
           submitBtn.innerHTML = '<span>VERIFIED &bull; ENTERING...</span>';
           submitBtn.disabled = true;
         }
-
-        document.documentElement.classList.add('wb-age-verified');
-
-        modal.classList.add('closing');
-        setTimeout(() => {
-          modal.style.display = 'none';
-          document.body.classList.remove('age-gate-locked');
-        }, 350);
+        grantAgeAccess();
       } else {
         // UNDER 21: Display restriction warning and prevent access
         try {

@@ -49,14 +49,13 @@ html {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
   background-color: var(--bg-dark);
   color: var(--text-main);
-  overflow-x: hidden;
-  overflow-y: auto;
   line-height: 1.5;
 }
 
@@ -475,30 +474,42 @@ button {
   text-decoration: none;
 }
 
+.cat-square-frame,
 .cat-circle-frame {
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
+  width: clamp(102px, 8.8vw, 128px);
+  height: clamp(102px, 8.8vw, 128px);
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
   position: relative;
   background: radial-gradient(circle at 40% 35%, #181512 0%, #0a0806 85%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(212, 163, 89, 0.28);
   transition: all var(--transition-fast);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
 
+.cat-square-frame picture,
+.cat-circle-frame picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cat-square-img,
 .cat-circle-img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 50%;
-  transition: transform var(--transition-fast);
+  border-radius: 12px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
   user-select: none;
   -webkit-user-drag: none;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .cat-item-name {
@@ -525,11 +536,13 @@ button {
 }
 
 /* Hover States */
+.cat-item-btn:hover .cat-square-frame,
 .cat-item-btn:hover .cat-circle-frame {
   border-color: rgba(212, 163, 89, 0.55);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7), 0 0 10px rgba(212, 163, 89, 0.2);
 }
 
+.cat-item-btn:hover .cat-square-img,
 .cat-item-btn:hover .cat-circle-img {
   transform: scale(1.05);
 }
@@ -539,6 +552,7 @@ button {
 }
 
 /* Active State */
+.cat-item-btn.active .cat-square-frame,
 .cat-item-btn.active .cat-circle-frame {
   border: 1.5px solid #dfa85b;
   box-shadow: 0 0 18px rgba(212, 163, 89, 0.42), 0 4px 14px rgba(0, 0, 0, 0.8);
@@ -646,6 +660,14 @@ button {
   color: #f7d898;
   box-shadow: 0 0 14px rgba(212, 163, 89, 0.4);
   transform: scale(1.05);
+}
+
+#cat-nav-next:hover svg {
+  transform: translateX(2px);
+}
+
+#cat-nav-prev:hover svg {
+  transform: translateX(-2px);
 }
 
 .cat-nav-arrow-btn:hover svg {
@@ -2482,13 +2504,13 @@ body.modal-open {
 
 
 /* ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== */
-html:not(.wb-age-verified) body {
+body.age-gate-locked {
   overflow: hidden !important;
 }
 
-body.age-gate-locked {
-  overflow: hidden !important;
-  height: 100vh !important;
+html.wb-age-verified body,
+html.wb-age-verified body.age-gate-locked {
+  overflow: visible !important;
 }
 
 .age-gate-backdrop {
@@ -3347,10 +3369,17 @@ body.error-page-body {
     padding: 0 1px;
   }
 
+  .cat-square-frame,
   .cat-circle-frame {
-    width: 68px;
-    height: 68px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.7);
+    width: 88px;
+    height: 88px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.7);
+  }
+
+  .cat-square-img,
+  .cat-circle-img {
+    border-radius: 10px;
   }
 
   .cat-item-name {
@@ -4028,9 +4057,11 @@ body.error-page-body {
     gap: 12px;
   }
 
+  .cat-square-frame,
   .cat-circle-frame {
-    width: 64px;
-    height: 64px;
+    width: 78px;
+    height: 78px;
+    border-radius: 10px;
   }
 
   .cat-item-name {
@@ -4158,9 +4189,11 @@ body.error-page-body {
     font-size: 1.1rem;
   }
 
+  .cat-square-frame,
   .cat-circle-frame {
-    width: 58px;
-    height: 58px;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
   }
 
   .cat-item-name {
