@@ -1194,6 +1194,72 @@ button {
   color: var(--gold-light);
 }
 
+
+/* ==================== EXPERIENCE BANNER SECTION ==================== */
+.experience-banner-section {
+  background: radial-gradient(circle at 50% 30%, rgba(212, 163, 89, 0.05) 0%, transparent 70%), #080706;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 44px 0 46px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-banner-container {
+  max-width: var(--site-max-w);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 54px);
+  display: flex;
+  justify-content: center;
+}
+
+.experience-banner-card {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 163, 89, 0.28);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.55), 0 0 28px rgba(212, 163, 89, 0.08);
+  background-color: #0c0a08;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.experience-banner-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 163, 89, 0.48);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 36px rgba(212, 163, 89, 0.16);
+}
+
+.experience-banner-picture {
+  display: block;
+  width: 100%;
+  line-height: 0;
+}
+
+.experience-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1020 / 269;
+}
+
+@media (max-width: 768px) {
+  .experience-banner-section {
+    padding: 26px 0 28px 0;
+  }
+  .experience-banner-card {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 540px) {
+  .experience-banner-section {
+    padding: 18px 0 20px 0;
+  }
+}
+
 /* ==================== FREQUENTLY ASKED QUESTIONS (FAQ) ==================== */
 .faq-section {
   background-color: #0b0908;

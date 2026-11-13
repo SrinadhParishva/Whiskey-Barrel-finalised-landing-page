@@ -909,6 +909,23 @@ function initCategoryFilter() {
         track.scrollTo({ left: Math.max(0, scrollOffset), behavior: 'smooth' });
       }
 
+      // Update active category heading
+      const titleElement = document.getElementById('featured-category-title');
+      if (titleElement) {
+        const categoryTitles = {
+          whiskey: 'WHISKEY SELECTIONS',
+          rum: 'RUM SELECTIONS',
+          beer: 'BEER & CRAFT BREWS',
+          vodka: 'VODKA SELECTIONS',
+          gin: 'GIN SELECTION',
+          wine: 'WINE SELECTIONS',
+          tequila: 'TEQUILA SELECTIONS',
+          cigar: 'CIGARS SELECTION',
+          all: 'FEATURED SELECTIONS'
+        };
+        titleElement.textContent = categoryTitles[targetCategory] || (targetCategory.toUpperCase() + ' SELECTIONS');
+      }
+
       // Update featured notice for coming-soon categories
       const noticeElement = document.querySelector('.featured-notice');
       if (noticeElement) {
