@@ -4477,7 +4477,8 @@ div:has(> .wine-card-pill) {
   transition: all 0.35s ease;
 }
 
-.category-card[data-category-card="CIGAR"]:hover .cigar-coming-soon-badge {
+.category-card[data-category-card="CIGAR"]:hover .cigar-coming-soon-badge,
+.category-card[data-category-card="GIN"]:hover .cigar-coming-soon-badge {
   border-color: rgba(212, 168, 106, 0.95);
   box-shadow: 0 0 24px rgba(212, 168, 106, 0.45), inset 0 0 16px rgba(212, 168, 106, 0.3);
   color: #ffffff;
@@ -6978,6 +6979,622 @@ footer,
   }
 }
 
+/* ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== */
+body.age-gate-locked {
+  overflow: hidden !important;
+}
+
+html.wb-age-verified body,
+html.wb-age-verified body.age-gate-locked {
+  overflow: visible !important;
+}
+
+.age-gate-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 7, 6, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
+}
+
+html.wb-age-verified .age-gate-backdrop {
+  display: none !important;
+}
+
+.age-gate-backdrop.closing {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.age-gate-card {
+  background: linear-gradient(165deg, #181512 0%, #0e0c0a 100%);
+  border: 1px solid rgba(212, 168, 106, 0.42);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  padding: 34px 28px 28px;
+  position: relative;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 45px rgba(212, 168, 106, 0.16);
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.age-gate-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #f5d48b, #d4a86a, transparent);
+}
+
+.age-gate-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.age-gate-logo-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 168, 106, 0.45);
+  padding: 3px;
+  background: rgba(10, 9, 7, 0.8);
+  box-shadow: 0 0 20px rgba(212, 168, 106, 0.25);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-gate-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.age-gate-brand-name {
+  font-family: 'Domine', Georgia, serif;
+  font-size: 1.22rem;
+  letter-spacing: 0.18em;
+  color: #f5d48b;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.age-gate-brand-tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: #7a7266;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Views switcher */
+.age-gate-view {
+  display: none;
+}
+
+.age-gate-view.active {
+  display: block;
+  animation: ageGateFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes ageGateFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.age-gate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(212, 168, 106, 0.1);
+  border: 1px solid rgba(212, 168, 106, 0.28);
+  border-radius: 30px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #d4a86a;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.age-gate-badge-icon {
+  width: 13px;
+  height: 13px;
+  color: #d4a86a;
+}
+
+.age-gate-title {
+  font-family: 'Domine', Georgia, serif;
+  font-size: 1.45rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.age-gate-desc {
+  font-size: 0.86rem;
+  color: #a89f91;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.age-gate-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.age-gate-btn {
+  width: 100%;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.age-gate-btn.btn-primary {
+  background: linear-gradient(135deg, #dfa85b 0%, #c48a3c 100%);
+  color: #120f0c;
+  border: none;
+  box-shadow: 0 4px 14px rgba(212, 168, 106, 0.28);
+}
+
+.age-gate-btn.btn-primary:hover {
+  background: linear-gradient(135deg, #f5d48b 0%, #d4a86a 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(212, 168, 106, 0.4);
+}
+
+.age-gate-btn.btn-outline {
+  background: rgba(22, 19, 16, 0.6);
+  border: 1px solid rgba(212, 168, 106, 0.35);
+  color: #eae3d9;
+}
+
+.age-gate-btn.btn-outline:hover {
+  background: rgba(212, 168, 106, 0.12);
+  border-color: #d4a86a;
+  color: #ffffff;
+}
+
+.age-gate-btn .arrow {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.age-gate-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* DOB form */
+.age-gate-dob-form {
+  margin-bottom: 16px;
+}
+
+.age-gate-dob-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.age-gate-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 85px;
+}
+
+.age-gate-field.year-field {
+  max-width: 110px;
+}
+
+.age-gate-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #d4a86a;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.age-gate-input {
+  width: 100%;
+  height: 52px;
+  background: rgba(22, 19, 16, 0.85);
+  border: 1px solid rgba(212, 168, 106, 0.38);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0;
+  -moz-appearance: textfield;
+  box-sizing: border-box;
+}
+
+.age-gate-input::-webkit-outer-spin-button,
+.age-gate-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.age-gate-input:focus {
+  outline: none;
+  border-color: #f5d48b;
+  background: #1a1612;
+  box-shadow: 0 0 14px rgba(212, 168, 106, 0.4);
+}
+
+.age-gate-input.input-error {
+  border-color: #e05d5d;
+  box-shadow: 0 0 10px rgba(224, 93, 93, 0.35);
+}
+
+.age-gate-sep {
+  font-size: 1.4rem;
+  color: rgba(212, 168, 106, 0.5);
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.age-gate-error {
+  min-height: 20px;
+  font-size: 0.78rem;
+  color: #ff7b7b;
+  margin-bottom: 12px;
+  font-weight: 500;
+  display: none;
+}
+
+.age-gate-error.show {
+  display: block;
+}
+
+.age-gate-remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.age-gate-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.age-gate-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.age-gate-custom-checkbox {
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(212, 168, 106, 0.5);
+  border-radius: 4px;
+  background: rgba(22, 19, 16, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.age-gate-checkbox:checked + .age-gate-custom-checkbox {
+  background: #d4a86a;
+  border-color: #f5d48b;
+}
+
+.age-gate-checkbox:checked + .age-gate-custom-checkbox::after {
+  content: '';
+  width: 5px;
+  height: 9px;
+  border: solid #12100e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
+.age-gate-checkbox:focus-visible + .age-gate-custom-checkbox {
+  box-shadow: 0 0 0 2px rgba(212, 168, 106, 0.5);
+}
+
+.age-gate-checkbox-text {
+  font-size: 0.76rem;
+  color: #a89f91;
+}
+
+.age-gate-back-link {
+  background: none;
+  border: none;
+  color: #7a7266;
+  font-size: 0.75rem;
+  padding: 6px;
+  cursor: pointer;
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 4px;
+  font-family: inherit;
+}
+
+.age-gate-back-link:hover {
+  color: #f5d48b;
+  text-decoration: underline;
+}
+
+/* Denied View */
+.age-gate-icon-denied {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: rgba(224, 93, 93, 0.12);
+  border: 1px solid rgba(224, 93, 93, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e05d5d;
+}
+
+.age-gate-icon-denied svg {
+  width: 32px;
+  height: 32px;
+}
+
+.age-gate-title.denied {
+  color: #ff9494;
+}
+
+.age-gate-denied-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 4px;
+  background: rgba(224, 93, 93, 0.15);
+  border: 1px solid rgba(224, 93, 93, 0.35);
+  color: #ff8585;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+
+.age-gate-desc.denied-text {
+  color: #ded6cc;
+  margin-bottom: 12px;
+}
+
+.age-gate-subtext {
+  font-size: 0.8rem;
+  color: #a89f91;
+  margin-bottom: 22px;
+}
+
+.age-gate-footer-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(212, 168, 106, 0.15);
+  font-size: 0.68rem;
+  color: #7a7266;
+  line-height: 1.45;
+}
+
+.age-gate-lock-icon {
+  width: 12px;
+  height: 12px;
+  color: #d4a86a;
+  flex-shrink: 0;
+}
+
+.age-gate-footer-note .gold-link {
+  color: #d4a86a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.age-gate-footer-note .gold-link:hover {
+  color: #f5d48b;
+}
+
+@media (max-width: 540px) {
+  .age-gate-backdrop {
+    padding: 14px;
+  }
+  .age-gate-card {
+    padding: 26px 18px 20px;
+    border-radius: 14px;
+  }
+  .age-gate-logo-box {
+    width: 62px;
+    height: 62px;
+  }
+  .age-gate-brand-name {
+    font-size: 1.1rem;
+  }
+  .age-gate-title {
+    font-size: 1.25rem;
+  }
+  .age-gate-desc {
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+  .age-gate-btn {
+    height: 46px;
+    font-size: 0.78rem;
+  }
+  .age-gate-input {
+    height: 48px;
+    font-size: 1.15rem;
+  }
+}
+
+/* ======================================================== */
+/* BEST SELLER TAGS & BADGES (FOR ALL CATEGORIES EXCEPT GIN & CIGAR) */
+/* ======================================================== */
+
+/* 1. Category Cards on Homepage (EXPLORE OUR COLLECTION) */
+.category-card-bestseller-tag {
+  position: absolute !important;
+  top: 12px !important;
+  left: 12px !important;
+  z-index: 10 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  padding: 5px 12px !important;
+  background: rgba(14, 11, 8, 0.88) !important;
+  border: 1px solid rgba(212, 168, 106, 0.75) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #f7ede1 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.65), 0 0 10px rgba(212, 168, 106, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  pointer-events: none !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.category-card:hover .category-card-bestseller-tag {
+  border-color: rgba(212, 168, 106, 1) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 16px rgba(212, 168, 106, 0.45) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+.bestseller-tag-star {
+  width: 10px !important;
+  height: 10px !important;
+  color: #d4a86a !important;
+  fill: currentColor !important;
+  flex-shrink: 0 !important;
+}
+
+/* 2. Product Grid Cards (category.html) */
+.product-card-bestseller-badge {
+  position: absolute !important;
+  top: 0.85rem !important;
+  left: 0.85rem !important;
+  z-index: 20 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4.5px !important;
+  padding: 4px 10px !important;
+  background: rgba(18, 14, 11, 0.9) !important;
+  border: 1px solid rgba(212, 168, 106, 0.75) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: #f7ede1 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), 0 0 8px rgba(212, 168, 106, 0.25) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  pointer-events: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.product-grid-card:hover .product-card-bestseller-badge {
+  border-color: rgba(212, 168, 106, 1) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.85), 0 0 14px rgba(212, 168, 106, 0.45) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+.bestseller-badge-star {
+  width: 9px !important;
+  height: 9px !important;
+  color: #d4a86a !important;
+  fill: currentColor !important;
+  flex-shrink: 0 !important;
+}
+
+/* 3. Product Pill Tag (below title) */
+.product-card-pill.pill-bestseller,
+.wine-card-pill.pill-bestseller {
+  background: rgba(212, 168, 106, 0.2) !important;
+  border-color: rgba(212, 168, 106, 0.75) !important;
+  color: #f5dfbe !important;
+  font-weight: 700 !important;
+}
+
+/* 4. Product Detail Page (product.html) */
+.product-detail-bestseller-badge {
+  position: absolute !important;
+  top: 1.25rem !important;
+  left: 1.25rem !important;
+  z-index: 20 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 14px !important;
+  background: rgba(18, 14, 11, 0.92) !important;
+  border: 1px solid rgba(212, 168, 106, 0.8) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #f7ede1 !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.75), 0 0 14px rgba(212, 168, 106, 0.35) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  pointer-events: none !important;
+}
 
 
 
@@ -6986,3 +7603,387 @@ footer,
 
 
 
+
+
+
+
+/* ======================================================== */
+/* LUXURY PRODUCT QUICK VIEW POPUP MODAL                     */
+/* ======================================================== */
+
+.product-modal-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem !important;
+  background: rgba(0, 0, 0, 0.88) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  opacity: 1 !important;
+  transition: opacity 0.25s ease, visibility 0.25s ease !important;
+}
+
+.product-modal-backdrop.hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.product-modal-container {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1060px !important;
+  max-height: 92vh !important;
+  display: flex !important;
+  animation: productModalScaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+@keyframes productModalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.product-modal-card {
+  position: relative !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  background: #0d0906 !important;
+  background: linear-gradient(145deg, #150f0a 0%, #0d0906 100%) !important;
+  border: 1px solid rgba(212, 168, 106, 0.3) !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 30px 80px -15px rgba(0, 0, 0, 0.95), 0 0 50px rgba(212, 168, 106, 0.12) !important;
+}
+
+@media (min-width: 768px) {
+  .product-modal-card {
+    grid-template-columns: 1fr 1.22fr !important;
+    max-height: 88vh !important;
+  }
+}
+
+/* Left Column */
+.product-modal-left {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 1.75rem 1.5rem !important;
+  background: #080604 !important;
+  background: radial-gradient(circle at 50% 50%, #1e150e 0%, #080604 80%) !important;
+  border-bottom: 1px solid rgba(212, 168, 106, 0.15) !important;
+  min-height: 380px !important;
+}
+
+@media (min-width: 768px) {
+  .product-modal-left {
+    border-bottom: none !important;
+    border-right: 1px solid rgba(212, 168, 106, 0.15) !important;
+    min-height: 520px !important;
+  }
+}
+
+.product-modal-top-badge {
+  align-self: flex-start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 14px !important;
+  background: rgba(22, 15, 10, 0.9) !important;
+  border: 1px solid rgba(212, 168, 106, 0.5) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #f5dfbe !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6) !important;
+}
+
+.product-modal-img-wrapper {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 320px !important;
+  height: 320px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: auto 0 !important;
+  padding: 1rem !important;
+}
+
+.product-modal-img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.85)) !important;
+  transition: transform 0.4s ease !important;
+}
+
+.product-modal-img:hover {
+  transform: scale(1.04) !important;
+}
+
+.product-modal-nav-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 9999px !important;
+  background: rgba(18, 13, 9, 0.85) !important;
+  border: 1px solid rgba(212, 168, 106, 0.35) !important;
+  color: #d4a86a !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7) !important;
+}
+
+.product-modal-nav-btn:hover {
+  background: #d4a86a !important;
+  color: #0c0906 !important;
+  border-color: #d4a86a !important;
+  transform: translateY(-50%) scale(1.1) !important;
+  box-shadow: 0 0 16px rgba(212, 168, 106, 0.45) !important;
+}
+
+.product-modal-nav-btn.prev-btn {
+  left: 14px !important;
+}
+
+.product-modal-nav-btn.next-btn {
+  right: 14px !important;
+}
+
+.product-modal-origin-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 16px !important;
+  background: rgba(20, 14, 10, 0.85) !important;
+  border: 1px solid rgba(212, 168, 106, 0.3) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  color: #c4b5a0 !important;
+  letter-spacing: 0.04em !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Right Column */
+.product-modal-right {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 1.75rem 1.75rem 2rem 1.75rem !important;
+  overflow-y: auto !important;
+  max-height: 88vh !important;
+}
+
+@media (min-width: 1024px) {
+  .product-modal-right {
+    padding: 2.25rem 2.25rem 2.25rem 2.25rem !important;
+  }
+}
+
+.product-modal-close-btn {
+  position: absolute !important;
+  top: 1.25rem !important;
+  right: 1.25rem !important;
+  z-index: 20 !important;
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 9999px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(212, 168, 106, 0.25) !important;
+  color: #c4b5a0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+}
+
+.product-modal-close-btn:hover {
+  background: rgba(212, 168, 106, 0.2) !important;
+  border-color: #d4a86a !important;
+  color: #ffffff !important;
+  transform: scale(1.08) !important;
+}
+
+.product-modal-eyebrow {
+  display: block !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #d4a86a !important;
+  padding-right: 40px !important;
+}
+
+.product-modal-title {
+  font-family: 'Domine', serif !important;
+  font-size: 1.85rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #f7f3eb !important;
+  margin-top: 0.35rem !important;
+  padding-right: 40px !important;
+}
+
+@media (min-width: 640px) {
+  .product-modal-title {
+    font-size: 2.15rem !important;
+  }
+}
+
+.product-modal-code {
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #8c8075 !important;
+  margin-top: 0.35rem !important;
+}
+
+.product-modal-price-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  margin-top: 1.15rem !important;
+  margin-bottom: 1.15rem !important;
+}
+
+.product-modal-price {
+  font-family: 'Domine', serif !important;
+  font-size: 2.1rem !important;
+  font-weight: 700 !important;
+  color: #e5b374 !important;
+}
+
+.product-modal-available-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 5px 13px !important;
+  background: rgba(34, 197, 94, 0.1) !important;
+  border: 1px solid rgba(74, 222, 128, 0.35) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  color: #4ade80 !important;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.12) !important;
+}
+
+.product-modal-available-badge .available-dot {
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 9999px !important;
+  background: #22c55e !important;
+  box-shadow: 0 0 8px #22c55e !important;
+}
+
+.product-modal-specs-box {
+  background: rgba(18, 13, 9, 0.75) !important;
+  border: 1px solid rgba(212, 168, 106, 0.22) !important;
+  border-radius: 12px !important;
+  padding: 1rem 1.15rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.9rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.product-modal-spec-item {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.product-modal-spec-item .spec-label,
+.product-modal-spec-col .spec-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.65rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #d4a86a !important;
+}
+
+.product-modal-spec-item .spec-label svg,
+.product-modal-spec-col .spec-label svg {
+  color: #d4a86a !important;
+  flex-shrink: 0 !important;
+}
+
+.product-modal-spec-item .spec-value,
+.product-modal-spec-col .spec-value {
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.92rem !important;
+  font-weight: 500 !important;
+  color: #eae3d9 !important;
+  margin-top: 3px !important;
+  line-height: 1.35 !important;
+}
+
+.product-modal-spec-row-split {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1rem !important;
+  padding-top: 0.25rem !important;
+}
+
+.product-modal-spec-col {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.product-modal-description {
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.86rem !important;
+  line-height: 1.6 !important;
+  color: #b8ab9a !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Custom Scrollbar for Right Pane */
+.product-modal-right::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+.product-modal-right::-webkit-scrollbar-track {
+  background: rgba(18, 13, 9, 0.6) !important;
+}
+
+.product-modal-right::-webkit-scrollbar-thumb {
+  background: rgba(212, 168, 106, 0.35) !important;
+  border-radius: 4px !important;
+}
+
+.product-modal-right::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 168, 106, 0.6) !important;
+}

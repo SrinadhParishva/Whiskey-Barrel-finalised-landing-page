@@ -13,26 +13,73 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
 
-  <!-- Preload Critical Hero Image -->
-  <link rel="preload" as="image" href="assets/experience-bg.webp" fetchpriority="high">
-
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Check 21+ Age Verification Status before render -->
+  <script>
+    try {
+      if (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true') {
+        document.documentElement.classList.add('wb-age-verified');
+      }
+    } catch (e) {}
+  </script>
 
   <!-- Ultra-Fast Local Lucide Icons & App Script -->
   <script src="assets/lucide.min.js" defer></script>
   <script src="script.js" defer></script>
-</head>
-<body class="overflow-x-hidden bg-background text-foreground font-body">
 
-  <main class="min-h-screen flex flex-col justify-between overflow-x-hidden">
+  <style>
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      background-color: #080605;
+    }
+    .experience-main-container {
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background-color: #080605;
+    }
+    .experience-section-wrapper {
+      flex: 1;
+      width: 100%;
+      height: calc(100vh - 73px);
+      height: calc(100dvh - 73px);
+      margin-top: 73px;
+      position: relative;
+      background-color: #080605;
+      overflow: hidden;
+    }
+    .experience-landing-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+      background-color: #0a0907;
+    }
+    @media (max-width: 768px) {
+      .experience-section-wrapper {
+        height: calc(100vh - 65px);
+        height: calc(100dvh - 65px);
+        margin-top: 65px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground font-body">
+  <script>(function(){try{if(localStorage.getItem('wb_age_verified_v2')==='true'||sessionStorage.getItem('wb_age_verified_v2')==='true'){document.documentElement.classList.add('wb-age-verified');if(document.body)document.body.classList.remove('age-gate-locked');}}catch(e){}})();</script>
+
+  <main class="experience-main-container">
     <!-- Header/Navigation -->
     <header class="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl">
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="index.html" class="group flex items-center gap-3">
           <span
             class="relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-ember/60 bg-background/90 overflow-hidden shadow-sm transition-transform duration-500 group-hover:scale-105 nav-logo-icon">
-            <img src="assets/wb-icon.webp" alt="WB Logo Icon" class="h-full w-full object-cover rounded-full" width="40" height="40" decoding="async">
+            <img src="assets/wb-icon.webp" alt="Whiskey Barrel Liquor & Spirits Logo Emblem" class="h-full w-full object-cover rounded-full" width="40" height="40" decoding="async">
           </span>
           <span class="font-display text-base sm:text-lg tracking-[0.25em] uppercase font-bold text-foreground">Whiskey Barrel</span>
         </a>
@@ -74,7 +121,7 @@
                   <div class="space-y-1">
                     <h3 class="font-bold text-sm text-[#ffffff] tracking-normal">Store Hours</h3>
                     <p class="text-xs sm:text-sm leading-relaxed text-[#eae3d9]/90 font-normal">
-                      Monday - Thursday : 10 AM - 10 PM<br>
+                      Monday - Thursday : 9 AM - 10 PM<br>
                       Friday - Saturday : 9 AM - 11 PM<br>
                       Sunday : 9 AM - 8 PM
                     </p>
@@ -88,7 +135,7 @@
                   <div class="space-y-1">
                     <h3 class="font-bold text-sm text-[#ffffff] tracking-normal">Phone</h3>
                     <p class="text-xs sm:text-sm leading-relaxed text-[#eae3d9]/90 font-normal">
-                      <a href="tel:+19135550199" class="hover:text-ember transition-colors">+1 (913) 555-0199</a>
+                      <a href="tel:+19134002339" class="hover:text-ember transition-colors">+1 (913) 400-2339</a>
                     </p>
                   </div>
                 </div>
@@ -130,179 +177,11 @@
       </nav>
     </header>
 
-    <!-- Experience Showcase Hero Section -->
-    <section class="experience-section experience-hero-standalone relative bg-[#080605] px-6 sm:px-10 lg:px-16 overflow-hidden">
-      
-      <!-- Atmospheric Background Image with Glencairn Glass & Oak Barrel -->
-      <div class="experience-bg-wrap absolute inset-0 pointer-events-none">
-        <img src="assets/experience-bg.webp" alt="Whiskey Barrel Experience" class="experience-bg-img w-full h-full object-cover object-right sm:object-center" width="1920" height="1080" loading="eager" fetchpriority="high" decoding="async">
-        <!-- Multi-layer Gradient Overlays for Extreme Legibility & Warm Glow -->
-        <div class="experience-overlay-left absolute inset-0"></div>
-        <div class="experience-overlay-bottom absolute inset-0"></div>
-      </div>
-
-      <!-- Content Container -->
-      <div class="relative z-10 mx-auto max-w-7xl flex flex-col justify-between h-full min-h-[calc(100vh-80px)] pt-6 sm:pt-8 pb-10 sm:pb-14">
-        
-        <!-- Top Text Block -->
-        <div class="experience-header max-w-2xl text-left pt-6 sm:pt-10">
-          <!-- Eyebrow with gold horizontal accent line -->
-          <div class="experience-eyebrow-row flex items-center gap-3.5 mb-4 sm:mb-5">
-            <span class="experience-eyebrow text-xs sm:text-[0.8rem] font-bold tracking-[0.28em] uppercase text-[#D4A86A]">
-              EXPERIENCE
-            </span>
-            <span class="experience-eyebrow-line h-[1.5px] w-12 sm:w-16 bg-[#D4A86A]/80"></span>
-          </div>
-
-          <!-- Main Title (2 Lines) -->
-          <h1 class="experience-title font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.35rem] font-medium tracking-[0.02em] uppercase leading-[1.12] mb-5 sm:mb-6">
-            <span class="text-[#FAF5EE]">MORE THAN A TASTE.</span><br>
-            <span class="experience-title-accent text-[#D4A86A]">A LASTING EXPERIENCE.</span>
-          </h1>
-
-          <!-- Subtitle Paragraph -->
-          <p class="experience-description font-body text-sm sm:text-[0.98rem] md:text-base text-[#BFB4A7] leading-[1.75] max-w-xl font-normal">
-            At Whiskey Barrel, every visit is an invitation to slow down, explore, and enjoy. From curated tastings to expert guidance, we create memorable moments around every bottle.
-          </p>
-        </div>
-
-        <!-- 4 Experience Feature Cards Grid -->
-        <div id="pillars" class="experience-cards-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 mt-12 sm:mt-16 lg:mt-20">
-          
-          <!-- Card 1: Tastings & Events -->
-          <div class="experience-card group">
-            <div class="experience-card-icon-wrap">
-              <!-- 3 stemmed tasting glasses SVG icon -->
-              <svg class="experience-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- Left Glass -->
-                <path d="M7 9 C7 12.5 10.5 12.5 10.5 9 V7 H7 Z" />
-                <line x1="8.75" y1="12.5" x2="8.75" y2="16.5" />
-                <line x1="7" y1="16.5" x2="10.5" y2="16.5" />
-                <!-- Center Glass (Taller) -->
-                <path d="M13.5 6 C13.5 10.5 18.5 10.5 18.5 6 V4 H13.5 Z" />
-                <line x1="16" y1="10.5" x2="16" y2="17.5" />
-                <line x1="13.5" y1="17.5" x2="18.5" y2="17.5" />
-                <!-- Right Glass -->
-                <path d="M21.5 9 C21.5 12.5 25 12.5 25 9 V7 H21.5 Z" />
-                <line x1="23.25" y1="12.5" x2="23.25" y2="16.5" />
-                <line x1="21.5" y1="16.5" x2="25" y2="16.5" />
-              </svg>
-            </div>
-            <h3 class="experience-card-title">TASTINGS &amp; EVENTS</h3>
-            <div class="experience-card-divider"></div>
-            <p class="experience-card-desc">
-              Curated tastings, special releases, and exclusive events to deepen your appreciation.
-            </p>
-          </div>
-
-          <!-- Card 2: Expert Guidance -->
-          <div class="experience-card group">
-            <div class="experience-card-icon-wrap">
-              <!-- Expert / Sommelier with bowtie icon -->
-              <svg class="experience-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="16" cy="9.5" r="4" />
-                <path d="M7.5 25 C7.5 19 11.5 17.5 14 17" />
-                <path d="M24.5 25 C24.5 19 20.5 17.5 18 17" />
-                <path d="M14 17 L16 20.5 L18 17" />
-                <polygon points="12.5,17.5 16,19 12.5,20.5" fill="currentColor" />
-                <polygon points="19.5,17.5 16,19 19.5,20.5" fill="currentColor" />
-                <circle cx="16" cy="19" r="0.8" fill="currentColor" />
-              </svg>
-            </div>
-            <h3 class="experience-card-title">EXPERT GUIDANCE</h3>
-            <div class="experience-card-divider"></div>
-            <p class="experience-card-desc">
-              Our knowledgeable team helps you discover new favorites and find the perfect bottle.
-            </p>
-          </div>
-
-          <!-- Card 3: Curated Selection -->
-          <div class="experience-card group">
-            <div class="experience-card-icon-wrap">
-              <!-- Whiskey Barrel Icon -->
-              <svg class="experience-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="16" cy="7" rx="6" ry="1.6" />
-                <ellipse cx="16" cy="25" rx="6" ry="1.6" />
-                <path d="M10 7 C7.5 12 7.5 20 10 25" />
-                <path d="M22 7 C24.5 12 24.5 20 22 25" />
-                <path d="M8.3 12.5 C12 13.8 20 13.8 23.7 12.5" />
-                <path d="M8.3 19.5 C12 20.8 20 20.8 23.7 19.5" />
-                <path d="M13.5 7 C12.5 12 12.5 20 13.5 25" />
-                <path d="M18.5 7 C19.5 12 19.5 20 18.5 25" />
-              </svg>
-            </div>
-            <h3 class="experience-card-title">CURATED SELECTION</h3>
-            <div class="experience-card-divider"></div>
-            <p class="experience-card-desc">
-              A thoughtfully chosen collection of whiskeys, wines, beers, and more from around the world.
-            </p>
-          </div>
-
-          <!-- Card 4: A Welcoming Space -->
-          <div class="experience-card group">
-            <div class="experience-card-icon-wrap">
-              <!-- Community / 3 figures icon -->
-              <svg class="experience-card-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="16" cy="9.5" r="3.2" />
-                <path d="M11 24.5 C11 20 13.2 18 16 18 C18.8 18 21 20 21 24.5" />
-                <circle cx="9.5" cy="12.5" r="2.4" />
-                <path d="M5.5 24.5 C5.5 21.2 7.5 19.8 9.5 19.5" />
-                <circle cx="22.5" cy="12.5" r="2.4" />
-                <path d="M26.5 24.5 C26.5 21.2 24.5 19.8 22.5 19.5" />
-              </svg>
-            </div>
-            <h3 class="experience-card-title">A WELCOMING SPACE</h3>
-            <div class="experience-card-divider"></div>
-            <p class="experience-card-desc">
-              A relaxed and inviting atmosphere to enjoy great drinks and better company.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
+    <!-- Experience Showcase Section Hosting the Uploaded Landing Page -->
+    <section class="experience-section experience-section-wrapper" id="experience" aria-label="Whiskey Barrel Experience">
+      <iframe src="experience/index.html" class="experience-landing-frame" title="Whiskey Barrel Experience Landing Page" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-border px-6 py-10">
-      <div
-        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground sm:flex-row">
-        <span>© 2026 Whiskey Barrel Distillery</span>
-
-        <!-- Social / Contact Buttons -->
-        <div class="footer-social-group">
-          <a
-            href="https://wa.me/19135550199"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Connect with Whiskey Barrel on WhatsApp"
-            class="footer-social-btn footer-social-whatsapp">
-            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.484-8.414z" />
-            </svg>
-          </a>
-
-          <a
-            href="https://www.instagram.com/whiskeybarrelusa?stkn=MTczeDAzcjF1Z2FpdA=="
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow Whiskey Barrel on Instagram"
-            class="footer-social-btn footer-social-instagram">
-            <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-            </svg>
-          </a>
-        </div>
-
-        <span>Please savour responsibly</span>
-      </div>
-    </footer>
   </main>
-
 
   <!-- Mobile Navigation Drawer -->
   <nav id="mobile-menu-drawer" aria-label="Mobile Navigation">
@@ -320,7 +199,7 @@
       </div>
       <div class="flex items-center gap-3">
         <i data-lucide="phone" class="h-4 w-4 text-ember shrink-0"></i>
-        <a href="tel:+19135550199" class="hover:text-ember transition-colors">+1 (913) 555-0199</a>
+        <a href="tel:+19134002339" class="hover:text-ember transition-colors">+1 (913) 400-2339</a>
       </div>
       <div class="flex items-center gap-3">
         <i data-lucide="mail" class="h-4 w-4 text-ember shrink-0"></i>
@@ -373,5 +252,142 @@
       </div>
     </div>
   </aside>
+
+  <!-- ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== -->
+  <div class="age-gate-backdrop" id="ageGateModal" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate-card">
+      <div class="age-gate-accent-line"></div>
+
+      <!-- Brand Header -->
+      <div class="age-gate-header">
+        <div class="age-gate-logo-box">
+          <img src="assets/wb-icon.webp" alt="Whiskey Barrel Official Age Verification Brand Seal" class="age-gate-logo" width="72" height="72" decoding="async">
+        </div>
+        <div class="age-gate-brand-name">WHISKEY BARREL</div>
+        <div class="age-gate-brand-tag">FINE SPIRITS &bull; WINE &bull; CRAFT BEER</div>
+      </div>
+
+      <!-- VIEW 1: Initial Question (Are you 21 or older?) -->
+      <div class="age-gate-view active" id="ageGateViewQuestion">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z"/>
+          </svg>
+          <span>AGE VERIFICATION REQUIRED</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateTitle">Are you 21 or older?</h2>
+        <p class="age-gate-desc" id="ageGateDesc">
+          You must be of legal drinking age to view our spirits, fine wines, craft beers, and tobacco products.
+        </p>
+
+        <div class="age-gate-actions">
+          <button type="button" class="age-gate-btn btn-primary" id="btnAgeYes">
+            <span>YES, I AM 21+</span>
+            <span class="arrow">&rarr;</span>
+          </button>
+          <button type="button" class="age-gate-btn btn-outline" id="btnAgeNo">
+            <span>NO, I AM UNDER 21</span>
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="age-gate-lock-icon">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+          <span>By entering, you confirm you are of legal drinking age in your jurisdiction.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Date of Birth Input (Shown when user clicks "YES") -->
+      <div class="age-gate-view" id="ageGateViewDob">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          <span>CONFIRM YOUR DATE OF BIRTH</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateDobTitle">Enter Your Birth Date</h2>
+        <p class="age-gate-desc">
+          Please confirm your date of birth to verify that you are at least 21 years of age.
+        </p>
+
+        <form class="age-gate-dob-form" id="ageGateDobForm" novalidate>
+          <div class="age-gate-dob-grid">
+            <div class="age-gate-field">
+              <label for="ageGateMonth" class="age-gate-label">MONTH</label>
+              <input type="text" id="ageGateMonth" name="birthMonth" class="age-gate-input" placeholder="MM" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-month" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field">
+              <label for="ageGateDay" class="age-gate-label">DAY</label>
+              <input type="text" id="ageGateDay" name="birthDay" class="age-gate-input" placeholder="DD" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-day" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field year-field">
+              <label for="ageGateYear" class="age-gate-label">YEAR</label>
+              <input type="text" id="ageGateYear" name="birthYear" class="age-gate-input" placeholder="YYYY" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="bday-year" required>
+            </div>
+          </div>
+
+          <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+          <div class="age-gate-remember">
+            <label class="age-gate-checkbox-label">
+              <input type="checkbox" id="ageGateRemember" class="age-gate-checkbox" checked>
+              <span class="age-gate-custom-checkbox"></span>
+              <span class="age-gate-checkbox-text">Remember me on this device (30 days)</span>
+            </label>
+          </div>
+
+          <div class="age-gate-actions">
+            <button type="submit" class="age-gate-btn btn-primary" id="btnAgeVerifySubmit">
+              <span>VERIFY &amp; ENTER SITE</span>
+              <span class="arrow">&rarr;</span>
+            </button>
+            <button type="button" class="age-gate-back-link" id="btnAgeBackToQuestion">
+              &larr; Back to previous question
+            </button>
+          </div>
+        </form>
+
+        <div class="age-gate-footer-note">
+          <span>Your birth date is processed securely in your browser and is never shared or stored externally.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 3: Under 21 / Access Denied (Shown when user clicks "NO" or enters DOB < 21) -->
+      <div class="age-gate-view" id="ageGateViewDenied">
+        <div class="age-gate-icon-denied">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          </svg>
+        </div>
+        <h2 class="age-gate-title denied" id="ageGateDeniedTitle">Access Restricted</h2>
+        <div class="age-gate-denied-badge">21+ LEGAL REQUIREMENT</div>
+        <p class="age-gate-desc denied-text">
+          You must be 21 years of age or older to enter this website. In accordance with federal, state, and local alcohol regulations, access to Whiskey Barrel is restricted.
+        </p>
+        <p class="age-gate-subtext">
+          If you arrived here in error or wish to exit, please click below:
+        </p>
+
+        <div class="age-gate-actions">
+          <a href="https://www.google.com" class="age-gate-btn btn-primary" id="btnAgeExit">
+            <span>EXIT WEBSITE</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <button type="button" class="age-gate-back-link" id="btnAgeDeniedBack">
+            &larr; I am 21 or older (return to verification)
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <span>Learn more about responsible drinking at <a href="https://www.responsibility.org" target="_blank" rel="noopener noreferrer" class="gold-link">Responsibility.org</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>

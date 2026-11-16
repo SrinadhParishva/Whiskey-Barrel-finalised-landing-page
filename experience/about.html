@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Resource Hints & Critical Preloads for Mobile PageSpeed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+  <!-- Google Fonts (Non-render-blocking Asynchronous Load) -->
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <!-- Critical Above-the-Fold CSS for Instant First Contentful Paint -->
+  <style>
+:root{--bg-dark:#0a0907;--bg-card:#110f0d;--bg-card-hover:#161411;--bg-nav:#080706;--bg-footer:#050403;--gold-primary:#d4a359;--gold-light:#f5d48b;--gold-deep:#b88636;--gold-border:rgba(212,163,89,0.22);--gold-border-bright:rgba(212,163,89,0.65);--gold-glow:rgba(212,163,89,0.16);--text-main:#f5efe6;--text-white:#ffffff;--text-gold:#d0a064;--text-muted:#9e9588;--text-dim:#7a7266;--font-serif-brand:'Cinzel',Georgia,serif;--font-serif-hero:'Playfair Display',Georgia,serif;--font-sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;--site-max-w:1540px;--transition-fast:0.2s cubic-bezier(0.16,1,0.3,1);--transition-smooth:0.3s cubic-bezier(0.16,1,0.3,1)}*{margin:0;padding:0;box-sizing:border-box}html{font-size:16px;scroll-behavior:smooth;background-color:var(--bg-dark);color:var(--text-main);font-family:var(--font-sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}body{min-height:100vh;background-color:var(--bg-dark);color:var(--text-main);line-height:1.5}a{color:inherit;text-decoration:none}button{font-family:inherit;cursor:pointer;border:none;background:none}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;font-size:0.74rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border-radius:3px;transition:all var(--transition-fast);cursor:pointer;white-space:nowrap}.btn-icon{width:13px;height:13px}.btn-primary{background:#d4a359;color:#12100e;border:1px solid #d4a359;box-shadow:0 2px 10px rgba(212,163,89,0.3)}.btn-primary:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-1px);box-shadow:0 4px 14px rgba(212,163,89,0.45)}.btn-primary:active{transform:translateY(0)}.btn-primary .arrow{font-size:0.95rem;line-height:1;transition:transform var(--transition-fast)}.btn-primary:hover .arrow{transform:translateX(3px)}.btn-outline{background:rgba(18,16,14,0.55);color:#f5efe6;border:1px solid rgba(212,163,89,0.5);backdrop-filter:blur(4px)}.btn-outline .btn-icon{color:#d4a359;stroke:#d4a359}.btn-outline:hover{background:rgba(212,163,89,0.16);border-color:var(--gold-primary);color:var(--text-white);transform:translateY(-1px)}.brand-text-group{display:flex;flex-direction:column;justify-content:center}.brand-link{display:inline-flex;align-items:center;gap:12px}.brand-logo-picture{display:inline-flex;align-items:center;justify-content:center;line-height:0}.brand-logo-img{width:52px;height:52px;border-radius:50%;object-fit:cover;aspect-ratio:1 / 1;filter:drop-shadow(0 2px 10px rgba(212,163,89,0.4));transition:transform var(--transition-fast),filter var(--transition-fast)}.brand-name{font-family:var(--font-serif-brand);font-size:1.25rem;font-weight:700;letter-spacing:0.12em;color:var(--gold-light);line-height:1.1;text-shadow:0 2px 10px rgba(0,0,0,0.8)}.brand-tagline{font-family:var(--font-sans);font-size:0.56rem;font-weight:600;letter-spacing:0.22em;color:var(--text-muted);margin-top:3px}.hero-location-badge{display:inline-flex;align-items:center;gap:8px;font-size:0.84rem;font-weight:500;color:#ded6cc;margin-bottom:24px}.icon-pin{width:15px;height:15px;color:var(--gold-primary);flex-shrink:0}.subpage-nav-bar{background-color:#080706;border-bottom:1px solid rgba(212,163,89,0.2);padding:16px 0;position:sticky;top:0;z-index:100;backdrop-filter:blur(10px)}.subpage-nav-bar .hero-brand{margin-bottom:0}.subpage-nav-container{max-width:var(--site-max-w);width:100%;margin:0 auto;padding:0 clamp(20px,4vw,54px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.subpage-nav-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.about-hero-section{position:relative;background:radial-gradient(circle at center 30%,rgba(212,163,89,0.12) 0%,transparent 70%),linear-gradient(180deg,#090807 0%,#110e0b 60%,#0c0a08 100%);border-bottom:1px solid rgba(212,163,89,0.18);padding:64px 0 54px 0;text-align:center;overflow:hidden}.about-hero-container{max-width:900px;margin:0 auto;padding:0 20px;position:relative;z-index:2}.about-hero-container .hero-location-badge{margin-bottom:0}.about-hero-pretitle{display:inline-block;font-size:0.74rem;font-weight:700;letter-spacing:0.2em;color:var(--gold-primary);text-transform:uppercase;margin-bottom:12px}.about-hero-title{font-family:var(--font-serif-hero);font-size:clamp(2.3rem,4vw,3.2rem);font-weight:600;color:var(--text-white);line-height:1.18;margin-bottom:14px}.about-hero-sub{font-size:1.05rem;line-height:1.6;color:#dfd7cc;max-width:620px;margin:0 auto 20px auto}@media (max-width:768px){.subpage-nav-container{padding:0 20px;gap:12px}.subpage-nav-actions{gap:8px}.subpage-nav-actions .btn{padding:6px 12px;font-size:0.7rem}.about-hero-section{padding:44px 0 36px 0}.about-hero-title{font-size:2rem}.about-hero-sub{font-size:0.9rem}}
+  html.wb-age-verified .age-gate-backdrop{display:none!important}body.age-gate-locked{overflow:hidden!important}html.wb-age-verified body,html.wb-age-verified body.age-gate-locked{overflow:visible!important}</style>
+
+  <!-- Optimized Non-Render-Blocking Stylesheet Delivery -->
+  <link rel="preload" as="style" href="style.min.css?v=13">
+  <link rel="stylesheet" href="style.min.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="style.min.css?v=13"></noscript>
+
+
+  <!-- Primary SEO Meta Tags -->
+  <title>About Whiskey Barrel | Liquor Store in Shawnee, KS</title>
+  <meta name="title" content="About Whiskey Barrel | Liquor Store in Shawnee, KS">
+  <meta name="description"
+    content="Learn about Whiskey Barrel, your premier neighborhood liquor store in Shawnee, KS. Discover our curated bourbon, fine wine, craft beer, tequila, and cigars.">
+  <meta name="keywords"
+    content="About Whiskey Barrel, liquor store Shawnee KS, bourbon Shawnee Kansas, whiskey shop Shawnee, wine store Shawnee KS, craft beer Kansas City, tequila Shawnee, cigars Shawnee KS">
+  <meta name="author" content="Whiskey Barrel">
+  <meta name="publisher" content="Whiskey Barrel">
+  <meta name="application-name" content="Whiskey Barrel">
+  <meta name="rating" content="mature">
+
+  <!-- Canonical Self-Referencing URL -->
+  <link rel="canonical" href="https://whiskeybarrel.store/about">
+
+  <!-- Search Engine Crawlers & Indexing -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Geographic / Local SEO Meta Tags -->
+  <meta name="geo.region" content="US-KS">
+  <meta name="geo.placename" content="Shawnee, Kansas">
+  <meta name="geo.position" content="39.014154;-94.727787">
+  <meta name="ICBM" content="39.014154, -94.727787">
+
+  <!-- Device & Browser Styling -->
+  <meta name="theme-color" content="#12100e">
+  <meta name="msapplication-navbutton-color" content="#12100e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=yes">
+
+  <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:site_name" content="Whiskey Barrel">
+  <meta property="og:title" content="About Whiskey Barrel | Liquor Store in Shawnee, KS">
+  <meta property="og:url" content="https://whiskeybarrel.store/about">
+  <meta property="og:description"
+    content="Discover Whiskey Barrel in Shawnee, KS: fine whiskey, allocated bourbon, curated wine, Kansas City craft beer, tequila, and smoke shop essentials.">
+  <meta property="og:image" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
+  <meta property="og:image:secure_url" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
+  <meta property="og:image:alt" content="Whiskey Barrel Liquor Storefront in Shawnee, KS">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Open Graph Local Business Data -->
+  <meta property="business:contact_data:street_address" content="12205 Shawnee Mission Parkway">
+  <meta property="business:contact_data:locality" content="Shawnee">
+  <meta property="business:contact_data:region" content="KS">
+  <meta property="business:contact_data:postal_code" content="66216">
+  <meta property="business:contact_data:country_name" content="United States">
+  <meta property="business:contact_data:phone_number" content="+1-913-400-2339">
+  <meta property="place:location:latitude" content="39.014154">
+  <meta property="place:location:longitude" content="-94.727787">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Whiskey Barrel | Liquor Store in Shawnee, KS">
+  <meta name="twitter:url" content="https://whiskeybarrel.store/about">
+  <meta name="twitter:description"
+    content="Learn about Whiskey Barrel in Shawnee, KS: our story, curated bourbon, wine cellar, KC craft beer, premium tequila, and smoke shop.">
+  <meta name="twitter:image" content="https://whiskeybarrel.store/assets/hero_storefront_night.webp">
+  <meta name="twitter:image:alt" content="Whiskey Barrel Storefront in Shawnee, KS">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="favicon.png?v=8">
+  <link rel="shortcut icon" href="favicon.png?v=8">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png?v=8">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png?v=8">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png?v=8">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png?v=8">
+
+  <!-- Schema.org JSON-LD Structured Data for AboutPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://whiskeybarrel.store/about#webpage",
+      "url": "https://whiskeybarrel.store/about",
+      "name": "About Whiskey Barrel | Liquor Store in Shawnee, KS",
+      "description": "Learn about Whiskey Barrel, Shawnee KS's premier neighborhood liquor store offering curated bourbon, rare whiskey, fine wine, craft beer, tequila, and cigars.",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://whiskeybarrel.store/#website",
+        "url": "https://whiskeybarrel.store/",
+        "name": "Whiskey Barrel"
+      },
+      "about": {
+        "@type": "LiquorStore",
+        "@id": "https://whiskeybarrel.store/#liquorstore",
+        "name": "Whiskey Barrel",
+        "telephone": "+1-913-400-2339",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12205 Shawnee Mission Parkway",
+          "addressLocality": "Shawnee",
+          "addressRegion": "KS",
+          "postalCode": "66216",
+          "addressCountry": "US"
+        }
+      }
+    }
+  ]
+}
+  </script>
+
+
+  <!-- Check 21+ Age Verification Status before render -->
+  <script>
+    try {
+      if (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true') {
+        document.documentElement.classList.add('wb-age-verified');
+      }
+    } catch (e) {}
+  </script>
+</head>
+
+<body>
+  <script>(function(){try{if(localStorage.getItem('wb_age_verified_v2')==='true'||sessionStorage.getItem('wb_age_verified_v2')==='true'){document.documentElement.classList.add('wb-age-verified');if(document.body)document.body.classList.remove('age-gate-locked');}}catch(e){}})();</script>
+
+  <!-- ==================== SUBPAGE TOP NAVIGATION ==================== -->
+  <header class="subpage-nav-bar" id="subpage-nav">
+    <div class="subpage-nav-container">
+      <div class="hero-brand">
+        <a href="../index.html" target="_top" class="brand-link" title="Return to Whiskey Barrel Homepage">
+          <picture class="brand-logo-picture">
+            <source srcset="assets/logo_web.webp?v=8" type="image/webp">
+            <img src="assets/logo_web.png?v=8" alt="Whiskey Barrel logo" class="brand-logo-img" width="400" height="400" fetchpriority="high" decoding="async">
+          </picture>
+          <div class="brand-text-group">
+            <span class="brand-name">WHISKEY BARREL</span>
+            <span class="brand-tagline">SPIRITS · PEOPLE · GOOD COMPANY</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="subpage-nav-actions">
+        <a href="../index.html" target="_top" class="btn btn-primary" id="btn-home-nav">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>STORE HOME</span>
+        </a>
+
+        <a href="tel:+19134002339" class="btn btn-outline" id="btn-call-subpage" role="button" aria-haspopup="dialog" aria-expanded="false" onclick="openCallStorePopup(); return false;">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>CALL STORE</span>
+        </a>
+
+        <a href="index.html#faq" class="btn btn-outline" id="btn-faq-subpage">
+          <span>FAQ'S</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== ABOUT HERO BANNER ==================== -->
+  <section class="about-hero-section" id="about-hero">
+    <div class="about-hero-container">
+      <span class="about-hero-pretitle">SPIRITS · PEOPLE · GOOD COMPANY</span>
+      <h1 class="about-hero-title">About Whiskey Barrel</h1>
+      <p class="about-hero-sub">
+        Your neighborhood destination for curated bourbon, fine wine, Kansas City craft beer, artisanal tequila, and world-class spirits in Shawnee, Kansas.
+      </p>
+
+      <div class="hero-location-badge">
+        <svg class="icon-pin" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+        </svg>
+        <span>12205 Shawnee Mission Parkway, Shawnee, KS 66216</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT & SHAWNEE LIQUOR GUIDE CONTENT ==================== -->
+  <main class="about-seo-section" id="about-content">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="about-seo-header">
+        <span class="about-seo-pretitle">SPIRITS · SELECTION · NEIGHBORHOOD ROOTS</span>
+        <h2 class="about-seo-title">
+          Your Premier Liquor Store in <span class="gold-accent">Shawnee, KS</span>
+        </h2>
+        <p class="about-seo-lead">
+          Welcome to Whiskey Barrel, your trusted neighborhood liquor store in Shawnee, KS. Conveniently located at 12205 Shawnee Mission Parkway, Shawnee, KS 66216, our store was founded on a simple philosophy: exceptional hospitality, deep product knowledge, and a thoughtfully curated inventory of spirits, wine, and beer. Whether you are searching for an allocated Kentucky straight bourbon, picking up a chilled six-pack of local Kansas City craft beer for the weekend, or selecting the ideal bottle of Cabernet Sauvignon for dinner, Whiskey Barrel offers an inviting, boutique shopping experience tailored to both seasoned connoisseurs and casual enthusiasts throughout Johnson County.
+        </p>
+        <p class="about-seo-sublead">
+          Our mission is to take the intimidation out of browsing and replace it with genuine, friendly guidance. Unlike oversized big-box retailers where rare finds get lost in sterile aisles, Whiskey Barrel combines an extensive catalog of world-class beverages with the warm personal touch of an independent local store. Every bottle on our shelves is chosen with care, reflecting a dedication to craftsmanship, flavor profile, and outstanding value. We take pride in serving our neighbors across Shawnee, Overland Park, Lenexa, Merriam, and the greater Kansas City metropolitan area seven days a week.
+        </p>
+      </div>
+
+      <!-- Feature Grid: 4 Pillars of Excellence -->
+      <div class="about-seo-grid">
+
+        <!-- Pillar 1: Whiskey & Bourbon -->
+        <article class="about-seo-card">
+          <div class="about-card-badge">
+            <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M8 2h8l2 6H6l2-6zM6 8v11a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8H6z"></path>
+              <line x1="6" y1="13" x2="18" y2="13"></line>
+            </svg>
+            <span>BOURBON &amp; WHISKEY</span>
+          </div>
+          <h3 class="about-card-title">Shawnee's Bourbon &amp; Whiskey Destination</h3>
+          <p>
+            For whiskey lovers across Kansas, Whiskey Barrel is renowned as a premier bourbon and whiskey destination in Shawnee, KS. The world of whiskey is vast, steeped in heritage and distinct regional traditions, and our shelves celebrate every facet of this legendary spirit. American whiskey enthusiasts will discover a diverse array of Kentucky straight bourbons, small-batch releases, high-rye expressions, and single-barrel selections known for their rich notes of toasted oak, caramel, vanilla, and warm spice. From beloved daily sippers to coveted bottles from iconic distilleries like Buffalo Trace, Four Roses, Elijah Craig, Maker's Mark, and Woodford Reserve, our selection is continuously refreshed to surprise and delight collectors.
+          </p>
+          <p>
+            Beyond traditional American bourbon, our whiskey collection spans the globe. Explore the peated complexity and coastal elegance of single malt and blended Scotch whiskies from Islay, Speyside, and the Scottish Highlands. Discover the triple-distilled smoothness of authentic Irish whiskeys, crisp Canadian blended whiskies, and the meticulous harmony of Japanese whiskies. If you enjoy classic cocktails like the Old Fashioned or Manhattan, our bold rye whiskeys offer the spicy punch and dry complexity that elevate any home bar. Our knowledgeable team is always available to discuss flavor notes, mash bills, and aging profiles, helping you choose the perfect pour.
+          </p>
+        </article>
+
+        <!-- Pillar 2: Curated Wine -->
+        <article class="about-seo-card">
+          <div class="about-card-badge">
+            <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M8 22h8m-4-7v7m-6-13a6 6 0 0 0 12 0c0-4-3-7-6-7s-6 3-6 7z"></path>
+            </svg>
+            <span>FINE WINE CELLAR</span>
+          </div>
+          <h3 class="about-card-title">Curated Wine for Every Palate &amp; Occasion</h3>
+          <p>
+            A great liquor store should be an inspiring place to explore wine, and Whiskey Barrel delivers with a vibrant, accessible wine selection right here in Shawnee. Wine connects people across celebrations, intimate meals, and casual gatherings. We feature a broad spectrum of varietals, regions, and styles designed to accommodate every taste and budget, from approachable weekday table wines to celebratory cellar-worthy vintages.
+          </p>
+          <p>
+            Red wine enthusiasts will appreciate our handpicked California Cabernet Sauvignons, expressive Willamette Valley Pinot Noirs, robust Argentine Malbecs, and rich Italian red blends. For those who prefer white wine, our coolers and shelves feature crisp New Zealand Sauvignon Blancs, buttery California Chardonnays, floral Pinot Grigios, and aromatic German and domestic Moscatos. We also showcase refreshing dry rosés and effervescent sparkling wines, including classic Champagne, Italian Prosecco, and sparkling cavas that bring celebratory sparkle to anniversaries, birthdays, and holiday dinners. If you are preparing a dinner menu or planning an event in Shawnee, our staff is happy to offer personalized food pairing recommendations.
+          </p>
+        </article>
+
+        <!-- Pillar 3: Craft Beer & Seltzers -->
+        <article class="about-seo-card">
+          <div class="about-card-badge">
+            <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M5 6v14a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V6M3 6h15M16 10h3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-3"></path>
+            </svg>
+            <span>CRAFT BEER &amp; SELTZERS</span>
+          </div>
+          <h3 class="about-card-title">Kansas City Craft Beer &amp; Chilled Seltzers</h3>
+          <p>
+            Kansas City has one of the most vibrant, respected craft brewing cultures in the country, and Whiskey Barrel proudly showcases local Midwest beers alongside top national and international favorites. We maintain a large walk-in cooler stocked with chilled six-packs, four-packs, and single cans, ensuring your craft beer is ice-cold and brewery-fresh when you walk out our doors.
+          </p>
+          <p>
+            Explore hop-forward India Pale Ales (IPAs), juicy hazy brews, rich imperial stouts, crisp pilsners, refreshing wheat beers, and seasonal ales crafted by local and regional brewmasters. From hometown legends like Boulevard Brewing to experimental microbrews, our beer selection reflects the creative spirit of our region. For those who prefer gluten-free alternatives or lighter beverage options, we stock an assortment of hard ciders, ready-to-drink canned cocktails, and premium real-fruit hard seltzers such as High Noon, White Claw, and Truly. Whether you are hosting a Kansas City Chiefs game day tailgate, firing up the backyard barbecue, or heading to a weekend lake trip, we have your cooler covered.
+          </p>
+        </article>
+
+        <!-- Pillar 4: Tequila & Spirits -->
+        <article class="about-seo-card">
+          <div class="about-card-badge">
+            <svg class="about-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>TEQUILA &amp; PREMIUM SPIRITS</span>
+          </div>
+          <h3 class="about-card-title">100% Blue Agave Tequila &amp; Artisanal Spirits</h3>
+          <p>
+            Tequila and agave spirits have experienced an unprecedented renaissance, and Whiskey Barrel is proud to present a premier selection of 100% blue Weber agave tequilas in Shawnee, KS. Discover crisp, unaged Blanco tequilas that highlight the bright herbal and citrus sweetness of pure agave—perfect for fresh margaritas and palomas. Experience the subtle vanilla and honey notes of barrel-rested Reposados, or indulge in the complex, velvet sophistication of Añejos and Extra Añejos aged in charred oak casks for contemplative neat sipping. For lovers of smoky depth, our artisanal mezcals deliver earthy, hand-roasted character distilled using ancestral methods in Oaxaca.
+          </p>
+          <p>
+            Our spirits selection extends well beyond agave. Stock your home cocktail bar with ultra-clean, multiple-distilled vodkas, aromatic London Dry and botanical gins, spiced and aged Caribbean rums, brandies, and artisan liqueurs. Whether you are crafting a martini, mixing a tiki punch, or preparing holiday eggnog, you will find the spirits and specialty cordials you need under one roof.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- Bottom In-Depth Store Highlights: Smoke Shop, Service & Hours -->
+      <div class="about-seo-details-block">
+        <div class="about-details-col">
+          <div class="about-col-header">
+            <span class="gold-bullet">&bull;</span>
+            <h4>Smoke Shop &amp; Premium Cigars in Shawnee</h4>
+          </div>
+          <p>
+            To complete your shopping experience, Whiskey Barrel features a dedicated smoke shop and walk-in humidor right inside our Shawnee liquor store. We stock premium handmade cigars from world-renowned growing regions in Nicaragua, the Dominican Republic, and Honduras. Whether you are a seasoned aficionado seeking a full-bodied maduro or looking for a mild Connecticut-shade cigar to celebrate a special milestone, our humidor preserves each stick at optimal humidity for peak freshness. We also carry essential smoking accessories, including torch lighters, cutters, rolling supplies, and glassware, alongside craft cocktail mixers, gourmet cherries, craft tonics, and bitters.
+          </p>
+        </div>
+
+        <div class="about-details-col">
+          <div class="about-col-header">
+            <span class="gold-bullet">&bull;</span>
+            <h4>Your Convenient Local Stop 7 Days a Week</h4>
+          </div>
+          <p>
+            Convenience, accessibility, and community connection define everything we do at Whiskey Barrel. Located on Shawnee Mission Parkway, just moments from major transit routes through Shawnee, our store offers ample front parking and an accessible, easy-to-navigate retail space. We are open seven days a week with extended weekend hours, making it effortless to stop in whenever you need supplies.
+          </p>
+          <p>
+            If you are hunting for a specific allocated bourbon, a specialty liqueur, or wondering whether your favorite vintage is currently in stock, you never have to guess. Simply give our friendly team a call at <a href="tel:+19134002339" class="about-inline-phone">(913) 400-2339</a>. We are always glad to check our shelves in real time. Visit Whiskey Barrel in Shawnee, Kansas today and discover why your neighbors make us their first stop for spirits, wine, beer, and good company.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom CTA Banner -->
+      <div class="faq-cta-bar">
+        <div class="faq-cta-content">
+          <h3 class="faq-cta-heading">Ready to explore our curated collection in person?</h3>
+          <p class="faq-cta-sub">Visit us at 12205 Shawnee Mission Parkway, Shawnee, KS 66216 or call our knowledgeable team to confirm bottle availability.</p>
+        </div>
+        <div class="faq-cta-actions">
+          <a href="https://www.google.com/maps/place/Whiskey+Barrel/@39.0143816,-94.7279887,15z/data=!4m15!1m8!3m7!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!2sWhiskey+Barrel!8m2!3d39.0141541!4d-94.727787!10e5!16s%2Fg%2F11spn4_7qy!3m5!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!8m2!3d39.0141541!4d-94.727787!16s%2Fg%2F11spn4_7qy?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-about-directions">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+            </svg>
+            <span>GET DIRECTIONS</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="tel:+19134002339" class="btn btn-outline" id="btn-about-call" role="button" aria-haspopup="dialog" aria-expanded="false" onclick="openCallStorePopup(); return false;">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>CALL STORE</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== STORE INFO & LOCATION ==================== -->
+  <section class="store-info-section" id="store-info">
+    <div class="store-info-container">
+
+      <!-- Column 1: Store Hours -->
+      <div class="info-block hours-block">
+        <div class="info-header">
+          <div class="gold-circle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="info-title">STORE HOURS</h3>
+        </div>
+        <div class="hours-schedule">
+          <div class="schedule-row">
+            <span class="day-range">Mon &ndash; Thu</span>
+            <span class="hours-time">9 AM &ndash; 10 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span class="day-range">Fri &ndash; Sat</span>
+            <span class="hours-time">9 AM &ndash; 11 PM</span>
+          </div>
+          <div class="schedule-row">
+            <span class="day-range">Sun</span>
+            <span class="hours-time">9 AM &ndash; 8 PM</span>
+          </div>
+        </div>
+        <!-- Live status indicator -->
+        <div class="live-status-badge" id="live-status-pill">
+          <span class="pulse-dot"></span>
+          <span class="status-msg">Open Now &middot; Closes at 10 PM</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Our Location -->
+      <div class="info-block location-block">
+        <div class="info-header">
+          <div class="gold-circle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3 class="info-title">OUR LOCATION</h3>
+        </div>
+        <div class="location-details">
+          <p class="loc-line">12205 Shawnee Mission Parkway,</p>
+          <p class="loc-line">Shawnee, KS 66216</p>
+        </div>
+        <div class="location-action">
+          <a href="https://www.google.com/maps/place/Whiskey+Barrel/@39.0143816,-94.7279887,15z/data=!4m15!1m8!3m7!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!2sWhiskey+Barrel!8m2!3d39.0141541!4d-94.727787!10e5!16s%2Fg%2F11spn4_7qy!3m5!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!8m2!3d39.0141541!4d-94.727787!16s%2Fg%2F11spn4_7qy?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+            rel="noopener noreferrer" class="btn btn-outline-gold" id="btn-get-directions-bottom">
+            <span>GET DIRECTIONS</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 3: Contact Us -->
+      <div class="info-block contact-block">
+        <div class="info-header">
+          <div class="gold-circle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <h3 class="info-title">CONTACT US</h3>
+        </div>
+        <div class="contact-methods">
+          <a href="tel:+19134002339" class="contact-link phone-num" id="contact-phone-link">+1 (913) 400-2339</a>
+          <a href="mailto:whiskeybarrel@parishva.in" class="contact-link email-addr" id="contact-email-link" aria-label="Email Whiskey Barrel">whiskeybarrel@parishva.in</a>
+        </div>
+        <div class="contact-action">
+          <a href="tel:+19134002339" class="btn btn-outline-gold" id="btn-call-bottom" role="button" aria-haspopup="dialog" aria-expanded="false" onclick="openCallStorePopup(); return false;">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>CALL STORE</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 4: Map Visual -->
+      <div class="info-block map-visual-block">
+        <a href="https://www.google.com/maps/place/Whiskey+Barrel/@39.0143816,-94.7279887,15z/data=!4m15!1m8!3m7!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!2sWhiskey+Barrel!8m2!3d39.0141541!4d-94.727787!10e5!16s%2Fg%2F11spn4_7qy!3m5!1s0x87c0ed9157f883f7:0xc38d104d634d33ed!8m2!3d39.0141541!4d-94.727787!16s%2Fg%2F11spn4_7qy?entry=ttu&amp;g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"
+            rel="noopener noreferrer" class="map-card-link" title="Open in Google Maps">
+          <div class="map-frame">
+            <img src="assets/map_hd.jpg" alt="Location Map for Whiskey Barrel - 12205 Shawnee Mission Parkway, Shawnee, Kansas" class="map-preview-img" width="716" height="208" loading="lazy" decoding="async">
+            <div class="map-hover-hint">
+              <span>Open in Google Maps &UpperRightArrow;</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <picture class="footer-logo-picture">
+          <source srcset="assets/logo_web.webp?v=8" type="image/webp">
+          <img src="assets/logo_web.png?v=8" alt="Whiskey Barrel logo" class="footer-barrel-icon" width="400" height="400" loading="lazy" decoding="async">
+        </picture>
+        <div class="footer-text-group">
+          <span class="footer-brand-title">WHISKEY BARREL</span>
+          <span class="footer-brand-sub">SPIRITS · PEOPLE · GOOD COMPANY</span>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <a href="./" class="footer-nav-link">Store Home</a>
+        <a href="./#faq" class="footer-nav-link">FAQ's</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/whiskeybarrelusa?stkn=MTczeDAzcjF1Z2FpdA%3D%3D" target="_blank"
+          rel="noopener noreferrer" class="footer-instagram-btn" id="footer-instagram-btn"
+          aria-label="Whiskey Barrel on Instagram" title="Follow Whiskey Barrel on Instagram">
+          <svg class="instagram-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+      <div class="footer-compliance">
+        <span class="compliance-text">21+ only. Please drink responsibly.</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== -->
+  <div class="age-gate-backdrop" id="ageGateModal" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate-card">
+      <div class="age-gate-accent-line"></div>
+
+      <!-- Brand Header -->
+      <div class="age-gate-header">
+        <div class="age-gate-logo-box">
+          <picture>
+            <source srcset="assets/logo_web.webp?v=8" type="image/webp">
+            <img src="assets/logo_web.png?v=8" alt="Whiskey Barrel Official Age Verification Brand Seal" class="age-gate-logo" width="72" height="72" decoding="async">
+          </picture>
+        </div>
+        <div class="age-gate-brand-name">WHISKEY BARREL</div>
+        <div class="age-gate-brand-tag">FINE SPIRITS &bull; WINE &bull; CRAFT BEER</div>
+      </div>
+
+      <!-- VIEW 1: Initial Question (Are you 21 or older?) -->
+      <div class="age-gate-view active" id="ageGateViewQuestion">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z"/>
+          </svg>
+          <span>AGE VERIFICATION REQUIRED</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateTitle">Are you 21 or older?</h2>
+        <p class="age-gate-desc" id="ageGateDesc">
+          You must be of legal drinking age to view our spirits, fine wines, craft beers, and tobacco products.
+        </p>
+
+        <div class="age-gate-actions">
+          <button type="button" class="btn btn-primary age-gate-btn" id="btnAgeYes">
+            <span>YES, I AM 21+</span>
+            <span class="arrow">&rarr;</span>
+          </button>
+          <button type="button" class="btn btn-outline age-gate-btn" id="btnAgeNo">
+            <span>NO, I AM UNDER 21</span>
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="age-gate-lock-icon">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+          <span>By entering, you confirm you are of legal drinking age in your jurisdiction.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Date of Birth Input (Shown when user clicks "YES") -->
+      <div class="age-gate-view" id="ageGateViewDob">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          <span>CONFIRM YOUR DATE OF BIRTH</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateDobTitle">Enter Your Birth Date</h2>
+        <p class="age-gate-desc">
+          Please confirm your date of birth to verify that you are at least 21 years of age.
+        </p>
+
+        <form class="age-gate-dob-form" id="ageGateDobForm" novalidate>
+          <div class="age-gate-dob-grid">
+            <div class="age-gate-field">
+              <label for="ageGateMonth" class="age-gate-label">MONTH</label>
+              <input type="text" id="ageGateMonth" name="birthMonth" class="age-gate-input" placeholder="MM" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-month" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field">
+              <label for="ageGateDay" class="age-gate-label">DAY</label>
+              <input type="text" id="ageGateDay" name="birthDay" class="age-gate-input" placeholder="DD" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-day" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field year-field">
+              <label for="ageGateYear" class="age-gate-label">YEAR</label>
+              <input type="text" id="ageGateYear" name="birthYear" class="age-gate-input" placeholder="YYYY" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="bday-year" required>
+            </div>
+          </div>
+
+          <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+          <div class="age-gate-remember">
+            <label class="age-gate-checkbox-label">
+              <input type="checkbox" id="ageGateRemember" class="age-gate-checkbox" checked>
+              <span class="age-gate-custom-checkbox"></span>
+              <span class="age-gate-checkbox-text">Remember me on this device (30 days)</span>
+            </label>
+          </div>
+
+          <div class="age-gate-actions">
+            <button type="submit" class="btn btn-primary age-gate-btn" id="btnAgeVerifySubmit">
+              <span>VERIFY &amp; ENTER SITE</span>
+              <span class="arrow">&rarr;</span>
+            </button>
+            <button type="button" class="age-gate-back-link" id="btnAgeBackToQuestion">
+              &larr; Back to previous question
+            </button>
+          </div>
+        </form>
+
+        <div class="age-gate-footer-note">
+          <span>Your birth date is processed securely in your browser and is never shared or stored externally.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 3: Under 21 / Access Denied (Shown when user clicks "NO" or enters DOB < 21) -->
+      <div class="age-gate-view" id="ageGateViewDenied">
+        <div class="age-gate-icon-denied">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          </svg>
+        </div>
+        <h2 class="age-gate-title denied" id="ageGateDeniedTitle">Access Restricted</h2>
+        <div class="age-gate-denied-badge">21+ LEGAL REQUIREMENT</div>
+        <p class="age-gate-desc denied-text">
+          You must be 21 years of age or older to enter this website. In accordance with federal, state, and local alcohol regulations, access to Whiskey Barrel is restricted.
+        </p>
+        <p class="age-gate-subtext">
+          If you arrived here in error or wish to exit, please click below:
+        </p>
+
+        <div class="age-gate-actions">
+          <a href="https://www.google.com" class="btn btn-primary age-gate-btn" id="btnAgeExit">
+            <span>EXIT WEBSITE</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <button type="button" class="age-gate-back-link" id="btnAgeDeniedBack">
+            &larr; I am 21 or older (return to verification)
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <span>Learn more about responsible drinking at <a href="https://www.responsibility.org" target="_blank" rel="noopener noreferrer" class="gold-link">Responsibility.org</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== CALL STORE MODAL / POPUP ==================== -->
+  <div class="call-popup-backdrop" id="callStorePopup" role="dialog" aria-modal="true" aria-labelledby="callPopupTitle" onclick="closeCallStorePopup(event)">
+    <div class="call-popup-card" onclick="event.stopPropagation()">
+      <button type="button" class="call-popup-close-btn" id="callPopupClose" onclick="closeCallStorePopup()" aria-label="Close contact options">&times;</button>
+
+      <div class="call-popup-header">
+        <div class="call-popup-badge">
+          <svg class="call-popup-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+          </svg>
+          <span>Whiskey Barrel &bull; Shawnee, KS</span>
+        </div>
+        <h3 class="call-popup-title" id="callPopupTitle">Contact the Store</h3>
+        <p class="call-popup-subtitle">Select an option below to connect with us immediately:</p>
+      </div>
+
+      <div class="call-popup-options">
+        <!-- Call Store Option -->
+        <a href="tel:+19134002339" class="call-popup-option" id="callOptionPhone">
+          <div class="call-option-icon-box phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="call-option-text">
+            <span class="call-option-name">Call Store</span>
+            <span class="call-option-sub">+1 (913) 400-2339 &bull; Open Phone Dialer</span>
+          </div>
+          <span class="call-option-arrow">&rarr;</span>
+        </a>
+
+        <!-- Text Message Option -->
+        <a href="sms:+19134002339" class="call-popup-option" id="callOptionSms">
+          <div class="call-option-icon-box sms">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              <line x1="8" y1="9" x2="16" y2="9"></line>
+              <line x1="8" y1="13" x2="13" y2="13"></line>
+            </svg>
+          </div>
+          <div class="call-option-text">
+            <span class="call-option-name">Text Message</span>
+            <span class="call-option-sub">+1 (913) 400-2339 &bull; Send SMS Text</span>
+          </div>
+          <span class="call-option-arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="call-popup-footer">
+        <span class="call-popup-hours-dot"></span>
+        <span class="call-popup-hours-text">Direct Line: +1 (913) 400-2339</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google tag (gtag.js) - Asynchronously loaded non-critical script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5BYZYPMKQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z5BYZYPMKQ');
+  </script>
+
+  <!-- JavaScript -->
+  <script src="app.min.js?v=12" defer></script>
+</body>
+
+</html>
+

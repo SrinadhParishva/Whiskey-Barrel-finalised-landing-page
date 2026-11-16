@@ -12,14 +12,18 @@
     content="Small-batch single malt, patiently aged in charred oak casks. Discover the expressions of Whiskey Barrel.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@Lovable">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts: Domine (Serif Headings) & Hanken Grotesk (Sans-Serif Body & UI) - Non-Blocking High-Speed Load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+  </noscript>
 
   <!-- Preload Critical LCP Hero Image -->
   <link rel="preload" as="image" href="assets/hero-whiskey-barrel.webp" fetchpriority="high">
@@ -27,12 +31,22 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Check 21+ Age Verification Status before render -->
+  <script>
+    try {
+      if (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true') {
+        document.documentElement.classList.add('wb-age-verified');
+      }
+    } catch (e) { }
+  </script>
+
   <!-- Ultra-Fast Local Lucide Icons & App Script -->
   <script src="assets/lucide.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 
 <body class="overflow-x-hidden bg-background text-foreground font-body">
+  <script>(function () { try { if (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true') { document.documentElement.classList.add('wb-age-verified'); if (document.body) document.body.classList.remove('age-gate-locked'); } } catch (e) { } })();</script>
 
   <main class="overflow-x-hidden">
     <!-- Header/Navigation -->
@@ -41,7 +55,8 @@
         <a href="#top" class="group flex items-center gap-3">
           <span
             class="relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-ember/60 bg-background/90 overflow-hidden shadow-sm transition-transform duration-500 group-hover:scale-105 nav-logo-icon">
-            <img src="assets/wb-icon.webp" alt="WB Logo Icon" class="h-full w-full object-cover rounded-full" width="40" height="40" decoding="async">
+            <img src="assets/wb-icon.webp" alt="Whiskey Barrel Liquor & Spirits Logo Emblem" class="h-full w-full object-cover rounded-full" width="40"
+              height="40" decoding="async">
           </span>
           <span class="font-display text-base sm:text-lg tracking-[0.25em] uppercase font-bold text-foreground">Whiskey
             Barrel</span>
@@ -68,7 +83,8 @@
               class="relative py-2 transition-colors duration-300 hover:text-ember after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-ember after:transition-transform after:duration-500 hover:after:origin-left hover:after:scale-x-100 flex items-center gap-1">Visit</a>
 
             <!-- Navbar Visit Dropdown Popover matching image -->
-            <div class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 sm:w-96 rounded-xl bg-[#12100e] border border-[#2d2620] p-6 sm:p-7 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto normal-case tracking-normal">
+            <div
+              class="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 sm:w-96 rounded-xl bg-[#12100e] border border-[#2d2620] p-6 sm:p-7 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto normal-case tracking-normal">
               <div class="space-y-6 text-[#eae3d9]">
                 <!-- Address -->
                 <div class="flex items-start gap-4 text-left">
@@ -103,7 +119,7 @@
                   <div class="space-y-1">
                     <h3 class="font-bold text-sm text-[#ffffff] tracking-normal">Phone</h3>
                     <p class="text-xs sm:text-sm leading-relaxed text-[#eae3d9]/90 font-normal">
-                      <a href="tel:+19135550199" class="hover:text-ember transition-colors">+913-400-2339</a>
+                      <a href="tel:+19134002339" class="hover:text-ember transition-colors">+913-400-2339</a>
                     </p>
                   </div>
                 </div>
@@ -115,7 +131,8 @@
                   <div class="space-y-1">
                     <h3 class="font-bold text-sm text-[#ffffff] tracking-normal">Email</h3>
                     <p class="text-xs sm:text-sm leading-relaxed text-[#eae3d9]/90 font-normal">
-                      <a href="mailto:whiskeybarrel@parishva.in" class="hover:text-ember transition-colors">whiskeybarrel@parishva.in</a>
+                      <a href="mailto:whiskeybarrel@parishva.in"
+                        class="hover:text-ember transition-colors">whiskeybarrel@parishva.in</a>
                     </p>
                   </div>
                 </div>
@@ -125,9 +142,11 @@
         </ul>
         <div class="flex items-center gap-4">
           <!-- Wishlist Trigger -->
-          <button type="button" id="cart-trigger-btn" aria-label="Open Wishlist" title="Wishlist" class="relative p-2 text-foreground/80 hover:text-ember transition-colors">
+          <button type="button" id="cart-trigger-btn" aria-label="Open Wishlist" title="Wishlist"
+            class="relative p-2 text-foreground/80 hover:text-ember transition-colors">
             <i data-lucide="heart" class="h-4 w-4"></i>
-            <span id="cart-badge" class="hidden absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-[image:var(--gradient-ember)] px-1 text-[0.6rem] font-medium text-primary-foreground">0</span>
+            <span id="cart-badge"
+              class="hidden absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-[image:var(--gradient-ember)] px-1 text-[0.6rem] font-medium text-primary-foreground">0</span>
           </button>
 
           <!-- Explore Our Collection Action Button -->
@@ -137,7 +156,8 @@
           </a>
 
           <!-- Mobile Menu Toggle Button -->
-          <button type="button" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden p-2 text-foreground/80 hover:text-ember transition-colors flex items-center justify-center">
+          <button type="button" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            class="md:hidden p-2 text-foreground/80 hover:text-ember transition-colors flex items-center justify-center">
             <i data-lucide="menu" class="h-6 w-6 menu-open-icon"></i>
             <i data-lucide="x" class="h-6 w-6 menu-close-icon hidden"></i>
           </button>
@@ -146,36 +166,45 @@
     </header>
 
     <!-- 1. Hero Section -->
-    <section id="top" class="hero-section relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-[#0a0806]">
+    <section id="top"
+      class="hero-section relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-[#0a0806]">
       <!-- Hero Dynamic Ambient Torchlight Overlay -->
       <div class="hero-torch-glow absolute inset-0 z-[1] pointer-events-none"></div>
 
       <!-- Hero Background Image & Cinematic Lighting Overlay -->
       <div class="hero-bg-wrapper absolute inset-0 z-0 select-none pointer-events-none">
-        <img src="assets/hero-whiskey-barrel.webp" alt="Whiskey Barrel Atmosphere"
+        <img src="assets/hero-whiskey-barrel.webp" alt="Whiskey Barrel Cellar - Golden amber whiskey poured into a crystal glass beside charred oak aging barrels"
           class="hero-bg-img w-full h-full object-cover object-[80%_center] sm:object-[75%_center] md:object-[68%_center] lg:object-right"
           width="1920" height="1080" fetchpriority="high" decoding="async">
         <!-- Directional gradient overlays for luxury contrast and text legibility -->
         <div class="hero-mobile-overlay"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-[#0a0806] via-[#0a0806]/85 sm:via-[#0a0806]/60 md:via-[#0a0806]/35 to-transparent"></div>
-        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#0a0806] via-[#0a0806]/50 to-transparent"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-[#0a0806] via-[#0a0806]/85 sm:via-[#0a0806]/60 md:via-[#0a0806]/35 to-transparent">
+        </div>
+        <div class="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#0a0806] via-[#0a0806]/50 to-transparent">
+        </div>
         <div class="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-[#0a0806]/85 to-transparent"></div>
       </div>
 
       <!-- Hero Main Content Container -->
-      <div class="hero-content-container relative z-10 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16 flex-1 flex flex-col justify-between pt-[110px] sm:pt-[125px] md:pt-[135px] pb-8 sm:pb-12">
-        
+      <div
+        class="hero-content-container relative z-10 mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16 flex-1 flex flex-col justify-between pt-[110px] sm:pt-[125px] md:pt-[135px] pb-8 sm:pb-12">
+
         <!-- Hero Text & CTA Block -->
         <div class="hero-text-block max-w-xl sm:max-w-2xl lg:max-w-3xl pt-2 sm:pt-4 pb-6">
           <h1 class="hero-main-title font-display uppercase tracking-[0.025em] leading-[1.08] text-left">
             <span class="hero-title-line-wrap"><span class="hero-title-ivory hero-line-1 block">A WORLD</span></span>
-            <span class="hero-title-line-wrap"><span class="hero-title-ivory hero-line-2 block">OF SPIRITS.</span></span>
+            <span class="hero-title-line-wrap"><span class="hero-title-ivory hero-line-2 block">OF
+                SPIRITS.</span></span>
             <span class="hero-title-line-wrap"><span class="hero-title-gold hero-line-3 block">ONE PLACE</span></span>
-            <span class="hero-title-line-wrap"><span class="hero-title-gold hero-line-4 block">TO DISCOVER.</span></span>
+            <span class="hero-title-line-wrap"><span class="hero-title-gold hero-line-4 block">TO
+                DISCOVER.</span></span>
           </h1>
 
-          <p class="hero-subtitle mt-5 sm:mt-6 max-w-lg sm:max-w-xl text-sm sm:text-base md:text-[1.05rem] leading-relaxed font-normal">
-            Curated whiskey, wine, beer, tequila, gin and more &mdash; selected for those who appreciate what&rsquo;s worth pouring.
+          <p
+            class="hero-subtitle mt-5 sm:mt-6 max-w-lg sm:max-w-xl text-sm sm:text-base md:text-[1.05rem] leading-relaxed font-normal">
+            Curated whiskey, wine, beer, tequila, gin and more &mdash; selected for those who appreciate what&rsquo;s
+            worth pouring.
           </p>
 
           <div class="hero-cta-group mt-7 sm:mt-9 flex flex-wrap items-center gap-3.5 sm:gap-5">
@@ -192,11 +221,13 @@
 
         <!-- Scroll Indicator (Bottom Left) -->
         <div class="hero-scroll-wrapper pt-4 pb-2">
-          <a href="#about" class="hero-scroll-btn group inline-flex items-center gap-3.5 text-[#9E9285] hover:text-[#D4A86A]">
+          <a href="#about"
+            class="hero-scroll-btn group inline-flex items-center gap-3.5 text-[#9E9285] hover:text-[#D4A86A]">
             <span class="hero-capsule-icon shrink-0" aria-hidden="true">
               <span class="hero-capsule-pill"></span>
             </span>
-            <span class="hero-scroll-text text-[0.68rem] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#A0958A] group-hover:text-[#EDE7DE]">
+            <span
+              class="hero-scroll-text text-[0.68rem] sm:text-xs font-semibold tracking-[0.24em] uppercase text-[#A0958A] group-hover:text-[#EDE7DE]">
               SCROLL TO DISCOVER
             </span>
           </a>
@@ -266,24 +297,30 @@
 
 
     <!-- 4. Expressions / Category Section -->
-    <section id="expressions" class="collection-section relative bg-[#0c0a08] px-6 sm:px-10 lg:px-16 py-18 sm:py-24 border-t border-b border-[#241c15]/60 overflow-hidden">
+    <section id="expressions"
+      class="collection-section relative bg-[#0c0a08] px-6 sm:px-10 lg:px-16 py-18 sm:py-24 border-t border-b border-[#241c15]/60 overflow-hidden">
       <div id="collection" class="absolute -top-24 opacity-0 pointer-events-none"></div>
       <!-- Ambient Torch Glow & Radial Background Blur -->
       <div class="collection-torch-glow"></div>
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#5e4324]/20 via-[#1f150b]/10 to-transparent pointer-events-none blur-3xl"></div>
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#5e4324]/20 via-[#1f150b]/10 to-transparent pointer-events-none blur-3xl">
+      </div>
 
       <div class="relative mx-auto max-w-7xl z-10">
 
         <!-- Section Header -->
         <div class="collection-header mb-10 sm:mb-12 text-left">
           <div class="collection-title-block max-w-3xl text-left">
-            <span class="collection-eyebrow block text-xs sm:text-[0.78rem] font-semibold tracking-[0.25em] uppercase text-[#D4A86A] mb-2.5">
+            <span
+              class="collection-eyebrow block text-xs sm:text-[0.78rem] font-semibold tracking-[0.25em] uppercase text-[#D4A86A] mb-2.5">
               THE HOUSE COLLECTION
             </span>
-            <h2 class="collection-main-title font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-medium uppercase tracking-[0.02em] text-[#EDE7DE] leading-tight">
+            <h2
+              class="collection-main-title font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-medium uppercase tracking-[0.02em] text-[#EDE7DE] leading-tight">
               EXPLORE OUR COLLECTION
             </h2>
-            <p class="collection-subtitle font-body text-sm sm:text-base text-[#9C9185] leading-relaxed font-normal mt-3 max-w-xl">
+            <p
+              class="collection-subtitle font-body text-sm sm:text-base text-[#9C9185] leading-relaxed font-normal mt-3 max-w-xl">
               Exceptional spirits from around the world, curated for every kind of taste.
             </p>
           </div>
@@ -293,11 +330,13 @@
         <div id="category-cards-grid" class="collection-grid">
 
           <!-- 1. WHISKEY -->
-          <div data-category-card="WHISKEY" class="category-card" style="--card-index: 0;">
+          <a href="category.html?category=WHISKEY" data-category-card="WHISKEY" class="category-card"
+            style="--card-index: 0;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-whiskey-lux.webp" alt="Whiskey Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-whiskey-lux.webp" alt="Whiskey Collection - Cut-crystal rocks glass of golden bourbon on a rustic charred oak barrel" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -310,14 +349,15 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 2. RUM -->
-          <div data-category-card="RUM" class="category-card" style="--card-index: 1;">
+          <a href="category.html?category=RUM" data-category-card="RUM" class="category-card" style="--card-index: 1;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-rum-lux.webp" alt="Rum Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-rum-lux.webp" alt="Rum Collection - Aged Caribbean dark rum in a crystal rocks glass on a warm mahogany bar counter" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -330,14 +370,16 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 3. BEER -->
-          <div data-category-card="BEER" class="category-card" style="--card-index: 2;">
+          <a href="category.html?category=BEER" data-category-card="BEER" class="category-card"
+            style="--card-index: 2;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-beer-lux.webp" alt="Beer Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-beer-lux.webp" alt="Beer Collection - Chilled golden craft lager with creamy white froth in a condensation-beaded pint glass" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -350,14 +392,16 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 4. VODKA -->
-          <div data-category-card="VODKA" class="category-card" style="--card-index: 3;">
+          <a href="category.html?category=VODKA" data-category-card="VODKA" class="category-card"
+            style="--card-index: 3;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-vodka-lux.webp" alt="Vodka Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-vodka-lux.webp" alt="Vodka Collection - Chilled premium vodka on the rocks with crystal-clear ice cubes and fresh lime garnish" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -370,14 +414,16 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 5. WINE -->
-          <div data-category-card="WINE" class="category-card" style="--card-index: 4;">
+          <a href="category.html?category=WINE" data-category-card="WINE" class="category-card"
+            style="--card-index: 4;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-wine-lux.webp" alt="Wine Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-wine-lux.webp" alt="Wine Collection - Poured glasses of vintage red and crisp white wine in an authentic stone cellar" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -390,34 +436,38 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 6. GIN -->
-          <div data-category-card="GIN" class="category-card" style="--card-index: 5;">
+          <a href="category.html?category=GIN" data-category-card="GIN" class="category-card" style="--card-index: 5;">
             <div class="category-card-frame">
               <div class="category-card-content">
-                <div class="category-card-img-wrapper">
-                  <img src="assets/cat-gin-lux.webp" alt="Gin Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                <div class="category-card-img-wrapper category-card-cigar-wrapper">
+                  <div class="cigar-coming-soon-display">
+                    <span class="cigar-coming-soon-badge">COMING SOON</span>
+                  </div>
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
                   <div class="category-card-footer-info">
                     <span class="category-card-label">GIN</span>
-                    <p class="category-card-sub">Botanical &middot; London Dry &middot; Aged</p>
+                    <p class="category-card-sub">Coming Soon</p>
                   </div>
                   <span class="category-card-arrow-badge" aria-hidden="true">&rarr;</span>
                 </div>
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 7. TEQUILA -->
-          <div data-category-card="TEQUILA" class="category-card" style="--card-index: 6;">
+          <a href="category.html?category=TEQUILA" data-category-card="TEQUILA" class="category-card"
+            style="--card-index: 6;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper">
-                  <img src="assets/cat-tequila-lux.webp" alt="Tequila Collection" class="category-card-img" width="400" height="400" loading="lazy" decoding="async">
+                  <img src="assets/cat-tequila-lux.webp" alt="Tequila Collection - Premium golden reposado tequila with lime slice and blue agave plant in background" class="category-card-img" width="400"
+                    height="400" loading="lazy" decoding="async">
                   <div class="category-card-img-overlay"></div>
                 </div>
                 <div class="category-card-footer">
@@ -430,10 +480,11 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
           <!-- 8. CIGAR -->
-          <div data-category-card="CIGAR" class="category-card" style="--card-index: 7;">
+          <a href="category.html?category=CIGAR" data-category-card="CIGAR" class="category-card"
+            style="--card-index: 7;">
             <div class="category-card-frame">
               <div class="category-card-content">
                 <div class="category-card-img-wrapper category-card-cigar-wrapper">
@@ -452,7 +503,7 @@
               </div>
             </div>
             <div class="category-card-glow"></div>
-          </div>
+          </a>
 
         </div>
 
@@ -462,7 +513,8 @@
           <!-- Section 1: Grand Cru Cellar Reserves -->
           <div data-reveal="up" data-delay="80" class="home-card-featured">
             <!-- Background Image -->
-            <img src="assets/grand_cru_wine.webp" alt="Grand Cru Cellar Reserves" class="home-card-bg-img" width="1200" height="500" loading="lazy" decoding="async">
+            <img src="assets/grand_cru_wine.webp" alt="Grand Cru Cellar Reserves - Prestigious vintage wine bottles resting in subterranean stone cellar" class="home-card-bg-img" width="1200"
+              height="500" loading="lazy" decoding="async">
             <!-- Overlay -->
             <div class="home-card-overlay-featured"></div>
             <!-- Content -->
@@ -477,7 +529,7 @@
                 Rare vintages. Limited releases. Handpicked by our sommeliers for the truly discerning.
               </p>
               <div class="home-card-btn-container">
-                <a href="#expressions" class="home-card-btn">
+                <a href="category.html?category=WINE" class="home-card-btn">
                   Explore Collection
                 </a>
               </div>
@@ -489,7 +541,8 @@
             <!-- 1982 Vintage Vault -->
             <div data-reveal="up" data-delay="160" class="home-card-half">
               <!-- Background Image -->
-              <img src="assets/vintage_vault_whiskey.webp" alt="1982 Vintage Vault" class="home-card-bg-img" width="600" height="400" loading="lazy" decoding="async">
+              <img src="assets/vintage_vault_whiskey.webp" alt="1982 Vintage Vault - Rare single barrel bourbon aging in charred oak casks in distillery vault" class="home-card-bg-img" width="600"
+                height="400" loading="lazy" decoding="async">
               <!-- Overlay -->
               <div class="home-card-overlay-half"></div>
               <!-- Content -->
@@ -501,7 +554,7 @@
                   Timeless vintages from an exceptional year. Discover history in every bottle.
                 </p>
                 <div class="home-card-btn-container">
-                  <a href="#expressions" class="home-card-btn">
+                  <a href="category.html?category=WHISKEY" class="home-card-btn">
                     Explore Vault
                   </a>
                 </div>
@@ -511,7 +564,8 @@
             <!-- Estate Tastings & Cuvées -->
             <div data-reveal="up" data-delay="240" class="home-card-half">
               <!-- Background Image -->
-              <img src="assets/estate_tastings_wine.webp" alt="Estate Tastings & Cuvées" class="home-card-bg-img" width="600" height="400" loading="lazy" decoding="async">
+              <img src="assets/estate_tastings_wine.webp" alt="Estate Tastings & Cuvées - Handcrafted cuvées and sommelier tasting glasses in winery estate" class="home-card-bg-img"
+                width="600" height="400" loading="lazy" decoding="async">
               <!-- Overlay -->
               <div class="home-card-overlay-half"></div>
               <!-- Content -->
@@ -523,7 +577,7 @@
                   Exclusive estate selections and curated tastings for refined palates.
                 </p>
                 <div class="home-card-btn-container">
-                  <a href="visit.html" class="home-card-btn">
+                  <a href="experience.html" class="home-card-btn">
                     Discover More
                   </a>
                 </div>
@@ -545,7 +599,8 @@
 
         <!-- Visit Background Image & Cinematic Lighting Overlay -->
         <div class="visit-banner-bg-wrapper">
-          <img src="assets/visit-house-storefront.webp" alt="Whiskey Barrel Flagship Storefront" class="visit-banner-bg" width="1920" height="800" loading="lazy" decoding="async">
+          <img src="assets/visit-house-storefront.webp" alt="Whiskey Barrel Flagship Storefront - Historic warm-lit boutique liquor shop exterior at twilight" class="visit-banner-bg"
+            width="1920" height="800" loading="lazy" decoding="async">
           <div class="visit-banner-overlay"></div>
         </div>
 
@@ -555,18 +610,21 @@
               <span class="visit-eyebrow">VISIT THE HOUSE</span>
             </div>
             <h2 class="visit-main-title">
-              <span class="visit-title-line-wrap"><span class="visit-title-ivory visit-line-1 block">COME TO</span></span>
-              <span class="visit-title-line-wrap"><span class="visit-title-gold visit-line-2 block">THE HOUSE.</span></span>
+              <span class="visit-title-line-wrap"><span class="visit-title-ivory visit-line-1 block">COME
+                  TO</span></span>
+              <span class="visit-title-line-wrap"><span class="visit-title-gold visit-line-2 block">THE
+                  HOUSE.</span></span>
             </h2>
             <p class="visit-banner-sub">
               More than a store. A place to discover your next favorite bottle.
             </p>
             <div class="visit-actions-row">
-              <a href="https://maps.google.com/?q=12205+Shawnee+Mission+PKWY+Shawnee+KS+66216" target="_blank" rel="noopener noreferrer" class="visit-btn-primary">
+              <a href="https://maps.google.com/?q=12205+Shawnee+Mission+PKWY+Shawnee+KS+66216" target="_blank"
+                rel="noopener noreferrer" class="visit-btn-primary">
                 <span>GET DIRECTIONS</span>
                 <span class="hero-btn-arrow">&rarr;</span>
               </a>
-              <a href="tel:+19135550123" class="visit-btn-secondary">
+              <a href="tel:+19134002339" class="visit-btn-secondary">
                 <span>CALL THE HOUSE</span>
                 <span class="hero-btn-arrow">&rarr;</span>
               </a>
@@ -582,7 +640,8 @@
           <div data-reveal="up" data-delay="100" class="visit-info-col">
             <div class="visit-info-icon-wrap">
               <svg class="visit-info-icon" viewBox="0 0 24 24" fill="#d4a86a" stroke="none">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
               </svg>
             </div>
             <div class="visit-info-text-wrap">
@@ -595,7 +654,8 @@
           <!-- Col 2: STORE HOURS -->
           <div data-reveal="up" data-delay="220" class="visit-info-col">
             <div class="visit-info-icon-wrap">
-              <svg class="visit-info-icon" viewBox="0 0 24 24" fill="none" stroke="#d4a86a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="visit-info-icon" viewBox="0 0 24 24" fill="none" stroke="#d4a86a" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
@@ -625,13 +685,14 @@
           <div data-reveal="up" data-delay="340" class="visit-info-col">
             <div class="visit-info-icon-wrap">
               <svg class="visit-info-icon" viewBox="0 0 24 24" fill="#d4a86a" stroke="none">
-                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.92c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.54c0-.55-.45-1-1-1z"/>
+                <path
+                  d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.92c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.54c0-.55-.45-1-1-1z" />
               </svg>
             </div>
             <div class="visit-info-text-wrap">
               <h3 class="visit-info-title">CONTACT</h3>
               <p class="visit-info-line">
-                <a href="tel:+19135550123" class="visit-info-link">+913-400-2339</a>
+                <a href="tel:+19134002339" class="visit-info-link">+913-400-2339</a>
               </p>
               <p class="visit-info-subline">
                 <a href="mailto:whiskeybarrel@parishva.in" class="visit-info-sublink">whiskeybarrel@parishva.in</a>
@@ -646,10 +707,12 @@
         <div data-reveal="scale" data-delay="150" class="visit-map-card">
           <!-- Left Map Graphic -->
           <div class="visit-map-visual">
-            <img src="assets/visit-dark-map.webp" alt="Whiskey Barrel Map Location" class="visit-map-bg-img" width="800" height="500" loading="lazy" decoding="async">
+            <img src="assets/visit-dark-map.webp" alt="Interactive Store Map for Whiskey Barrel - 12205 Shawnee Mission Parkway, Shawnee, Kansas" class="visit-map-bg-img" width="800"
+              height="500" loading="lazy" decoding="async">
             <div class="visit-map-overlay-pin">
               <svg class="visit-map-pin-svg" viewBox="0 0 24 24" fill="#d4a86a">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
               </svg>
               <span class="visit-map-pin-label">Shawnee Mission PKWY</span>
             </div>
@@ -659,7 +722,8 @@
           <div class="visit-map-directions-panel">
             <h4 class="visit-map-directions-title">GET DIRECTIONS</h4>
             <p class="visit-map-directions-sub">Find us easily and plan your visit.</p>
-            <a href="https://maps.google.com/?q=12205+Shawnee+Mission+PKWY+Shawnee+KS+66216" target="_blank" rel="noopener noreferrer" class="visit-btn-map-open">
+            <a href="https://maps.google.com/?q=12205+Shawnee+Mission+PKWY+Shawnee+KS+66216" target="_blank"
+              rel="noopener noreferrer" class="visit-btn-map-open">
               <span>OPEN IN MAPS</span>
               <span class="hero-btn-arrow">→</span>
             </a>
@@ -676,23 +740,16 @@
 
         <!-- Social / Contact Buttons -->
         <div class="footer-social-group">
-          <a
-            href="https://wa.me/19135550199"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Connect with Whiskey Barrel on WhatsApp"
-            class="footer-social-btn footer-social-whatsapp">
+          <a href="https://wa.me/19135550199" target="_blank" rel="noopener noreferrer"
+            aria-label="Connect with Whiskey Barrel on WhatsApp" class="footer-social-btn footer-social-whatsapp">
             <svg class="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.456 5.711 1.457h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.484-8.414z" />
             </svg>
           </a>
 
-          <a
-            href="https://www.instagram.com/whiskeybarrelusa?stkn=MTczeDAzcjF1Z2FpdA=="
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Follow Whiskey Barrel on Instagram"
+          <a href="https://www.instagram.com/whiskeybarrelusa?stkn=MTczeDAzcjF1Z2FpdA==" target="_blank"
+            rel="noopener noreferrer" aria-label="Follow Whiskey Barrel on Instagram"
             class="footer-social-btn footer-social-instagram">
             <svg class="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -723,11 +780,12 @@
       </div>
       <div class="flex items-center gap-3">
         <i data-lucide="phone" class="h-4 w-4 text-ember shrink-0"></i>
-        <a href="tel:+19135550199" class="hover:text-ember transition-colors">+913-400-2339</a>
+        <a href="tel:+19134002339" class="hover:text-ember transition-colors">+913-400-2339</a>
       </div>
       <div class="flex items-center gap-3">
         <i data-lucide="mail" class="h-4 w-4 text-ember shrink-0"></i>
-        <a href="mailto:whiskeybarrel@parishva.in" class="hover:text-ember transition-colors">whiskeybarrel@parishva.in</a>
+        <a href="mailto:whiskeybarrel@parishva.in"
+          class="hover:text-ember transition-colors">whiskeybarrel@parishva.in</a>
       </div>
     </div>
   </nav>
@@ -781,5 +839,153 @@
       </div>
     </div>
   </aside>
+
+  <!-- ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== -->
+  <div class="age-gate-backdrop" id="ageGateModal" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate-card">
+      <div class="age-gate-accent-line"></div>
+
+      <!-- Brand Header -->
+      <div class="age-gate-header">
+        <div class="age-gate-logo-box">
+          <img src="assets/wb-icon.webp" alt="Whiskey Barrel Official Age Verification Brand Seal" class="age-gate-logo" width="72" height="72"
+            decoding="async">
+        </div>
+        <div class="age-gate-brand-name">WHISKEY BARREL</div>
+        <div class="age-gate-brand-tag">FINE SPIRITS &bull; WINE &bull; CRAFT BEER</div>
+      </div>
+
+      <!-- VIEW 1: Initial Question (Are you 21 or older?) -->
+      <div class="age-gate-view active" id="ageGateViewQuestion">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z" />
+          </svg>
+          <span>AGE VERIFICATION REQUIRED</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateTitle">Are you 21 or older?</h2>
+        <p class="age-gate-desc" id="ageGateDesc">
+          You must be of legal drinking age to view our spirits, fine wines, craft beers, and tobacco products.
+        </p>
+
+        <div class="age-gate-actions">
+          <button type="button" class="age-gate-btn btn-primary" id="btnAgeYes">
+            <span>YES, I AM 21+</span>
+            <span class="arrow">&rarr;</span>
+          </button>
+          <button type="button" class="age-gate-btn btn-outline" id="btnAgeNo">
+            <span>NO, I AM UNDER 21</span>
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="age-gate-lock-icon">
+            <path
+              d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z" />
+          </svg>
+          <span>By entering, you confirm you are of legal drinking age in your jurisdiction.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Date of Birth Input (Shown when user clicks "YES") -->
+      <div class="age-gate-view" id="ageGateViewDob">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z" />
+          </svg>
+          <span>CONFIRM YOUR DATE OF BIRTH</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateDobTitle">Enter Your Birth Date</h2>
+        <p class="age-gate-desc">
+          Please confirm your date of birth to verify that you are at least 21 years of age.
+        </p>
+
+        <form class="age-gate-dob-form" id="ageGateDobForm" novalidate>
+          <div class="age-gate-dob-grid">
+            <div class="age-gate-field">
+              <label for="ageGateMonth" class="age-gate-label">MONTH</label>
+              <input type="text" id="ageGateMonth" name="birthMonth" class="age-gate-input" placeholder="MM"
+                inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-month" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field">
+              <label for="ageGateDay" class="age-gate-label">DAY</label>
+              <input type="text" id="ageGateDay" name="birthDay" class="age-gate-input" placeholder="DD"
+                inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-day" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field year-field">
+              <label for="ageGateYear" class="age-gate-label">YEAR</label>
+              <input type="text" id="ageGateYear" name="birthYear" class="age-gate-input" placeholder="YYYY"
+                inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="bday-year" required>
+            </div>
+          </div>
+
+          <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+          <div class="age-gate-remember">
+            <label class="age-gate-checkbox-label">
+              <input type="checkbox" id="ageGateRemember" class="age-gate-checkbox" checked>
+              <span class="age-gate-custom-checkbox"></span>
+              <span class="age-gate-checkbox-text">Remember me on this device (30 days)</span>
+            </label>
+          </div>
+
+          <div class="age-gate-actions">
+            <button type="submit" class="age-gate-btn btn-primary" id="btnAgeVerifySubmit">
+              <span>VERIFY &amp; ENTER SITE</span>
+              <span class="arrow">&rarr;</span>
+            </button>
+            <button type="button" class="age-gate-back-link" id="btnAgeBackToQuestion">
+              &larr; Back to previous question
+            </button>
+          </div>
+        </form>
+
+        <div class="age-gate-footer-note">
+          <span>Your birth date is processed securely in your browser and is never shared or stored externally.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 3: Under 21 / Access Denied (Shown when user clicks "NO" or enters DOB < 21) -->
+      <div class="age-gate-view" id="ageGateViewDenied">
+        <div class="age-gate-icon-denied">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          </svg>
+        </div>
+        <h2 class="age-gate-title denied" id="ageGateDeniedTitle">Access Restricted</h2>
+        <div class="age-gate-denied-badge">21+ LEGAL REQUIREMENT</div>
+        <p class="age-gate-desc denied-text">
+          You must be 21 years of age or older to enter this website. In accordance with federal, state, and local
+          alcohol regulations, access to Whiskey Barrel is restricted.
+        </p>
+        <p class="age-gate-subtext">
+          If you arrived here in error or wish to exit, please click below:
+        </p>
+
+        <div class="age-gate-actions">
+          <a href="https://www.google.com" class="age-gate-btn btn-primary" id="btnAgeExit">
+            <span>EXIT WEBSITE</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <button type="button" class="age-gate-back-link" id="btnAgeDeniedBack">
+            &larr; I am 21 or older (return to verification)
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <span>Learn more about responsible drinking at <a href="https://www.responsibility.org" target="_blank"
+              rel="noopener noreferrer" class="gold-link">Responsibility.org</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
+
 </html>

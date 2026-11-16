@@ -19,11 +19,21 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Check 21+ Age Verification Status before render -->
+  <script>
+    try {
+      if (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true') {
+        document.documentElement.classList.add('wb-age-verified');
+      }
+    } catch (e) {}
+  </script>
+
   <!-- Ultra-Fast Local Lucide Icons & App Script -->
   <script src="assets/lucide.min.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body class="overflow-x-hidden bg-background text-foreground font-body">
+  <script>(function(){try{if(localStorage.getItem('wb_age_verified_v2')==='true'||sessionStorage.getItem('wb_age_verified_v2')==='true'){document.documentElement.classList.add('wb-age-verified');if(document.body)document.body.classList.remove('age-gate-locked');}}catch(e){}})();</script>
 
   <main class="min-h-screen flex flex-col justify-between overflow-x-hidden">
     <!-- Header/Navigation -->
@@ -31,7 +41,7 @@
       <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="index.html" class="group flex items-center gap-3">
           <span class="relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-ember/60 bg-background/90 overflow-hidden shadow-sm transition-transform duration-500 group-hover:scale-105 nav-logo-icon">
-            <img src="assets/wb-icon.webp" alt="WB Logo Icon" class="h-full w-full object-cover rounded-full" width="40" height="40" decoding="async">
+            <img src="assets/wb-icon.webp" alt="Whiskey Barrel Liquor & Spirits Logo Emblem" class="h-full w-full object-cover rounded-full" width="40" height="40" decoding="async">
           </span>
           <span class="font-display text-base sm:text-lg tracking-[0.25em] uppercase font-bold text-foreground">Whiskey Barrel</span>
         </a>
@@ -87,7 +97,7 @@
                   <div class="space-y-1">
                     <h3 class="font-bold text-sm text-[#ffffff] tracking-normal">Phone</h3>
                     <p class="text-xs sm:text-sm leading-relaxed text-[#eae3d9]/90 font-normal">
-                      <a href="tel:+19135550199" class="hover:text-ember transition-colors">+1 (913) 555-0199</a>
+                      <a href="tel:+19134002339" class="hover:text-ember transition-colors">+1 (913) 400-2339</a>
                     </p>
                   </div>
                 </div>
@@ -138,7 +148,7 @@
 
         <!-- Visit Background Image & Cinematic Lighting Overlay -->
         <div class="visit-banner-bg-wrapper">
-          <img src="assets/visit-house-storefront.webp" alt="Whiskey Barrel Flagship Storefront" class="visit-banner-bg" width="1920" height="800" fetchpriority="high" decoding="async">
+          <img src="assets/visit-house-storefront.webp" alt="Whiskey Barrel Flagship Storefront - Historic warm-lit boutique liquor shop exterior at twilight" class="visit-banner-bg" width="1920" height="800" fetchpriority="high" decoding="async">
           <div class="visit-banner-overlay"></div>
         </div>
 
@@ -239,7 +249,7 @@
         <div data-reveal="scale" data-delay="150" class="visit-map-card">
           <!-- Left Map Graphic -->
           <div class="visit-map-visual">
-            <img src="assets/visit-dark-map.webp" alt="Whiskey Barrel Map Location" class="visit-map-bg-img" width="800" height="500" loading="lazy" decoding="async">
+            <img src="assets/visit-dark-map.webp" alt="Interactive Store Map for Whiskey Barrel - 12205 Shawnee Mission Parkway, Shawnee, Kansas" class="visit-map-bg-img" width="800" height="500" loading="lazy" decoding="async">
             <div class="visit-map-overlay-pin">
               <svg class="visit-map-pin-svg" viewBox="0 0 24 24" fill="#d4a86a">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
@@ -368,6 +378,143 @@
       </div>
     </div>
   </aside>
+
+  <!-- ==================== MANDATORY 21+ AGE VERIFICATION MODAL ==================== -->
+  <div class="age-gate-backdrop" id="ageGateModal" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate-card">
+      <div class="age-gate-accent-line"></div>
+
+      <!-- Brand Header -->
+      <div class="age-gate-header">
+        <div class="age-gate-logo-box">
+          <img src="assets/wb-icon.webp" alt="Whiskey Barrel Official Age Verification Brand Seal" class="age-gate-logo" width="72" height="72" decoding="async">
+        </div>
+        <div class="age-gate-brand-name">WHISKEY BARREL</div>
+        <div class="age-gate-brand-tag">FINE SPIRITS &bull; WINE &bull; CRAFT BEER</div>
+      </div>
+
+      <!-- VIEW 1: Initial Question (Are you 21 or older?) -->
+      <div class="age-gate-view active" id="ageGateViewQuestion">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v2h-2v-2zm0-10h2v8h-2V7z"/>
+          </svg>
+          <span>AGE VERIFICATION REQUIRED</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateTitle">Are you 21 or older?</h2>
+        <p class="age-gate-desc" id="ageGateDesc">
+          You must be of legal drinking age to view our spirits, fine wines, craft beers, and tobacco products.
+        </p>
+
+        <div class="age-gate-actions">
+          <button type="button" class="age-gate-btn btn-primary" id="btnAgeYes">
+            <span>YES, I AM 21+</span>
+            <span class="arrow">&rarr;</span>
+          </button>
+          <button type="button" class="age-gate-btn btn-outline" id="btnAgeNo">
+            <span>NO, I AM UNDER 21</span>
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="age-gate-lock-icon">
+            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+          </svg>
+          <span>By entering, you confirm you are of legal drinking age in your jurisdiction.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 2: Date of Birth Input (Shown when user clicks "YES") -->
+      <div class="age-gate-view" id="ageGateViewDob">
+        <div class="age-gate-badge">
+          <svg class="age-gate-badge-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          <span>CONFIRM YOUR DATE OF BIRTH</span>
+        </div>
+        <h2 class="age-gate-title" id="ageGateDobTitle">Enter Your Birth Date</h2>
+        <p class="age-gate-desc">
+          Please confirm your date of birth to verify that you are at least 21 years of age.
+        </p>
+
+        <form class="age-gate-dob-form" id="ageGateDobForm" novalidate>
+          <div class="age-gate-dob-grid">
+            <div class="age-gate-field">
+              <label for="ageGateMonth" class="age-gate-label">MONTH</label>
+              <input type="text" id="ageGateMonth" name="birthMonth" class="age-gate-input" placeholder="MM" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-month" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field">
+              <label for="ageGateDay" class="age-gate-label">DAY</label>
+              <input type="text" id="ageGateDay" name="birthDay" class="age-gate-input" placeholder="DD" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-day" required>
+            </div>
+            <div class="age-gate-sep">/</div>
+            <div class="age-gate-field year-field">
+              <label for="ageGateYear" class="age-gate-label">YEAR</label>
+              <input type="text" id="ageGateYear" name="birthYear" class="age-gate-input" placeholder="YYYY" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="bday-year" required>
+            </div>
+          </div>
+
+          <div class="age-gate-error" id="ageGateError" role="alert" aria-live="polite"></div>
+
+          <div class="age-gate-remember">
+            <label class="age-gate-checkbox-label">
+              <input type="checkbox" id="ageGateRemember" class="age-gate-checkbox" checked>
+              <span class="age-gate-custom-checkbox"></span>
+              <span class="age-gate-checkbox-text">Remember me on this device (30 days)</span>
+            </label>
+          </div>
+
+          <div class="age-gate-actions">
+            <button type="submit" class="age-gate-btn btn-primary" id="btnAgeVerifySubmit">
+              <span>VERIFY &amp; ENTER SITE</span>
+              <span class="arrow">&rarr;</span>
+            </button>
+            <button type="button" class="age-gate-back-link" id="btnAgeBackToQuestion">
+              &larr; Back to previous question
+            </button>
+          </div>
+        </form>
+
+        <div class="age-gate-footer-note">
+          <span>Your birth date is processed securely in your browser and is never shared or stored externally.</span>
+        </div>
+      </div>
+
+      <!-- VIEW 3: Under 21 / Access Denied (Shown when user clicks "NO" or enters DOB < 21) -->
+      <div class="age-gate-view" id="ageGateViewDenied">
+        <div class="age-gate-icon-denied">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+          </svg>
+        </div>
+        <h2 class="age-gate-title denied" id="ageGateDeniedTitle">Access Restricted</h2>
+        <div class="age-gate-denied-badge">21+ LEGAL REQUIREMENT</div>
+        <p class="age-gate-desc denied-text">
+          You must be 21 years of age or older to enter this website. In accordance with federal, state, and local alcohol regulations, access to Whiskey Barrel is restricted.
+        </p>
+        <p class="age-gate-subtext">
+          If you arrived here in error or wish to exit, please click below:
+        </p>
+
+        <div class="age-gate-actions">
+          <a href="https://www.google.com" class="age-gate-btn btn-primary" id="btnAgeExit">
+            <span>EXIT WEBSITE</span>
+            <span class="arrow">&rarr;</span>
+          </a>
+          <button type="button" class="age-gate-back-link" id="btnAgeDeniedBack">
+            &larr; I am 21 or older (return to verification)
+          </button>
+        </div>
+
+        <div class="age-gate-footer-note">
+          <span>Learn more about responsible drinking at <a href="https://www.responsibility.org" target="_blank" rel="noopener noreferrer" class="gold-link">Responsibility.org</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
 

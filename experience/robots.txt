@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whiskeybarrel.store/sitemap.xml
+
