@@ -317,9 +317,10 @@
     </section>
 
     <!-- 2. About Whiskey -->
-    <section id="about" class="relative bg-[#faf9f7] text-[#1c1917] px-6 pt-16 pb-18 border-b border-border/20">
+    <section id="about" class="relative bg-[#faf9f7] text-[#1c1917] px-6 pt-16 pb-20 border-b border-border/20">
       <div id="story" class="absolute -top-24 opacity-0 pointer-events-none"></div>
-      <div class="mx-auto max-w-4xl text-center">
+      <div class="mx-auto max-w-4xl">
+        <!-- Header -->
         <div data-reveal="up" class="flex flex-col items-center justify-center text-center">
           <div class="flex items-center justify-center gap-4">
             <span class="h-px w-14 bg-border/40"></span>
@@ -335,21 +336,64 @@
           </h3>
         </div>
 
-        <div data-reveal="up" data-delay="100"
-          class="mt-8 space-y-6 text-base sm:text-lg leading-relaxed text-[#44403c] font-body">
-          <p>
-            Every established business has a story. Whiskey Barrel Liquor &amp; Smoke already had one when Our Founder acquired the store. He saw an opportunity not simply to own a retail business, but to shape its next chapter. With a decade of experience in hospitality, Our Founder brings a perspective grounded in management, service and the details that influence how people experience a business. His move into retail is part of a broader ambition: to build a portfolio of businesses with purpose, character and long-term value. For Whiskey Barrel, that ambition is focused on creating a premium retail destination in Shawnee, Kansas. The vision is to bring a more thoughtful approach to presentation, selection and service while respecting the local business that came before it. At the centre of this next chapter is a simple belief: heritage is not only something we inherit. It is something we build through the choices we make, the standards we set and the trust we earn over time. Whiskey Barrel is building on its past with a clear vision for the future—one shaped by hospitality, elevated by intention and committed to becoming a name customers remember.
+        <!-- 1. Lead Opening Statement -->
+        <div data-reveal="up" data-delay="100" class="mt-10 text-center max-w-3xl mx-auto">
+          <p class="text-lg sm:text-xl leading-relaxed text-[#292524] font-medium font-body">
+            Every established business has a story. Whiskey Barrel Liquor &amp; Smoke already had one when Our Founder acquired the store. He saw an opportunity not simply to own a retail business, but to shape its next chapter.
+          </p>
+        </div>
+
+        <!-- 2. Two-Column Narrative Cards (Hospitality Background & Shawnee Vision) -->
+        <div data-reveal="up" data-delay="150" class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <div class="rounded-xl border border-[#e7e5e4] bg-[#ffffff] p-6 sm:p-7 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:border-ember/40 transition-colors">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="h-1.5 w-1.5 rounded-full bg-ember"></span>
+              <span class="text-[0.7rem] uppercase tracking-[0.2em] font-bold text-ember">Hospitality &amp; Perspective</span>
+            </div>
+            <p class="text-sm sm:text-base leading-relaxed text-[#57534e] font-body">
+              With a decade of experience in hospitality, Our Founder brings a perspective grounded in management, service and the details that influence how people experience a business. His move into retail is part of a broader ambition: to build a portfolio of businesses with purpose, character and long-term value.
+            </p>
+          </div>
+
+          <div class="rounded-xl border border-[#e7e5e4] bg-[#ffffff] p-6 sm:p-7 shadow-[0_2px_12px_rgba(0,0,0,0.03)] hover:border-ember/40 transition-colors">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="h-1.5 w-1.5 rounded-full bg-ember"></span>
+              <span class="text-[0.7rem] uppercase tracking-[0.2em] font-bold text-ember">Destination &amp; Selection</span>
+            </div>
+            <p class="text-sm sm:text-base leading-relaxed text-[#57534e] font-body">
+              For Whiskey Barrel, that ambition is focused on creating a premium retail destination in Shawnee, Kansas. The vision is to bring a more thoughtful approach to presentation, selection and service while respecting the local business that came before it.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Core Philosophy Editorial Pull-Quote -->
+        <div data-reveal="up" data-delay="200" class="mt-8 relative overflow-hidden rounded-xl border-l-4 border-ember bg-[#f5f2eb] px-7 py-6 sm:px-9 sm:py-7 text-left shadow-sm">
+          <div class="flex items-start gap-4">
+            <span class="font-serif text-4xl leading-none text-ember select-none shrink-0 mt-1">“</span>
+            <div>
+              <p class="font-serif text-base sm:text-lg italic text-[#292524] leading-relaxed">
+                At the centre of this next chapter is a simple belief: heritage is not only something we inherit. It is something we build through the choices we make, the standards we set and the trust we earn over time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Looking Forward & Closing Statement -->
+        <div data-reveal="up" data-delay="250" class="mt-8 space-y-4 text-center max-w-3xl mx-auto">
+          <p class="text-base sm:text-lg leading-relaxed text-[#44403c] font-body">
+            Whiskey Barrel is building on its past with a clear vision for the future—one shaped by hospitality, elevated by intention and committed to becoming a name customers remember.
           </p>
 
-          <p>
+          <p class="text-sm sm:text-base leading-relaxed text-[#78716c] font-body pt-2 border-t border-[#e7e5e4]">
             Whiskey Barrel Liquor &amp; Smoke is entering a new chapter. Under the ownership of Our Founder, the store is evolving toward a more considered retail experience—bringing together a local foundation, a hospitality-led approach to service and a vision for lasting value.
           </p>
         </div>
 
-        <div data-reveal="up" data-delay="200" class="mt-8 flex items-center justify-center gap-4">
-          <span class="h-px w-20 bg-border/30"></span>
-          <span class="inline-block h-1.5 w-1.5 rounded-full bg-ember/60"></span>
-          <span class="h-px w-20 bg-border/30"></span>
+        <!-- Decorative Accent -->
+        <div data-reveal="up" data-delay="300" class="mt-10 flex items-center justify-center gap-4">
+          <span class="h-px w-20 bg-border/40"></span>
+          <span class="inline-block h-1.5 w-1.5 rounded-full bg-ember"></span>
+          <span class="h-px w-20 bg-border/40"></span>
         </div>
       </div>
     </section>
