@@ -2536,6 +2536,9 @@ const Wishlist = {
 };
 
 const Cart = Wishlist;
+window.Wishlist = Wishlist;
+window.Cart = Wishlist;
+window.toast = toast;
 
 
 
