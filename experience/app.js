@@ -929,7 +929,7 @@ function initCategoryFilter() {
           noticeElement.innerHTML = `
             <span class="notice-text notice-highlight">COMING SOON</span>
             <span class="notice-divider">|</span>
-            <span class="notice-text">CALL (913) 400-2339 TO INQUIRE ABOUT UPCOMING ARRIVALS</span>
+            <span class="notice-text">CALL +1(913)400-2339 TO INQUIRE ABOUT UPCOMING ARRIVALS</span>
           `;
         } else {
           noticeElement.innerHTML = `

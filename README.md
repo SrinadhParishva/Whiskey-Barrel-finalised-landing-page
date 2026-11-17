@@ -8,7 +8,7 @@
 ## 📍 Store Location & Contact
 
 - **Address**: 12205 Shawnee Mission Parkway, Shawnee, KS 66216
-- **Phone**: +1 (913) 400-2339
+- **Phone**: +1(913)400-2339
 - **Email**: WB@rkmgmt.net
 - **Website**: [whiskeybarrel.store](https://whiskeybarrel.store/)
 
