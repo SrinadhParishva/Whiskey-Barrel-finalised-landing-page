@@ -331,7 +331,7 @@ const PRODUCTS_DATA = {
   bacardi: {
     id: 'bacardi',
     cloverName: 'BACARDI RUM PUNCH 1.75L',
-    name: 'Bacardí Rum Punch Ready-to-Serve',
+    name: 'Bacardi Rum Punch Ready-to-Serve',
     price: '$15.99',
     alcoholType: 'Rum cocktail / flavored rum drink',
     mainIngredients: 'Rum, fruit flavorings; other ingredients vary',
@@ -341,7 +341,7 @@ const PRODUCTS_DATA = {
     category: 'rum',
     categoryLabel: 'Ready to Serve Cocktails',
     image: 'assets/rum_bacardi.webp',
-    description: 'Crafted with premium Bacardí Caribbean rum, real fruit juices, and natural flavors. A vibrant, refreshing island punch ready to pour over ice.',
+    description: 'Crafted with premium Bacardi Caribbean rum, real fruit juices, and natural flavors. A vibrant, refreshing island punch ready to pour over ice.',
     tastingNotes: 'Ripe pineapple, sweet orange zest, passion fruit, fresh cherry, and clean sugarcane rum.',
     inStock: true
   },
@@ -382,7 +382,7 @@ const PRODUCTS_DATA = {
   patron: {
     id: 'patron',
     cloverName: 'PATRON REPO 375ML',
-    name: 'Patrón Reposado Tequila',
+    name: 'Patron Reposado Tequila',
     price: '$27.99',
     alcoholType: 'Reposado tequila',
     mainIngredients: 'Blue Weber agave, water',
@@ -511,7 +511,7 @@ const PRODUCTS_DATA = {
     category: 'beer',
     categoryLabel: 'Mexican Cerveza Lager',
     image: 'assets/beer_corona.webp',
-    description: 'La Cerveza Más Fina. Brewed in Mexico with a golden hue, refreshing crisp flavor, and iconic pairing with a freshly squeezed wedge of lime.',
+    description: 'La Cerveza Mas Fina. Brewed in Mexico with a golden hue, refreshing crisp flavor, and iconic pairing with a freshly squeezed wedge of lime.',
     tastingNotes: 'Crisp malt sweetness, touch of honey, subtle floral hops, and a clean, refreshing, citrus-friendly finish.',
     inStock: true
   },

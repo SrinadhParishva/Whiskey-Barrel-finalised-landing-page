@@ -972,10 +972,10 @@ const BEER_PRODUCTS = [
       country: "🇲🇽 Mexico",
       composition: "🌾 Water, Barley Malt, Cereals & Hops",
       type: "🍺 Mexican Vienna-Style Lager",
-      badges: [{ label: "MÉXICO", score: "1865" }, { label: "ABV", score: "4.0%" }],
+      badges: [{ label: "MEXICO", score: "1865" }, { label: "ABV", score: "4.0%" }],
       description: "Mexico's oldest beer brand brewed since 1865. An ultra-refreshing Vienna-style amber lager with light-to-medium body, toasted malt sweetness, and a crisp, clean finish.",
       priceRange: { minVariantPrice: { amount: "16.99", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/beer-victoria-12pack.webp", altText: "Victoria Cerveza Hecha en México 12-Pack retail carton and chilled longneck bottle on reflective white background" } }] },
+      images: { edges: [{ node: { url: "assets/beer-victoria-12pack.webp", altText: "Victoria Cerveza Hecha en Mexico 12-Pack retail carton and chilled longneck bottle on reflective white background" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer13", title: "12-Pack (12 oz Bottles)", price: { amount: "16.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
@@ -1223,16 +1223,16 @@ const WINE_PRODUCTS = [
   {
     node: {
       id: "gid://shopify/Product/custom-wine-4",
-      title: "Sutter Home California Rosé",
+      title: "Sutter Home California Rose",
       handle: "sutter-home-rose",
       category: "WINE",
       country: "🇺🇸 United States",
-      composition: "🍇 Fresh California Rosé Blend",
-      type: "🌸 California Rosé Wine",
+      composition: "🍇 Fresh California Rose Blend",
+      type: "🌸 California Rose Wine",
       badges: [{ label: "REFRESH", score: "4.4" }, { label: "NAPA", score: "ESTD 1890" }],
-      description: "Delightfully refreshing California Rosé featuring delicate aromas of ripe red berries, sweet strawberries, and crisp melon with a clean, uplifting finish.",
+      description: "Delightfully refreshing California Rose featuring delicate aromas of ripe red berries, sweet strawberries, and crisp melon with a clean, uplifting finish.",
       priceRange: { minVariantPrice: { amount: "6.99", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/wine-sutter-home-rose.webp", altText: "Bottle of Sutter Home California Rosé with a glass of chilled blush pink wine" } }] },
+      images: { edges: [{ node: { url: "assets/wine-sutter-home-rose.webp", altText: "Bottle of Sutter Home California Rose with a glass of chilled blush pink wine" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/wine4", title: "750ml Bottle", price: { amount: "11.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
@@ -2007,7 +2007,7 @@ const TEQUILA_PRODUCTS = [
   {
     node: {
       id: "gid://shopify/Product/custom-tequila-3",
-      title: "Patrón Reposado Tequila",
+      title: "Patron Reposado Tequila",
       handle: "patron-reposado-tequila",
       category: "TEQUILA",
       country: "🇲🇽 Mexico",
@@ -2016,7 +2016,7 @@ const TEQUILA_PRODUCTS = [
       badges: [{ label: "RP", score: "95" }, { label: "HANDCRAFTED", score: "RESERVE" }],
       description: "Handcrafted from 100% Weber Blue Agave and aged in oak barrels for over two months. Smooth balance of fresh agave and oak wood with notes of citrus, honey, and light floral sweetness.",
       priceRange: { minVariantPrice: { amount: "27.99", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/tequila-patron-reposado.webp", altText: "Bottle of Patrón Reposado Tequila with a crystal rocks glass on ice" } }] },
+      images: { edges: [{ node: { url: "assets/tequila-patron-reposado.webp", altText: "Bottle of Patron Reposado Tequila with a crystal rocks glass on ice" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila3", title: "375ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
@@ -2722,16 +2722,16 @@ const NON_BEST_SELLER_HANDLES = new Set([
 function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, index = 0) {
   const catKey = (p.category || "WHISKEY").toUpperCase();
   const wineTitlesMap = {
-    "domaines-des-etoiles-pinot-noir": "Domaines des Étoiles Pinot Noir<br>2021",
+    "domaines-des-etoiles-pinot-noir": "Domaines des Etoiles Pinot Noir<br>2021",
     "chateau-margaux-cabernet-sauvignon": "Château Margaux Cabernet<br>Sauvignon 2016",
     "veuve-clicquot-la-grande-dame": "Veuve Clicquot La Grande Dame",
-    "chateau-miraval-rose": "Château Miraval Côtes Rosé",
+    "chateau-miraval-rose": "Château Miraval Côtes Rose",
     "domaine-de-la-mer-chardonnay": "Domaine de la Mer Chardonnay",
     "sun-drenched-marble-chardonnay": "Sun-Drenched Marble Chardonnay",
     "mahogany-table-cabernet-2018": "Mahogany Table Cabernet 2018",
     "textured-label-pinot-noir": "Textured Label Pinot Noir",
     "gold-foil-vintage-champagne-2012": "Gold Foil Vintage Champagne 2012",
-    "silver-bucket-provence-rose": "Silver Bucket Provence Rosé",
+    "silver-bucket-provence-rose": "Silver Bucket Provence Rose",
     "grand-cru-bordeaux-reserve-2015": "Grand Cru Bordeaux Reserve 2015",
     "tuscan-reserve-sangiovese-2019": "Tuscan Reserve Sangiovese 2019",
     "barossa-valley-shiraz-reserve": "Barossa Valley Shiraz Reserve",
@@ -2744,13 +2744,13 @@ function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, 
     "domaines-des-etoiles-pinot-noir": ["RED", "WINE", "UNITED STATES", "WILLAMETTE VALLEY"],
     "chateau-margaux-cabernet-sauvignon": ["RED WINE", "(GRAND VIN)", "FRANCE", "BORDEAUX"],
     "veuve-clicquot-la-grande-dame": ["SPARKLING", "CHAMPAGNE", "FRANCE", "CHAMPAGNE"],
-    "chateau-miraval-rose": ["ROSÉ WINE", "WINE", "FRANCE", "PROVENCE"],
+    "chateau-miraval-rose": ["ROSE WINE", "WINE", "FRANCE", "PROVENCE"],
     "domaine-de-la-mer-chardonnay": ["WHITE WINE", "RESERVE", "FRANCE", "MEDITERRANEAN"],
     "sun-drenched-marble-chardonnay": ["WHITE WINE", "NAPA VALLEY", "UNITED STATES", "CHARDONNAY"],
     "mahogany-table-cabernet-2018": ["RED WINE", "OAKVILLE", "UNITED STATES", "CABERNET"],
     "textured-label-pinot-noir": ["RED WINE", "BURGUNDY", "FRANCE", "PINOT NOIR"],
     "gold-foil-vintage-champagne-2012": ["PRESTIGE", "CHAMPAGNE", "FRANCE", "VINTAGE"],
-    "silver-bucket-provence-rose": ["ROSÉ WINE", "PRESTIGE", "FRANCE", "PROVENCE"],
+    "silver-bucket-provence-rose": ["ROSE WINE", "PRESTIGE", "FRANCE", "PROVENCE"],
     "grand-cru-bordeaux-reserve-2015": ["RED WINE", "BORDEAUX", "FRANCE", "GRAND CRU"],
     "tuscan-reserve-sangiovese-2019": ["RED WINE", "BRUNELLO", "ITALY", "SANGIOVESE"],
     "barossa-valley-shiraz-reserve": ["RED WINE", "BAROSSA VALLEY", "AUSTRALIA", "SHIRAZ"],
@@ -3086,7 +3086,7 @@ async function handleCategoryPage() {
     },
     WINE: {
       title: "Fine Wine Collection",
-      subtitle: "Experience vintage Cabernet Sauvignon, Pinot Noir, prestige Champagne, and chilled Provence Rosé.",
+      subtitle: "Experience vintage Cabernet Sauvignon, Pinot Noir, prestige Champagne, and chilled Provence Rose.",
       products: WINE_PRODUCTS
     },
     GIN: {
@@ -5029,7 +5029,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
   "sutter-home-rose": {
     badge: "WINE (VARIETAL UNSPECIFIED)",
     eyebrow: "WINE (VARIETAL UNSPECIFIED)",
-    title: "Sutter Home Rosé",
+    title: "Sutter Home Rose",
     subtitle: "SUTTER HOME 750ML",
     price: "$6.99",
     style: "Wine (varietal unspecified)",
@@ -5120,7 +5120,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
   "patron-reposado-tequila": {
     badge: "REPOSADO TEQUILA",
     eyebrow: "REPOSADO TEQUILA",
-    title: "Patrón Reposado Tequila",
+    title: "Patron Reposado Tequila",
     subtitle: "PATRON REPO 375ML",
     price: "$27.99",
     style: "Reposado tequila",
@@ -5300,7 +5300,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     description: "Authentic Dutch lager beer sourced from Netherlands; verify US-market package. Available in-store at Whiskey Barrel."
   },
   "victoria-cerveza-12pack": {
-    badge: "CERVEZA DE MÉXICO",
+    badge: "CERVEZA DE MEXICO",
     eyebrow: "MEXICAN VIENNA-STYLE LAGER",
     title: "Victoria Cerveza",
     subtitle: "VICTORIA CERVEZA 12PK BTL 12OZ",
