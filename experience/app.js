@@ -1380,6 +1380,10 @@ const AGE_GATE_EXPIRY_DAYS = 30;
 
 function isAgeVerified() {
   try {
+    const search = window.location.search || '';
+    if (search.includes('verify=') || search.includes('agegate=') || search.includes('test_age=')) {
+      return false;
+    }
     if (sessionStorage.getItem(AGE_GATE_STORAGE_KEY) === 'true') {
       return true;
     }
