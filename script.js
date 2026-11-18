@@ -1099,7 +1099,7 @@ const BEER_PRODUCTS = [
   }
 ];
 
-// Uploaded & Curated 4 Products for Vodka Category
+// Uploaded & Curated 8 Products for Vodka Category
 const VODKA_PRODUCTS = [
   {
     node: {
@@ -1216,6 +1216,23 @@ const VODKA_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/vodka-new-amsterdam.webp", altText: "Bottle of New Amsterdam Original 5x Distilled American Vodka with a crystal rocks glass on ice" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka7", title: "750ml Bottle", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-8",
+      title: "High Noon Vodka Soda Black Cherry",
+      handle: "high-noon-black-cherry-vodka-soda",
+      category: "VODKA",
+      country: "🇺🇸 United States",
+      composition: "🍒 Real Vodka, Real Fruit Juice & Sparkling Water",
+      type: "🍸 Vodka Soda with Real Fruit Juice",
+      badges: [{ label: "REAL JUICE", score: "VODKA SODA" }, { label: "ABV", score: "4.5%" }],
+      isBestSeller: false,
+      description: "Crafted with real vodka, sparkling water, and real fruit juice. Bursting with rich, juicy black cherry flavor at only 100 calories, gluten-free, with no added sugar.",
+      priceRange: { minVariantPrice: { amount: "3.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-high-noon-black-cherry.webp", altText: "Chilled can of High Noon Black Cherry Vodka Soda on a sunny beach rail with ocean backdrop" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka8", title: "355ml Can (12 oz)", price: { amount: "3.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -2750,6 +2767,7 @@ const NON_BEST_SELLER_HANDLES = new Set([
   "ciroc-snap-frost-vodka",
   "deep-eddy-vodka",
   "new-amsterdam-original-vodka",
+  "high-noon-black-cherry-vodka-soda",
   // Newly Uploaded Wines
   "josh-cellars-chardonnay",
   "bota-box-pinot-grigio-3l",
@@ -2766,7 +2784,10 @@ const NON_BEST_SELLER_HANDLES = new Set([
   "busch-light-30pack",
   "yuengling-traditional-lager-12pack",
   "modelo-negra-especial-12pack",
-  "coors-banquet-12pack"
+  "coors-banquet-12pack",
+  "smirnoff-ice-neon-lemonade-12pack",
+  "truly-hard-seltzer-citrus-12pack",
+  "mikes-harder-party-pack-12pack"
 ]);
 
 function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, index = 0) {
@@ -5614,6 +5635,19 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "40% ABV (80 Proof)",
     volume: "750 ml",
     description: "Distilled five times from selected American grains and filtered three times through charcoal for an silky smooth mouthfeel with delicate citrus and fruit notes."
+  },
+  "high-noon-black-cherry-vodka-soda": {
+    badge: "REAL VODKA & JUICE",
+    eyebrow: "VODKA SODA WITH REAL JUICE",
+    title: "High Noon Vodka Soda Black Cherry",
+    subtitle: "HIGH NOON BLACK CHERRY VODKA SODA 355ML CAN",
+    price: "$3.99",
+    style: "Vodka soda with real fruit juice",
+    ingredients: "Vodka, real fruit juice, sparkling water, natural flavors",
+    origin: "Modesto, California, USA",
+    abv: "4.5% ABV",
+    volume: "355 ml (12 oz Can)",
+    description: "Crafted with real vodka, sparkling water, and real fruit juice. Bursting with rich, juicy black cherry flavor at only 100 calories, gluten-free, with no added sugar."
   }
 ,
   "1800-tequila-blanco": {
