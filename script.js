@@ -765,8 +765,7 @@ const RUM_PRODUCTS = [
   }
 ];
 
-// Uploaded & Curated 11 Products for Beer Category
-// Uploaded & Curated 17 Products for Beer Category
+// Uploaded & Curated 20 Products for Beer Category
 const BEER_PRODUCTS = [
   {
     node: {
@@ -1045,6 +1044,57 @@ const BEER_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "15.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-coors-banquet-12pack.webp", altText: "Coors Banquet Golden Lager 12-Pack retail carton and heritage gold can on reflective white background" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer17", title: "12-Pack (12 oz Cans)", price: { amount: "15.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-beer-smirnoff-ice-neon",
+      title: "Smirnoff Ice Neon Lemonade Variety Pack",
+      handle: "smirnoff-ice-neon-lemonade-12pack",
+      isBestSeller: false,
+      category: "BEER",
+      country: "🇺🇸 United States",
+      composition: "🍋 Real Fruit Juice & Triple-Filtered Malt",
+      type: "🍺 Premium Flavored Malt Beverage",
+      badges: [{ label: "SMIRNOFF", score: "ICE" }, { label: "ABV", score: "4.5%" }],
+      description: "A vibrant variety pack of crisp Smirnoff Ice Neon Lemonades featuring 4 bold flavors: Original Lemonade, Strawberry Lemonade, Peach Lemonade, and Blue Raspberry Lemonade in a 12-can pack.",
+      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/beer-smirnoff-ice-neon-lemonade-12pack.webp", altText: "Smirnoff Ice Neon Lemonade 12-Pack variety carton and colorful chilled cans on reflective white background" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer18", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-beer-truly-citrus",
+      title: "Truly Hard Seltzer Citrus Variety Pack",
+      handle: "truly-hard-seltzer-citrus-12pack",
+      isBestSeller: false,
+      category: "BEER",
+      country: "🇺🇸 United States",
+      composition: "🍋 Sparkling Water, Real Fruit Juice & Cane Sugar",
+      type: "🍺 Spiked Sparkling Water Hard Seltzer",
+      badges: [{ label: "GLUTEN FREE", score: "100 CALS" }, { label: "ABV", score: "5.0%" }],
+      description: "Crisp, clean, and endlessly refreshing with 100 calories and only 1g sugar. Features four bright citrus flavors: Lime, Lemon, Grapefruit, and Citrus Squeeze in a 12-can pack.",
+      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/beer-truly-hard-seltzer-citrus-12pack.webp", altText: "Truly Hard Seltzer Citrus Variety 12-Pack retail carton and chilled citrus cans on reflective white background" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer19", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-beer-mikes-harder",
+      title: "Mike's Harder Party Variety Pack",
+      handle: "mikes-harder-party-pack-12pack",
+      isBestSeller: false,
+      category: "BEER",
+      country: "🇺🇸 United States",
+      composition: "🍋 Real Lemon Juice & Premium Malt Base",
+      type: "🍺 Hard Lemonade & Malt Beverage",
+      badges: [{ label: "HARDER", score: "PARTY" }, { label: "ABV", score: "8.0%" }],
+      description: "An intense, bold flavor punch at 8% ABV. Features 4 fan-favorite party flavors: Original Lemonade, Black Cherry, Cranberry, and Mango in a premium 12-can pack.",
+      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/beer-mikes-harder-party-pack-12pack.webp", altText: "Mike's Harder Party Variety 12-Pack retail carton and bold chilled cans on reflective white background" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer20", title: "12-Pack (12 oz Cans)", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -5368,6 +5418,45 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "5.0% ABV",
     volume: "12-Pack (12 oz Cans)",
     description: "The Original Coors brewed exclusively in Golden, Colorado with 100% Rocky Mountain water and high country Moravian barley since 1873. Full-flavored, bright, and refreshing."
+  },
+  "smirnoff-ice-neon-lemonade-12pack": {
+    badge: "PREMIUM MALT BEVERAGE",
+    eyebrow: "FLAVORED MALT BEVERAGE",
+    title: "Smirnoff Ice Neon Lemonade",
+    subtitle: "SMIRNOFF ICE NEON LEMONADE 12PK CAN 12OZ",
+    price: "$17.99",
+    style: "Flavored malt beverage",
+    ingredients: "Filtered water, alcohol from malt, natural flavors, real fruit juice",
+    origin: "USA",
+    abv: "4.5% ABV",
+    volume: "12-Pack (12 oz Cans)",
+    description: "A vibrant variety pack of crisp Smirnoff Ice Neon Lemonades featuring 4 bold flavors: Original Lemonade, Strawberry Lemonade, Peach Lemonade, and Blue Raspberry Lemonade in a 12-can pack."
+  },
+  "truly-hard-seltzer-citrus-12pack": {
+    badge: "HARD SELTZER",
+    eyebrow: "SPIKED SPARKLING WATER",
+    title: "Truly Hard Seltzer Citrus Variety",
+    subtitle: "TRULY CITRUS VARIETY 12PK CAN 12OZ",
+    price: "$17.99",
+    style: "Spiked sparkling water",
+    ingredients: "Filtered water, alcohol from cane sugar, natural flavors, cane sugar, citric acid, sodium citrate",
+    origin: "USA",
+    abv: "5.0% ABV",
+    volume: "12-Pack (12 oz Cans)",
+    description: "Crisp, clean, and endlessly refreshing with 100 calories and only 1g sugar. Features four bright citrus flavors: Lime, Lemon, Grapefruit, and Citrus Squeeze in a 12-can pack."
+  },
+  "mikes-harder-party-pack-12pack": {
+    badge: "HARD LEMONADE",
+    eyebrow: "PREMIUM FLAVORED MALT BEVERAGE",
+    title: "Mike's Harder Party Variety Pack",
+    subtitle: "MIKES HARDER PARTY VARIETY 12PK CAN 12OZ",
+    price: "$18.99",
+    style: "Flavored malt beverage",
+    ingredients: "Purified water, malt base, real lemon juice concentrate, natural flavors",
+    origin: "USA",
+    abv: "8.0% ABV",
+    volume: "12-Pack (12 oz Cans)",
+    description: "An intense, bold flavor punch at 8% ABV. Features 4 fan-favorite party flavors: Original Lemonade, Black Cherry, Cranberry, and Mango in a premium 12-can pack."
   },
   "josh-cellars-chardonnay": {
     badge: "CALIFORNIA CHARDONNAY",
