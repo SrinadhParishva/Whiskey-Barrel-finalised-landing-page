@@ -266,7 +266,7 @@
     try {
       var search = window.location.search;
       var isTest = search.indexOf('verify=') !== -1 || search.indexOf('agegate=') !== -1 || search.indexOf('test_age=') !== -1;
-      if (!isTest && (localStorage.getItem('wb_age_verified_v2') === 'true' || sessionStorage.getItem('wb_age_verified_v2') === 'true')) {
+      if (!isTest && (localStorage.getItem('wb_experience_age_verified') === 'true' || sessionStorage.getItem('wb_experience_age_verified') === 'true')) {
         document.documentElement.classList.add('wb-age-verified');
       }
     } catch (e) {}
@@ -274,7 +274,7 @@
 </head>
 
 <body>
-  <script>(function(){try{var search=window.location.search;var isTest=search.indexOf('verify=')!==-1||search.indexOf('agegate=')!==-1||search.indexOf('test_age=')!==-1;if(!isTest&&(localStorage.getItem('wb_age_verified_v2')==='true'||sessionStorage.getItem('wb_age_verified_v2')==='true')){document.documentElement.classList.add('wb-age-verified');if(document.body)document.body.classList.remove('age-gate-locked');}}catch(e){}})();</script>
+  <script>(function(){try{var search=window.location.search;var isTest=search.indexOf('verify=')!==-1||search.indexOf('agegate=')!==-1||search.indexOf('test_age=')!==-1;if(!isTest&&(localStorage.getItem('wb_experience_age_verified')==='true'||sessionStorage.getItem('wb_experience_age_verified')==='true')){document.documentElement.classList.add('wb-age-verified');if(document.body)document.body.classList.remove('age-gate-locked');}}catch(e){}})();</script>
 
   <!-- ==================== HERO SECTION ==================== -->
   <header class="hero-section" id="hero">

@@ -4322,9 +4322,10 @@ function initSmoothAnchorNavigation() {
 /**
  * Mandatory 21+ Age Verification Gate
  */
-const AGE_GATE_STORAGE_KEY = 'wb_age_verified_v2';
-const AGE_GATE_DATE_KEY = 'wb_age_verified_date_v2';
-const AGE_GATE_DENIED_KEY = 'wb_age_denied';
+const IS_EXPERIENCE_PAGE = typeof window !== 'undefined' && window.location.pathname.includes('experience');
+const AGE_GATE_STORAGE_KEY = IS_EXPERIENCE_PAGE ? 'wb_experience_age_verified' : 'wb_age_verified_v2';
+const AGE_GATE_DATE_KEY = IS_EXPERIENCE_PAGE ? 'wb_experience_age_date' : 'wb_age_verified_date_v2';
+const AGE_GATE_DENIED_KEY = IS_EXPERIENCE_PAGE ? 'wb_experience_age_denied' : 'wb_age_denied';
 const AGE_GATE_EXPIRY_DAYS = 30;
 
 function isAgeVerified() {

@@ -1373,9 +1373,9 @@ function initFaqAccordion() {
 /**
  * Mandatory 21+ Age Verification Gate
  */
-const AGE_GATE_STORAGE_KEY = 'wb_age_verified_v2';
-const AGE_GATE_DATE_KEY = 'wb_age_verified_date_v2';
-const AGE_GATE_DENIED_KEY = 'wb_age_denied';
+const AGE_GATE_STORAGE_KEY = 'wb_experience_age_verified';
+const AGE_GATE_DATE_KEY = 'wb_experience_age_date';
+const AGE_GATE_DENIED_KEY = 'wb_experience_age_denied';
 const AGE_GATE_EXPIRY_DAYS = 30;
 
 function isAgeVerified() {
