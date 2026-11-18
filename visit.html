@@ -18,17 +18,17 @@
   <link rel="icon" href="favicon.ico?v=9" type="image/x-icon">
   <link rel="icon" type="image/png" href="favicon.png?v=9">
 
-  <!-- Google Fonts: Domine (Serif Headings) & Hanken Grotesk (Sans-Serif Body & UI) - Non-Blocking High-Speed Load -->
+  <!-- Google Fonts: Cormorant Garamond, Montserrat, Inter, Domine & Hanken Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Domine:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=Montserrat:wght@500;700&display=swap"></noscript>
 
   <!-- Preload Critical Showcase Image -->
-  <link rel="preload" as="image" href="assets/visit-house-storefront.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/visit-house-storefront.webp?v=14" fetchpriority="high">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=14">
 
   <!-- Check 21+ Age Verification Status before render -->
   <script>
@@ -153,13 +153,10 @@
     <!-- 5. Visit Our Store ("COME TO THE HOUSE") -->
     <section id="visit" class="visit-section pt-16">
       <!-- Top Flagship Storefront Showcase Banner -->
-      <div class="visit-showcase-banner">
-        <!-- Visit Dynamic Ambient Torchlight Overlay -->
-        <div class="visit-torch-glow"></div>
-
-        <!-- Visit Background Image & Cinematic Lighting Overlay -->
+      <div class="visit-showcase-banner" id="visitShowcaseBanner">
+        <!-- Clean Storefront Background Image & Cinematic Lighting Overlay -->
         <div class="visit-banner-bg-wrapper">
-          <img src="assets/visit-house-storefront.webp" alt="Whiskey Barrel Flagship Storefront - Historic warm-lit boutique liquor shop exterior at twilight" class="visit-banner-bg" width="1920" height="800" fetchpriority="high" decoding="async">
+          <img src="assets/visit-house-storefront.webp?v=14" alt="Whiskey Barrel - Wine, Spirits & Smokes - Storefront exterior at 12206 W. 63rd Street illuminated at twilight" class="visit-banner-bg" width="2560" height="1115" fetchpriority="high" decoding="async">
           <div class="visit-banner-overlay"></div>
         </div>
 
@@ -167,13 +164,14 @@
           <div class="visit-banner-content">
             <div class="visit-eyebrow-wrap">
               <span class="visit-eyebrow">VISIT THE HOUSE</span>
+              <span class="visit-eyebrow-line" aria-hidden="true"></span>
             </div>
             <h1 class="visit-main-title">
               <span class="visit-title-line-wrap"><span class="visit-title-ivory visit-line-1 block">COME TO</span></span>
               <span class="visit-title-line-wrap"><span class="visit-title-gold visit-line-2 block">THE HOUSE.</span></span>
             </h1>
             <p class="visit-banner-sub">
-              More than a store. A place to discover your next favorite bottle.
+              More than a store. A place to discover<br class="hidden sm:inline"> your next favorite bottle.
             </p>
             <div class="visit-actions-row">
               <a href="https://maps.google.com/?q=12205+Shawnee+Mission+PKWY+Shawnee+KS+66216" target="_blank" rel="noopener noreferrer" class="visit-btn-primary">
