@@ -174,7 +174,7 @@ async function storefrontApiRequest(query, variables = {}) {
   }
 }
 
-// Uploaded & Curated 15 Products for Whiskey Category
+// Uploaded & Curated 33 Products for Whiskey Category
 const WHISKEY_PRODUCTS = [
   {
     node: {
@@ -706,6 +706,23 @@ const WHISKEY_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "37.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-chivas-regal-12.webp", altText: "Chivas Regal 12 Year Old Blended Scotch Whisky bottle in silver presentation box with a rocks glass on ice" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey32", title: "750ml Bottle", price: { amount: "37.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-33",
+      title: "Hennessy Very Special (V.S) Cognac",
+      handle: "hennessy-vs-cognac",
+      category: "WHISKEY",
+      country: "🇫🇷 France",
+      composition: "🍇 Ugni Blanc Grapes & French Limousin Oak",
+      type: "🥃 French V.S Cognac",
+      badges: [{ label: "COGNAC", score: "1765" }, { label: "AGED", score: "V.S" }],
+      isBestSeller: false,
+      description: "The world's most popular Cognac, crafted in Cognac, France since 1765. Masterfully blended from up to 40 eaux-de-vie matured in French Limousin oak barrels, offering rich aromas of toasted oak, roasted almond, and fresh grapes with a vibrant, warming finish.",
+      priceRange: { minVariantPrice: { amount: "44.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-hennessy-vs-cognac.webp", altText: "Bottle of Hennessy V.S Cognac on dark marble bar with Paris Eiffel Tower evening view" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey33", title: "750ml Bottle", price: { amount: "44.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -2741,6 +2758,7 @@ const NON_BEST_SELLER_HANDLES = new Set([
   // Newly Uploaded Rum
   "captain-morgan-original-spiced",
   // Newly Uploaded Whiskeys
+  "hennessy-vs-cognac",
   "bushmills-original-irish-whiskey",
   "chivas-regal-12-year-scotch",
   "basil-hayden-bourbon",
@@ -5924,6 +5942,19 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "40% ABV (80 Proof)",
     volume: "750 ml",
     description: "An iconic blend of Strathisla single malts and smooth grain whiskies, each aged for a minimum of 12 years. Radiant, warm amber color with wild herbs, heather, honey, and orchard fruits."
+  },
+  "hennessy-vs-cognac": {
+    badge: "MAISON FONDÉE EN 1765",
+    eyebrow: "VERY SPECIAL FRENCH COGNAC",
+    title: "Hennessy V.S Cognac",
+    subtitle: "HENNESSY VS COGNAC 750ML",
+    price: "$44.99",
+    style: "French V.S Cognac",
+    ingredients: "French grapes (Ugni Blanc), aged wine eau-de-vie, water",
+    origin: "Cognac, Charente, France",
+    abv: "40% ABV (80 Proof)",
+    volume: "750 ml",
+    description: "The world's most popular Cognac, crafted in Cognac, France since 1765. Masterfully blended from up to 40 eaux-de-vie matured in French Limousin oak barrels, offering rich aromas of toasted oak, roasted almond, and fresh grapes with a vibrant, warming finish."
   }
 ,
   "captain-morgan-original-spiced": {
