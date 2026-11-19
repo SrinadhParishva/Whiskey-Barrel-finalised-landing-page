@@ -430,9 +430,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "SMALL BATCH", score: "KENTUCKY" }],
       isBestSeller: false,
       description: "Artfully aged in Kentucky with a trademark high-rye mashbill. Golden amber hue with aromas of spice, tea, and hints of peppermint, followed by gentle rye warmth and clean vanilla on the finish.",
-      priceRange: { minVariantPrice: { amount: "42.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "41.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-basil-hayden.webp", altText: "Basil Hayden Kentucky Straight Bourbon Whiskey bottle in presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey16", title: "750ml Bottle", price: { amount: "42.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey16", title: "750ml Bottle", price: { amount: "41.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -447,9 +447,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "US*1", score: "SMALL BATCH" }],
       isBestSeller: false,
       description: "Truly small batch Kentucky straight bourbon crafted in batches of no more than twenty barrels. Rich notes of dried fruit, candied pecans, rich vanilla, and warm baking spices.",
-      priceRange: { minVariantPrice: { amount: "47.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "45.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-michters-us1.webp", altText: "Michter's US*1 Small Batch Bourbon Whiskey bottle with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey17", title: "750ml Bottle", price: { amount: "47.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey17", title: "750ml Bottle", price: { amount: "45.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -464,9 +464,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "ESTD 1783", score: "KENTUCKY" }],
       isBestSeller: false,
       description: "Named after Kentucky's first commercial distiller who began distilling along the Ohio River in 1783. Aged far longer than required by law, delivering deep vanilla, mint, and toasted oak.",
-      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "15.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-evan-williams.webp", altText: "Evan Williams Kentucky Straight Bourbon Whiskey bottle in presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey18", title: "750ml Bottle", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey18", title: "750ml Bottle", price: { amount: "15.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -481,9 +481,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "PORT WINE", score: "FINISHED" }],
       isBestSeller: false,
       description: "Crafted in Louisville, Kentucky and finished in hand-selected ruby port wine casks for 3 to 6 months. Exceptional complexity with golden syrup, raisins, rich maple, and subtle dark chocolate.",
-      priceRange: { minVariantPrice: { amount: "54.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-angels-envy.webp", altText: "Angel's Envy Kentucky Straight Bourbon Whiskey Finished in Port Wine Barrels bottle with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey19", title: "750ml Bottle", price: { amount: "54.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey19", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -498,9 +498,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "92 PROOF", score: "WHEATED" }],
       isBestSeller: false,
       description: "Using wheat instead of rye as the secondary grain, Larceny delivers a velvety soft mouthfeel and luscious sweetness with notes of fresh baked bread, butterscotch, and honeyed oak.",
-      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-larceny-small-batch.webp", altText: "Larceny Small Batch Wheated Bourbon 92 Proof bottle with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey20", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey20", title: "750ml Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -515,9 +515,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "REGAL GALA", score: "APPLE" }],
       isBestSeller: false,
       description: "Masterfully blended Crown Royal Canadian whisky infused with crisp Regal Gala apples. A lively harmony of tart, crisp apple sweetness balanced with spicy notes of rich Canadian whisky.",
-      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-crown-royal-apple.webp", altText: "Crown Royal Regal Apple Flavored Whisky bottle in presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey21", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey21", title: "750ml Bottle", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -532,9 +532,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "FINE DE LUXE", score: "CANADA" }],
       isBestSeller: false,
       description: "The timeless standard of Canadian whisky excellence, originally created to celebrate King George VI's visit in 1939. Blend of 50 full-bodied whiskies aged to absolute perfection.",
-      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-crown-royal-deluxe.webp", altText: "Crown Royal Fine De Luxe Blended Canadian Whisky bottle in purple presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey22", title: "750ml Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey22", title: "750ml Bottle", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -583,9 +583,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "DOUBLE", score: "MELLOWED" }],
       isBestSeller: false,
       description: "Inspired by our founder, Gentleman Jack undergoes a second charcoal mellowing after aging to achieve unprecedented smoothness. Warm caramel, sweet vanilla, and delicate apple oak.",
-      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-gentleman-jack.webp", altText: "Gentleman Jack Double Mellowed Tennessee Whiskey bottle in black presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey25", title: "750ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey25", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -600,9 +600,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "100 PROOF", score: "ESTD 1870" }],
       isBestSeller: false,
       description: "Handcrafted using the time-honored recipe formulated in 1870. Bottled at 100 proof to maintain its full flavor profile: roasted coffee, ripe cherry, rich tobacco leaf, and charred oak.",
-      priceRange: { minVariantPrice: { amount: "27.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "22.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-old-forester-100.webp", altText: "Old Forester 100 Proof Kentucky Straight Bourbon Whisky bottle in black presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey26", title: "750ml Bottle", price: { amount: "27.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey26", title: "750ml Bottle", price: { amount: "22.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -617,9 +617,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "AGED 9 YRS", score: "100 PROOF" }],
       isBestSeller: false,
       description: "Patiently aged for a full 9 years in deeply charred American oak barrels and bottled at an honest 100 proof. Deep copper color with rich copper, maple sugar, toasted nuts, and long warm oak finish.",
-      priceRange: { minVariantPrice: { amount: "36.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "39.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-knob-creek-9yr.webp", altText: "Knob Creek 9 Year Small Batch Bourbon 100 Proof bottle in wood-grain presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey27", title: "750ml Bottle", price: { amount: "36.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey27", title: "750ml Bottle", price: { amount: "39.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -634,9 +634,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "BONDED", score: "100 PROOF" }],
       isBestSeller: false,
       description: "Produced in the traditional Pennsylvania rye style, Bottled-in-Bond at 100 proof under strict U.S. government supervision. Exceptional spicy rye character, cocoa, citrus peel, and cinnamon oak.",
-      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-rittenhouse-rye.webp", altText: "Rittenhouse Straight Rye Whisky Bottled-in-Bond 100 Proof bottle with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey28", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey28", title: "750ml Bottle", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -651,9 +651,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "AGED 14 YRS", score: "SPEYSIDE" }],
       isBestSeller: false,
       description: "Matured for 14 years in ex-bourbon American oak casks, then finished in deep-charred new American oak barrels crafted by the Kelvin Cooperage in Louisville, Kentucky. Ripe summer fruits, creamy toffee, and toasted oak.",
-      priceRange: { minVariantPrice: { amount: "59.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "62.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-glenfiddich-14.webp", altText: "Glenfiddich 14 Year Old Bourbon Barrel Reserve Speyside Single Malt Scotch bottle in blue cylinder tin with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey29", title: "750ml Bottle", price: { amount: "59.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey29", title: "750ml Bottle", price: { amount: "62.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -668,9 +668,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "BATCH 27", score: "MALT SCOTCH" }],
       isBestSeller: false,
       description: "A free-spirited, rich and smooth blended malt crafted from small batches of three of Speyside's finest single malt whiskies, married together in first-fill ex-bourbon casks. Zesty orange, vanilla, honey, and spiced oak.",
-      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "31.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-monkey-shoulder.webp", altText: "Monkey Shoulder The Original Blended Malt Scotch Whisky bottle with three brass monkeys emblem and a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey30", title: "750ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey30", title: "750ml Bottle", price: { amount: "31.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ,
@@ -686,9 +686,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "SINCE 1608", score: "TRIPLE DISTILLED" }],
       isBestSeller: false,
       description: "Crafted at Ireland's oldest licensed distillery (granted 1608). Combining triple-distilled single malt whiskey with a lighter grain whiskey, aged in American oak bourbon casks. Crisp and light with rich warming fruit, vanilla, and honey.",
-      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-bushmills-original.webp", altText: "Bushmills The Original Irish Whiskey bottle with embossed 1608 logo and a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey31", title: "750ml Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey31", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -703,9 +703,9 @@ const WHISKEY_PRODUCTS = [
       badges: [{ label: "AGED 12 YRS", score: "SPEYSIDE" }],
       isBestSeller: false,
       description: "An iconic blend of Strathisla single malts and smooth grain whiskies, each aged for a minimum of 12 years. Radiant, warm amber color with wild herbs, heather, honey, and orchard fruits.",
-      priceRange: { minVariantPrice: { amount: "37.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "39.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-chivas-regal-12.webp", altText: "Chivas Regal 12 Year Old Blended Scotch Whisky bottle in silver presentation box with a rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey32", title: "750ml Bottle", price: { amount: "37.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey32", title: "1L Bottle", price: { amount: "39.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -825,11 +825,11 @@ const BEER_PRODUCTS = [
       country: "🇺🇸 United States",
       composition: "🌾 Barley Malt, Rice & Hops",
       type: "🍺 American Light Lager",
-      badges: [{ label: "REFRESH", score: "4.3" }, { label: "LIGHT", score: "LAGER" }],
-      description: "Always brewed using the choicest hops, best barley malt, and premium rice. Refreshingly easy drinking with an ultra-clean, crisp finish in a 16 FL. OZ. bottle/can.",
-      priceRange: { minVariantPrice: { amount: "24.49", currencyCode: "USD" } },
+      badges: [{ label: "ABV", score: "4.2%" }, { label: "LIGHT", score: "LAGER" }],
+      description: "Always brewed using the choicest hops, best barley malt, and premium rice. Refreshingly easy drinking with an ultra-clean, crisp finish in a 12-pack of 12 fl oz cans.",
+      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-bud-light-12pack.webp", altText: "Bud Light 12-Pack retail carton and condensation-beaded blue can on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer3", title: "16oz Bottle/Can", price: { amount: "11.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer3", title: "12-Pack (12 oz Cans)", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -973,9 +973,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Dutch Pure Malt Lager",
       badges: [{ label: "IMPORT", score: "5.0%" }, { label: "1873", score: "AMSTERDAM" }],
       description: "Brewed since 1873 with 100% pure malt, water, and unique A-Yeast. Rich, balanced taste with subtle fruity notes in an 18-can pack.",
-      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-heineken-lager-12pack.webp", altText: "Heineken Original Pure Malt Lager 12-Pack retail carton and chilled green can on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer12", title: "18-Pack (12 oz Cans)", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer12", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -990,9 +990,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Mexican Vienna-Style Lager",
       badges: [{ label: "MEXICO", score: "1865" }, { label: "ABV", score: "4.0%" }],
       description: "Mexico's oldest beer brand brewed since 1865. An ultra-refreshing Vienna-style amber lager with light-to-medium body, toasted malt sweetness, and a crisp, clean finish.",
-      priceRange: { minVariantPrice: { amount: "16.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-victoria-12pack.webp", altText: "Victoria Cerveza Hecha en Mexico 12-Pack retail carton and chilled longneck bottle on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer13", title: "12-Pack (12 oz Bottles)", price: { amount: "16.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer13", title: "12-Pack (12 oz Bottles)", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1007,9 +1007,9 @@ const BEER_PRODUCTS = [
       type: "🍺 American Light Lager",
       badges: [{ label: "USA", score: "COLD" }, { label: "ABV", score: "4.1%" }],
       description: "Brewed with the finest ingredients and cold-filtered for an exceptionally clean, crisp, and refreshing taste with easy drinkability in a 30-can pack.",
-      priceRange: { minVariantPrice: { amount: "22.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-busch-light-30pack.webp", altText: "Busch Light Cold-Filtered 30-Pack carton and chilled blue mountain can on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer14", title: "30-Pack (12 oz Cans)", price: { amount: "22.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer14", title: "30-Pack (12 oz Cans)", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1024,9 +1024,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Traditional Amber Lager",
       badges: [{ label: "ESTD", score: "1829" }, { label: "ABV", score: "4.5%" }],
       description: "Crafted by America's Oldest Brewery since 1829. Famous for its rich amber color, medium body, subtle roasted caramel malt sweetness, and cluster and cascade hops.",
-      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "15.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-yuengling-lager-12pack.webp", altText: "Yuengling Traditional Lager 12-Pack retail carton and chilled amber can on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer15", title: "12-Pack (12 oz Cans)", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer15", title: "12-Pack (12 oz Cans)", price: { amount: "15.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1041,9 +1041,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Munich Dunkel Dark Lager",
       badges: [{ label: "ESPECIAL", score: "DARK" }, { label: "ABV", score: "5.4%" }],
       description: "Brewed longer to enhance flavors of slow-roasted caramel malts, dark chocolate accents, and gentle sweetness balanced with a delightfully smooth, crisp pour.",
-      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-modelo-negra-12pack.webp", altText: "Modelo Negra Especial Dunkel Lager 12-Pack retail carton and chilled dark bottle on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer16", title: "12-Pack (12 oz Cans)", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer16", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1075,9 +1075,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Premium Flavored Malt Beverage",
       badges: [{ label: "SMIRNOFF", score: "ICE" }, { label: "ABV", score: "4.5%" }],
       description: "A vibrant variety pack of crisp Smirnoff Ice Neon Lemonades featuring 4 bold flavors: Original Lemonade, Strawberry Lemonade, Peach Lemonade, and Blue Raspberry Lemonade in a 12-can pack.",
-      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "16.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-smirnoff-ice-neon-lemonade-12pack.webp", altText: "Smirnoff Ice Neon Lemonade 12-Pack variety carton and colorful chilled cans on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer18", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer18", title: "12-Pack (12 oz Cans)", price: { amount: "16.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1092,9 +1092,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Spiked Sparkling Water Hard Seltzer",
       badges: [{ label: "GLUTEN FREE", score: "100 CALS" }, { label: "ABV", score: "5.0%" }],
       description: "Crisp, clean, and endlessly refreshing with 100 calories and only 1g sugar. Features four bright citrus flavors: Lime, Lemon, Grapefruit, and Citrus Squeeze in a 12-can pack.",
-      priceRange: { minVariantPrice: { amount: "17.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "15.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-truly-hard-seltzer-citrus-12pack.webp", altText: "Truly Hard Seltzer Citrus Variety 12-Pack retail carton and chilled citrus cans on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer19", title: "12-Pack (12 oz Cans)", price: { amount: "17.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer19", title: "12-Pack (12 oz Cans)", price: { amount: "15.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1109,9 +1109,9 @@ const BEER_PRODUCTS = [
       type: "🍺 Hard Lemonade & Malt Beverage",
       badges: [{ label: "HARDER", score: "PARTY" }, { label: "ABV", score: "8.0%" }],
       description: "An intense, bold flavor punch at 8% ABV. Features 4 fan-favorite party flavors: Original Lemonade, Black Cherry, Cranberry, and Mango in a premium 12-can pack.",
-      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "18.49", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/beer-mikes-harder-party-pack-12pack.webp", altText: "Mike's Harder Party Variety 12-Pack retail carton and bold chilled cans on reflective white background" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer20", title: "12-Pack (12 oz Cans)", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/beer20", title: "12-Pack (12 oz Cans)", price: { amount: "18.49", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -1196,9 +1196,9 @@ const VODKA_PRODUCTS = [
       badges: [{ label: "FRANCE", score: "5X DISTILLED" }],
       isBestSeller: false,
       description: "Distilled exclusively from fine French Ugni Blanc and Mauzac Blanc grapes. Five times distilled in historic copper pot stills for exceptional clarity, fresh citrus brightness, and a silky smooth finish.",
-      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "37.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/vodka-ciroc-snap-frost.webp", altText: "Bottle of Cîroc Snap Frost French Grape Vodka with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka5", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka5", title: "750ml Bottle", price: { amount: "37.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1230,9 +1230,9 @@ const VODKA_PRODUCTS = [
       badges: [{ label: "SMOOTH", score: "5X DISTILLED" }],
       isBestSeller: false,
       description: "Distilled five times from finest American grains and filtered three times through charcoal for an silky smooth mouthfeel with delicate citrus and fruit notes.",
-      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "13.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/vodka-new-amsterdam.webp", altText: "Bottle of New Amsterdam Original 5x Distilled American Vodka with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka7", title: "750ml Bottle", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka7", title: "750ml Bottle", price: { amount: "13.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -1398,10 +1398,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "CALIFORNIA", score: "CHARDONNAY" }],
       description: "Crafted from premium California vineyards, bursting with aromas of bright citrus and honey, balanced by gentle oak and lush vanilla on the palate.",
       priceRange: {
-        minVariantPrice: {
-          amount: "14.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "14.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1418,11 +1415,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-josh-chard-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "14.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "14.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1443,10 +1436,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "ECO-BOX", score: "3 LITERS" }],
       description: "Light and crisp with lively aromas of white peach, nectarine, and floral citrus. Eco-friendly premium box packaging keeps wine fresh for up to 30 days after opening.",
       priceRange: {
-        minVariantPrice: {
-          amount: "17.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "17.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1463,11 +1453,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-bota-pg-1",
-              title: "3 Liters (Box)",
-              price: {
-                amount: "17.99",
-                currencyCode: "USD"
-              },
+              title: "3 Liters (Box)", price: { amount: "17.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1488,10 +1474,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "ITALY", score: "PROSECCO" }],
       description: "A delicate and luminous Italian sparkling wine with aromas of fresh citrus, honey, and white flowers. Crisp, clean, and effervescent with a refreshing finish.",
       priceRange: {
-        minVariantPrice: {
-          amount: "16.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "17.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1508,11 +1491,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-la-marca-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "16.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "17.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1533,10 +1512,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "DUCKHORN", score: "CALIFORNIA" }],
       description: "Crafted by the renowned Duckhorn winemaking team. A rich, alluring blend offering luscious blackberry, plum, and cocoa notes supported by silky tannins.",
       priceRange: {
-        minVariantPrice: {
-          amount: "21.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "20.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1553,11 +1529,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-decoy-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "21.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "20.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1578,10 +1550,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "CALIFORNIA", score: "CRISP" }],
       description: "Light-bodied, crisp, and delightfully fresh with vibrant notes of green apples, tart citrus, and juicy white peaches. Pairs seamlessly with light poultry and seafood.",
       priceRange: {
-        minVariantPrice: {
-          amount: "7.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "7.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1598,11 +1567,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-barefoot-pg-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "7.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "7.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1623,10 +1588,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "SWEET", score: "MOSCATO" }],
       description: "Vibrantly sweet and delightfully floral with luscious notes of white peach, honeysuckle, and nectarine balanced by soft effervescence on the finish.",
       priceRange: {
-        minVariantPrice: {
-          amount: "10.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "10.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1643,11 +1605,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-cupcake-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "10.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "10.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1668,10 +1626,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "CALIFORNIA", score: "RED BLEND" }],
       description: "A captivating master blend of Zinfandel, Syrah, Cabernet Sauvignon, and Merlot. Deep ruby color with intense flavors of black cherry, vanilla, and mocha spice.",
       priceRange: {
-        minVariantPrice: {
-          amount: "11.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "10.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1688,11 +1643,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-apothic-red-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "11.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "10.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1713,10 +1664,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "SONOMA", score: "CHARDONNAY" }],
       description: "Cool-climate Sonoma Coast Chardonnay displaying Meyer lemon, yellow apple, and toasted brioche notes with rich minerality and a balanced, lingering finish.",
       priceRange: {
-        minVariantPrice: {
-          amount: "19.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "19.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1733,11 +1681,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-la-crema-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "19.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "19.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -1758,10 +1702,7 @@ const WINE_PRODUCTS = [
       badges: [{ label: "NEW ZEALAND", score: "MARLBOROUGH" }],
       description: "World-famous Marlborough Sauvignon Blanc overflowing with aromas of passionfruit, fresh pink grapefruit, crushed herbs, and bright zesty acidity.",
       priceRange: {
-        minVariantPrice: {
-          amount: "15.99",
-          currencyCode: "USD"
-        }
+        minVariantPrice: { amount: "15.99", currencyCode: "USD" }
       },
       images: {
         edges: [
@@ -1778,11 +1719,7 @@ const WINE_PRODUCTS = [
           {
             node: {
               id: "gid://shopify/ProductVariant/wine-kim-crawford-1",
-              title: "750ml Bottle",
-              price: {
-                amount: "15.99",
-                currencyCode: "USD"
-              },
+              title: "750ml Bottle", price: { amount: "15.99", currencyCode: "USD" },
               availableForSale: true
             }
           }
@@ -2134,9 +2071,9 @@ const TEQUILA_PRODUCTS = [
       badges: [{ label: "JALISCO", score: "100% AGAVE" }],
       isBestSeller: false,
       description: "Crafted from 100% Blue Weber Agave harvested at peak maturity in Jalisco, Mexico. Double distilled in copper pot stills for clean, delicate floral and citrus aromas with smooth agave sweetness and black pepper accents.",
-      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "30.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/tequila-1800-blanco.webp", altText: "Bottle of 1800 Tequila Blanco 100% Blue Agave Azul with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila5", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila5", title: "750ml Bottle", price: { amount: "30.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -2168,9 +2105,9 @@ const TEQUILA_PRODUCTS = [
       badges: [{ label: "CASA SAUZA", score: "100% PURO" }],
       isBestSeller: false,
       description: "Crafted by Casa Sauza in Jalisco using 100% pure Blue Weber agave. Gentle extraction and deep-pot distillation yield a lively herbal profile with fresh floral notes, balanced agave fruitiness, and a clean, zesty finish.",
-      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/tequila-hornitos-plata.webp", altText: "Bottle of Hornitos Plata 100% Puro de Agave Tequila with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila7", title: "750ml Bottle", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila7", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -2185,9 +2122,9 @@ const TEQUILA_PRODUCTS = [
       badges: [{ label: "HIGHLANDS", score: "REPOSADO" }],
       isBestSeller: false,
       description: "Born in the highlands of Los Altos de Jalisco from 100% Blue Agave. Aged up to one year in new American virgin oak barrels, developing a pale golden hue with aromas of vanilla, wood, and tropical fruit backed by smooth agave richness.",
-      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
+      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/tequila-cazadores-reposado.webp", altText: "Bottle of Cazadores Reposado 100% Blue Agave Tequila with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila8", title: "750ml Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila8", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -5267,13 +5204,13 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "LIGHT LAGER BEER",
     eyebrow: "LIGHT LAGER BEER",
     title: "Bud Light",
-    subtitle: "BUD LIGHT AL 20PK BTL 16OZ",
-    price: "$24.49",
+    subtitle: "BUD LIGHT 12PK CANS 12OZ",
+    price: "$14.99",
     style: "Light lager beer",
     ingredients: "Water, barley malt, rice, hops, yeast",
     origin: "USA",
     abv: "4.2% ABV",
-    volume: "20-Pack (16 oz Aluminum Bottles)",
+    volume: "12-Pack (12 oz Cans)",
     description: "America's favorite light lager brewed with barley malt and rice for smooth drinkability, clean taste, and a fast, refreshing finish."
   },
   "miller-lite-pilsner": {
@@ -5384,21 +5321,21 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "DUTCH LAGER BEER",
     eyebrow: "DUTCH LAGER BEER",
     title: "HEINEKEN 18PK CAN 12OZ",
-    subtitle: "HEINEKEN 18PK CAN 12OZ",
-    price: "$24.99",
+    subtitle: "HEINEKEN 12PK CANS 12OZ",
+    price: "$17.99",
     style: "Dutch lager beer",
     ingredients: "Water, barley malt, hops, yeast",
     origin: "Netherlands; verify US-market package",
     abv: "5% ABV",
-    volume: "18-Pack (12 oz Cans)",
+    volume: "12-Pack (12 oz Cans)",
     description: "Authentic Dutch lager beer sourced from Netherlands; verify US-market package. Available in-store at Whiskey Barrel."
   },
   "victoria-cerveza-12pack": {
     badge: "CERVEZA DE MEXICO",
     eyebrow: "MEXICAN VIENNA-STYLE LAGER",
     title: "Victoria Cerveza",
-    subtitle: "VICTORIA CERVEZA 12PK BTL 12OZ",
-    price: "$16.99",
+    subtitle: "VICTORIA 12PK BTL 12OZ",
+    price: "$18.99",
     style: "Mexican Vienna-style lager beer",
     ingredients: "Water, barley malt, non-malted cereals, hops",
     origin: "Mexico",
@@ -5410,8 +5347,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "COLD REFRESHMENT",
     eyebrow: "AMERICAN LIGHT LAGER",
     title: "Busch Light",
-    subtitle: "BUSCH LIGHT 30PK CANS 12OZ",
-    price: "$22.99",
+    subtitle: "BUSCH LIGHT 30PK CAN 12OZ",
+    price: "$29.99",
     style: "American light lager beer",
     ingredients: "Water, barley malt, cereal grains, hops, yeast",
     origin: "USA",
@@ -5424,7 +5361,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     eyebrow: "TRADITIONAL AMBER LAGER",
     title: "Yuengling Traditional Lager",
     subtitle: "YUENGLING LAGER 12PK CANS 12OZ",
-    price: "$14.99",
+    price: "$15.99",
     style: "American amber lager beer",
     ingredients: "Water, barley malt, corn, hops, yeast",
     origin: "Pottsville, Pennsylvania, USA",
@@ -5437,7 +5374,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     eyebrow: "MUNICH DUNKEL MEXICAN DARK LAGER",
     title: "Modelo Negra Especial",
     subtitle: "MODELO NEGRA 12PK CANS 12OZ",
-    price: "$18.99",
+    price: "$17.99",
     style: "Munich Dunkel-style Mexican dark lager",
     ingredients: "Water, roasted barley malt, hops, yeast",
     origin: "Mexico",
@@ -5462,8 +5399,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "PREMIUM MALT BEVERAGE",
     eyebrow: "FLAVORED MALT BEVERAGE",
     title: "Smirnoff Ice Neon Lemonade",
-    subtitle: "SMIRNOFF ICE NEON LEMONADE 12PK CAN 12OZ",
-    price: "$17.99",
+    subtitle: "SMIRNOFF ICE NEON LEMONADE 12PK CANS 12OZ",
+    price: "$16.99",
     style: "Flavored malt beverage",
     ingredients: "Filtered water, alcohol from malt, natural flavors, real fruit juice",
     origin: "USA",
@@ -5475,8 +5412,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "HARD SELTZER",
     eyebrow: "SPIKED SPARKLING WATER",
     title: "Truly Hard Seltzer Citrus Variety",
-    subtitle: "TRULY CITRUS VARIETY 12PK CAN 12OZ",
-    price: "$17.99",
+    subtitle: "TRULY CITRUS VARIETY 12PK CANS 12OZ",
+    price: "$15.99",
     style: "Spiked sparkling water",
     ingredients: "Filtered water, alcohol from cane sugar, natural flavors, cane sugar, citric acid, sodium citrate",
     origin: "USA",
@@ -5488,8 +5425,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "HARD LEMONADE",
     eyebrow: "PREMIUM FLAVORED MALT BEVERAGE",
     title: "Mike's Harder Party Variety Pack",
-    subtitle: "MIKES HARDER PARTY VARIETY 12PK CAN 12OZ",
-    price: "$18.99",
+    subtitle: "MIKES HARDER 12PK CAN 12OZ",
+    price: "$18.49",
     style: "Flavored malt beverage",
     ingredients: "Purified water, malt base, real lemon juice concentrate, natural flavors",
     origin: "USA",
@@ -5501,7 +5438,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "CALIFORNIA CHARDONNAY",
     eyebrow: "CALIFORNIA CHARDONNAY",
     title: "Josh Cellars Chardonnay",
-    subtitle: "JOSH CELLARS CHARDONNAY 750ML",
+    subtitle: "JOSH CELLARS CHARD 750ML",
     price: "$14.99",
     style: "White wine (Chardonnay)",
     ingredients: "Chardonnay grapes, yeast; sulfites",
@@ -5514,7 +5451,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "BOXED PINOT GRIGIO",
     eyebrow: "PREMIUM CALIFORNIA BOXED WINE",
     title: "Bota Box Pinot Grigio 3L",
-    subtitle: "BOTA BOX PINOT GRIGIO 3L",
+    subtitle: "BOTA BOX P GRIGIO 3L",
     price: "$17.99",
     style: "White wine (Pinot Grigio boxed)",
     ingredients: "Pinot Grigio grapes, yeast; sulfites",
@@ -5527,8 +5464,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "ITALIAN SPARKLING WINE",
     eyebrow: "PROSECCO D.O.C. SPARKLING WINE",
     title: "La Marca Prosecco D.O.C.",
-    subtitle: "LA MARCA PROSECCO DOC 750ML",
-    price: "$16.99",
+    subtitle: "LAMARCA PROSECCO BLUE",
+    price: "$17.99",
     style: "Italian sparkling wine (Prosecco D.O.C.)",
     ingredients: "Glera grapes, yeast; sulfites",
     origin: "Veneto, Italy",
@@ -5540,12 +5477,12 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "CALIFORNIA RED BLEND",
     eyebrow: "DUCKHORN PORTFOLIO RED WINE",
     title: "Decoy Red Wine Duckhorn Portfolio",
-    subtitle: "DECOY RED WINE 2019 750ML",
-    price: "$21.99",
+    subtitle: "DECOY RED BLEND 750ML",
+    price: "$20.99",
     style: "Red wine (California red blend)",
     ingredients: "Cabernet Sauvignon, Merlot, Zinfandel, Petite Sirah grapes, yeast; sulfites",
     origin: "California, USA",
-    abv: "13.9% ABV",
+    abv: "14.1% ABV",
     volume: "750 ml",
     description: "Crafted by the renowned Duckhorn winemaking team. A rich, alluring blend offering luscious blackberry, plum, and cocoa notes supported by silky tannins."
   },
@@ -5553,12 +5490,12 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "CALIFORNIA PINOT GRIGIO",
     eyebrow: "CALIFORNIA PINOT GRIGIO",
     title: "Barefoot Pinot Grigio",
-    subtitle: "BAREFOOT PINOT GRIGIO 750ML",
+    subtitle: "BAREFOOT PINOT GRIGIO",
     price: "$7.99",
     style: "White wine (Pinot Grigio)",
     ingredients: "Pinot Grigio grapes, yeast; sulfites",
     origin: "Modesto, California, USA",
-    abv: "12% ABV",
+    abv: "12.5% ABV",
     volume: "750 ml",
     description: "Light-bodied, crisp, and delightfully fresh with vibrant notes of green apples, tart citrus, and juicy white peaches. Pairs seamlessly with light poultry and seafood."
   },
@@ -5566,12 +5503,12 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "SWEET WHITE WINE",
     eyebrow: "ITALIAN MOSCATO",
     title: "Cupcake Vineyards Moscato",
-    subtitle: "CUPCAKE VINEYARDS MOSCATO 750ML",
+    subtitle: "CUPCAKE MOSCATO 750ML",
     price: "$10.99",
     style: "Sweet white wine (Moscato)",
     ingredients: "Moscato grapes, yeast; sulfites",
-    origin: "Tre Venezie, Italy",
-    abv: "5.5% ABV",
+    origin: "Check bottle",
+    abv: "9.5% ABV",
     volume: "750 ml",
     description: "Vibrantly sweet and delightfully floral with luscious notes of white peach, honeysuckle, and nectarine balanced by soft effervescence on the finish."
   },
@@ -5579,8 +5516,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "CALIFORNIA RED BLEND",
     eyebrow: "WINEMAKER'S BLEND 2022",
     title: "Apothic Red Winemaker's Blend",
-    subtitle: "APOTHIC RED WINEMAKERS BLEND 750ML",
-    price: "$11.99",
+    subtitle: "APOTHIC RED",
+    price: "$10.99",
     style: "Red wine (California red blend)",
     ingredients: "Zinfandel, Syrah, Cabernet Sauvignon, Merlot grapes, yeast; sulfites",
     origin: "California, USA",
@@ -5592,7 +5529,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "SONOMA COAST CHARDONNAY",
     eyebrow: "SONOMA COAST CHARDONNAY",
     title: "La Crema Sonoma Coast Chardonnay",
-    subtitle: "LA CREMA SONOMA COAST 750ML",
+    subtitle: "LA CREMA CHARD 750ML",
     price: "$19.99",
     style: "White wine (Chardonnay)",
     ingredients: "Chardonnay grapes, yeast; sulfites",
@@ -5605,12 +5542,12 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "MARLBOROUGH SAUVIGNON BLANC",
     eyebrow: "MARLBOROUGH SAUVIGNON BLANC",
     title: "Kim Crawford Marlborough Sauvignon Blanc",
-    subtitle: "KIM CRAWFORD SAUVIGNON BLANC 750ML",
+    subtitle: "KIM CRAWFORD SUV BLANC 750ML",
     price: "$15.99",
     style: "White wine (Sauvignon Blanc)",
     ingredients: "Sauvignon Blanc grapes, yeast; sulfites",
     origin: "Marlborough, New Zealand",
-    abv: "12.5% ABV",
+    abv: "13% ABV",
     volume: "750 ml",
     description: "World-famous Marlborough Sauvignon Blanc overflowing with aromas of passionfruit, fresh pink grapefruit, crushed herbs, and bright zesty acidity."
   }
@@ -5619,8 +5556,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "FRENCH GRAPE VODKA",
     eyebrow: "5X DISTILLED FRENCH VODKA",
     title: "Cîroc Snap Frost Vodka",
-    subtitle: "CIROC SNAP FROST 750ML",
-    price: "$29.99",
+    subtitle: "CIROC VODKA 750ML",
+    price: "$37.99",
     style: "Grape-distilled vodka",
     ingredients: "French grapes (Mauzac Blanc & Ugni Blanc), water",
     origin: "Gaillac & Cognac, France",
@@ -5646,7 +5583,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     eyebrow: "5X DISTILLED TRIPLE FILTERED",
     title: "New Amsterdam Original Vodka",
     subtitle: "NEW AMSTERDAM VODKA 750ML",
-    price: "$14.99",
+    price: "$13.99",
     style: "American grain vodka",
     ingredients: "Finest American grains, pure water",
     origin: "Modesto, California, USA",
@@ -5672,8 +5609,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "100% BLUE AGAVE BLANCO",
     eyebrow: "WORLD'S MOST AWARDED TEQUILA",
     title: "1800 Tequila Blanco",
-    subtitle: "1800 TEQUILA BLANCO 750ML",
-    price: "$29.99",
+    subtitle: "1800 TEQ BLANCO 750ML",
+    price: "$30.99",
     style: "100% de agave blanco tequila",
     ingredients: "100% Blue Weber agave, pure spring water",
     origin: "Jalisco, Mexico",
@@ -5685,7 +5622,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "BLUE AGAVE SILVER TEQUILA",
     eyebrow: "MADE WITH BLUE AGAVE",
     title: "Jose Cuervo Especial Silver Tequila",
-    subtitle: "JOSE CUERVO SILVER 750ML",
+    subtitle: "JOSE CUERVO ESP SILVER 750ML",
     price: "$19.99",
     style: "Silver tequila",
     ingredients: "Blue Weber agave, cane distillate, water",
@@ -5698,8 +5635,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "100% PURO DE AGAVE",
     eyebrow: "CASA SAUZA 100% PURO",
     title: "Hornitos Plata Tequila",
-    subtitle: "HORNITOS PLATA 750ML",
-    price: "$24.99",
+    subtitle: "HORNITOS PLATA750ML",
+    price: "$29.99",
     style: "100% puro de agave plata tequila",
     ingredients: "100% Blue Weber agave, water",
     origin: "Tequila, Jalisco, Mexico",
@@ -5711,8 +5648,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "HIGHLANDS 100% AGAVE REPOSADO",
     eyebrow: "100% DE AGAVE REPOSADO",
     title: "Cazadores Reposado Tequila",
-    subtitle: "CAZADORES REPOSADO 750ML",
-    price: "$26.99",
+    subtitle: "CAZADORES TEQ REPO750ML",
+    price: "$28.99",
     style: "Reposado tequila",
     ingredients: "100% Highland Blue Weber agave, water",
     origin: "Los Altos de Jalisco, Mexico",
@@ -5725,8 +5662,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "KENTUCKY STRAIGHT BOURBON",
     eyebrow: "HIGH RYE SMALL BATCH BOURBON",
     title: "Basil Hayden Kentucky Straight Bourbon",
-    subtitle: "BASIL HAYDEN 750ML",
-    price: "$42.99",
+    subtitle: "BASIL HAYDEN KENTUCKY BOURBON WHISKEY 750ML",
+    price: "$41.99",
     style: "Kentucky straight bourbon whiskey",
     ingredients: "Corn, high-rye mash, malted barley, water",
     origin: "Clermont, Kentucky, USA",
@@ -5738,8 +5675,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "US*1 SMALL BATCH BOURBON",
     eyebrow: "KENTUCKY STRAIGHT BOURBON",
     title: "Michter's US*1 Small Batch Bourbon",
-    subtitle: "MICHTER'S US*1 750ML",
-    price: "$47.99",
+    subtitle: "MICHTERS SML BATCH BOURBON 750ML",
+    price: "$45.99",
     style: "Small batch bourbon whiskey",
     ingredients: "Selected grain mash bill, Kentucky limestone water",
     origin: "Louisville, Kentucky, USA",
@@ -5751,8 +5688,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "KENTUCKY STRAIGHT BOURBON",
     eyebrow: "KENTUCKY'S 1ST DISTILLER SINCE 1783",
     title: "Evan Williams Kentucky Straight Bourbon",
-    subtitle: "EVAN WILLIAMS BLACK LABEL 750ML",
-    price: "$17.99",
+    subtitle: "EVAN WILLIAMS 750ML",
+    price: "$15.99",
     style: "Kentucky straight bourbon whiskey",
     ingredients: "Corn, rye, malted barley, limestone water",
     origin: "Bardstown, Kentucky, USA",
@@ -5764,8 +5701,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "PORT WINE FINISHED BOURBON",
     eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
     title: "Angel's Envy Bourbon Port Barrel Finish",
-    subtitle: "ANGEL'S ENVY BOURBON 750ML",
-    price: "$54.99",
+    subtitle: "ANGELS ENVY 750ML",
+    price: "$49.99",
     style: "Port barrel finished bourbon whiskey",
     ingredients: "Corn, rye, malted barley, finished in ruby port casks",
     origin: "Louisville, Kentucky, USA",
@@ -5777,8 +5714,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "SMALL BATCH WHEATED BOURBON",
     eyebrow: "92 PROOF WHEATED BOURBON",
     title: "Larceny Small Batch Wheated Bourbon",
-    subtitle: "LARCENY BOURBON 750ML",
-    price: "$28.99",
+    subtitle: "LARCENY VS SMLL BATCH KSBW 92 750ML",
+    price: "$26.99",
     style: "Small batch wheated bourbon whiskey",
     ingredients: "Corn, wheat, malted barley, limestone water",
     origin: "Bardstown, Kentucky, USA",
@@ -5790,8 +5727,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "CANADIAN BLENDED WHISKY",
     eyebrow: "INFUSED WITH REGAL GALA APPLES",
     title: "Crown Royal Regal Apple Flavored Whisky",
-    subtitle: "CROWN ROYAL REGAL APPLE 750ML",
-    price: "$28.99",
+    subtitle: "CROWN ROYAL APPLE 750 ML",
+    price: "$24.99",
     style: "Flavored Canadian blended whisky",
     ingredients: "Blended Canadian whisky, natural Regal Gala apple flavors",
     origin: "Gimli, Manitoba, Canada",
@@ -5803,8 +5740,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "FINE DE LUXE CANADIAN WHISKY",
     eyebrow: "BLENDED CANADIAN WHISKY",
     title: "Crown Royal Fine De Luxe Canadian Whisky",
-    subtitle: "CROWN ROYAL DELUXE 750ML",
-    price: "$26.99",
+    subtitle: "CROWN ROYAL 750 ML",
+    price: "$24.99",
     style: "Blended Canadian whisky",
     ingredients: "Corn, rye, wheat, malted barley",
     origin: "Gimli, Manitoba, Canada",
@@ -5816,7 +5753,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "KENTUCKY STRAIGHT BOURBON",
     eyebrow: "ESTD 1795 1.75 LITERS",
     title: "Jim Beam Kentucky Straight Bourbon 1.75L",
-    subtitle: "JIM BEAM BOURBON 1.75L",
+    subtitle: "JIM BEAM 1.75L",
     price: "$29.99",
     style: "Kentucky straight bourbon whiskey",
     ingredients: "Corn, rye, malted barley, water",
@@ -5829,7 +5766,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "TENNESSEE HONEY LIQUEUR",
     eyebrow: "ORIGINAL RECIPE HONEY WHISKEY",
     title: "Jack Daniel's Tennessee Honey",
-    subtitle: "JACK DANIEL'S HONEY 750ML",
+    subtitle: "JACK DANIELS TENNESSEE HONEY 750ML",
     price: "$26.99",
     style: "Honey whiskey liqueur",
     ingredients: "Old No. 7 Tennessee whiskey, proprietary honey liqueur",
@@ -5842,8 +5779,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "DOUBLE MELLOWED TENNESSEE",
     eyebrow: "RARE DOUBLE CHARCOAL MELLOWED",
     title: "Gentleman Jack Double Mellowed Whiskey",
-    subtitle: "GENTLEMAN JACK 750ML",
-    price: "$34.99",
+    subtitle: "JD GENTLEMAN JACK 750ML",
+    price: "$29.99",
     style: "Double mellowed Tennessee whiskey",
     ingredients: "Corn, rye, malted barley, Cave Spring water",
     origin: "Lynchburg, Tennessee, USA",
@@ -5855,8 +5792,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "100 PROOF STRAIGHT BOURBON",
     eyebrow: "THE FIRST BOTTLED BOURBON ESTD 1870",
     title: "Old Forester 100 Proof Kentucky Bourbon",
-    subtitle: "OLD FORESTER 100 PROOF 750ML",
-    price: "$27.99",
+    subtitle: "OLD FORESTER 100PROOF 750ML",
+    price: "$22.99",
     style: "100 proof Kentucky straight bourbon whisky",
     ingredients: "72% corn, 18% rye, 10% malted barley",
     origin: "Louisville, Kentucky, USA",
@@ -5868,8 +5805,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "9 YEARS AGED 100 PROOF",
     eyebrow: "KENTUCKY STRAIGHT BOURBON 9 YRS",
     title: "Knob Creek 9 Year Small Batch Bourbon",
-    subtitle: "KNOB CREEK 9YR 750ML",
-    price: "$36.99",
+    subtitle: "KNOB CREEK 9YRS BOURBON 750ML",
+    price: "$39.99",
     style: "9 year Kentucky straight bourbon whiskey",
     ingredients: "Corn, rye, malted barley, limestone water",
     origin: "Clermont, Kentucky, USA",
@@ -5881,8 +5818,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "BOTTLED-IN-BOND RYE",
     eyebrow: "100 PROOF STRAIGHT RYE WHISKY",
     title: "Rittenhouse Straight Rye Bottled-in-Bond",
-    subtitle: "RITTENHOUSE RYE 750ML",
-    price: "$28.99",
+    subtitle: "RITTENHOUSE 100PROOF RYE 750ML",
+    price: "$24.99",
     style: "Bottled-in-Bond straight rye whisky",
     ingredients: "51% rye, 37% corn, 12% malted barley",
     origin: "Bardstown, Kentucky, USA",
@@ -5894,8 +5831,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "SPEYSIDE SINGLE MALT 14 YRS",
     eyebrow: "OUR BOURBON BARREL RESERVE 14",
     title: "Glenfiddich 14 Year Bourbon Barrel Reserve",
-    subtitle: "GLENFIDDICH 14 YR 750ML",
-    price: "$59.99",
+    subtitle: "GLENFIDDICH SNGL MALT 14YRS 750ML",
+    price: "$62.99",
     style: "Speyside single malt Scotch whisky",
     ingredients: "100% malted barley, natural spring water",
     origin: "Dufftown, Banffshire, Scotland",
@@ -5908,7 +5845,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     eyebrow: "BATCH 27 ORIGINAL BLENDED MALT",
     title: "Monkey Shoulder Blended Malt Scotch",
     subtitle: "MONKEY SHOULDER 750ML",
-    price: "$34.99",
+    price: "$31.99",
     style: "Blended malt Scotch whisky",
     ingredients: "100% Speyside malted barley whiskies",
     origin: "Speyside, Scotland",
@@ -5921,8 +5858,8 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "THE ORIGINAL IRISH WHISKEY",
     eyebrow: "TRIPLE DISTILLED SINCE 1608",
     title: "Bushmills The Original Irish Whiskey",
-    subtitle: "BUSHMILLS ORIGINAL 750ML",
-    price: "$26.99",
+    subtitle: "BUSHMILLS THE ORIGINAL 750ML",
+    price: "$28.99",
     style: "Triple distilled blended Irish whiskey",
     ingredients: "Irish malted barley, grain, pure spring water",
     origin: "Bushmills, County Antrim, Ireland",
@@ -5934,13 +5871,13 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "AGED 12 YEARS BLENDED SCOTCH",
     eyebrow: "ESTABLISHED 1801 ABERDEEN",
     title: "Chivas Regal 12 Year Old Scotch",
-    subtitle: "CHIVAS REGAL 12YR 750ML",
-    price: "$37.99",
+    subtitle: "CHIVAS REGAL 12 AGED 1L",
+    price: "$39.99",
     style: "12 year aged blended Scotch whisky",
     ingredients: "Speyside malt and grain whiskies, water",
     origin: "Keith, Moray, Scotland",
     abv: "40% ABV (80 Proof)",
-    volume: "750 ml",
+    volume: "1 L",
     description: "An iconic blend of Strathisla single malts and smooth grain whiskies, each aged for a minimum of 12 years. Radiant, warm amber color with wild herbs, heather, honey, and orchard fruits."
   },
   "hennessy-vs-cognac": {
@@ -5961,7 +5898,7 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     badge: "ORIGINAL SPICED RUM",
     eyebrow: "CARIBBEAN SPICED RUM",
     title: "Captain Morgan Original Spiced Rum",
-    subtitle: "CAPTAIN MORGAN SPICED 750ML",
+    subtitle: "CAPTAIN MORGAN SPICED RUM 750ML",
     price: "$16.99",
     style: "Spiced Caribbean rum",
     ingredients: "Distilled cane molasses, indigenous spices, natural flavors",
