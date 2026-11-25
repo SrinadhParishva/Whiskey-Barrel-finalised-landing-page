@@ -174,7 +174,7 @@ async function storefrontApiRequest(query, variables = {}) {
   }
 }
 
-// Uploaded & Curated 33 Products for Whiskey Category
+// Uploaded & Curated 72 Products for Whiskey Category
 const WHISKEY_PRODUCTS = [
   {
     node: {
@@ -724,10 +724,712 @@ const WHISKEY_PRODUCTS = [
       images: { edges: [{ node: { url: "assets/whiskey-hennessy-vs-cognac.webp", altText: "Bottle of Hennessy V.S Cognac on dark marble bar with Paris Eiffel Tower evening view" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey33", title: "750ml Bottle", price: { amount: "44.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-34",
+      title: "Baker's 7 Year Single Barrel Bourbon - 750 mL",
+      handle: "bakers-7-year-single-barrel",
+      category: "WHISKEY",
+      country: "Kentucky, United States",
+      composition: "Corn-based bourbon mash; exact ratios not stated by producer",
+      type: "Kentucky straight single-barrel bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Standard 7-year single-barrel Baker’s at 107 proof. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "69.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-bakers-7-year.webp", altText: "Baker's 7 Year Single Barrel 107 Proof Kentucky Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey34", title: "750ml Bottle", price: { amount: "69.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-35",
+      title: "Bardstown Origin Series High Wheat Bourbon - 750 mL",
+      handle: "bardstown-origin-high-wheat",
+      category: "WHISKEY",
+      country: "Bardstown, Kentucky, United States",
+      composition: "53% corn, 39% wheat and 8% malted barley",
+      type: "Kentucky straight wheated bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Origin High Wheat, six years and 106 proof. Producer sell sheet confirms UPC 857552008806. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-bardstown-origin-high-wheat.webp", altText: "Bardstown Bourbon Company Origin Series High Wheat Kentucky Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey35", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-36",
+      title: "Bardstown Origin Series Bottled-in-Bond Bourbon - 750 mL",
+      handle: "bardstown-origin-bottled-in-bond",
+      category: "WHISKEY",
+      country: "Bardstown, Kentucky, United States",
+      composition: "68% corn, 20% wheat and 12% malted barley",
+      type: "Bottled-in-bond Kentucky straight wheated bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Estate-distilled Origin Bottled-in-Bond, aged six years and bottled at 100 proof. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-bardstown-origin-bottled-in-bond.webp", altText: "Bardstown Bourbon Company Origin Series Bottled-in-Bond Kentucky Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey36", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-37",
+      title: "Balcones Baby Blue Corn Whisky - 750 mL",
+      handle: "balcones-baby-blue-corn-whisky",
+      category: "WHISKEY",
+      country: "Waco, Texas, United States",
+      composition: "Roasted blue corn",
+      type: "Texas corn whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Baby Blue pot-distilled corn whisky at 92 proof. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "39.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-balcones-baby-blue.webp", altText: "Balcones Baby Blue Roasted Blue Corn Texas Whisky bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey37", title: "750ml Bottle", price: { amount: "39.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-38",
+      title: "Balblair 15 Year Single Malt Scotch Whisky - 750 mL",
+      handle: "balblair-15-year-single-malt",
+      category: "WHISKEY",
+      country: "Edderton, Scottish Highlands, United Kingdom",
+      composition: "Malted barley",
+      type: "Highland single malt Scotch whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "15-year age statement. Matured in American oak ex-bourbon casks and first-fill ex-sherry oak. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "124.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-balblair-15-year.webp", altText: "Balblair 15 Year Old Highland Single Malt Scotch Whisky bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey38", title: "750ml Bottle", price: { amount: "124.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-39",
+      title: "Balcones Texas Pot Still Bourbon - 750 mL",
+      handle: "balcones-texas-pot-still-bourbon",
+      category: "WHISKEY",
+      country: "Waco, Texas, United States",
+      composition: "Roasted blue corn, Texas wheat, Texas rye and malted barley",
+      type: "Texas pot-still straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Four-grain bourbon matured in new American oak. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-balcones-texas-pot-still.webp", altText: "Balcones Texas Pot Still Straight Bourbon Whisky bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey39", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-40",
+      title: "Backbone Uncut Straight Bourbon - 750 mL",
+      handle: "backbone-bourbon-uncut",
+      category: "WHISKEY",
+      country: "Indiana, United States",
+      composition: "75% corn, 21% rye and 4% malted barley",
+      type: "Barrel-proof straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Backbone Uncut is bottled undiluted. The producer's published batch 29 and original source photo show 116.6 proof / 58.3% ABV. Confirm the inventory batch before using that strength.",
+      priceRange: { minVariantPrice: { amount: "54.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-backbone-bourbon-uncut.webp", altText: "Backbone Bourbon Uncut Batch #29 Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey40", title: "750ml Bottle", price: { amount: "54.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-41",
+      title: "Bardstown Origin Series Rye Whiskey - 750 mL",
+      handle: "bardstown-origin-toasted-cherry-rye",
+      category: "WHISKEY",
+      country: "Bardstown, Kentucky, United States",
+      composition: "95% rye and 5% malted barley",
+      type: "Kentucky straight rye whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Origin rye, six years, finished in toasted cherry wood and oak barrels. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-bardstown-origin-toasted-cherry-rye.webp", altText: "Bardstown Bourbon Company Origin Series Kentucky Straight Rye Whiskey Finished in Toasted Cherry Wood and Oak Barrels with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey41", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-42",
+      title: "2XO American Oak Bourbon - 750 mL",
+      handle: "2xo-american-oak-bourbon",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-forward bourbon mash",
+      type: "Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "American Oak is part of the 2XO Oak Series.",
+      priceRange: { minVariantPrice: { amount: "44.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-2xo-american-oak-bourbon.webp", altText: "2XO American Oak Kentucky Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey42", title: "750ml Bottle", price: { amount: "44.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-43",
+      title: "Barrell Foundation Bourbon - 750 mL",
+      handle: "barrell-foundation-bourbon",
+      category: "WHISKEY",
+      country: "United States; blended and bottled in Kentucky",
+      composition: "Derived blend mash bill: 73% corn, 23% rye and 4% malted barley",
+      type: "Blend of straight bourbon whiskeys",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Standard Foundation blends bourbons from Kentucky, Indiana, Tennessee and Maryland. 100 proof, 750 mL.",
+      priceRange: { minVariantPrice: { amount: "55.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-barrell-foundation-bourbon.webp", altText: "Barrell Foundation Bourbon Aged 5 Years A Blend of Straight Bourbon Whiskeys bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey43", title: "750ml Bottle", price: { amount: "55.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-44",
+      title: "Barrell Dovetail Whiskey - 750 mL",
+      handle: "barrell-dovetail-whiskey",
+      category: "WHISKEY",
+      country: "United States",
+      composition: "Bourbon and other American whiskey components",
+      type: "Cask-strength barrel-finished whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "The original Dovetail source bottle shows 125.42 proof / 62.71% ABV. This is the pictured batch. Release strengths vary, so confirm the inventory bottle label. Finished in Cabernet, Port and rum casks.",
+      priceRange: { minVariantPrice: { amount: "89.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-barrell-dovetail.webp", altText: "Barrell Dovetail Whiskey Finished in Rum Port and Cabernet Barrels Cask Strength bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey44", title: "750ml Bottle", price: { amount: "89.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-45",
+      title: "Compass Box Artist Blend Scotch Whisky - 750 mL",
+      handle: "compass-box-artist-blend",
+      category: "WHISKEY",
+      country: "Scotland, United Kingdom",
+      composition: "Malt Scotch whisky, grain Scotch whisky",
+      type: "Blended Scotch whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Compass Box Artist Blend 750 mL. The producer lists about 55% malt whisky in the blend.",
+      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-compass-box-artist-blend.webp", altText: "Compass Box Artist Blend Scotch Whisky Fruity Creamy Rich bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey45", title: "750ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-46",
+      title: "Barrell Seagrass Rye Whiskey - 750 mL",
+      handle: "barrell-seagrass-rye",
+      category: "WHISKEY",
+      country: "United States and Canada",
+      composition: "American and Canadian rye whiskeys",
+      type: "Cask-strength barrel-finished rye whiskey blend",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "NC ABC lists this exact UPC at 118.4 proof / 59.2% ABV. This is a regulatory reference value. The source photo has blank proof fields and releases vary, so confirm the inventory bottle label. Finished in rhum, Madeira and apricot-brandy casks.",
+      priceRange: { minVariantPrice: { amount: "85.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-barrell-seagrass-rye.webp", altText: "Barrell Seagrass Rye Whiskey Finished in Martinique Rum Madeira and Apricot Brandy Barrels Cask Strength bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey46", title: "750ml Bottle", price: { amount: "85.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-47",
+      title: "Widow Jane Baby Jane Bourbon - 750 mL",
+      handle: "widow-jane-baby-jane",
+      category: "WHISKEY",
+      country: "New York and Kentucky, United States",
+      composition: "Proprietary Baby Jane heirloom corn; other mash grains undisclosed in the cited release",
+      type: "Blend of straight bourbon whiskeys",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Small-batch blend of Brooklyn and Kentucky bourbon. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-widow-jane-baby-jane.webp", altText: "Widow Jane Baby Jane Distilled from Proprietary Heirloom Corn Straight Bourbon Whiskeys bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey47", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-48",
+      title: "291 Colorado Barrel Proof Single Barrel Bourbon - 750 mL",
+      handle: "291-barrel-proof-colorado-bourbon",
+      category: "WHISKEY",
+      country: "Colorado, USA",
+      composition: "Corn-forward bourbon mash",
+      type: "Barrel-proof single-barrel bourbon",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Published reference for this UPC is 63% ABV. Barrel proof varies. The source image shows a 66.9% straight-bourbon bottling, so confirm the pictured expression and batch against the inventory bottle.",
+      priceRange: { minVariantPrice: { amount: "119.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-291-barrel-proof-colorado.webp", altText: "291 Barrel Proof Colorado Straight Bourbon Whiskey Finished with Aspen Wood Staves bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey48", title: "750ml Bottle", price: { amount: "119.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-49",
+      title: "1792 Small Batch Bourbon - 1.75 L",
+      handle: "1792-small-batch-bourbon-175l",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-forward grain mash with rye",
+      type: "Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "High-rye Small Batch expression in the 1.75 L bottle.",
+      priceRange: { minVariantPrice: { amount: "59.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-1792-small-batch-175l.webp", altText: "1792 Small Batch Kentucky Straight Bourbon Whiskey 1.75L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey49", title: "1.75L Bottle", price: { amount: "59.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-50",
+      title: "Aberlour 12 Year Single Malt Scotch Whisky - 750 mL",
+      handle: "aberlour-12-year-speyside-single-malt",
+      category: "WHISKEY",
+      country: "Scotland (Speyside, Aberlour)",
+      composition: "Malted barley",
+      type: "Speyside single malt Scotch whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Current Pernod Ricard U.S. supplier record for UPC 080432102145 and the original 750 mL bottle photos show 40% ABV / 80 proof. NC ABC has a 43% entry for the same UPC. Use 40% as the U.S. reference and check the inventory label.",
+      priceRange: { minVariantPrice: { amount: "64.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-aberlour-12-year.webp", altText: "Aberlour Speyside Single Malt Scotch Whisky Double Cask Matured 12 Years Old bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey50", title: "750ml Bottle", price: { amount: "64.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-51",
+      title: "Aberfeldy Highland Single Malt Scotch Whisky - 750 mL",
+      handle: "aberfeldy-12-year-highland-single-malt",
+      category: "WHISKEY",
+      country: "Scotland (Highlands, Aberfeldy)",
+      composition: "Malted barley",
+      type: "Highland single malt Scotch whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "12 years old. Honeyed malt with fruit, spice and vanilla.",
+      priceRange: { minVariantPrice: { amount: "59.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-aberfeldy-12-year.webp", altText: "Aberfeldy Highland Single Malt Scotch Whisky 12 Years in Oak bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey51", title: "750ml Bottle", price: { amount: "59.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-52",
+      title: "Ancient Age Bourbon - 1.75 L",
+      handle: "ancient-age-bourbon-175l",
+      category: "WHISKEY",
+      country: "Frankfort, Kentucky, USA",
+      composition: "Corn, rye, malted barley",
+      type: "Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Ancient Age 1.75 L, 80 proof. The distillery does not publish the mash proportions.",
+      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-ancient-age-bourbon-175l.webp", altText: "Ancient Age Kentucky Straight Bourbon Whiskey 1.75L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey52", title: "1.75L Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-53",
+      title: "1792 Small Batch Bourbon - 750 mL",
+      handle: "1792-small-batch-bourbon",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-forward grain mash with rye",
+      type: "Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "High-rye Small Batch expression in the 750 mL bottle. Label artwork may vary.",
+      priceRange: { minVariantPrice: { amount: "30.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-1792-small-batch-bourbon.webp", altText: "1792 Small Batch Kentucky Straight Bourbon Whiskey 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey53", title: "750ml Bottle", price: { amount: "30.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-54",
+      title: "1620 Small Batch Bourbon - 750 mL",
+      handle: "1620-small-batch-bourbon",
+      category: "WHISKEY",
+      country: "USA",
+      composition: "Corn, rye, malted barley",
+      type: "Small batch bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "The 90-proof Small Batch expression. The distiller lists Full Proof as a separate product.",
+      priceRange: { minVariantPrice: { amount: "39.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-1620-small-batch-bourbon.webp", altText: "1620 Distilling Company Small Batch Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey54", title: "750ml Bottle", price: { amount: "39.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-55",
+      title: "Ancient Age Bourbon - 750 mL",
+      handle: "ancient-age-bourbon-750ml",
+      category: "WHISKEY",
+      country: "Frankfort, Kentucky, USA",
+      composition: "Corn, rye, malted barley",
+      type: "Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Ancient Age 750 mL, 80 proof.",
+      priceRange: { minVariantPrice: { amount: "13.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-ancient-age-bourbon-750ml.webp", altText: "Ancient Age Kentucky Straight Bourbon Whiskey 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey55", title: "750ml Bottle", price: { amount: "13.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-56",
+      title: "Angel's Envy Triple Oak Bourbon - 750 mL",
+      handle: "angels-envy-triple-oak-bourbon",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-based bourbon grain mash",
+      type: "Oak-finished Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Angel's Envy Triple Oak 750 mL, 92 proof. Finished in French, Hungarian and Chinkapin oak.",
+      priceRange: { minVariantPrice: { amount: "79.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-angels-envy-triple-oak.webp", altText: "Angel's Envy Triple Oak Kentucky Straight Bourbon Whiskey Finished in Hungarian Chinkapin and French Oak Barrels bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey56", title: "750ml Bottle", price: { amount: "79.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-57",
+      title: "Angel's Envy Bourbon - 375 mL",
+      handle: "angels-envy-port-finish-375ml",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-based bourbon grain mash",
+      type: "Port-finished Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Angel's Envy Signature Series 375 mL, finished in port wine barrels. Maine lists 86.6 proof for this UPC.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-angels-envy-port-finish-375ml.webp", altText: "Angel's Envy Kentucky Straight Bourbon Whiskey Finished in Port Wine Barrels 375ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey57", title: "375ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-58",
+      title: "Augusta 10 Year Single Barrel Bourbon - 750 mL",
+      handle: "augusta-buckners-10-year-single-barrel",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-based bourbon grain mash",
+      type: "Single-barrel Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Buckner's 10 Year source bottle shows 120.4 proof / 60.2% ABV, corroborated by an exact-UPC retailer record. This is a pictured single-barrel value. Confirm the inventory barrel's label.",
+      priceRange: { minVariantPrice: { amount: "159.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-augusta-buckners-10-year.webp", altText: "Augusta Distillery Buckner's Single Barrel Aged 10 Years Unfiltered Cask Strength Kentucky Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey58", title: "750ml Bottle", price: { amount: "159.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-59",
+      title: "Augusta Old Route 8 Bourbon - 750 mL",
+      handle: "augusta-old-route-8-year-single-barrel",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Corn-based bourbon grain mash",
+      type: "Single-barrel Kentucky straight bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Old Route 8 source bottle shows 110 proof / 55% ABV. This is a pictured single-barrel value. Confirm the inventory barrel's label.",
+      priceRange: { minVariantPrice: { amount: "119.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-augusta-old-route-8-year.webp", altText: "Augusta Distillery Old Route 8 Single Barrel Cask Strength Traditional Kentucky Straight Bourbon Whiskey Aged 8 Years bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey59", title: "750ml Bottle", price: { amount: "119.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-60",
+      title: "Auchentoshan American Oak Single Malt Scotch Whisky - 750 mL",
+      handle: "auchentoshan-american-oak-single-malt",
+      category: "WHISKEY",
+      country: "Glasgow area, Scotland, United Kingdom",
+      composition: "Malted barley",
+      type: "Lowland single malt Scotch whisky",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Auchentoshan American Oak 750 mL. Triple distilled and matured in American oak ex-bourbon casks.",
+      priceRange: { minVariantPrice: { amount: "52.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-auchentoshan-american-oak.webp", altText: "Auchentoshan Single Malt Scotch Whisky American Oak Smooth and Vibrant bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey60", title: "750ml Bottle", price: { amount: "52.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-61",
+      title: "Backbone Decade Down Uncut Bourbon - 750 mL",
+      handle: "backbone-decade-down-uncut-anniversary",
+      category: "WHISKEY",
+      country: "Indiana, United States",
+      composition: "Corn, rye and malted barley",
+      type: "Straight bourbon whiskey, partly sherry-cask finished",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Decade Down Uncut Anniversary Edition blends five- to seven-year bourbons, including a sherry-cask-finished portion. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "75.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-backbone-decade-down-anniversary.webp", altText: "Backbone Bourbon Anniversary Edition Decade Down Uncut Straight Bourbon Whiskey bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey61", title: "750ml Bottle", price: { amount: "75.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-62",
+      title: "Amaro Montenegro - 750 mL",
+      handle: "amaro-montenegro-liqueur",
+      category: "WHISKEY",
+      country: "Italy (Bologna)",
+      composition: "40 botanicals, including spices, citrus peels and roots",
+      type: "Italian amaro (herbal liqueur)",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Amaro Montenegro, 750 mL. Bittersweet herbal and citrus profile.",
+      priceRange: { minVariantPrice: { amount: "37.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-amaro-montenegro.webp", altText: "Amaro Montenegro Premiata 1885 Specialità bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey62", title: "750ml Bottle", price: { amount: "37.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-63",
+      title: "Baileys Chocolate Irish Cream Liqueur - 750 mL",
+      handle: "baileys-chocolate-irish-cream-750ml",
+      category: "WHISKEY",
+      country: "Ireland",
+      composition: "Baileys Original Irish Cream and Belgian chocolate",
+      type: "Chocolate Irish cream liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Chocolate expression in blue bottle. 750 mL, 31.4 proof.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-baileys-chocolate-irish-cream-750ml.webp", altText: "Baileys Chocolate Irish Cream Liqueur 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey63", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-64",
+      title: "10th Mountain Bourbon - 750 mL",
+      handle: "10th-mountain-bourbon-whiskey",
+      category: "WHISKEY",
+      country: "Colorado, USA",
+      composition: "Colorado corn, rye, malted barley",
+      type: "American bourbon whiskey",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Made with a corn-forward mash and aged in new charred oak.",
+      priceRange: { minVariantPrice: { amount: "61.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-10th-mountain-bourbon.webp", altText: "10th Mountain Whiskey & Spirit Company Bourbon Whiskey 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey64", title: "750ml Bottle", price: { amount: "61.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-65",
+      title: "Baileys Original Irish Cream - 750 mL",
+      handle: "baileys-original-irish-cream-750ml",
+      category: "WHISKEY",
+      country: "Ireland",
+      composition: "Irish whiskey and spirits, Irish dairy cream, chocolate and vanilla flavors",
+      type: "Irish cream liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Original Irish Cream, 750 mL bottle.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-baileys-original-irish-cream-750ml.webp", altText: "Baileys The Original Irish Cream Liqueur 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey65", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-66",
+      title: "Baileys Espresso Crème Irish Cream Liqueur - 750 mL",
+      handle: "baileys-espresso-creme-750ml",
+      category: "WHISKEY",
+      country: "Ireland",
+      composition: "Baileys Original Irish Cream, coffee flavor and other natural flavors",
+      type: "Coffee-flavored Irish cream liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Espresso Crème expression. 750 mL, 34 proof.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-baileys-espresso-creme-750ml.webp", altText: "Baileys Irresistible Espresso Crème Liqueur 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey66", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-67",
+      title: "B&B D.O.M. Liqueur - 750 mL",
+      handle: "bb-dom-liqueur-benedictine-brandy",
+      category: "WHISKEY",
+      country: "Fécamp, France",
+      composition: "Bénédictine herbal liqueur (60%); French brandy (40%)",
+      type: "Brandy and herbal liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Blended at Palais Bénédictine and rested in French oak. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "38.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-bb-dom-liqueur.webp", altText: "B&B D.O.M. Liqueur Bénédictine and Brandy bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey67", title: "750ml Bottle", price: { amount: "38.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-68",
+      title: "Baileys Original Irish Cream - 1.75 L",
+      handle: "baileys-original-irish-cream-175l",
+      category: "WHISKEY",
+      country: "Ireland",
+      composition: "Irish whiskey and spirits, Irish dairy cream, chocolate and vanilla flavors",
+      type: "Irish cream liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Original Irish Cream, 1.75 L bottle.",
+      priceRange: { minVariantPrice: { amount: "51.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-baileys-original-irish-cream-175l.webp", altText: "Baileys The Original Irish Cream Liqueur 1.75L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey68", title: "1.75L Bottle", price: { amount: "51.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-69",
+      title: "Wild Turkey American Honey - 50 mL",
+      handle: "wild-turkey-american-honey-liqueur-50ml",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Kentucky bourbon whiskey, honey",
+      type: "Bourbon-based honey liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Wild Turkey American Honey 50 mL miniature. The state listing groups the minis in a 12-pack.",
+      priceRange: { minVariantPrice: { amount: "1.09", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-wild-turkey-american-honey-50ml.webp", altText: "Wild Turkey American Honey Liqueur 50ml miniature bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey69", title: "50ml Bottle", price: { amount: "1.09", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-70",
+      title: "Wild Turkey American Honey Liqueur 1.75L",
+      handle: "wild-turkey-american-honey-liqueur-175l",
+      category: "WHISKEY",
+      country: "",
+      composition: "",
+      type: "Honey Bourbon Liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "",
+      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-wild-turkey-american-honey-175l.webp", altText: "Wild Turkey American Honey Liqueur 1.75L bottle with a tasting glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey70", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-71",
+      title: "Wild Turkey American Honey - 375 mL",
+      handle: "wild-turkey-american-honey-liqueur-375ml",
+      category: "WHISKEY",
+      country: "United States (Lawrenceburg, Kentucky)",
+      composition: "Kentucky bourbon whiskey and honey",
+      type: "Bourbon and honey liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Wild Turkey American Honey, 375 mL. Sweet honey and bourbon profile.",
+      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-wild-turkey-american-honey-375ml.webp", altText: "Wild Turkey American Honey Liqueur 375ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey71", title: "375ml Bottle", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-whiskey-72",
+      title: "Wild Turkey American Honey - 750 mL",
+      handle: "wild-turkey-american-honey-liqueur-750ml",
+      category: "WHISKEY",
+      country: "Kentucky, USA",
+      composition: "Kentucky bourbon whiskey, honey",
+      type: "Bourbon-based honey liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Wild Turkey American Honey 750 mL, 71 proof.",
+      priceRange: { minVariantPrice: { amount: "19.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/whiskey-wild-turkey-american-honey-750ml.webp", altText: "Wild Turkey American Honey Liqueur 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey72", title: "750ml Bottle", price: { amount: "19.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
   }
 ];
 
-// Uploaded & Curated Products for Rum Category
+// Uploaded & Curated 8 Products for Rum Category
 const RUM_PRODUCTS = [
   {
     node: {
@@ -778,6 +1480,96 @@ const RUM_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "16.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/rum-captain-morgan-spiced.webp", altText: "Captain Morgan Original Spiced Caribbean Rum bottle with a crystal rocks glass on ice" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum3", title: "750ml Bottle", price: { amount: "16.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rum-4",
+      title: "Bacardí Gold Rum - 375 mL",
+      handle: "bacardi-gold-rum-375ml",
+      category: "RUM",
+      country: "Puerto Rico, United States",
+      composition: "Sugarcane molasses, water and yeast",
+      type: "Gold rum",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Toasted-oak-aged amber rum. 375 mL.",
+      priceRange: { minVariantPrice: { amount: "9.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rum-bacardi-gold-375ml.webp", altText: "Bottle of Bacardi Gold Ron Superior Carta Oro Rum 375ml with a crystal rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum4", title: "375ml Bottle", price: { amount: "9.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rum-5",
+      title: "Bacardí Superior White Rum - 50 mL",
+      handle: "bacardi-superior-white-rum-50ml",
+      category: "RUM",
+      country: "Cataño, Puerto Rico, United States",
+      composition: "Sugarcane molasses, water and yeast",
+      type: "White rum",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Light white rum, 50 mL per bottle. Same UPC appears as single and 10-pack in different catalogs.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rum-bacardi-superior-white-50ml.webp", altText: "Bottle of Bacardi Superior Carta Blanca White Rum 50ml miniature with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum5", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rum-6",
+      title: "Bacardí Gold Rum - 200 mL",
+      handle: "bacardi-gold-rum-200ml",
+      category: "RUM",
+      country: "Puerto Rico, United States",
+      composition: "Sugarcane molasses, water and yeast",
+      type: "Gold rum",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Toasted-oak-aged amber rum. 200 mL.",
+      priceRange: { minVariantPrice: { amount: "5.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rum-bacardi-gold-200ml.webp", altText: "Bottle of Bacardi Gold Ron Superior Carta Oro Rum 200ml with a crystal tasting glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum6", title: "200ml Bottle", price: { amount: "5.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rum-7",
+      title: "Arak Razzouk - 750 mL",
+      handle: "arak-razzouk-750ml",
+      category: "RUM",
+      country: "Lebanon",
+      composition: "Distilled grape juice, aniseed",
+      type: "Arak / anise-flavored grape spirit",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arak Razzouk 750 mL, 100 proof. Turns cloudy with added water.",
+      priceRange: { minVariantPrice: { amount: "25.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rum-arak-razzouk-750ml.webp", altText: "Bottle of Arak Razzouk Distilled Anise Spirit 750ml with a glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum7", title: "750ml Bottle", price: { amount: "25.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rum-8",
+      title: "Angostura Aromatic Bitters - 4 fl oz",
+      handle: "angostura-aromatic-bitters-4oz",
+      category: "RUM",
+      country: "Trinidad and Tobago",
+      composition: "Alcohol, water, herbs and spices",
+      type: "Aromatic cocktail bitters",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Angostura aromatic bitters 4 fl oz. Concentrated cocktail seasoning with a proprietary formula.",
+      priceRange: { minVariantPrice: { amount: "11.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rum-angostura-aromatic-bitters-4oz.webp", altText: "Bottle of Angostura Aromatic Bitters 4 fl oz (118ml) with an Old Fashioned cocktail glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rum8", title: "4 fl oz Bottle", price: { amount: "11.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -1116,7 +1908,7 @@ const BEER_PRODUCTS = [
   }
 ];
 
-// Uploaded & Curated 8 Products for Vodka Category
+// Uploaded & Curated 25 Products for Vodka Category
 const VODKA_PRODUCTS = [
   {
     node: {
@@ -1250,6 +2042,312 @@ const VODKA_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "3.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/vodka-high-noon-black-cherry.webp", altText: "Chilled can of High Noon Black Cherry Vodka Soda on a sunny beach rail with ocean backdrop" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka8", title: "355ml Can (12 oz)", price: { amount: "3.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-9",
+      title: "Absolut Vodka - 200 mL",
+      handle: "absolut-vodka-swedish-200ml",
+      category: "VODKA",
+      country: "Sweden (Åhus, Skåne)",
+      composition: "Swedish winter wheat and well water",
+      type: "Vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Absolut Original, 200 mL. Continuous distillation.",
+      priceRange: { minVariantPrice: { amount: "7.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-absolut-swedish-vodka-200ml.webp", altText: "Absolut Vodka Swedish Vodka 200ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka9", title: "200ml Bottle", price: { amount: "7.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-10",
+      title: "Absolut Vodka - 1.75 L",
+      handle: "absolut-vodka-swedish-175l",
+      category: "VODKA",
+      country: "Sweden (Åhus, Skåne)",
+      composition: "Swedish winter wheat and well water",
+      type: "Vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Absolut Original, 1.75 L. Continuous distillation.",
+      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-absolut-swedish-vodka-175l.webp", altText: "Absolut Vodka Swedish Vodka 1.75L bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka10", title: "1.75L Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-11",
+      title: "360 Georgia Peach Vodka - 750 mL",
+      handle: "360-georgia-peach-flavored-vodka-750ml",
+      category: "VODKA",
+      country: "Missouri, USA",
+      composition: "Corn-based vodka, peach flavor",
+      type: "Peach-flavored vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Georgia Peach is the flavor name. The distiller uses Missouri-grown corn for its vodka base.",
+      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-360-georgia-peach-750ml.webp", altText: "360 Georgia Peach Flavored Vodka 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka11", title: "750ml Bottle", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-12",
+      title: "Absolut Citron Vodka - 750 mL",
+      handle: "absolut-citron-lemon-vodka-750ml",
+      category: "VODKA",
+      country: "Sweden (Åhus, Skåne)",
+      composition: "Vodka and natural citrus flavoring",
+      type: "Lemon-flavored vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Absolut Citron, 750 mL. Lemon peel and lime character.",
+      priceRange: { minVariantPrice: { amount: "20.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-absolut-citron-lemon-750ml.webp", altText: "Absolut Citron Lemon Flavored Vodka 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka12", title: "750ml Bottle", price: { amount: "20.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-13",
+      title: "360 Bing Cherry Vodka - 750 mL",
+      handle: "360-bing-cherry-flavored-vodka-750ml",
+      category: "VODKA",
+      country: "Missouri, USA",
+      composition: "Corn-based vodka, Bing cherry flavor",
+      type: "Cherry-flavored vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Bing cherry expression of 360 Vodka.",
+      priceRange: { minVariantPrice: { amount: "14.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-360-bing-cherry-750ml.webp", altText: "360 Bing Cherry Flavored Vodka 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka13", title: "750ml Bottle", price: { amount: "14.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-14",
+      title: "360 Vodka - 1.75 L",
+      handle: "360-vodka-american-vodka-175l",
+      category: "VODKA",
+      country: "Missouri, USA",
+      composition: "Corn",
+      type: "Vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Unflavored 360 Vodka in the 1.75 L bottle.",
+      priceRange: { minVariantPrice: { amount: "22.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-360-american-vodka-175l.webp", altText: "360 Vodka Eco Friendly Superior American Vodka 1.75L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka14", title: "1.75L Bottle", price: { amount: "22.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-15",
+      title: "99 Apples Liqueur - 50 mL",
+      handle: "99-brand-apples-liqueur-50ml",
+      category: "VODKA",
+      country: "USA",
+      composition: "Liqueur base, apple flavoring",
+      type: "Apple-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Apples 50 mL miniature.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-apples-50ml.webp", altText: "99 Brand Apples 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka15", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-16",
+      title: "99 Watermelons Schnapps - 50 mL",
+      handle: "99-brand-watermelons-liqueur-50ml",
+      category: "VODKA",
+      country: "United States (Louisville, Kentucky)",
+      composition: "Distilled spirit and watermelon flavoring",
+      type: "Watermelon-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Brand Watermelon miniature, 50 mL.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-watermelons-50ml.webp", altText: "99 Brand Watermelons 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka16", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-17",
+      title: "Absolut Vodka - 375 mL",
+      handle: "absolut-vodka-swedish-375ml",
+      category: "VODKA",
+      country: "Sweden (Åhus, Skåne)",
+      composition: "Swedish winter wheat and well water",
+      type: "Vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Absolut Original, 375 mL. Continuous distillation.",
+      priceRange: { minVariantPrice: { amount: "12.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-absolut-swedish-vodka-375ml.webp", altText: "Absolut Vodka Swedish Vodka 375ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka17", title: "375ml Bottle", price: { amount: "12.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-18",
+      title: "Amarula Cream Liqueur - 750 mL",
+      handle: "amarula-cream-marula-fruit-liqueur-750ml",
+      category: "VODKA",
+      country: "South Africa",
+      composition: "Marula fruit spirit and dairy cream",
+      type: "Cream liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Amarula Original Cream, 750 mL. Marula spirit matures in French oak before blending with cream.",
+      priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-amarula-cream-liqueur-750ml.webp", altText: "Amarula Cream Marula Fruit Liqueur 750ml bottle with a glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka18", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-19",
+      title: "99 Whipped Liqueur - 50 mL",
+      handle: "99-brand-whipped-liqueur-50ml",
+      category: "VODKA",
+      country: "United States (Louisville, Kentucky)",
+      composition: "Distilled spirit and whipped-cream flavoring",
+      type: "Whipped cream–flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Brand Whipped miniature, 50 mL.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-whipped-50ml.webp", altText: "99 Brand Whipped 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka19", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-20",
+      title: "Barin Russian Vodka - 375 mL",
+      handle: "barin-vodka-premium-quality",
+      category: "VODKA",
+      country: "Check bottle — origin unverified",
+      composition: "Vodka base; fermentation source not disclosed",
+      type: "Vodka",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Savas lists Barin at 80 proof and a retailer lists the 375 mL bottle. Confirm the UPC and country from the back label before publication. Different Barin label records identify different countries, and none has been matched to this UPC and size.",
+      priceRange: { minVariantPrice: { amount: "2.69", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-barin-premium-vodka.webp", altText: "Barin Vodka Premium Quality bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka20", title: "375ml Bottle", price: { amount: "2.69", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-21",
+      title: "99 Bananas Schnapps - 50 mL",
+      handle: "99-brand-bananas-liqueur-50ml",
+      category: "VODKA",
+      country: "USA",
+      composition: "Liqueur base, banana flavoring",
+      type: "Banana-flavored schnapps",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Bananas 50 mL miniature. Pack listings may describe the distributor multipack.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-bananas-50ml.webp", altText: "99 Brand Bananas 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka21", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-22",
+      title: "99 Peaches Schnapps - 50 mL",
+      handle: "99-brand-peaches-liqueur-50ml",
+      category: "VODKA",
+      country: "United States (Louisville, Kentucky)",
+      composition: "Distilled spirit and peach flavoring",
+      type: "Peach-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Brand Peach miniature, 50 mL.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-peaches-50ml.webp", altText: "99 Brand Peaches 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka22", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-23",
+      title: "99 Fruit Punch Liqueur - 50 mL",
+      handle: "99-brand-fruit-punch-liqueur-50ml",
+      category: "VODKA",
+      country: "USA",
+      composition: "Liqueur base, fruit punch flavoring",
+      type: "Fruit-punch-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Fruit Punch 50 mL miniature.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-fruit-punch-50ml.webp", altText: "99 Brand Fruit Punch 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka23", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-24",
+      title: "99 Grapes Liqueur - 50 mL",
+      handle: "99-brand-grapes-schnapps-liqueur-50ml",
+      category: "VODKA",
+      country: "United States (Louisville, Kentucky)",
+      composition: "Distilled spirit and grape flavoring",
+      type: "Grape-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Brand Grape miniature, 50 mL.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-grapes-50ml.webp", altText: "99 Brand Grapes Grape Schnapps 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka24", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-25",
+      title: "99 Strawberries Liqueur - 50 mL",
+      handle: "99-brand-strawberries-liqueur-50ml",
+      category: "VODKA",
+      country: "United States (Louisville, Kentucky)",
+      composition: "Distilled spirit and strawberry flavoring",
+      type: "Strawberry-flavored liqueur",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "99 Brand Strawberry miniature, 50 mL.",
+      priceRange: { minVariantPrice: { amount: "0.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/vodka-99-strawberries-50ml.webp", altText: "99 Brand Strawberries 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka25", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -1729,6 +2827,7 @@ const WINE_PRODUCTS = [
   }
 ];
 
+// Uploaded & Curated 23 Products for Gin Category
 const GIN_PRODUCTS = [
   {
     node: {
@@ -1764,226 +2863,128 @@ const GIN_PRODUCTS = [
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-3",
-      title: "Empress Sapphire Floral Gin",
-      handle: "empress-sapphire-floral-gin",
+      id: "gid://shopify/Product/custom-gin-17",
+      title: "Aperol - 750 mL",
+      handle: "aperol-aperitivo-liqueur-750ml",
       category: "GIN",
-      country: "🇨🇦 Canada",
-      composition: "🫐 Butterfly Pea Blossom",
-      type: "🍸 Indigo Botanical Gin",
-      badges: [{ label: "VIVINO", score: "4.7" }, { label: "AGED", score: "RESERVE" }],
-      description: "Infused with butterfly pea blossom for a natural indigo shade that shifts to rose when tonic is added.",
-      priceRange: { minVariantPrice: { amount: "68.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Empress Sapphire Floral Indigo Gin with citrus botanicals" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin3", title: "700ml Bottle", price: { amount: "68.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "Italy",
+      composition: "Orange, gentian, chinchona, herbs and spices",
+      type: "Italian bitter aperitivo",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Aperol 750 mL, 22 proof. Orange-colored bittersweet aperitivo.",
+      priceRange: { minVariantPrice: { amount: "26.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-aperol-aperitivo-liqueur-750ml.webp", altText: "Bottle of Aperol Aperitivo Liqueur 750ml with an aperitif glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin17", title: "750ml Bottle", price: { amount: "26.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-4",
-      title: "Artisanal Citrus Peel Dry Gin",
-      handle: "artisanal-citrus-peel-dry-gin",
+      id: "gid://shopify/Product/custom-gin-18",
+      title: "Absente Refined Absinthe - 750 mL",
+      handle: "absente-absinthe-refined-750ml",
       category: "GIN",
-      country: "🇪🇸 Spain",
-      composition: "🫐 Mediterranean Citrus",
-      type: "🍸 Spanish Style Gin",
-      badges: [{ label: "RP", score: "93" }, { label: "AGED", score: "RESERVE" }],
-      description: "Distilled with Valencia orange peel, lemons, rosemary, and thyme. Vibrant, aromatic, and refreshing.",
-      priceRange: { minVariantPrice: { amount: "60.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Artisanal Citrus Peel Dry Gin with fresh lemon and lime peels" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin4", title: "700ml Bottle", price: { amount: "60.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "France (Provence)",
+      composition: "Wormwood, anise, mugwort, lemon balm and mint",
+      type: "Absinthe (herbal liqueur)",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Absente Absinthe Refined, 110-proof. Anise-forward with herbal notes.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-absente-absinthe-refined-750ml.webp", altText: "Bottle of Absente Absinthe Refined 750ml with a crystal glass of absinthe" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin18", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-5",
-      title: "Wild Lavender Craft Gin",
-      handle: "wild-lavender-craft-gin",
+      id: "gid://shopify/Product/custom-gin-19",
+      title: "Aperol - 375 mL",
+      handle: "aperol-aperitivo-liqueur-375ml",
       category: "GIN",
-      country: "🇫🇷 France",
-      composition: "🫐 Provence Lavender",
-      type: "🍸 French Botanical Gin",
-      badges: [{ label: "WE", score: "92" }, { label: "AGED", score: "RESERVE" }],
-      description: "Small-batch French gin distilled in copper pots with Provence lavender, lemon verbena, and angelica root.",
-      priceRange: { minVariantPrice: { amount: "72.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Wild Lavender Craft Gin with purple lavender sprigs" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin5", title: "700ml Bottle", price: { amount: "72.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "Italy",
+      composition: "Orange, gentian, chinchona, herbs and spices",
+      type: "Italian bitter aperitivo",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Aperol 375 mL, 22 proof. Bottled aperitivo used to make a spritz.",
+      priceRange: { minVariantPrice: { amount: "19.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-aperol-aperitivo-liqueur-375ml.webp", altText: "Bottle of Aperol Aperitivo Liqueur 375ml with an aperitif glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin19", title: "375ml Bottle", price: { amount: "19.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-6",
-      title: "Olive & Rosemary Mediterranean",
-      handle: "olive-rosemary-mediterranean-gin",
+      id: "gid://shopify/Product/custom-gin-20",
+      title: "Aviation American Gin - 750 mL",
+      handle: "aviation-american-gin-750ml",
       category: "GIN",
-      country: "🇮🇹 Italy",
-      composition: "🫐 Tuscans Olives & Herbs",
-      type: "🍸 Mediterranean Gin",
-      badges: [{ label: "VIVINO", score: "4.6" }, { label: "AGED", score: "RESERVE" }],
-      description: "Savory Tuscan style gin infused with Arbequina olives, fresh rosemary, basil, and Italian juniper.",
-      priceRange: { minVariantPrice: { amount: "82.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Olive & Rosemary Mediterranean Gin with fresh herbs" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin6", title: "700ml Bottle", price: { amount: "82.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "Portland, Oregon, USA",
+      composition: "Neutral spirit, juniper and other botanicals",
+      type: "American-style gin",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Aviation American Gin 750 mL, 84 proof. Botanicals include cardamom, lavender, coriander, anise, sarsaparilla and orange peel.",
+      priceRange: { minVariantPrice: { amount: "27.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-aviation-american-gin-750ml.webp", altText: "Bottle of Aviation American Gin Batch Distilled 750ml with a crystal rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin20", title: "750ml Bottle", price: { amount: "27.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-7",
-      title: "Royal Navy Strength Dry Gin",
-      handle: "royal-navy-strength-dry-gin",
+      id: "gid://shopify/Product/custom-gin-21",
+      title: "Hendrick's Gin 750ml",
+      handle: "hendricks-gin-750ml",
       category: "GIN",
-      country: "🇬🇧 United Kingdom",
-      composition: "🫐 57% ABV Juniper & Spice",
-      type: "🍸 Navy Strength Gin",
-      badges: [{ label: "RP", score: "96" }, { label: "AGED", score: "RESERVE" }],
-      description: "Overproof 57% ABV Navy strength gin. Intense juniper punch, coriander seed, grains of paradise, and lime peel.",
-      priceRange: { minVariantPrice: { amount: "88.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Royal Navy Strength 57% ABV Dry Gin in maritime presentation" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin7", title: "700ml Bottle", price: { amount: "88.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "",
+      composition: "",
+      type: "Scottish Gin",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "",
+      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-hendricks-750ml.webp", altText: "Bottle of Hendrick's Gin 750ml with a crystal rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin21", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-8",
-      title: "Pink Grapefruit & Elderflower",
-      handle: "pink-grapefruit-elderflower-gin",
+      id: "gid://shopify/Product/custom-gin-22",
+      title: "Tanqueray London Dry Gin 750ml",
+      handle: "tanqueray-london-dry-gin-750ml",
       category: "GIN",
-      country: "🇬🇧 United Kingdom",
-      composition: "🫐 Grapefruit & Elderflower",
-      type: "🍸 Pink Botanical Gin",
-      badges: [{ label: "REFRESH", score: "4.7" }, { label: "AGED", score: "RESERVE" }],
-      description: "Naturally distilled with ruby red grapefruit and hand-picked English elderflowers. Crisp citrus sweetness.",
-      priceRange: { minVariantPrice: { amount: "55.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Pink Grapefruit & Elderflower Botanical Gin with pink citrus" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin8", title: "700ml Bottle", price: { amount: "55.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "",
+      composition: "",
+      type: "London Dry Gin",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "",
+      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-tanqueray-london-dry-750ml.webp", altText: "Bottle of Tanqueray Imported London Dry Gin 750ml with a crystal glass and clear ice sphere" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin22", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
     node: {
-      id: "gid://shopify/Product/custom-gin-9",
-      title: "Copper Still Small Batch 10",
-      handle: "copper-still-small-batch-10",
+      id: "gid://shopify/Product/custom-gin-23",
+      title: "Bombay Sapphire London Dry Gin 750ml",
+      handle: "bombay-sapphire-london-dry-gin-750ml",
       category: "GIN",
-      country: "🇺🇸 United States",
-      composition: "🫐 Oregon Hops & Orris",
-      type: "🍸 American Craft Gin",
-      badges: [{ label: "WE", score: "91" }, { label: "AGED", score: "RESERVE" }],
-      description: "Batch No. 10 American dry gin distilled with Cascade hops, chamomile, and fresh grapefruit rind.",
-      priceRange: { minVariantPrice: { amount: "65.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Copper Still Small Batch 10 Artisanal Gin with copper reflection" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin9", title: "700ml Bottle", price: { amount: "65.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-10",
-      title: "London Dry Heritage Edition",
-      handle: "london-dry-heritage-edition",
-      category: "GIN",
-      country: "🇬🇧 United Kingdom",
-      composition: "🫐 Classic 9 Botanicals",
-      type: "🍸 London Dry Gin",
-      badges: [{ label: "VIVINO", score: "4.8" }, { label: "AGED", score: "RESERVE" }],
-      description: "Traditional 18th-century recipe with 9 wild botanicals including cassia bark, liquorice, and coriander.",
-      priceRange: { minVariantPrice: { amount: "52.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of London Dry Heritage Edition Gin with classic botanicals" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin10", title: "700ml Bottle", price: { amount: "52.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-11",
-      title: "Black Forest Monkey 47 Reserve",
-      handle: "black-forest-monkey-47-reserve",
-      category: "GIN",
-      country: "🇩🇪 Germany",
-      composition: "🫐 47 Black Forest Botanicals",
-      type: "🍸 German Reserve Gin",
-      badges: [{ label: "RP", score: "98" }, { label: "AGED", score: "RESERVE" }],
-      description: "Iconic German gin boasting 47 hand-picked Black Forest botanicals and cranberries. Unrivaled complexity.",
-      priceRange: { minVariantPrice: { amount: "110.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Black Forest Reserve Botanical Gin with woodland herbs" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin11", title: "700ml Bottle", price: { amount: "110.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-12",
-      title: "Botanical Garden Cucumber Gin",
-      handle: "botanical-garden-cucumber-gin",
-      category: "GIN",
-      country: "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland",
-      composition: "🫐 Cucumber & Rose Petal",
-      type: "🍸 Cucumber Infused Gin",
-      badges: [{ label: "WE", score: "95" }, { label: "AGED", score: "RESERVE" }],
-      description: "Distilled with fresh Bulgarian rose petals and crisp English cucumbers. Delightfully refreshing profile.",
-      priceRange: { minVariantPrice: { amount: "70.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Botanical Garden Cucumber Gin with crisp cucumber slices" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin12", title: "700ml Bottle", price: { amount: "70.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-13",
-      title: "Spiced Cardamom Artisanal Gin",
-      handle: "spiced-cardamom-artisanal-gin",
-      category: "GIN",
-      country: "🇮🇳 India",
-      composition: "🫐 Green Cardamom & Pepper",
-      type: "🍸 Spiced Botanical Gin",
-      badges: [{ label: "VIVINO", score: "4.7" }, { label: "AGED", score: "RESERVE" }],
-      description: "Crafted in Goa, India with green cardamom, Malabar black pepper, cinnamon, and wild juniper.",
-      priceRange: { minVariantPrice: { amount: "75.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Spiced Cardamom Artisanal Gin with exotic warm spices" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin13", title: "700ml Bottle", price: { amount: "75.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-14",
-      title: "Old Tom Barrel-Aged Gin",
-      handle: "old-tom-barrel-aged-gin",
-      category: "GIN",
-      country: "🇺🇸 United States",
-      composition: "🫐 Toasted Oak & Botanicals",
-      type: "🍺 Barrel-Aged Gin",
-      badges: [{ label: "RP", score: "94" }, { label: "AGED", score: "RESERVE" }],
-      description: "Aged 12 months in charred bourbon barrels. Amber hue with vanilla oak notes complementing crisp juniper.",
-      priceRange: { minVariantPrice: { amount: "85.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Old Tom Barrel-Aged Botanical Gin with charred wood accents" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin14", title: "700ml Bottle", price: { amount: "85.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-15",
-      title: "Crystal Decanter Botanical Gin",
-      handle: "crystal-decanter-botanical-gin",
-      category: "GIN",
-      country: "🇬🇧 United Kingdom",
-      composition: "🫐 Rare Alpine Botanicals",
-      type: "🍸 Luxury Decanter Gin",
-      badges: [{ label: "VIVINO", score: "4.9" }, { label: "AGED", score: "RESERVE" }],
-      description: "Presented in a hand-cut crystal decanter. Infused with rare alpine Edelweiss and wild mountain herbs.",
-      priceRange: { minVariantPrice: { amount: "160.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/gin-reserve.webp", altText: "Bottle of Crystal Decanter Botanical Gin in faceted luxury bottle" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin15", title: "700ml Bottle", price: { amount: "160.00", currencyCode: "USD" }, availableForSale: true } }] }
-    }
-  },
-  {
-    node: {
-      id: "gid://shopify/Product/custom-gin-16",
-      title: "Black Forest Sloe & Elderflower Gin",
-      handle: "black-forest-sloe-elderflower-gin",
-      category: "GIN",
-      country: "🇩🇪 Germany",
-      composition: "🫐 Wild Sloe Berries & Elderflower",
-      type: "🍸 Artisanal Reserve Gin",
-      badges: [{ label: "WE", score: "93" }, { label: "AGED", score: "RESERVE" }],
-      description: "Hand-harvested Black Forest sloe berries macerated with elderflower and juniper. Rich ruby hue with tart plum notes.",
-      priceRange: { minVariantPrice: { amount: "78.00", currencyCode: "USD" } },
-      images: { edges: [{ node: { url: "assets/cat-gin.webp", altText: "Bottle of Black Forest Sloe & Elderflower Gin with ripe forest berries" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin16", title: "700ml Bottle", price: { amount: "78.00", currencyCode: "USD" }, availableForSale: true } }] }
+      country: "",
+      composition: "",
+      type: "London Dry Gin",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "",
+      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/gin-bombay-sapphire-london-dry-750ml.webp", altText: "Bottle of Bombay Sapphire Distilled London Dry Gin 750ml with a crystal rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin23", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -1991,7 +2992,7 @@ const GIN_PRODUCTS = [
 // Cigar section items - Coming Soon
 const CIGAR_PRODUCTS = [];
 
-// Uploaded & Curated 4 Products for Tequila Category
+// Uploaded & Curated 29 Products for Tequila Category
 const TEQUILA_PRODUCTS = [
   {
     node: {
@@ -2125,6 +3126,384 @@ const TEQUILA_PRODUCTS = [
       priceRange: { minVariantPrice: { amount: "28.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/tequila-cazadores-reposado.webp", altText: "Bottle of Cazadores Reposado 100% Blue Agave Tequila with a crystal rocks glass on ice" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila8", title: "750ml Bottle", price: { amount: "28.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-9",
+      title: "Adictivo Añejo Tequila - 750 mL",
+      handle: "adictivo-tequila-anejo-750ml",
+      category: "TEQUILA",
+      country: "Mexico (El Arenal, Jalisco)",
+      composition: "100% blue agave",
+      type: "Añejo tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "750 mL. French oak maturation with toasted aromas.",
+      priceRange: { minVariantPrice: { amount: "69.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-adictivo-anejo-750ml.webp", altText: "Adictivo Tequila Añejo 100% de Agave 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila9", title: "750ml Bottle", price: { amount: "69.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-10",
+      title: "Olmeca Altos Añejo Tequila - 750 mL",
+      handle: "olmeca-altos-tequila-anejo-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Los Altos, Jalisco)",
+      composition: "100% blue agave",
+      type: "Añejo tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Olmeca Altos Añejo, 750 mL. Aged at least 12 months in bourbon barrels.",
+      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-olmeca-altos-anejo-750ml.webp", altText: "Olmeca Altos 100% Agave Tequila Añejo 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila10", title: "750ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-11",
+      title: "Olmeca Altos Plata Tequila - 750 mL",
+      handle: "olmeca-altos-tequila-plata-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Los Altos, Jalisco)",
+      composition: "100% blue agave",
+      type: "Blanco (plata) tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Olmeca Altos Plata, 750 mL. Unaged with cooked agave and citrus notes.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-olmeca-altos-plata-750ml.webp", altText: "Olmeca Altos 100% Agave Tequila Plata 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila11", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-12",
+      title: "Olmeca Altos Reposado Tequila - 750 mL",
+      handle: "olmeca-altos-tequila-reposado-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Los Altos, Jalisco)",
+      composition: "100% blue agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Olmeca Altos Reposado, 750 mL. Bourbon-barrel aged with cooked agave and oak notes.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-olmeca-altos-reposado-750ml.webp", altText: "Olmeca Altos 100% Agave Tequila Reposado 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila12", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-13",
+      title: "AsomBroso La Rosa Reposado Tequila - 750 mL",
+      handle: "asombroso-la-rosa-reposado-tequila-750ml",
+      category: "TEQUILA",
+      country: "Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "AsomBroso La Rosa Reposado 750 mL. Rested in French oak Bordeaux wine barrels, which impart a pink tint.",
+      priceRange: { minVariantPrice: { amount: "44.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-asombroso-la-rosa-reposado-750ml.webp", altText: "Asombroso La Rosa Reposado Tequila 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila13", title: "750ml Bottle", price: { amount: "44.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-14",
+      title: "Adictivo Reposado Tequila - 750 mL",
+      handle: "adictivo-tequila-reposado-750ml",
+      category: "TEQUILA",
+      country: "Mexico (El Arenal, Jalisco)",
+      composition: "100% blue agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "750 mL. French oak maturation with cooked agave and wood aromas.",
+      priceRange: { minVariantPrice: { amount: "58.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-adictivo-reposado-750ml.webp", altText: "Adictivo Tequila Reposado 100% de Agave 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila14", title: "750ml Bottle", price: { amount: "58.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-15",
+      title: "Arette Artesanal Añejo Tequila - 750 mL",
+      handle: "arette-artesanal-suave-anejo-tequila-750ml",
+      category: "TEQUILA",
+      country: "Tequila, Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Añejo tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arette Artesanal Suave Añejo 750 mL, aged in oak.",
+      priceRange: { minVariantPrice: { amount: "94.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-arette-artesanal-suave-anejo-750ml.webp", altText: "Arette Artesanal Suave Añejo 100% de Agave Tequila 750ml bottle with a shot glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila15", title: "750ml Bottle", price: { amount: "94.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-16",
+      title: "Alma del Jaguar Añejo Tequila - 750 mL",
+      handle: "alma-del-jaguar-tequila-anejo-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Los Altos, Jalisco)",
+      composition: "100% blue agave, water and yeast",
+      type: "Añejo tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Regular Añejo, 750 mL. Bottled unfiltered at the source.",
+      priceRange: { minVariantPrice: { amount: "83.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-alma-del-jaguar-anejo-750ml.webp", altText: "Alma Del Jaguar Tequila Añejo 100% Puro de Agave 750ml bottle with a rocks glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila16", title: "750ml Bottle", price: { amount: "83.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-17",
+      title: "Alma del Jaguar Blanco Tequila - 750 mL",
+      handle: "alma-del-jaguar-tequila-blanco-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Los Altos, Jalisco)",
+      composition: "100% blue agave, water and yeast",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Blanco, 750 mL. Bottled unfiltered at the source.",
+      priceRange: { minVariantPrice: { amount: "49.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-alma-del-jaguar-blanco-750ml.webp", altText: "Alma Del Jaguar Tequila Blanco 100% Puro de Agave 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila17", title: "750ml Bottle", price: { amount: "49.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-18",
+      title: "Amatitena Reposado Tequila - 750 mL",
+      handle: "amatitena-tequila-reposado-750ml",
+      category: "TEQUILA",
+      country: "Mexico (Amatitán, Jalisco)",
+      composition: "100% blue agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Amatiteña Reposado, 750 mL export bottle. Producer sheet matches the UPC and 42% ABV.",
+      priceRange: { minVariantPrice: { amount: "84.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-amatitena-reposado-750ml.webp", altText: "Amatiteña Tequila Reposado 100% de Agave 750ml bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila18", title: "750ml Bottle", price: { amount: "84.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-19",
+      title: "Arette Artesanal Suave Blanco Tequila - 750 mL",
+      handle: "arette-artesanal-suave-blanco-tequila-750ml",
+      category: "TEQUILA",
+      country: "Tequila, Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arette Artesanal Suave Blanco 750 mL. UPC distinguishes this from Clásica.",
+      priceRange: { minVariantPrice: { amount: "54.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-arette-artesanal-suave-blanco-750ml.webp", altText: "Arette Artesanal Suave Blanco 100% de Agave Tequila 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila19", title: "750ml Bottle", price: { amount: "54.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-20",
+      title: "Arette Reposado Tequila - 1 L",
+      handle: "arette-reposado-tequila-1l",
+      category: "TEQUILA",
+      country: "Tequila, Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arette Clásica Reposado 1 L, rested in oak. This is the Clásica 1 L release.",
+      priceRange: { minVariantPrice: { amount: "31.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-arette-reposado-1l.webp", altText: "Arette 100% de Agave Reposado Tequila 1.0L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila20", title: "1.0L Bottle", price: { amount: "31.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-21",
+      title: "ArteNOM Selección 1579 Blanco Tequila - 750 mL",
+      handle: "artenom-seleccion-1579-blanco-tequila-750ml",
+      category: "TEQUILA",
+      country: "Jesús María, Jalisco, Mexico",
+      composition: "100% highland blue Weber agave",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "ArteNOM Selección de 1579, made at Destilería El Pandillo. Maine lists 81.4 proof for this UPC.",
+      priceRange: { minVariantPrice: { amount: "60.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-artenom-seleccion-1579-blanco-750ml.webp", altText: "ArteNOM Selección de 1579 Blanco Tequila 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila21", title: "750ml Bottle", price: { amount: "60.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-22",
+      title: "Arette Blanco Tequila - 1 L",
+      handle: "arette-blanco-tequila-1l",
+      category: "TEQUILA",
+      country: "Tequila, Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arette Clásica Blanco 1 L, 80 proof.",
+      priceRange: { minVariantPrice: { amount: "31.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-arette-blanco-1l.webp", altText: "Arette 100% de Agave Blanco Tequila 1.0L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila22", title: "1.0L Bottle", price: { amount: "31.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-23",
+      title: "Arette Artesanal Suave Reposado Tequila - 750 mL",
+      handle: "arette-artesanal-suave-reposado-tequila-750ml",
+      category: "TEQUILA",
+      country: "Tequila, Jalisco, Mexico",
+      composition: "100% blue Weber agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Arette Artesanal Suave Reposado 750 mL, rested in oak. UPC distinguishes this from Clásica.",
+      priceRange: { minVariantPrice: { amount: "62.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-arette-artesanal-suave-reposado-750ml.webp", altText: "Arette Artesanal Suave Reposado 100% de Agave Tequila 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila23", title: "750ml Bottle", price: { amount: "62.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-24",
+      title: "100 Años Reposado Tequila - 750 mL",
+      handle: "100-anos-tequila-reposado-750ml",
+      category: "TEQUILA",
+      country: "Mexico",
+      composition: "Agave-based tequila",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "100 Años Reposado, 750 mL. NC ABC lists this UPC at 80 proof.",
+      priceRange: { minVariantPrice: { amount: "22.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-100-anos-reposado-750ml.webp", altText: "100 Años Tequila Reposado 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila24", title: "750ml Bottle", price: { amount: "22.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-25",
+      title: "4 Copas Blanco Tequila - 750 mL",
+      handle: "4-copas-organic-blanco-tequila-750ml",
+      category: "TEQUILA",
+      country: "Jalisco, Mexico",
+      composition: "Organic blue agave",
+      type: "Organic blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Standard 80-proof Blanco expression. The brand also sells a separate high-proof expression.",
+      priceRange: { minVariantPrice: { amount: "52.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-4-copas-organic-blanco-750ml.webp", altText: "4 Copas The Original Organic Tequila Blanco 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila25", title: "750ml Bottle", price: { amount: "52.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-26",
+      title: "818 Añejo Tequila - 750 mL",
+      handle: "818-tequila-anejo-750ml",
+      category: "TEQUILA",
+      country: "Jalisco, Mexico",
+      composition: "Blue Weber agave",
+      type: "Añejo tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "818 ages this expression for over one year in French and American oak.",
+      priceRange: { minVariantPrice: { amount: "45.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-818-anejo-750ml.webp", altText: "818 Tequila Añejo 100% Agave Azul 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila26", title: "750ml Bottle", price: { amount: "45.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-27",
+      title: "818 Blanco Tequila - 750 mL",
+      handle: "818-tequila-blanco-750ml",
+      category: "TEQUILA",
+      country: "Jalisco, Mexico",
+      composition: "Blue Weber agave",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "818's unaged blanco expression.",
+      priceRange: { minVariantPrice: { amount: "29.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-818-blanco-750ml.webp", altText: "818 Tequila Blanco 100% Agave Azul 750ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila27", title: "750ml Bottle", price: { amount: "29.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-28",
+      title: "1800 Blanco Tequila - 375 mL",
+      handle: "1800-tequila-blanco-375ml",
+      category: "TEQUILA",
+      country: "Mexico",
+      composition: "Blue Weber agave, yeast, water",
+      type: "Blanco tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Double-distilled blanco tequila.",
+      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-1800-blanco-375ml.webp", altText: "1800 Tequila Blanco 100% Agave Azul 375ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila28", title: "375ml Bottle", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-tequila-29",
+      title: "1800 Reposado Tequila - 375 mL",
+      handle: "1800-tequila-reposado-375ml",
+      category: "TEQUILA",
+      country: "Mexico",
+      composition: "Blue Weber agave",
+      type: "Reposado tequila",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Oak-aged reposado tequila in the 375 mL bottle.",
+      priceRange: { minVariantPrice: { amount: "18.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/tequila-1800-reposado-375ml.webp", altText: "1800 Tequila Reposado 100% Agave Azul 375ml bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/tequila29", title: "375ml Bottle", price: { amount: "18.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -2692,9 +4071,101 @@ function getGlassIconSVG(typeStr) {
 // Reusable Wine Category Product Grid Card Renderer (Light Cream Theme)
 // Handles of newly added products that should NOT have the "BEST SELLER" badge or tag
 const NON_BEST_SELLER_HANDLES = new Set([
+  // Newly Uploaded Gin
+  "hendricks-gin-750ml",
+  "tanqueray-london-dry-gin-750ml",
+  "bombay-sapphire-london-dry-gin-750ml",
+  "aperol-aperitivo-liqueur-750ml",
+  "absente-absinthe-refined-750ml",
+  "aperol-aperitivo-liqueur-375ml",
+  "aviation-american-gin-750ml",
   // Newly Uploaded Rum
   "captain-morgan-original-spiced",
-  // Newly Uploaded Whiskeys
+  "bacardi-gold-rum-375ml",
+  "bacardi-superior-white-rum-50ml",
+  "bacardi-gold-rum-200ml",
+  "arak-razzouk-750ml",
+  "angostura-aromatic-bitters-4oz",
+      // Newly Uploaded Tequilas
+  "arette-artesanal-suave-blanco-tequila-750ml",
+  "arette-reposado-tequila-1l",
+  "artenom-seleccion-1579-blanco-tequila-750ml",
+  "arette-blanco-tequila-1l",
+  "arette-artesanal-suave-reposado-tequila-750ml",
+  "100-anos-tequila-reposado-750ml",
+  "4-copas-organic-blanco-tequila-750ml",
+  "818-tequila-anejo-750ml",
+  "818-tequila-blanco-750ml",
+  "1800-tequila-blanco-375ml",
+  "1800-tequila-reposado-375ml",
+  "adictivo-tequila-anejo-750ml",
+  "olmeca-altos-tequila-anejo-750ml",
+  "olmeca-altos-tequila-plata-750ml",
+  "olmeca-altos-tequila-reposado-750ml",
+  "asombroso-la-rosa-reposado-tequila-750ml",
+  "adictivo-tequila-reposado-750ml",
+  "arette-artesanal-suave-anejo-tequila-750ml",
+  "alma-del-jaguar-tequila-anejo-750ml",
+  "alma-del-jaguar-tequila-blanco-750ml",
+  "amatitena-tequila-reposado-750ml",
+// Newly Uploaded Vodkas
+  "99-brand-apples-liqueur-50ml",
+  "99-brand-watermelons-liqueur-50ml",
+  "absolut-vodka-swedish-375ml",
+  "amarula-cream-marula-fruit-liqueur-750ml",
+  "99-brand-whipped-liqueur-50ml",
+  "barin-vodka-premium-quality",
+  "99-brand-bananas-liqueur-50ml",
+  "99-brand-peaches-liqueur-50ml",
+  "99-brand-fruit-punch-liqueur-50ml",
+  "99-brand-grapes-schnapps-liqueur-50ml",
+  "99-brand-strawberries-liqueur-50ml",
+  "absolut-vodka-swedish-200ml",
+  "absolut-vodka-swedish-175l",
+  "360-georgia-peach-flavored-vodka-750ml",
+  "absolut-citron-lemon-vodka-750ml",
+  "360-bing-cherry-flavored-vodka-750ml",
+  "360-vodka-american-vodka-175l",
+// Newly Uploaded Whiskeys
+  "wild-turkey-american-honey-liqueur-50ml",
+  "wild-turkey-american-honey-liqueur-175l",
+  "wild-turkey-american-honey-liqueur-375ml",
+  "wild-turkey-american-honey-liqueur-750ml",
+  "amaro-montenegro-liqueur",
+  "baileys-chocolate-irish-cream-750ml",
+  "10th-mountain-bourbon-whiskey",
+  "baileys-original-irish-cream-750ml",
+  "baileys-espresso-creme-750ml",
+  "bb-dom-liqueur-benedictine-brandy",
+  "baileys-original-irish-cream-175l",
+  "ancient-age-bourbon-750ml",
+  "angels-envy-triple-oak-bourbon",
+  "angels-envy-port-finish-375ml",
+  "augusta-buckners-10-year-single-barrel",
+  "augusta-old-route-8-year-single-barrel",
+  "auchentoshan-american-oak-single-malt",
+  "backbone-decade-down-uncut-anniversary",
+  "291-barrel-proof-colorado-bourbon",
+  "1792-small-batch-bourbon-175l",
+  "aberlour-12-year-speyside-single-malt",
+  "aberfeldy-12-year-highland-single-malt",
+  "ancient-age-bourbon-175l",
+  "1792-small-batch-bourbon",
+  "1620-small-batch-bourbon",
+  "bardstown-origin-toasted-cherry-rye",
+  "2xo-american-oak-bourbon",
+  "barrell-foundation-bourbon",
+  "barrell-dovetail-whiskey",
+  "compass-box-artist-blend",
+  "barrell-seagrass-rye",
+  "widow-jane-baby-jane",
+  "bakers-7-year-single-barrel",
+  "bardstown-origin-high-wheat",
+  "bardstown-origin-bottled-in-bond",
+  "balcones-baby-blue-corn-whisky",
+  "balblair-15-year-single-malt",
+  "balcones-texas-pot-still-bourbon",
+  "backbone-bourbon-uncut",
   "hennessy-vs-cognac",
   "bushmills-original-irish-whiskey",
   "chivas-regal-12-year-scotch",
@@ -2862,16 +4333,24 @@ function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, 
 
       <!-- Bottom Bar: MRP Price & Dark Rating Badge Pill -->
       <div class="product-card-footer wine-card-footer">
-        <div class="flex items-baseline">
-          <span class="product-card-mrp-label wine-card-mrp-label">MRP</span>
-          <span class="product-card-mrp-price wine-card-mrp-price">
-            ${priceStr}
-          </span>
-        </div>
+        ${priceStr ? `
+          <div class="flex items-baseline">
+            <span class="product-card-mrp-label wine-card-mrp-label">MRP</span>
+            <span class="product-card-mrp-price wine-card-mrp-price">
+              ${priceStr}
+            </span>
+          </div>
+        ` : `
+          <div class="flex items-baseline">
+            <span class="product-card-mrp-label wine-card-mrp-label" style="letter-spacing: 0.15em;">AVAILABLE IN STORE</span>
+          </div>
+        `}
 
-        <div class="product-card-rating-badge wine-card-rating-badge">
-          ${ratingBadge}
-        </div>
+        ${ratingBadge ? `
+          <div class="product-card-rating-badge wine-card-rating-badge">
+            ${ratingBadge}
+          </div>
+        ` : ""}
       </div>
 
     </article>
@@ -2882,7 +4361,8 @@ function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, 
 // Reusable Product Grid Card Renderer (Exact Match to Reference Image)
 function createProductCardHTML(product, index = 0) {
   const p = product.node;
-  const priceStr = formatMoney(p.priceRange.minVariantPrice.amount, p.priceRange.minVariantPrice.currencyCode);
+  const hasPrice = p.priceRange && p.priceRange.minVariantPrice?.amount && !isNaN(parseFloat(p.priceRange.minVariantPrice.amount)) && parseFloat(p.priceRange.minVariantPrice.amount) > 0;
+  const priceStr = hasPrice ? formatMoney(p.priceRange.minVariantPrice.amount, p.priceRange.minVariantPrice.currencyCode) : "";
   const image = p.images.edges[0]?.node;
 
   // Clean raw strings from emoji characters
@@ -2890,24 +4370,28 @@ function createProductCardHTML(product, index = 0) {
   const cleanType = (p.type || "").replace(/[\u{1F300}-\u{1F9FF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{1F1E6}-\u{1F1FF}]/gu, "").trim();
   
   // Rating badge (e.g. 4.8 VIVINO)
-  const ratingBadge = p.badges && p.badges[0] ? `${p.badges[0].score} ${p.badges[0].label}` : "4.8 VIVINO";
+  const ratingBadge = p.badges && p.badges[0] ? `${p.badges[0].score} ${p.badges[0].label}` : (p.hasNoDetails ? "" : "4.8 VIVINO");
 
   // Build pill tags
   const tags = [];
-  if (cleanType) {
-    cleanType.split(" ").forEach(t => {
-      const clean = t.replace(/[^a-zA-Z]/g, "").toUpperCase();
-      if (clean && clean.length > 1 && !tags.includes(clean)) tags.push(clean);
-    });
+  if (p.hasNoDetails) {
+    tags.push(p.category || "WHISKEY");
   } else {
-    tags.push(p.category);
-  }
+    if (cleanType) {
+      cleanType.split(" ").forEach(t => {
+        const clean = t.replace(/[^a-zA-Z]/g, "").toUpperCase();
+        if (clean && clean.length > 1 && !tags.includes(clean)) tags.push(clean);
+      });
+    } else {
+      tags.push(p.category);
+    }
 
-  if (cleanCountry) {
-    cleanCountry.replace(/[()]/g, "").split(" ").forEach(c => {
-      const clean = c.replace(/[^a-zA-Z]/g, "").toUpperCase();
-      if (clean && clean.length > 2 && !tags.includes(clean)) tags.push(clean);
-    });
+    if (cleanCountry) {
+      cleanCountry.replace(/[()]/g, "").split(" ").forEach(c => {
+        const clean = c.replace(/[^a-zA-Z]/g, "").toUpperCase();
+        if (clean && clean.length > 2 && !tags.includes(clean)) tags.push(clean);
+      });
+    }
   }
 
   const displayedTags = tags.slice(0, 4);
@@ -3020,7 +4504,7 @@ async function handleIndexPage() {
       } else if (categoryKey === "GIN") {
         updateBreadcrumb(categoryLabel || "Gin");
         if (updateUrl) history.pushState({ category: "GIN" }, "", "#gin");
-        renderProductList([]);
+        renderProductList(GIN_PRODUCTS);
       } else if (categoryKey === "TEQUILA") {
         updateBreadcrumb(categoryLabel || "Tequila");
         if (updateUrl) history.pushState({ category: "TEQUILA" }, "", "#tequila");
@@ -3118,7 +4602,7 @@ async function handleCategoryPage() {
     GIN: {
       title: "Botanical Gin Collection",
       subtitle: "Handcrafted small-batch gin distilled with rare mountain juniper, citrus peel, and wild lavender.",
-      products: []
+      products: GIN_PRODUCTS
     },
     TEQUILA: {
       title: "Tequila & Mezcal Collection",
@@ -3180,7 +4664,7 @@ async function handleCategoryPage() {
     const whiskeyFooterActionsEl = document.getElementById("whiskey-footer-actions");
     const defaultFooterSocialEl = document.getElementById("default-footer-social");
     if (whiskeyFooterActionsEl) {
-      if (["WHISKEY", "RUM", "BEER", "VODKA", "WINE", "TEQUILA"].includes(key)) {
+      if (["WHISKEY", "RUM", "BEER", "VODKA", "WINE", "TEQUILA", "GIN"].includes(key)) {
         whiskeyFooterActionsEl.classList.remove("hidden");
         whiskeyFooterActionsEl.style.display = "flex";
         if (defaultFooterSocialEl) {
@@ -3212,7 +4696,7 @@ async function handleCategoryPage() {
     const filterBeamWrapper = document.querySelector(".cask-filter-beam-wrapper");
     const cigarComingSoonEl = document.getElementById("cigar-coming-soon");
 
-    if (key === "CIGAR" || key === "GIN") {
+    if (key === "CIGAR") {
       if (filterBeamWrapper) filterBeamWrapper.classList.add("hidden");
       if (productsLoading) productsLoading.classList.add("hidden");
       if (productsGrid) productsGrid.classList.add("hidden");
@@ -3221,11 +4705,7 @@ async function handleCategoryPage() {
         cigarComingSoonEl.classList.remove("hidden");
         const comingSoonDesc = cigarComingSoonEl.querySelector("p");
         if (comingSoonDesc) {
-          if (key === "GIN") {
-            comingSoonDesc.textContent = "Our botanical gin collection and artisanal small-batch releases are currently in preparation. Please check back soon for the official release.";
-          } else {
-            comingSoonDesc.textContent = "Our curated humidor selection and hand-rolled artisanal cigars are currently in preparation. Please check back soon for the official release.";
-          }
+          comingSoonDesc.textContent = "Our curated humidor selection and hand-rolled artisanal cigars are currently in preparation. Please check back soon for the official release.";
         }
       }
       return;
@@ -3567,7 +5047,7 @@ async function handleProductPage() {
     if (typeEl && p.type) typeEl.textContent = p.type;
 
     const descriptionEl = document.getElementById("product-description");
-    if (descriptionEl) descriptionEl.textContent = p.description;
+    if (descriptionEl) descriptionEl.textContent = p.description || "Available in store at Whiskey Barrel. Visit us at 12205 Shawnee Mission Parkway for availability and details.";
 
     const priceEl = document.getElementById("product-price");
     const optionsContainer = document.getElementById("product-variants-container");
@@ -3580,13 +5060,15 @@ async function handleProductPage() {
       
       // Update Price
       if (priceEl) {
-        if (variant) {
+        if (variant && variant.price?.amount && parseFloat(variant.price.amount) > 0) {
           priceEl.textContent = formatMoney(variant.price.amount, variant.price.currencyCode);
-        } else {
+        } else if (p.priceRange && p.priceRange.minVariantPrice?.amount && parseFloat(p.priceRange.minVariantPrice.amount) > 0) {
           priceEl.textContent = formatMoney(
             p.priceRange.minVariantPrice.amount,
             p.priceRange.minVariantPrice.currencyCode
           );
+        } else {
+          priceEl.textContent = "Available in Store";
         }
       }
 
@@ -4745,6 +6227,1111 @@ window.addEventListener("DOMContentLoaded", () => {
 /* ======================================================== */
 
 const PRODUCT_QUICKVIEW_DETAILS = {
+  "bakers-7-year-single-barrel": {
+    badge: "KENTUCKY STRAIGHT SINGLE-BARREL BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT SINGLE-BARREL BOURBON WHISKEY",
+    title: "Baker's 7 Year Single Barrel Bourbon - 750 mL",
+    subtitle: "BAKERS BOURBON WHISKEY 750ML",
+    price: "$69.99",
+    style: "Kentucky straight single-barrel bourbon whiskey",
+    ingredients: "Corn-based bourbon mash; exact ratios not stated by producer",
+    origin: "Kentucky, United States",
+    abv: "53.5% ABV",
+    volume: "750 ml",
+    description: "Standard 7-year single-barrel Baker’s at 107 proof. 750 mL."
+  },
+  "bardstown-origin-high-wheat": {
+    badge: "KENTUCKY STRAIGHT WHEATED BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT WHEATED BOURBON WHISKEY",
+    title: "Bardstown Origin Series High Wheat Bourbon - 750 mL",
+    subtitle: "BARDSTOWN BOURBON 750ML",
+    price: "$49.99",
+    style: "Kentucky straight wheated bourbon whiskey",
+    ingredients: "53% corn, 39% wheat and 8% malted barley",
+    origin: "Bardstown, Kentucky, United States",
+    abv: "53% ABV",
+    volume: "750 ml",
+    description: "Origin High Wheat, six years and 106 proof. Producer sell sheet confirms UPC 857552008806. 750 mL."
+  },
+  "bardstown-origin-bottled-in-bond": {
+    badge: "BOTTLED-IN-BOND KENTUCKY STRAIGHT WHEATED BOURBON WHISKEY",
+    eyebrow: "BOTTLED-IN-BOND KENTUCKY STRAIGHT WHEATED BOURBON WHISKEY",
+    title: "Bardstown Origin Series Bottled-in-Bond Bourbon - 750 mL",
+    subtitle: "BARDSTOWN ORIGIN 750ML",
+    price: "$49.99",
+    style: "Bottled-in-bond Kentucky straight wheated bourbon whiskey",
+    ingredients: "68% corn, 20% wheat and 12% malted barley",
+    origin: "Bardstown, Kentucky, United States",
+    abv: "50% ABV",
+    volume: "750 ml",
+    description: "Estate-distilled Origin Bottled-in-Bond, aged six years and bottled at 100 proof. 750 mL."
+  },
+  "balcones-baby-blue-corn-whisky": {
+    badge: "TEXAS CORN WHISKY",
+    eyebrow: "TEXAS CORN WHISKY",
+    title: "Balcones Baby Blue Corn Whisky - 750 mL",
+    subtitle: "BALCONES BABY BLUE 750ML",
+    price: "$39.99",
+    style: "Texas corn whisky",
+    ingredients: "Roasted blue corn",
+    origin: "Waco, Texas, United States",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "Baby Blue pot-distilled corn whisky at 92 proof. 750 mL."
+  },
+  "balblair-15-year-single-malt": {
+    badge: "HIGHLAND SINGLE MALT SCOTCH WHISKY",
+    eyebrow: "HIGHLAND SINGLE MALT SCOTCH WHISKY",
+    title: "Balblair 15 Year Single Malt Scotch Whisky - 750 mL",
+    subtitle: "BALBLAIR DISTILLERY 15 YRS 750ML",
+    price: "$124.99",
+    style: "Highland single malt Scotch whisky",
+    ingredients: "Malted barley",
+    origin: "Edderton, Scottish Highlands, United Kingdom",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "15-year age statement. Matured in American oak ex-bourbon casks and first-fill ex-sherry oak. 750 mL."
+  },
+  "balcones-texas-pot-still-bourbon": {
+    badge: "TEXAS POT-STILL STRAIGHT BOURBON WHISKEY",
+    eyebrow: "TEXAS POT-STILL STRAIGHT BOURBON WHISKEY",
+    title: "Balcones Texas Pot Still Bourbon - 750 mL",
+    subtitle: "BALCONES TEXAS BOUTBON 750ML",
+    price: "$29.99",
+    style: "Texas pot-still straight bourbon whiskey",
+    ingredients: "Roasted blue corn, Texas wheat, Texas rye and malted barley",
+    origin: "Waco, Texas, United States",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "Four-grain bourbon matured in new American oak. 750 mL."
+  },
+  "backbone-bourbon-uncut": {
+    badge: "BARREL-PROOF STRAIGHT BOURBON WHISKEY",
+    eyebrow: "BARREL-PROOF STRAIGHT BOURBON WHISKEY",
+    title: "Backbone Uncut Straight Bourbon - 750 mL",
+    subtitle: "BACKBONE BOURBON UNCUT BOURBON WHISKY 750ML",
+    price: "$54.99",
+    style: "Barrel-proof straight bourbon whiskey",
+    ingredients: "75% corn, 21% rye and 4% malted barley",
+    origin: "Indiana, United States",
+    abv: "58.3% ABV",
+    volume: "750 ml",
+    description: "Backbone Uncut is bottled undiluted. The producer's published batch 29 and original source photo show 116.6 proof / 58.3% ABV. Confirm the inventory batch before using that strength."
+  },
+  "bardstown-origin-toasted-cherry-rye": {
+    badge: "KENTUCKY STRAIGHT RYE WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT RYE WHISKEY",
+    title: "Bardstown Origin Series Rye Whiskey - 750 mL",
+    subtitle: "BARDSTOWN ORIGIN 750ML",
+    price: "$49.99",
+    style: "Kentucky straight rye whiskey",
+    ingredients: "95% rye and 5% malted barley",
+    origin: "Bardstown, Kentucky, United States",
+    abv: "48% ABV",
+    volume: "750 ml",
+    description: "Origin rye, six years, finished in toasted cherry wood and oak barrels. 750 mL."
+  },
+  "2xo-american-oak-bourbon": {
+    badge: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "2XO American Oak Bourbon - 750 mL",
+    subtitle: "2XO AMERUCAN OAK 750ML",
+    price: "$44.99",
+    style: "Kentucky straight bourbon whiskey",
+    ingredients: "Corn-forward bourbon mash",
+    origin: "Kentucky, USA",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "American Oak is part of the 2XO Oak Series."
+  },
+  "barrell-foundation-bourbon": {
+    badge: "BLEND OF STRAIGHT BOURBON WHISKEYS",
+    eyebrow: "BLEND OF STRAIGHT BOURBON WHISKEYS",
+    title: "Barrell Foundation Bourbon - 750 mL",
+    subtitle: "BARRELL FDN BOURBON 750ML",
+    price: "$55.99",
+    style: "Blend of straight bourbon whiskeys",
+    ingredients: "Derived blend mash bill: 73% corn, 23% rye and 4% malted barley",
+    origin: "United States; blended and bottled in Kentucky",
+    abv: "50% ABV",
+    volume: "750 ml",
+    description: "Standard Foundation blends bourbons from Kentucky, Indiana, Tennessee and Maryland. 100 proof, 750 mL."
+  },
+  "barrell-dovetail-whiskey": {
+    badge: "CASK-STRENGTH BARREL-FINISHED WHISKEY",
+    eyebrow: "CASK-STRENGTH BARREL-FINISHED WHISKEY",
+    title: "Barrell Dovetail Whiskey - 750 mL",
+    subtitle: "BARREL DOVETAIL 750ML",
+    price: "$89.99",
+    style: "Cask-strength barrel-finished whiskey",
+    ingredients: "Bourbon and other American whiskey components",
+    origin: "United States",
+    abv: "62.71% ABV",
+    volume: "750 ml",
+    description: "The original Dovetail source bottle shows 125.42 proof / 62.71% ABV. This is the pictured batch. Release strengths vary, so confirm the inventory bottle label. Finished in Cabernet, Port and rum casks."
+  },
+  "compass-box-artist-blend": {
+    badge: "BLENDED SCOTCH WHISKY",
+    eyebrow: "BLENDED SCOTCH WHISKY",
+    title: "Compass Box Artist Blend Scotch Whisky - 750 mL",
+    subtitle: "ARTIST BLEND 750ML",
+    price: "$34.99",
+    style: "Blended Scotch whisky",
+    ingredients: "Malt Scotch whisky, grain Scotch whisky",
+    origin: "Scotland, United Kingdom",
+    abv: "43% ABV",
+    volume: "750 ml",
+    description: "Compass Box Artist Blend 750 mL. The producer lists about 55% malt whisky in the blend."
+  },
+  "barrell-seagrass-rye": {
+    badge: "CASK-STRENGTH BARREL-FINISHED RYE WHISKEY BLEND",
+    eyebrow: "CASK-STRENGTH BARREL-FINISHED RYE WHISKEY BLEND",
+    title: "Barrell Seagrass Rye Whiskey - 750 mL",
+    subtitle: "BARREL SEAGRASS RYE 750ML",
+    price: "$85.99",
+    style: "Cask-strength barrel-finished rye whiskey blend",
+    ingredients: "American and Canadian rye whiskeys",
+    origin: "United States and Canada",
+    abv: "59.2% ABV",
+    volume: "750 ml",
+    description: "NC ABC lists this exact UPC at 118.4 proof / 59.2% ABV. This is a regulatory reference value. The source photo has blank proof fields and releases vary, so confirm the inventory bottle label. Finished in rhum, Madeira and apricot-brandy casks."
+  },
+  "widow-jane-baby-jane": {
+    badge: "BLEND OF STRAIGHT BOURBON WHISKEYS",
+    eyebrow: "BLEND OF STRAIGHT BOURBON WHISKEYS",
+    title: "Widow Jane Baby Jane Bourbon - 750 mL",
+    subtitle: "BABY JANE BOURBON WHISKEY750ML",
+    price: "$49.99",
+    style: "Blend of straight bourbon whiskeys",
+    ingredients: "Proprietary Baby Jane heirloom corn; other mash grains undisclosed in the cited release",
+    origin: "New York and Kentucky, United States",
+    abv: "45.5% ABV",
+    volume: "750 ml",
+    description: "Small-batch blend of Brooklyn and Kentucky bourbon. 750 mL."
+  },
+  "291-barrel-proof-colorado-bourbon": {
+    badge: "BARREL-PROOF SINGLE-BARREL BOURBON",
+    eyebrow: "BARREL-PROOF SINGLE-BARREL BOURBON",
+    title: "291 Colorado Barrel Proof Single Barrel Bourbon - 750 mL",
+    subtitle: "291 BARREL PROOF COLORADO WHISKY 750ML",
+    price: "$119.99",
+    style: "Barrel-proof single-barrel bourbon",
+    ingredients: "Corn-forward bourbon mash",
+    origin: "Colorado, USA",
+    abv: "63% ABV",
+    volume: "750 ml",
+    description: "Published reference for this UPC is 63% ABV. Barrel proof varies. The source image shows a 66.9% straight-bourbon bottling, so confirm the pictured expression and batch against the inventory bottle."
+  },
+  "1792-small-batch-bourbon-175l": {
+    badge: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "1792 Small Batch Bourbon - 1.75 L",
+    subtitle: "1792 SMALL BATCH  1.75L",
+    price: "$59.99",
+    style: "Kentucky straight bourbon whiskey",
+    ingredients: "Corn-forward grain mash with rye",
+    origin: "Kentucky, USA",
+    abv: "46.85% ABV",
+    volume: "1.75 L",
+    description: "High-rye Small Batch expression in the 1.75 L bottle."
+  },
+  "aberlour-12-year-speyside-single-malt": {
+    badge: "SPEYSIDE SINGLE MALT SCOTCH WHISKY",
+    eyebrow: "SPEYSIDE SINGLE MALT SCOTCH WHISKY",
+    title: "Aberlour 12 Year Single Malt Scotch Whisky - 750 mL",
+    subtitle: "ABERLOUR DISLLRY SNGL MALT 750ML",
+    price: "$64.99",
+    style: "Speyside single malt Scotch whisky",
+    ingredients: "Malted barley",
+    origin: "Scotland (Speyside, Aberlour)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Current Pernod Ricard U.S. supplier record for UPC 080432102145 and the original 750 mL bottle photos show 40% ABV / 80 proof. NC ABC has a 43% entry for the same UPC. Use 40% as the U.S. reference and check the inventory label."
+  },
+  "aberfeldy-12-year-highland-single-malt": {
+    badge: "HIGHLAND SINGLE MALT SCOTCH WHISKY",
+    eyebrow: "HIGHLAND SINGLE MALT SCOTCH WHISKY",
+    title: "Aberfeldy Highland Single Malt Scotch Whisky - 750 mL",
+    subtitle: "ABERFELDY HGHGLAD SINGLE MALT 750 ML",
+    price: "$59.99",
+    style: "Highland single malt Scotch whisky",
+    ingredients: "Malted barley",
+    origin: "Scotland (Highlands, Aberfeldy)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "12 years old. Honeyed malt with fruit, spice and vanilla."
+  },
+  "ancient-age-bourbon-175l": {
+    badge: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Ancient Age Bourbon - 1.75 L",
+    subtitle: "ANCIENT AGE 1.75L",
+    price: "$26.99",
+    style: "Kentucky straight bourbon whiskey",
+    ingredients: "Corn, rye, malted barley",
+    origin: "Frankfort, Kentucky, USA",
+    abv: "40% ABV",
+    volume: "1.75 L",
+    description: "Ancient Age 1.75 L, 80 proof. The distillery does not publish the mash proportions."
+  },
+  "1792-small-batch-bourbon": {
+    badge: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "1792 Small Batch Bourbon - 750 mL",
+    subtitle: "1792 SMLL BATCH 750ML",
+    price: "$30.99",
+    style: "Kentucky straight bourbon whiskey",
+    ingredients: "Corn-forward grain mash with rye",
+    origin: "Kentucky, USA",
+    abv: "46.85% ABV",
+    volume: "750 ml",
+    description: "High-rye Small Batch expression in the 750 mL bottle. Label artwork may vary."
+  },
+  "1620-small-batch-bourbon": {
+    badge: "SMALL BATCH BOURBON WHISKEY",
+    eyebrow: "SMALL BATCH BOURBON WHISKEY",
+    title: "1620 Small Batch Bourbon - 750 mL",
+    subtitle: "1620 SMALL BTCH BOURB 750ML",
+    price: "$39.99",
+    style: "Small batch bourbon whiskey",
+    ingredients: "Corn, rye, malted barley",
+    origin: "USA",
+    abv: "45% ABV",
+    volume: "750 ml",
+    description: "The 90-proof Small Batch expression. The distiller lists Full Proof as a separate product."
+  },
+  "ancient-age-bourbon-750ml": {
+    badge: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Ancient Age Bourbon - 750 mL",
+    subtitle: "ANCIENT AGE 750ML",
+    price: "$13.99",
+    style: "Kentucky straight bourbon whiskey",
+    ingredients: "Corn, rye, malted barley",
+    origin: "Frankfort, Kentucky, USA",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Ancient Age 750 mL, 80 proof."
+  },
+  "angels-envy-triple-oak-bourbon": {
+    badge: "OAK-FINISHED KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "OAK-FINISHED KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Angel's Envy Triple Oak Bourbon - 750 mL",
+    subtitle: "ANGELS ENVY TRIPLE OAK 750ML",
+    price: "$79.99",
+    style: "Oak-finished Kentucky straight bourbon whiskey",
+    ingredients: "Corn-based bourbon grain mash",
+    origin: "Kentucky, USA",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "Angel's Envy Triple Oak 750 mL, 92 proof. Finished in French, Hungarian and Chinkapin oak."
+  },
+  "angels-envy-port-finish-375ml": {
+    badge: "PORT-FINISHED KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "PORT-FINISHED KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Angel's Envy Bourbon - 375 mL",
+    subtitle: "ANGELS ENVY 375ML",
+    price: "$29.99",
+    style: "Port-finished Kentucky straight bourbon whiskey",
+    ingredients: "Corn-based bourbon grain mash",
+    origin: "Kentucky, USA",
+    abv: "43.3% ABV",
+    volume: "375 ml",
+    description: "Angel's Envy Signature Series 375 mL, finished in port wine barrels. Maine lists 86.6 proof for this UPC."
+  },
+  "augusta-buckners-10-year-single-barrel": {
+    badge: "SINGLE-BARREL KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "SINGLE-BARREL KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Augusta 10 Year Single Barrel Bourbon - 750 mL",
+    subtitle: "AUGUSTA 10YR SNGL BRL 750ML",
+    price: "$159.99",
+    style: "Single-barrel Kentucky straight bourbon whiskey",
+    ingredients: "Corn-based bourbon grain mash",
+    origin: "Kentucky, USA",
+    abv: "60.2% ABV",
+    volume: "750 ml",
+    description: "Buckner's 10 Year source bottle shows 120.4 proof / 60.2% ABV, corroborated by an exact-UPC retailer record. This is a pictured single-barrel value. Confirm the inventory barrel's label."
+  },
+  "augusta-old-route-8-year-single-barrel": {
+    badge: "SINGLE-BARREL KENTUCKY STRAIGHT BOURBON WHISKEY",
+    eyebrow: "SINGLE-BARREL KENTUCKY STRAIGHT BOURBON WHISKEY",
+    title: "Augusta Old Route 8 Bourbon - 750 mL",
+    subtitle: "AUGUSTA OLD ROUTE 8 750ML",
+    price: "$119.99",
+    style: "Single-barrel Kentucky straight bourbon whiskey",
+    ingredients: "Corn-based bourbon grain mash",
+    origin: "Kentucky, USA",
+    abv: "55% ABV",
+    volume: "750 ml",
+    description: "Old Route 8 source bottle shows 110 proof / 55% ABV. This is a pictured single-barrel value. Confirm the inventory barrel's label."
+  },
+  "auchentoshan-american-oak-single-malt": {
+    badge: "LOWLAND SINGLE MALT SCOTCH WHISKY",
+    eyebrow: "LOWLAND SINGLE MALT SCOTCH WHISKY",
+    title: "Auchentoshan American Oak Single Malt Scotch Whisky - 750 mL",
+    subtitle: "AUCHENTOSHAN SINGLE MALT 750ML",
+    price: "$52.99",
+    style: "Lowland single malt Scotch whisky",
+    ingredients: "Malted barley",
+    origin: "Glasgow area, Scotland, United Kingdom",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Auchentoshan American Oak 750 mL. Triple distilled and matured in American oak ex-bourbon casks."
+  },
+  "backbone-decade-down-uncut-anniversary": {
+    badge: "STRAIGHT BOURBON WHISKEY, PARTLY SHERRY-CASK FINISHED",
+    eyebrow: "STRAIGHT BOURBON WHISKEY, PARTLY SHERRY-CASK FINISHED",
+    title: "Backbone Decade Down Uncut Bourbon - 750 mL",
+    subtitle: "BACKBONE BOURBON WHISKY 750ML",
+    price: "$75.99",
+    style: "Straight bourbon whiskey, partly sherry-cask finished",
+    ingredients: "Corn, rye and malted barley",
+    origin: "Indiana, United States",
+    abv: "55% ABV",
+    volume: "750 ml",
+    description: "Decade Down Uncut Anniversary Edition blends five- to seven-year bourbons, including a sherry-cask-finished portion. 750 mL."
+  },
+  "amaro-montenegro-liqueur": {
+    badge: "ITALIAN AMARO (HERBAL LIQUEUR)",
+    eyebrow: "ITALIAN AMARO (HERBAL LIQUEUR)",
+    title: "Amaro Montenegro - 750 mL",
+    subtitle: "AMARO MONTENEGRO 750ML",
+    price: "$37.99",
+    style: "Italian amaro (herbal liqueur)",
+    ingredients: "40 botanicals, including spices, citrus peels and roots",
+    origin: "Italy (Bologna)",
+    abv: "23% ABV",
+    volume: "750 ml",
+    description: "Amaro Montenegro, 750 mL. Bittersweet herbal and citrus profile."
+  },
+  "baileys-chocolate-irish-cream-750ml": {
+    badge: "CHOCOLATE IRISH CREAM LIQUEUR",
+    eyebrow: "CHOCOLATE IRISH CREAM LIQUEUR",
+    title: "Baileys Chocolate Irish Cream Liqueur - 750 mL",
+    subtitle: "BAILEY CHOCOLATE CREAM LIQUER",
+    price: "$29.99",
+    style: "Chocolate Irish cream liqueur",
+    ingredients: "Baileys Original Irish Cream and Belgian chocolate",
+    origin: "Ireland",
+    abv: "15.7% ABV",
+    volume: "750 ml",
+    description: "Chocolate expression in blue bottle. 750 mL, 31.4 proof."
+  },
+  "10th-mountain-bourbon-whiskey": {
+    badge: "AMERICAN BOURBON WHISKEY",
+    eyebrow: "AMERICAN BOURBON WHISKEY",
+    title: "10th Mountain Bourbon - 750 mL",
+    subtitle: "10TH MOUNTAIN BOURBON 750ML",
+    price: "$61.99",
+    style: "American bourbon whiskey",
+    ingredients: "Colorado corn, rye, malted barley",
+    origin: "Colorado, USA",
+    abv: "46% ABV",
+    volume: "750 ml",
+    description: "Made with a corn-forward mash and aged in new charred oak."
+  },
+  "baileys-original-irish-cream-750ml": {
+    badge: "IRISH CREAM LIQUEUR",
+    eyebrow: "IRISH CREAM LIQUEUR",
+    title: "Baileys Original Irish Cream - 750 mL",
+    subtitle: "BAILEY IRISH CREAM 750ML",
+    price: "$29.99",
+    style: "Irish cream liqueur",
+    ingredients: "Irish whiskey and spirits, Irish dairy cream, chocolate and vanilla flavors",
+    origin: "Ireland",
+    abv: "17% ABV",
+    volume: "750 ml",
+    description: "Original Irish Cream, 750 mL bottle."
+  },
+  "baileys-espresso-creme-750ml": {
+    badge: "COFFEE-FLAVORED IRISH CREAM LIQUEUR",
+    eyebrow: "COFFEE-FLAVORED IRISH CREAM LIQUEUR",
+    title: "Baileys Espresso Crème Irish Cream Liqueur - 750 mL",
+    subtitle: "BAILEY ESPRESSO 750ML",
+    price: "$29.99",
+    style: "Coffee-flavored Irish cream liqueur",
+    ingredients: "Baileys Original Irish Cream, coffee flavor and other natural flavors",
+    origin: "Ireland",
+    abv: "17% ABV",
+    volume: "750 ml",
+    description: "Espresso Crème expression. 750 mL, 34 proof."
+  },
+  "bb-dom-liqueur-benedictine-brandy": {
+    badge: "BRANDY AND HERBAL LIQUEUR",
+    eyebrow: "BRANDY AND HERBAL LIQUEUR",
+    title: "B&B D.O.M. Liqueur - 750 mL",
+    subtitle: "B&B LIQUEUR 750ML",
+    price: "$38.99",
+    style: "Brandy and herbal liqueur",
+    ingredients: "Bénédictine herbal liqueur (60%); French brandy (40%)",
+    origin: "Fécamp, France",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Blended at Palais Bénédictine and rested in French oak. 750 mL."
+  },
+  "baileys-original-irish-cream-175l": {
+    badge: "IRISH CREAM LIQUEUR",
+    eyebrow: "IRISH CREAM LIQUEUR",
+    title: "Baileys Original Irish Cream - 1.75 L",
+    subtitle: "BAILEYS IRISH CREAM 1.75L",
+    price: "$51.99",
+    style: "Irish cream liqueur",
+    ingredients: "Irish whiskey and spirits, Irish dairy cream, chocolate and vanilla flavors",
+    origin: "Ireland",
+    abv: "17% ABV",
+    volume: "1.75 L",
+    description: "Original Irish Cream, 1.75 L bottle."
+  },
+  "wild-turkey-american-honey-liqueur-50ml": {
+    badge: "BOURBON-BASED HONEY LIQUEUR",
+    eyebrow: "BOURBON-BASED HONEY LIQUEUR",
+    title: "Wild Turkey American Honey - 50 mL",
+    subtitle: "AMERICAN HONEY 50ML",
+    price: "$1.09",
+    style: "Bourbon-based honey liqueur",
+    ingredients: "Kentucky bourbon whiskey, honey",
+    origin: "Kentucky, USA",
+    abv: "35.5% ABV",
+    volume: "50 ml",
+    description: "Wild Turkey American Honey 50 mL miniature. The state listing groups the minis in a 12-pack."
+  },
+  "wild-turkey-american-honey-liqueur-375ml": {
+    badge: "BOURBON AND HONEY LIQUEUR",
+    eyebrow: "BOURBON AND HONEY LIQUEUR",
+    title: "Wild Turkey American Honey - 375 mL",
+    subtitle: "AMERICAN HONEY 375ML",
+    price: "$14.99",
+    style: "Bourbon and honey liqueur",
+    ingredients: "Kentucky bourbon whiskey and honey",
+    origin: "United States (Lawrenceburg, Kentucky)",
+    abv: "35.5% ABV",
+    volume: "375 ml",
+    description: "Wild Turkey American Honey, 375 mL. Sweet honey and bourbon profile."
+  },
+  "wild-turkey-american-honey-liqueur-750ml": {
+    badge: "BOURBON-BASED HONEY LIQUEUR",
+    eyebrow: "BOURBON-BASED HONEY LIQUEUR",
+    title: "Wild Turkey American Honey - 750 mL",
+    subtitle: "AMERICAN HONEY 750ML",
+    price: "$19.99",
+    style: "Bourbon-based honey liqueur",
+    ingredients: "Kentucky bourbon whiskey, honey",
+    origin: "Kentucky, USA",
+    abv: "35.5% ABV",
+    volume: "750 ml",
+    description: "Wild Turkey American Honey 750 mL, 71 proof."
+  },
+  "aperol-aperitivo-liqueur-750ml": {
+    badge: "ITALIAN BITTER APERITIVO",
+    eyebrow: "ITALIAN BITTER APERITIVO",
+    title: "Aperol - 750 mL",
+    subtitle: "APEROL 750ML",
+    price: "$26.99",
+    style: "Italian bitter aperitivo",
+    ingredients: "Orange, gentian, chinchona, herbs and spices",
+    origin: "Italy",
+    abv: "11% ABV",
+    volume: "750 ml",
+    description: "Aperol 750 mL, 22 proof. Orange-colored bittersweet aperitivo."
+  },
+  "absente-absinthe-refined-750ml": {
+    badge: "ABSINTHE (HERBAL LIQUEUR)",
+    eyebrow: "ABSINTHE (HERBAL LIQUEUR)",
+    title: "Absente Refined Absinthe - 750 mL",
+    subtitle: "ABSENTE REFINED 750ML",
+    price: "$49.99",
+    style: "Absinthe (herbal liqueur)",
+    ingredients: "Wormwood, anise, mugwort, lemon balm and mint",
+    origin: "France (Provence)",
+    abv: "55% ABV",
+    volume: "750 ml",
+    description: "Absente Absinthe Refined, 110-proof. Anise-forward with herbal notes."
+  },
+  "aperol-aperitivo-liqueur-375ml": {
+    badge: "ITALIAN BITTER APERITIVO",
+    eyebrow: "ITALIAN BITTER APERITIVO",
+    title: "Aperol - 375 mL",
+    subtitle: "APEROL 375ML",
+    price: "$19.99",
+    style: "Italian bitter aperitivo",
+    ingredients: "Orange, gentian, chinchona, herbs and spices",
+    origin: "Italy",
+    abv: "11% ABV",
+    volume: "375 ml",
+    description: "Aperol 375 mL, 22 proof. Bottled aperitivo used to make a spritz."
+  },
+  "aviation-american-gin-750ml": {
+    badge: "AMERICAN-STYLE GIN",
+    eyebrow: "AMERICAN-STYLE GIN",
+    title: "Aviation American Gin - 750 mL",
+    subtitle: "AVIATION GIN750ML",
+    price: "$27.99",
+    style: "American-style gin",
+    ingredients: "Neutral spirit, juniper and other botanicals",
+    origin: "Portland, Oregon, USA",
+    abv: "42% ABV",
+    volume: "750 ml",
+    description: "Aviation American Gin 750 mL, 84 proof. Botanicals include cardamom, lavender, coriander, anise, sarsaparilla and orange peel."
+  },
+  "bacardi-gold-rum-375ml": {
+    badge: "GOLD RUM",
+    eyebrow: "GOLD RUM",
+    title: "Bacardí Gold Rum - 375 mL",
+    subtitle: "BACARDI GOLD RUM 375ML",
+    price: "$9.99",
+    style: "Gold rum",
+    ingredients: "Sugarcane molasses, water and yeast",
+    origin: "Puerto Rico, United States",
+    abv: "40% ABV",
+    volume: "375 ml",
+    description: "Toasted-oak-aged amber rum. 375 mL."
+  },
+  "bacardi-superior-white-rum-50ml": {
+    badge: "WHITE RUM",
+    eyebrow: "WHITE RUM",
+    title: "Bacardí Superior White Rum - 50 mL",
+    subtitle: "BACARDI SILVER 50ML",
+    price: "$0.99",
+    style: "White rum",
+    ingredients: "Sugarcane molasses, water and yeast",
+    origin: "Cataño, Puerto Rico, United States",
+    abv: "40% ABV",
+    volume: "50 ml",
+    description: "Light white rum, 50 mL per bottle. Same UPC appears as single and 10-pack in different catalogs."
+  },
+  "bacardi-gold-rum-200ml": {
+    badge: "GOLD RUM",
+    eyebrow: "GOLD RUM",
+    title: "Bacardí Gold Rum - 200 mL",
+    subtitle: "BACARDI GOLD 200ML",
+    price: "$5.99",
+    style: "Gold rum",
+    ingredients: "Sugarcane molasses, water and yeast",
+    origin: "Puerto Rico, United States",
+    abv: "40% ABV",
+    volume: "200 ml",
+    description: "Toasted-oak-aged amber rum. 200 mL."
+  },
+  "arak-razzouk-750ml": {
+    badge: "ARAK / ANISE-FLAVORED GRAPE SPIRIT",
+    eyebrow: "ARAK / ANISE-FLAVORED GRAPE SPIRIT",
+    title: "Arak Razzouk - 750 mL",
+    subtitle: "ARAK RAZZOUK 750ML",
+    price: "$25.99",
+    style: "Arak / anise-flavored grape spirit",
+    ingredients: "Distilled grape juice, aniseed",
+    origin: "Lebanon",
+    abv: "50% ABV",
+    volume: "750 ml",
+    description: "Arak Razzouk 750 mL, 100 proof. Turns cloudy with added water."
+  },
+  "angostura-aromatic-bitters-4oz": {
+    badge: "AROMATIC COCKTAIL BITTERS",
+    eyebrow: "AROMATIC COCKTAIL BITTERS",
+    title: "Angostura Aromatic Bitters - 4 fl oz",
+    subtitle: "ANGOSTURA BITTERS 4FLOZ",
+    price: "$11.99",
+    style: "Aromatic cocktail bitters",
+    ingredients: "Alcohol, water, herbs and spices",
+    origin: "Trinidad and Tobago",
+    abv: "44.7% ABV",
+    volume: "4 fl oz",
+    description: "Angostura aromatic bitters 4 fl oz. Concentrated cocktail seasoning with a proprietary formula."
+  },
+  "absolut-vodka-swedish-200ml": {
+    badge: "VODKA",
+    eyebrow: "VODKA",
+    title: "Absolut Vodka - 200 mL",
+    subtitle: "ABSOLUT VODKA 200ML",
+    price: "$7.99",
+    style: "Vodka",
+    ingredients: "Swedish winter wheat and well water",
+    origin: "Sweden (Åhus, Skåne)",
+    abv: "40% ABV",
+    volume: "200 ml",
+    description: "Absolut Original, 200 mL. Continuous distillation."
+  },
+  "absolut-vodka-swedish-175l": {
+    badge: "VODKA",
+    eyebrow: "VODKA",
+    title: "Absolut Vodka - 1.75 L",
+    subtitle: "ABSOLUT VODKA 1.75L",
+    price: "$34.99",
+    style: "Vodka",
+    ingredients: "Swedish winter wheat and well water",
+    origin: "Sweden (Åhus, Skåne)",
+    abv: "40% ABV",
+    volume: "1.75 L",
+    description: "Absolut Original, 1.75 L. Continuous distillation."
+  },
+  "360-georgia-peach-flavored-vodka-750ml": {
+    badge: "PEACH-FLAVORED VODKA",
+    eyebrow: "PEACH-FLAVORED VODKA",
+    title: "360 Georgia Peach Vodka - 750 mL",
+    subtitle: "360 GEORGIA PEACH VODKA 750ML",
+    price: "$14.99",
+    style: "Peach-flavored vodka",
+    ingredients: "Corn-based vodka, peach flavor",
+    origin: "Missouri, USA",
+    abv: "35% ABV",
+    volume: "750 ml",
+    description: "Georgia Peach is the flavor name. The distiller uses Missouri-grown corn for its vodka base."
+  },
+  "absolut-citron-lemon-vodka-750ml": {
+    badge: "LEMON-FLAVORED VODKA",
+    eyebrow: "LEMON-FLAVORED VODKA",
+    title: "Absolut Citron Vodka - 750 mL",
+    subtitle: "ABSOLUT CITRON 750ML",
+    price: "$20.99",
+    style: "Lemon-flavored vodka",
+    ingredients: "Vodka and natural citrus flavoring",
+    origin: "Sweden (Åhus, Skåne)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Absolut Citron, 750 mL. Lemon peel and lime character."
+  },
+  "360-bing-cherry-flavored-vodka-750ml": {
+    badge: "CHERRY-FLAVORED VODKA",
+    eyebrow: "CHERRY-FLAVORED VODKA",
+    title: "360 Bing Cherry Vodka - 750 mL",
+    subtitle: "360 BING CHERRY VODKA 750ML",
+    price: "$14.99",
+    style: "Cherry-flavored vodka",
+    ingredients: "Corn-based vodka, Bing cherry flavor",
+    origin: "Missouri, USA",
+    abv: "35% ABV",
+    volume: "750 ml",
+    description: "Bing cherry expression of 360 Vodka."
+  },
+  "360-vodka-american-vodka-175l": {
+    badge: "VODKA",
+    eyebrow: "VODKA",
+    title: "360 Vodka - 1.75 L",
+    subtitle: "360 VODKA 1.75L",
+    price: "$22.99",
+    style: "Vodka",
+    ingredients: "Corn",
+    origin: "Missouri, USA",
+    abv: "40% ABV",
+    volume: "1.75 L",
+    description: "Unflavored 360 Vodka in the 1.75 L bottle."
+  },
+  "99-brand-apples-liqueur-50ml": {
+    badge: "APPLE-FLAVORED LIQUEUR",
+    eyebrow: "APPLE-FLAVORED LIQUEUR",
+    title: "99 Apples Liqueur - 50 mL",
+    subtitle: "99 APPLE 50ML",
+    price: "$0.99",
+    style: "Apple-flavored liqueur",
+    ingredients: "Liqueur base, apple flavoring",
+    origin: "USA",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Apples 50 mL miniature."
+  },
+  "99-brand-watermelons-liqueur-50ml": {
+    badge: "WATERMELON-FLAVORED LIQUEUR",
+    eyebrow: "WATERMELON-FLAVORED LIQUEUR",
+    title: "99 Watermelons Schnapps - 50 mL",
+    subtitle: "99 WATERMELONS 50ML",
+    price: "$0.99",
+    style: "Watermelon-flavored liqueur",
+    ingredients: "Distilled spirit and watermelon flavoring",
+    origin: "United States (Louisville, Kentucky)",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Brand Watermelon miniature, 50 mL."
+  },
+  "absolut-vodka-swedish-375ml": {
+    badge: "VODKA",
+    eyebrow: "VODKA",
+    title: "Absolut Vodka - 375 mL",
+    subtitle: "ABSOLUT VODKA 375ML",
+    price: "$12.99",
+    style: "Vodka",
+    ingredients: "Swedish winter wheat and well water",
+    origin: "Sweden (Åhus, Skåne)",
+    abv: "40% ABV",
+    volume: "375 ml",
+    description: "Absolut Original, 375 mL. Continuous distillation."
+  },
+  "amarula-cream-marula-fruit-liqueur-750ml": {
+    badge: "CREAM LIQUEUR",
+    eyebrow: "CREAM LIQUEUR",
+    title: "Amarula Cream Liqueur - 750 mL",
+    subtitle: "AMARULA LIQUEUR 750ML",
+    price: "$28.99",
+    style: "Cream liqueur",
+    ingredients: "Marula fruit spirit and dairy cream",
+    origin: "South Africa",
+    abv: "17% ABV",
+    volume: "750 ml",
+    description: "Amarula Original Cream, 750 mL. Marula spirit matures in French oak before blending with cream."
+  },
+  "99-brand-whipped-liqueur-50ml": {
+    badge: "WHIPPED CREAM–FLAVORED LIQUEUR",
+    eyebrow: "WHIPPED CREAM–FLAVORED LIQUEUR",
+    title: "99 Whipped Liqueur - 50 mL",
+    subtitle: "99 WHIPPED 50ML",
+    price: "$0.99",
+    style: "Whipped cream–flavored liqueur",
+    ingredients: "Distilled spirit and whipped-cream flavoring",
+    origin: "United States (Louisville, Kentucky)",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Brand Whipped miniature, 50 mL."
+  },
+  "barin-vodka-premium-quality": {
+    badge: "VODKA",
+    eyebrow: "VODKA",
+    title: "Barin Russian Vodka - 375 mL",
+    subtitle: "BARIN 375ML",
+    price: "$2.69",
+    style: "Vodka",
+    ingredients: "Vodka base; fermentation source not disclosed",
+    origin: "Check bottle — origin unverified",
+    abv: "40% ABV",
+    volume: "375 ml",
+    description: "Savas lists Barin at 80 proof and a retailer lists the 375 mL bottle. Confirm the UPC and country from the back label before publication. Different Barin label records identify different countries, and none has been matched to this UPC and size."
+  },
+  "99-brand-bananas-liqueur-50ml": {
+    badge: "BANANA-FLAVORED SCHNAPPS",
+    eyebrow: "BANANA-FLAVORED SCHNAPPS",
+    title: "99 Bananas Schnapps - 50 mL",
+    subtitle: "99 BANANAS 50ML",
+    price: "$0.99",
+    style: "Banana-flavored schnapps",
+    ingredients: "Liqueur base, banana flavoring",
+    origin: "USA",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Bananas 50 mL miniature. Pack listings may describe the distributor multipack."
+  },
+  "99-brand-peaches-liqueur-50ml": {
+    badge: "PEACH-FLAVORED LIQUEUR",
+    eyebrow: "PEACH-FLAVORED LIQUEUR",
+    title: "99 Peaches Schnapps - 50 mL",
+    subtitle: "99 PEACHES 50ML",
+    price: "$0.99",
+    style: "Peach-flavored liqueur",
+    ingredients: "Distilled spirit and peach flavoring",
+    origin: "United States (Louisville, Kentucky)",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Brand Peach miniature, 50 mL."
+  },
+  "99-brand-fruit-punch-liqueur-50ml": {
+    badge: "FRUIT-PUNCH-FLAVORED LIQUEUR",
+    eyebrow: "FRUIT-PUNCH-FLAVORED LIQUEUR",
+    title: "99 Fruit Punch Liqueur - 50 mL",
+    subtitle: "99 FRUIT PUNCH 50ML",
+    price: "$0.99",
+    style: "Fruit-punch-flavored liqueur",
+    ingredients: "Liqueur base, fruit punch flavoring",
+    origin: "USA",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Fruit Punch 50 mL miniature."
+  },
+  "99-brand-grapes-schnapps-liqueur-50ml": {
+    badge: "GRAPE-FLAVORED LIQUEUR",
+    eyebrow: "GRAPE-FLAVORED LIQUEUR",
+    title: "99 Grapes Liqueur - 50 mL",
+    subtitle: "99 GRAPES 50ML",
+    price: "$0.99",
+    style: "Grape-flavored liqueur",
+    ingredients: "Distilled spirit and grape flavoring",
+    origin: "United States (Louisville, Kentucky)",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Brand Grape miniature, 50 mL."
+  },
+  "99-brand-strawberries-liqueur-50ml": {
+    badge: "STRAWBERRY-FLAVORED LIQUEUR",
+    eyebrow: "STRAWBERRY-FLAVORED LIQUEUR",
+    title: "99 Strawberries Liqueur - 50 mL",
+    subtitle: "99 STRAWBERRIES 50ML",
+    price: "$0.99",
+    style: "Strawberry-flavored liqueur",
+    ingredients: "Distilled spirit and strawberry flavoring",
+    origin: "United States (Louisville, Kentucky)",
+    abv: "49.5% ABV",
+    volume: "50 ml",
+    description: "99 Brand Strawberry miniature, 50 mL."
+  },
+  "adictivo-tequila-anejo-750ml": {
+    badge: "AÑEJO TEQUILA",
+    eyebrow: "AÑEJO TEQUILA",
+    title: "Adictivo Añejo Tequila - 750 mL",
+    subtitle: "ADDICTIVO TEQ ANEJO 750ML",
+    price: "$69.99",
+    style: "Añejo tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (El Arenal, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "750 mL. French oak maturation with toasted aromas."
+  },
+  "olmeca-altos-tequila-anejo-750ml": {
+    badge: "AÑEJO TEQUILA",
+    eyebrow: "AÑEJO TEQUILA",
+    title: "Olmeca Altos Añejo Tequila - 750 mL",
+    subtitle: "ALTOS ANEJO TEQ750ML",
+    price: "$34.99",
+    style: "Añejo tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (Los Altos, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Olmeca Altos Añejo, 750 mL. Aged at least 12 months in bourbon barrels."
+  },
+  "olmeca-altos-tequila-plata-750ml": {
+    badge: "BLANCO (PLATA) TEQUILA",
+    eyebrow: "BLANCO (PLATA) TEQUILA",
+    title: "Olmeca Altos Plata Tequila - 750 mL",
+    subtitle: "ALTOS PLATA TEQ750ML",
+    price: "$29.99",
+    style: "Blanco (plata) tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (Los Altos, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Olmeca Altos Plata, 750 mL. Unaged with cooked agave and citrus notes."
+  },
+  "olmeca-altos-tequila-reposado-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "Olmeca Altos Reposado Tequila - 750 mL",
+    subtitle: "ALTOS REPO TEQ750ML",
+    price: "$29.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (Los Altos, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Olmeca Altos Reposado, 750 mL. Bourbon-barrel aged with cooked agave and oak notes."
+  },
+  "asombroso-la-rosa-reposado-tequila-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "AsomBroso La Rosa Reposado Tequila - 750 mL",
+    subtitle: "ASOMBROSO ULTRAFINO REPO750ML",
+    price: "$44.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "AsomBroso La Rosa Reposado 750 mL. Rested in French oak Bordeaux wine barrels, which impart a pink tint."
+  },
+  "adictivo-tequila-reposado-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "Adictivo Reposado Tequila - 750 mL",
+    subtitle: "ADICTIVO TEQ REPO 750ML",
+    price: "$58.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (El Arenal, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "750 mL. French oak maturation with cooked agave and wood aromas."
+  },
+  "arette-artesanal-suave-anejo-tequila-750ml": {
+    badge: "AÑEJO TEQUILA",
+    eyebrow: "AÑEJO TEQUILA",
+    title: "Arette Artesanal Añejo Tequila - 750 mL",
+    subtitle: "ARETTE ARTESANAL ANEJO750ML",
+    price: "$94.99",
+    style: "Añejo tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Tequila, Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Arette Artesanal Suave Añejo 750 mL, aged in oak."
+  },
+  "alma-del-jaguar-tequila-anejo-750ml": {
+    badge: "AÑEJO TEQUILA",
+    eyebrow: "AÑEJO TEQUILA",
+    title: "Alma del Jaguar Añejo Tequila - 750 mL",
+    subtitle: "ALMA DEL JAGUAR A EJO TEQ 750 ML",
+    price: "$83.99",
+    style: "Añejo tequila",
+    ingredients: "100% blue agave, water and yeast",
+    origin: "Mexico (Los Altos, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Regular Añejo, 750 mL. Bottled unfiltered at the source."
+  },
+  "alma-del-jaguar-tequila-blanco-750ml": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "Alma del Jaguar Blanco Tequila - 750 mL",
+    subtitle: "ALMA DEL JAGUAR BLANCO750ML",
+    price: "$49.99",
+    style: "Blanco tequila",
+    ingredients: "100% blue agave, water and yeast",
+    origin: "Mexico (Los Altos, Jalisco)",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Blanco, 750 mL. Bottled unfiltered at the source."
+  },
+  "amatitena-tequila-reposado-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "Amatitena Reposado Tequila - 750 mL",
+    subtitle: "AMATITENA TEQ RESOPADO750ML",
+    price: "$84.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue agave",
+    origin: "Mexico (Amatitán, Jalisco)",
+    abv: "42% ABV",
+    volume: "750 ml",
+    description: "Amatiteña Reposado, 750 mL export bottle. Producer sheet matches the UPC and 42% ABV."
+  },
+  "arette-artesanal-suave-blanco-tequila-750ml": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "Arette Artesanal Suave Blanco Tequila - 750 mL",
+    subtitle: "ARETTE TEQ BLANCO750ML",
+    price: "$54.99",
+    style: "Blanco tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Tequila, Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Arette Artesanal Suave Blanco 750 mL. UPC distinguishes this from Clásica."
+  },
+  "arette-reposado-tequila-1l": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "Arette Reposado Tequila - 1 L",
+    subtitle: "ARETTE TEQ REPO 1L",
+    price: "$31.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Tequila, Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "1.0 L",
+    description: "Arette Clásica Reposado 1 L, rested in oak. This is the Clásica 1 L release."
+  },
+  "artenom-seleccion-1579-blanco-tequila-750ml": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "ArteNOM Selección 1579 Blanco Tequila - 750 mL",
+    subtitle: "ARTE NOM 1579 750ML",
+    price: "$60.99",
+    style: "Blanco tequila",
+    ingredients: "100% highland blue Weber agave",
+    origin: "Jesús María, Jalisco, Mexico",
+    abv: "40.7% ABV",
+    volume: "750 ml",
+    description: "ArteNOM Selección de 1579, made at Destilería El Pandillo. Maine lists 81.4 proof for this UPC."
+  },
+  "arette-blanco-tequila-1l": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "Arette Blanco Tequila - 1 L",
+    subtitle: "ARETTE TEQ BLANCO 1L",
+    price: "$31.99",
+    style: "Blanco tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Tequila, Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "1.0 L",
+    description: "Arette Clásica Blanco 1 L, 80 proof."
+  },
+  "arette-artesanal-suave-reposado-tequila-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "Arette Artesanal Suave Reposado Tequila - 750 mL",
+    subtitle: "ARETTE TEQ REPO750ML",
+    price: "$62.99",
+    style: "Reposado tequila",
+    ingredients: "100% blue Weber agave",
+    origin: "Tequila, Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Arette Artesanal Suave Reposado 750 mL, rested in oak. UPC distinguishes this from Clásica."
+  },
+  "100-anos-tequila-reposado-750ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "100 Años Reposado Tequila - 750 mL",
+    subtitle: "100 ANOS REPO 750ML",
+    price: "$22.99",
+    style: "Reposado tequila",
+    ingredients: "Agave-based tequila",
+    origin: "Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "100 Años Reposado, 750 mL. NC ABC lists this UPC at 80 proof."
+  },
+  "4-copas-organic-blanco-tequila-750ml": {
+    badge: "ORGANIC BLANCO TEQUILA",
+    eyebrow: "ORGANIC BLANCO TEQUILA",
+    title: "4 Copas Blanco Tequila - 750 mL",
+    subtitle: "4 COPAS TEQ BLANCO750ML",
+    price: "$52.99",
+    style: "Organic blanco tequila",
+    ingredients: "Organic blue agave",
+    origin: "Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "Standard 80-proof Blanco expression. The brand also sells a separate high-proof expression."
+  },
+  "818-tequila-anejo-750ml": {
+    badge: "AÑEJO TEQUILA",
+    eyebrow: "AÑEJO TEQUILA",
+    title: "818 Añejo Tequila - 750 mL",
+    subtitle: "818TEQ ANEJO750ML",
+    price: "$45.99",
+    style: "Añejo tequila",
+    ingredients: "Blue Weber agave",
+    origin: "Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "818 ages this expression for over one year in French and American oak."
+  },
+  "818-tequila-blanco-750ml": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "818 Blanco Tequila - 750 mL",
+    subtitle: "818TEQ BLANCO750ML",
+    price: "$29.99",
+    style: "Blanco tequila",
+    ingredients: "Blue Weber agave",
+    origin: "Jalisco, Mexico",
+    abv: "40% ABV",
+    volume: "750 ml",
+    description: "818's unaged blanco expression."
+  },
+  "1800-tequila-blanco-375ml": {
+    badge: "BLANCO TEQUILA",
+    eyebrow: "BLANCO TEQUILA",
+    title: "1800 Blanco Tequila - 375 mL",
+    subtitle: "1800 BLANCO 375ML",
+    price: "$18.99",
+    style: "Blanco tequila",
+    ingredients: "Blue Weber agave, yeast, water",
+    origin: "Mexico",
+    abv: "40% ABV",
+    volume: "375 ml",
+    description: "Double-distilled blanco tequila."
+  },
+  "1800-tequila-reposado-375ml": {
+    badge: "REPOSADO TEQUILA",
+    eyebrow: "REPOSADO TEQUILA",
+    title: "1800 Reposado Tequila - 375 mL",
+    subtitle: "1800 REPOSADO 375ML",
+    price: "$18.99",
+    style: "Reposado tequila",
+    ingredients: "Blue Weber agave",
+    origin: "Mexico",
+    abv: "40% ABV",
+    volume: "375 ml",
+    description: "Oak-aged reposado tequila in the 375 mL bottle."
+  },
   "knob-creek-smoked-maple": {
     badge: "FLAVORED BOURBON WHISKEY",
     eyebrow: "FLAVORED BOURBON WHISKEY",
@@ -5963,7 +8550,8 @@ function showQuickViewModalForProduct(p) {
   const cleanType = (p.type || "").replace(/[\u{1F300}-\u{1F9FF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{1F1E6}-\u{1F1FF}]/gu, "").trim();
   const cleanComposition = (p.composition || "").replace(/[\u{1F300}-\u{1F9FF}]|[\u{1F600}-\u{1F64F}]|[\u{1F680}-\u{1F6FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]|[\u{1F1E6}-\u{1F1FF}]/gu, "").trim();
 
-  const priceStr = formatMoney(p.priceRange.minVariantPrice.amount, p.priceRange.minVariantPrice.currencyCode);
+  const hasPrice = p.priceRange && p.priceRange.minVariantPrice?.amount && !isNaN(parseFloat(p.priceRange.minVariantPrice.amount)) && parseFloat(p.priceRange.minVariantPrice.amount) > 0;
+  const priceStr = hasPrice ? formatMoney(p.priceRange.minVariantPrice.amount, p.priceRange.minVariantPrice.currencyCode) : "Available in Store";
   const imageUrl = p.images?.edges?.[0]?.node?.url || "assets/cat-whiskey-lux.webp";
 
   // Elements
@@ -5992,7 +8580,7 @@ function showQuickViewModalForProduct(p) {
   if (originSpecEl) originSpecEl.textContent = detail.origin || cleanCountry || "Imported";
   if (abvEl) abvEl.textContent = detail.abv || "40% ABV";
   if (volumeEl) volumeEl.textContent = detail.volume || "750 ml";
-  if (descEl) descEl.textContent = detail.description || p.description;
+  if (descEl) descEl.textContent = detail.description || p.description || "Available in store at Whiskey Barrel. Visit us at 12205 Shawnee Mission Parkway for pricing, tasting notes, and bottle availability.";
 
   if (imgEl) {
     imgEl.src = imageUrl;
