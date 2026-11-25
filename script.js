@@ -1379,16 +1379,16 @@ const WHISKEY_PRODUCTS = [
       title: "Wild Turkey American Honey Liqueur 1.75L",
       handle: "wild-turkey-american-honey-liqueur-175l",
       category: "WHISKEY",
-      country: "",
-      composition: "",
-      type: "Honey Bourbon Liqueur",
+      country: "United States (Lawrenceburg, Kentucky)",
+      composition: "Kentucky bourbon whiskey, honey",
+      type: "Bourbon-based honey liqueur",
       badges: [],
       isBestSeller: false,
-      hasNoDetails: true,
-      description: "",
+      hasNoDetails: false,
+      description: "Wild Turkey American Honey 1.75 L, 71 proof. Exceptionally smooth liqueur blended with pure honey and Kentucky bourbon whiskey.",
       priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/whiskey-wild-turkey-american-honey-175l.webp", altText: "Wild Turkey American Honey Liqueur 1.75L bottle with a tasting glass" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey70", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/whiskey70", title: "1.75L Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -2939,16 +2939,16 @@ const GIN_PRODUCTS = [
       title: "Hendrick's Gin 750ml",
       handle: "hendricks-gin-750ml",
       category: "GIN",
-      country: "",
-      composition: "",
-      type: "Scottish Gin",
+      country: "Girvan, Scotland",
+      composition: "Neutral spirit, juniper, other botanicals, cucumber, rose",
+      type: "Gin",
       badges: [],
       isBestSeller: false,
-      hasNoDetails: true,
-      description: "",
-      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      hasNoDetails: false,
+      description: "Distillates from carter-head and pot stills are combined, then flavored with cucumber and rose. Distilled and bottled in Girvan, Scotland.",
+      priceRange: { minVariantPrice: { amount: "34.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/gin-hendricks-750ml.webp", altText: "Bottle of Hendrick's Gin 750ml with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin21", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin21", title: "750ml Bottle", price: { amount: "34.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -2957,16 +2957,16 @@ const GIN_PRODUCTS = [
       title: "Tanqueray London Dry Gin 750ml",
       handle: "tanqueray-london-dry-gin-750ml",
       category: "GIN",
-      country: "",
-      composition: "",
-      type: "London Dry Gin",
+      country: "United Kingdom",
+      composition: "Grain spirit, juniper, coriander, angelica root, licorice",
+      type: "London dry gin",
       badges: [],
       isBestSeller: false,
-      hasNoDetails: true,
-      description: "",
-      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      hasNoDetails: false,
+      description: "The U.S. Original London Dry expression uses four core botanicals. Distilled four times and bottled in Great Britain.",
+      priceRange: { minVariantPrice: { amount: "24.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/gin-tanqueray-london-dry-750ml.webp", altText: "Bottle of Tanqueray Imported London Dry Gin 750ml with a crystal glass and clear ice sphere" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin22", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin22", title: "750ml Bottle", price: { amount: "24.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   },
   {
@@ -2975,16 +2975,16 @@ const GIN_PRODUCTS = [
       title: "Bombay Sapphire London Dry Gin 750ml",
       handle: "bombay-sapphire-london-dry-gin-750ml",
       category: "GIN",
-      country: "",
-      composition: "",
-      type: "London Dry Gin",
+      country: "Hampshire, England, UK",
+      composition: "Neutral spirit, juniper, other botanicals",
+      type: "London dry gin",
       badges: [],
       isBestSeller: false,
-      hasNoDetails: true,
-      description: "",
-      priceRange: { minVariantPrice: { amount: "", currencyCode: "USD" } },
+      hasNoDetails: false,
+      description: "Botanicals are vapor-infused from a 1761 recipe. The U.S. expression can differ in strength from other markets.",
+      priceRange: { minVariantPrice: { amount: "27.99", currencyCode: "USD" } },
       images: { edges: [{ node: { url: "assets/gin-bombay-sapphire-london-dry-750ml.webp", altText: "Bottle of Bombay Sapphire Distilled London Dry Gin 750ml with a crystal rocks glass on ice" } }] },
-      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin23", title: "Bottle", price: { amount: "", currencyCode: "USD" }, availableForSale: true } }] }
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/gin23", title: "750ml Bottle", price: { amount: "27.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
   }
 ];
@@ -4619,6 +4619,7 @@ async function handleCategoryPage() {
   let currentCategoryProducts = [];
 
   const filterAndRenderProducts = (filteredList) => {
+    window.activeCategoryProducts = Array.isArray(filteredList) ? filteredList : [];
     if (!productsGrid) return;
     if (productsLoading) productsLoading.classList.add("hidden");
 
@@ -8493,6 +8494,84 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "35% ABV (70 Proof)",
     volume: "750 ml",
     description: "The legendary Caribbean rum expertly blended with natural flavors and warming spices, then aged in charred white oak barrels. Rich vanilla, brown sugar, cinnamon, and subtle clove notes for a smooth, balanced finish."
+  },
+  "wild-turkey-american-honey-liqueur-175l": {
+    badge: "BOURBON-BASED HONEY LIQUEUR",
+    eyebrow: "BOURBON-BASED HONEY LIQUEUR",
+    title: "Wild Turkey American Honey Liqueur 1.75L",
+    subtitle: "AMERICAN HONEY 1.75L",
+    price: "Available in Store",
+    style: "Bourbon-based honey liqueur",
+    ingredients: "Kentucky bourbon whiskey, honey",
+    origin: "United States (Lawrenceburg, Kentucky)",
+    abv: "35.5% ABV (71 Proof)",
+    volume: "1.75 L",
+    description: "Wild Turkey American Honey 1.75 L, 71 proof. Exceptionally smooth liqueur blended with pure honey and Kentucky bourbon whiskey."
+  },
+  "nocturne-handcrafted-botanical-gin": {
+    badge: "CRAFT BOTANICAL GIN",
+    eyebrow: "SMALL BATCH BOTANICAL GIN",
+    title: "Nocturne Handcrafted Gin",
+    subtitle: "NOCTURNE HANDCRAFTED BOTANICAL GIN 700ML",
+    price: "$95.00",
+    style: "Craft Botanical Gin",
+    ingredients: "Juniper, citrus peel, wild lavender, cardamom",
+    origin: "London, United Kingdom",
+    abv: "43% ABV",
+    volume: "700 ml",
+    description: "Distilled with rare mountain juniper, citrus peel, wild lavender, and cardamom in an amber glass decanter."
+  },
+  "highland-mountain-juniper-gin": {
+    badge: "SCOTTISH DRY GIN",
+    eyebrow: "THE FORAGER'S EDITION",
+    title: "Highland Mountain Juniper Gin",
+    subtitle: "FOREST GATHERED GIN 700ML",
+    price: "$78.00",
+    style: "Scottish Dry Gin",
+    ingredients: "Wild juniper berries, pine needles, heather, forest botanicals",
+    origin: "Scotland",
+    abv: "43% ABV",
+    volume: "700 ml",
+    description: "Crafted in the Scottish Highlands with hand-foraged heather, juniper berries, and pine needles."
+  },
+  "hendricks-gin-750ml": {
+    badge: "SMALL BATCH SCOTTISH GIN",
+    eyebrow: "INFUSED WITH CUCUMBER & ROSE",
+    title: "Hendrick's Gin - 750 mL",
+    subtitle: "HENDRICKS GIN750ML",
+    price: "$34.99",
+    style: "Gin",
+    ingredients: "Neutral spirit, juniper, other botanicals, cucumber, rose",
+    origin: "Girvan, Scotland",
+    abv: "44% ABV (Label: 41.4% ABV)",
+    volume: "750 ml",
+    description: "Distillates from carter-head and pot stills are combined, then flavored with cucumber and rose. Distilled and bottled in Girvan, Scotland."
+  },
+  "tanqueray-london-dry-gin-750ml": {
+    badge: "LONDON DRY GIN",
+    eyebrow: "IMPORTED LONDON DRY GIN",
+    title: "Tanqueray London Dry Gin - 750 mL",
+    subtitle: "TANQUERAY GIN750ML",
+    price: "$24.99",
+    style: "London dry gin",
+    ingredients: "Grain spirit, juniper, coriander, angelica root, licorice",
+    origin: "United Kingdom",
+    abv: "47.3% ABV (94.6 Proof)",
+    volume: "750 ml",
+    description: "The U.S. Original London Dry expression uses four core botanicals. Distilled four times and bottled in Great Britain."
+  },
+  "bombay-sapphire-london-dry-gin-750ml": {
+    badge: "VAPOUR INFUSED LONDON DRY GIN",
+    eyebrow: "FROM A 1761 RECIPE",
+    title: "Bombay Sapphire London Dry Gin - 750 mL",
+    subtitle: "BOMBAY SAPPHIRE GIN 750ML",
+    price: "$27.99",
+    style: "London dry gin",
+    ingredients: "Neutral spirit, juniper, other botanicals",
+    origin: "Hampshire, England, UK",
+    abv: "47% ABV (94 Proof)",
+    volume: "750 ml",
+    description: "Botanicals are vapor-infused from a 1761 recipe. The U.S. expression can differ in strength from other markets."
   }
 };
 
@@ -8506,7 +8585,9 @@ function getAllStoreProductsList() {
     ...(typeof BEER_PRODUCTS !== "undefined" ? BEER_PRODUCTS : []),
     ...(typeof VODKA_PRODUCTS !== "undefined" ? VODKA_PRODUCTS : []),
     ...(typeof WINE_PRODUCTS !== "undefined" ? WINE_PRODUCTS : []),
-    ...(typeof TEQUILA_PRODUCTS !== "undefined" ? TEQUILA_PRODUCTS : [])
+    ...(typeof GIN_PRODUCTS !== "undefined" ? GIN_PRODUCTS : []),
+    ...(typeof TEQUILA_PRODUCTS !== "undefined" ? TEQUILA_PRODUCTS : []),
+    ...(typeof CIGAR_PRODUCTS !== "undefined" ? CIGAR_PRODUCTS : [])
   ];
 }
 
@@ -8517,9 +8598,9 @@ function openProductQuickView(handle, event) {
     event.stopPropagation();
   }
 
-  // Determine active product list: current category list if defined and non-empty, else all products
-  const activeProducts = (typeof currentCategoryProducts !== "undefined" && Array.isArray(currentCategoryProducts) && currentCategoryProducts.length > 0)
-    ? currentCategoryProducts
+  // Determine active product list: currently rendered category list if defined and non-empty, else all products
+  const activeProducts = (Array.isArray(window.activeCategoryProducts) && window.activeCategoryProducts.length > 0)
+    ? window.activeCategoryProducts
     : getAllStoreProductsList();
 
   const idx = activeProducts.findIndex(p => p.node && p.node.handle === handle);
