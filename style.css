@@ -6576,6 +6576,58 @@ footer,
 /* ==========================================================================
    6. LUXURY MOBILE NAVIGATION DRAWER
    ========================================================================== */
+@media (min-width: 768px) {
+  #mobile-menu-toggle,
+  #mobile-menu-drawer {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #mobile-menu-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(212, 168, 106, 0.35);
+    background-color: rgba(212, 168, 106, 0.08);
+    color: #f7f3eb;
+    cursor: pointer;
+    position: relative;
+    z-index: 60;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  #mobile-menu-toggle:hover,
+  #mobile-menu-toggle:focus-visible,
+  #mobile-menu-toggle[aria-expanded="true"] {
+    color: #d4a86a;
+    border-color: rgba(212, 168, 106, 0.7);
+    background-color: rgba(212, 168, 106, 0.16);
+    outline: none;
+  }
+
+  #mobile-menu-toggle .menu-open-icon,
+  #mobile-menu-toggle .menu-close-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    stroke: currentColor;
+    stroke-width: 2.25;
+    flex-shrink: 0;
+  }
+
+  #mobile-menu-toggle .hidden {
+    display: none !important;
+  }
+}
+
 #mobile-menu-drawer {
   position: fixed;
   inset: 0;
