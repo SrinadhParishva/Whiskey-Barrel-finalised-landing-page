@@ -1812,9 +1812,12 @@ button {
 .footer-social {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.footer-instagram-btn {
+.footer-instagram-btn,
+.footer-facebook-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -1833,7 +1836,8 @@ button {
   backdrop-filter: blur(4px);
 }
 
-.footer-instagram-btn:hover {
+.footer-instagram-btn:hover,
+.footer-facebook-btn:hover {
   background: rgba(212, 163, 89, 0.18);
   border-color: var(--gold-primary);
   color: var(--text-white);
@@ -1841,11 +1845,13 @@ button {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5), 0 0 12px rgba(212, 163, 89, 0.25);
 }
 
-.footer-instagram-btn:active {
+.footer-instagram-btn:active,
+.footer-facebook-btn:active {
   transform: translateY(0);
 }
 
-.footer-instagram-btn .instagram-icon {
+.footer-instagram-btn .instagram-icon,
+.footer-facebook-btn .social-icon {
   width: 15px;
   height: 15px;
   stroke: var(--gold-primary);
@@ -1853,7 +1859,8 @@ button {
   flex-shrink: 0;
 }
 
-.footer-instagram-btn:hover .instagram-icon {
+.footer-instagram-btn:hover .instagram-icon,
+.footer-facebook-btn:hover .social-icon {
   stroke: var(--gold-light);
   transform: scale(1.08);
 }
@@ -3848,9 +3855,11 @@ body.error-page-body {
   .footer-social {
     width: 100%;
     justify-content: center;
+    gap: 10px;
   }
 
-  .footer-instagram-btn {
+  .footer-instagram-btn,
+  .footer-facebook-btn {
     width: 100%;
     max-width: 220px;
     height: 42px;

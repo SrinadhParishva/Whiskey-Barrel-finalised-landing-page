@@ -3508,13 +3508,161 @@ const TEQUILA_PRODUCTS = [
   }
 ];
 
+// Uploaded & Curated 8 Products for Ready To Enjoy Category
+const READY_TO_ENJOY_PRODUCTS = [
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-1",
+      title: "Artigiano Mango Bellini - 750 mL",
+      handle: "artigiano-bellini-mango-750ml",
+      category: "READY_TO_ENJOY",
+      country: "Check bottle — conflicting sources",
+      composition: "White wine, fruit purée",
+      type: "Ready-to-drink wine-based Bellini",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Producer Mango technical specification lists 6% ABV. The regulatory filing assigns this UPC to Peach at 5%, while Clover says Mango. Origin sources conflict between Spain and Germany. Confirm flavor, UPC, ABV and origin on the inventory bottle.",
+      priceRange: { minVariantPrice: { amount: "10.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-artigiano-bellini-mango-750ml.webp", altText: "Artigiano Mango Bellini 750 mL bottle with a sparkling flute glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd1", title: "750ml Bottle", price: { amount: "10.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-2",
+      title: "Artigiano Peach Bellini - 750 mL",
+      handle: "artigiano-bellini-peach-750ml",
+      category: "READY_TO_ENJOY",
+      country: "Check bottle — conflicting sources",
+      composition: "White wine, fruit purée",
+      type: "Ready-to-drink wine-based Bellini",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Producer Peach technical specification lists 6% ABV. The regulatory filing assigns this UPC to Mango at 6%, while Clover says Peach. Technical sheets identify Germany and related brand metadata lists Spain. Confirm flavor, UPC and origin on the inventory bottle.",
+      priceRange: { minVariantPrice: { amount: "10.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-artigiano-bellini-peach-750ml.webp", altText: "Artigiano Peach Bellini 750 mL bottle with a sparkling flute glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd2", title: "750ml Bottle", price: { amount: "10.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-3",
+      title: "Artigiano Strawberry Bellini - 750 mL",
+      handle: "artigiano-bellini-strawberry-750ml",
+      category: "READY_TO_ENJOY",
+      country: "Spain (brand listing)",
+      composition: "White wine, strawberry purée",
+      type: "Ready-to-drink strawberry Bellini",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Producer Strawberry technical specification lists 6% ABV. The regulatory filing lists 5% for this UPC. Use 6% as the named-product reference and confirm the inventory bottle label.",
+      priceRange: { minVariantPrice: { amount: "10.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-artigiano-bellini-strawberry-750ml.webp", altText: "Artigiano Strawberry Bellini 750 mL bottle with a sparkling flute glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd3", title: "750ml Bottle", price: { amount: "10.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-4",
+      title: "Bacardí Island Punch Rum Cocktail - 1.75 L",
+      handle: "bacardi-island-punch-175l",
+      category: "READY_TO_ENJOY",
+      country: "Check bottle — origin unverified",
+      composition: "BACARDÍ rum, pineapple juice and tropical flavorings",
+      type: "Ready-to-serve rum cocktail",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Island Punch with guava, hibiscus, prickly pear and lime flavor notes. 1.75 L. Finished cocktail production site not verified. Retailer country fields conflict, so the country of the finished cocktail requires the package's origin statement.",
+      priceRange: { minVariantPrice: { amount: "15.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-bacardi-island-punch-175l.webp", altText: "Bacardí Island Punch Rum Cocktail 1.75 L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd4", title: "1.75L Bottle", price: { amount: "15.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-5",
+      title: "1800 Ultimate Strawberry Margarita - 1.75 L",
+      handle: "1800-ultimate-strawberry-margarita-175l",
+      category: "READY_TO_ENJOY",
+      country: "Lawrenceburg, Indiana, USA",
+      composition: "Tequila, strawberry flavoring",
+      type: "Ready-to-drink margarita",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Strawberry ready-to-serve margarita in the 1.75 L bottle. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA.",
+      priceRange: { minVariantPrice: { amount: "20.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-1800-ultimate-margarita-strawberry-175l.webp", altText: "1800 The Ultimate Strawberry Margarita Ready to Serve 1.75 L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd5", title: "1.75L Bottle", price: { amount: "20.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-6",
+      title: "1800 Ultimate Blood Orange Margarita - 1.75 L",
+      handle: "1800-ultimate-blood-orange-margarita-175l",
+      category: "READY_TO_ENJOY",
+      country: "Lawrenceburg, Indiana, USA",
+      composition: "Tequila, blood orange flavoring",
+      type: "Ready-to-drink margarita",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Blood orange ready-to-serve margarita. NC ABC lists 19.9 proof for this UPC. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA.",
+      priceRange: { minVariantPrice: { amount: "20.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-1800-ultimate-margarita-blood-orange-175l.webp", altText: "1800 The Ultimate Blood Orange Margarita Ready to Serve 1.75 L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd6", title: "1.75L Bottle", price: { amount: "20.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-7",
+      title: "1800 Ultimate Pineapple Margarita - 1.75 L",
+      handle: "1800-ultimate-pineapple-margarita-175l",
+      category: "READY_TO_ENJOY",
+      country: "Lawrenceburg, Indiana, USA",
+      composition: "Tequila, pineapple flavoring",
+      type: "Ready-to-drink margarita",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Pineapple ready-to-serve margarita in the 1.75 L bottle. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA.",
+      priceRange: { minVariantPrice: { amount: "20.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-1800-ultimate-margarita-pineapple-175l.webp", altText: "1800 The Ultimate Pineapple Margarita Ready to Serve 1.75 L bottle with a rocks glass on ice" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd7", title: "1.75L Bottle", price: { amount: "20.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-rtd-8",
+      title: "Bartenders Trading Co. Hot Sex Cocktail - 750 mL",
+      handle: "bartenders-hot-sex-cocktail-750ml",
+      category: "READY_TO_ENJOY",
+      country: "United States",
+      composition: "Vodka, ginger liqueur, dairy cream, chocolate flavor and ginseng",
+      type: "Ready-to-drink vodka cream cocktail",
+      badges: [],
+      isBestSeller: false,
+      hasNoDetails: false,
+      description: "Bartenders Trading Co. Hot Sex chocolate and ginger cocktail, listed at 25 proof by NC ABC. 750 mL.",
+      priceRange: { minVariantPrice: { amount: "16.99", currencyCode: "USD" } },
+      images: { edges: [{ node: { url: "assets/rtd-bartenders-hot-sex-cocktail-750ml.webp", altText: "Bartenders Trading Co. Hot Sex Ready to Drink Cocktail 750 mL bottle with a rocks glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/rtd8", title: "750ml Bottle", price: { amount: "16.99", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  }
+];
+
 async function fetchProducts(first = 24) {
   // Instant synchronous/resolved catalog for blazing fast page load
-  return [...WHISKEY_PRODUCTS, ...RUM_PRODUCTS, ...BEER_PRODUCTS, ...WINE_PRODUCTS, ...VODKA_PRODUCTS, ...GIN_PRODUCTS, ...TEQUILA_PRODUCTS, ...CIGAR_PRODUCTS];
+  return [...WHISKEY_PRODUCTS, ...RUM_PRODUCTS, ...BEER_PRODUCTS, ...WINE_PRODUCTS, ...VODKA_PRODUCTS, ...GIN_PRODUCTS, ...TEQUILA_PRODUCTS, ...READY_TO_ENJOY_PRODUCTS, ...CIGAR_PRODUCTS];
 }
 
 async function fetchProductByHandle(handle) {
-  const allProducts = [...WHISKEY_PRODUCTS, ...RUM_PRODUCTS, ...BEER_PRODUCTS, ...WINE_PRODUCTS, ...VODKA_PRODUCTS, ...GIN_PRODUCTS, ...TEQUILA_PRODUCTS, ...CIGAR_PRODUCTS];
+  const allProducts = [...WHISKEY_PRODUCTS, ...RUM_PRODUCTS, ...BEER_PRODUCTS, ...WINE_PRODUCTS, ...VODKA_PRODUCTS, ...GIN_PRODUCTS, ...TEQUILA_PRODUCTS, ...READY_TO_ENJOY_PRODUCTS, ...CIGAR_PRODUCTS];
   const handleAliases = {
     "macallan-25-fine-oak": "knob-creek-smoked-maple",
     "copper-cask-12-year": "johnnie-walker-black-label",
@@ -3678,6 +3826,7 @@ const Wishlist = {
       ...WINE_PRODUCTS,
       ...GIN_PRODUCTS,
       ...TEQUILA_PRODUCTS,
+      ...READY_TO_ENJOY_PRODUCTS,
       ...CIGAR_PRODUCTS
     ];
     const found = allProducts.find(p => p.node.handle === handle);
@@ -4213,7 +4362,16 @@ const NON_BEST_SELLER_HANDLES = new Set([
   "coors-banquet-12pack",
   "smirnoff-ice-neon-lemonade-12pack",
   "truly-hard-seltzer-citrus-12pack",
-  "mikes-harder-party-pack-12pack"
+  "mikes-harder-party-pack-12pack",
+  // Ready To Enjoy
+  "artigiano-bellini-mango-750ml",
+  "artigiano-bellini-peach-750ml",
+  "artigiano-bellini-strawberry-750ml",
+  "bacardi-island-punch-175l",
+  "1800-ultimate-strawberry-margarita-175l",
+  "1800-ultimate-blood-orange-margarita-175l",
+  "1800-ultimate-pineapple-margarita-175l",
+  "bartenders-hot-sex-cocktail-750ml"
 ]);
 
 function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, index = 0) {
@@ -4509,6 +4667,10 @@ async function handleIndexPage() {
         updateBreadcrumb(categoryLabel || "Tequila");
         if (updateUrl) history.pushState({ category: "TEQUILA" }, "", "#tequila");
         renderProductList(TEQUILA_PRODUCTS);
+      } else if (categoryKey === "READY_TO_ENJOY") {
+        updateBreadcrumb(categoryLabel || "Ready to Enjoy");
+        if (updateUrl) history.pushState({ category: "READY_TO_ENJOY" }, "", "#ready-to-enjoy");
+        renderProductList(READY_TO_ENJOY_PRODUCTS);
       } else if (categoryKey === "CIGAR") {
         updateBreadcrumb(categoryLabel || "Cigar");
         if (updateUrl) history.pushState({ category: "CIGAR" }, "", "#cigar");
@@ -4609,6 +4771,11 @@ async function handleCategoryPage() {
       subtitle: "Handcrafted 100% blue agave highland tequilas and artisanal smoky mezcals aged in charred white oak.",
       products: TEQUILA_PRODUCTS
     },
+    READY_TO_ENJOY: {
+      title: "Ready to Enjoy",
+      subtitle: "Discover a selection of refreshing, ready-to-serve favourites & cocktails.",
+      products: READY_TO_ENJOY_PRODUCTS
+    },
     CIGAR: {
       title: "Artisanal Cigar Collection",
       subtitle: "Hand-rolled Nicaraguan long-filler cigars presented in engraved solid mahogany humidor boxes.",
@@ -4658,14 +4825,14 @@ async function handleCategoryPage() {
     if (heroTitle) heroTitle.textContent = meta.title;
     if (heroSubtitle) heroSubtitle.textContent = meta.subtitle;
     if (breadcrumbCategoryEl) {
-      breadcrumbCategoryEl.textContent = key.charAt(0) + key.slice(1).toLowerCase();
+      breadcrumbCategoryEl.textContent = key === "READY_TO_ENJOY" ? "Ready to Enjoy" : key.charAt(0) + key.slice(1).toLowerCase();
     }
 
     // Toggle Exclusive Category Action Buttons (Maps, Phone, Instagram, WhatsApp) for WHISKEY, RUM, BEER, VODKA, WINE, GIN
     const whiskeyFooterActionsEl = document.getElementById("whiskey-footer-actions");
     const defaultFooterSocialEl = document.getElementById("default-footer-social");
     if (whiskeyFooterActionsEl) {
-      if (["WHISKEY", "RUM", "BEER", "VODKA", "WINE", "TEQUILA", "GIN"].includes(key)) {
+      if (["WHISKEY", "RUM", "BEER", "VODKA", "WINE", "TEQUILA", "GIN", "READY_TO_ENJOY"].includes(key)) {
         whiskeyFooterActionsEl.classList.remove("hidden");
         whiskeyFooterActionsEl.style.display = "flex";
         if (defaultFooterSocialEl) {
@@ -4972,7 +5139,7 @@ async function handleProductPage() {
     if (backLink && p.category) {
       backLink.href = `category.html?category=${encodeURIComponent(p.category)}`;
       if (backText) {
-        const catName = p.category.charAt(0).toUpperCase() + p.category.slice(1).toLowerCase();
+        const catName = p.category === "READY_TO_ENJOY" ? "Ready to Enjoy" : p.category.charAt(0).toUpperCase() + p.category.slice(1).toLowerCase();
         backText.textContent = `Back to ${catName} Collection`;
       }
     }
@@ -8572,6 +8739,110 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "47% ABV (94 Proof)",
     volume: "750 ml",
     description: "Botanicals are vapor-infused from a 1761 recipe. The U.S. expression can differ in strength from other markets."
+  },
+  "artigiano-bellini-mango-750ml": {
+    badge: "READY-TO-DRINK WINE-BASED BELLINI",
+    eyebrow: "READY-TO-DRINK COCKTAIL",
+    title: "Artigiano Mango Bellini - 750 mL",
+    subtitle: "ARTIGIANO BELLINI MANGO 750ML",
+    price: "$10.99",
+    style: "Ready-to-drink wine-based Bellini",
+    ingredients: "White wine, fruit purée",
+    origin: "Check bottle — conflicting sources",
+    abv: "6% ABV",
+    volume: "750 ml",
+    description: "Producer Mango technical specification lists 6% ABV. The regulatory filing assigns this UPC to Peach at 5%, while Clover says Mango. Origin sources conflict between Spain and Germany. Confirm flavor, UPC, ABV and origin on the inventory bottle."
+  },
+  "artigiano-bellini-peach-750ml": {
+    badge: "READY-TO-DRINK WINE-BASED BELLINI",
+    eyebrow: "READY-TO-DRINK COCKTAIL",
+    title: "Artigiano Peach Bellini - 750 mL",
+    subtitle: "ARTIGIANO BELLINI PEACH 750ML",
+    price: "$10.99",
+    style: "Ready-to-drink wine-based Bellini",
+    ingredients: "White wine, fruit purée",
+    origin: "Check bottle — conflicting sources",
+    abv: "6% ABV",
+    volume: "750 ml",
+    description: "Producer Peach technical specification lists 6% ABV. The regulatory filing assigns this UPC to Mango at 6%, while Clover says Peach. Technical sheets identify Germany and related brand metadata lists Spain. Confirm flavor, UPC and origin on the inventory bottle."
+  },
+  "artigiano-bellini-strawberry-750ml": {
+    badge: "READY-TO-DRINK STRAWBERRY BELLINI",
+    eyebrow: "READY-TO-DRINK COCKTAIL",
+    title: "Artigiano Strawberry Bellini - 750 mL",
+    subtitle: "ARTIGIANO BELLINI STRAWBERRY 750ML",
+    price: "$10.99",
+    style: "Ready-to-drink strawberry Bellini",
+    ingredients: "White wine, strawberry purée",
+    origin: "Spain (brand listing)",
+    abv: "6% ABV",
+    volume: "750 ml",
+    description: "Producer Strawberry technical specification lists 6% ABV. The regulatory filing lists 5% for this UPC. Use 6% as the named-product reference and confirm the inventory bottle label."
+  },
+  "bacardi-island-punch-175l": {
+    badge: "READY-TO-SERVE RUM COCKTAIL",
+    eyebrow: "CHILL & ENJOY",
+    title: "Bacardí Island Punch Rum Cocktail - 1.75 L",
+    subtitle: "BACARDI ISLAND PUNCH 1.75L",
+    price: "$15.99",
+    style: "Ready-to-serve rum cocktail",
+    ingredients: "BACARDÍ rum, pineapple juice and tropical flavorings",
+    origin: "Check bottle — origin unverified",
+    abv: "12.5% ABV",
+    volume: "1.75 L",
+    description: "Island Punch with guava, hibiscus, prickly pear and lime flavor notes. 1.75 L. Finished cocktail production site not verified. Retailer country fields conflict, so the country of the finished cocktail requires the package's origin statement."
+  },
+  "1800-ultimate-strawberry-margarita-175l": {
+    badge: "READY-TO-DRINK MARGARITA",
+    eyebrow: "READY TO SERVE",
+    title: "1800 Ultimate Strawberry Margarita - 1.75 L",
+    subtitle: "1800 ULT MARGAR STRAWBERRY 1.75L",
+    price: "$20.99",
+    style: "Ready-to-drink margarita",
+    ingredients: "Tequila, strawberry flavoring",
+    origin: "Lawrenceburg, Indiana, USA",
+    abv: "9.95% ABV (19.9 Proof)",
+    volume: "1.75 L",
+    description: "Strawberry ready-to-serve margarita in the 1.75 L bottle. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA."
+  },
+  "1800-ultimate-blood-orange-margarita-175l": {
+    badge: "READY-TO-DRINK MARGARITA",
+    eyebrow: "READY TO SERVE",
+    title: "1800 Ultimate Blood Orange Margarita - 1.75 L",
+    subtitle: "1800 BLOOD ORANGE MARG1.75L",
+    price: "$20.99",
+    style: "Ready-to-drink margarita",
+    ingredients: "Tequila, blood orange flavoring",
+    origin: "Lawrenceburg, Indiana, USA",
+    abv: "9.95% ABV (19.9 Proof)",
+    volume: "1.75 L",
+    description: "Blood orange ready-to-serve margarita. NC ABC lists 19.9 proof for this UPC. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA."
+  },
+  "1800-ultimate-pineapple-margarita-175l": {
+    badge: "READY-TO-DRINK MARGARITA",
+    eyebrow: "READY TO SERVE",
+    title: "1800 Ultimate Pineapple Margarita - 1.75 L",
+    subtitle: "1800 PINEAPPLE MARG 1.75L",
+    price: "$20.99",
+    style: "Ready-to-drink margarita",
+    ingredients: "Tequila, pineapple flavoring",
+    origin: "Lawrenceburg, Indiana, USA",
+    abv: "9.95% ABV (19.9 Proof)",
+    volume: "1.75 L",
+    description: "Pineapple ready-to-serve margarita in the 1.75 L bottle. Back-label production statement identifies Proximo in Lawrenceburg, Indiana, USA."
+  },
+  "bartenders-hot-sex-cocktail-750ml": {
+    badge: "READY-TO-DRINK VODKA CREAM COCKTAIL",
+    eyebrow: "READY TO DRINK",
+    title: "Bartenders Trading Co. Hot Sex Cocktail - 750 mL",
+    subtitle: "BARTENDERS HOT SEX COCKTAIL 750ML",
+    price: "$16.99",
+    style: "Ready-to-drink vodka cream cocktail",
+    ingredients: "Vodka, ginger liqueur, dairy cream, chocolate flavor and ginseng",
+    origin: "United States",
+    abv: "12.5% ABV (25 Proof)",
+    volume: "750 ml",
+    description: "Bartenders Trading Co. Hot Sex chocolate and ginger cocktail, listed at 25 proof by NC ABC. 750 mL."
   }
 };
 
@@ -8587,6 +8858,7 @@ function getAllStoreProductsList() {
     ...(typeof WINE_PRODUCTS !== "undefined" ? WINE_PRODUCTS : []),
     ...(typeof GIN_PRODUCTS !== "undefined" ? GIN_PRODUCTS : []),
     ...(typeof TEQUILA_PRODUCTS !== "undefined" ? TEQUILA_PRODUCTS : []),
+    ...(typeof READY_TO_ENJOY_PRODUCTS !== "undefined" ? READY_TO_ENJOY_PRODUCTS : []),
     ...(typeof CIGAR_PRODUCTS !== "undefined" ? CIGAR_PRODUCTS : [])
   ];
 }
