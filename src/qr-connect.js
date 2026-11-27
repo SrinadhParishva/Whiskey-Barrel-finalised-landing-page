@@ -147,68 +147,6 @@ export async function renderBrandedQrToCanvas(canvas, options = {}) {
   return { matrix, loaded, finalSize };
 }
 
-/**
- * Builds a print-ready vector SVG string with crisp module paths
- * and self-contained Base64 PNG Whiskey Barrel center logo.
- */
-export async function buildBrandedQrSvg(options = {}) {
-  const {
-    url = WHISKEY_BARREL_CONNECT_CONFIG.connectPageUrl,
-    quietModules = 4,
-    logoData = null,
-  } = options;
-
-  const matrix = buildQrMatrix(url);
-  const loaded = logoData || (await loadBrandLogo());
-  const unit = 10;
-  const totalModules = matrix.size + quietModules * 2;
-  const outerPad = 24;
-  const qrPx = totalModules * unit;
-  const size = qrPx + outerPad * 2;
-  const offset = outerPad + quietModules * unit;
-  const cx = size / 2;
-  const cy = size / 2;
-  const qrAreaPx = matrix.size * unit;
-  const badgeDiameter = qrAreaPx * 0.19;
-  const badgeRadius = badgeDiameter / 2;
-  const logoSize = badgeDiameter * 0.8;
-
-  let pathD = '';
-  for (let row = 0; row < matrix.size; row++) {
-    for (let col = 0; col < matrix.size; col++) {
-      if (!matrix.data[row * matrix.size + col]) continue;
-      const x = offset + col * unit;
-      const y = offset + row * unit;
-      const mx = x + unit / 2;
-      const my = y + unit / 2;
-      if (Math.hypot(mx - cx, my - cy) < badgeRadius + unit * 0.45) {
-        continue;
-      }
-      pathD += `M${x},${y}h${unit}v${unit}h-${unit}z`;
-    }
-  }
-
-  const imageTag = loaded?.dataUrl
-    ? `<image href="${loaded.dataUrl}" x="${(cx - logoSize / 2).toFixed(2)}" y="${(cy - logoSize / 2).toFixed(2)}" width="${logoSize.toFixed(2)}" height="${logoSize.toFixed(2)}" clip-path="url(#wb-logo-clip)" preserveAspectRatio="xMidYMid slice" />`
-    : '';
-
-  return [
-    `<?xml version="1.0" encoding="UTF-8"?>`,
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}" width="${size}" height="${size}" role="img" aria-label="Whiskey Barrel Connect QR Code">`,
-    `  <defs>`,
-    `    <clipPath id="wb-logo-clip">`,
-    `      <circle cx="${cx}" cy="${cy}" r="${(logoSize / 2).toFixed(2)}" />`,
-    `    </clipPath>`,
-    `  </defs>`,
-    `  <rect x="0" y="0" width="${size}" height="${size}" fill="#FFFFFF" />`,
-    `  <rect x="10" y="10" width="${size - 20}" height="${size - 20}" fill="none" stroke="#D4A24D" stroke-width="2" />`,
-    `  <path d="${pathD}" fill="#000000" shape-rendering="crispEdges" />`,
-    `  <circle cx="${cx}" cy="${cy}" r="${badgeRadius.toFixed(2)}" fill="#FFFFFF" stroke="#D4A24D" stroke-width="2.5" />`,
-    `  ${imageTag}`,
-    `</svg>`,
-  ].join('\n');
-}
-
 function triggerBlobDownload(blob, filename) {
   const objectUrl = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -286,20 +224,6 @@ async function initWhiskeyBarrelConnect() {
         'image/png',
         1.0
       );
-    });
-  }
-
-  // 5. Vector SVG Download button (print-ready with embedded center logo)
-  const downloadSvgBtn = document.getElementById('download-qr-svg-btn');
-  if (downloadSvgBtn) {
-    downloadSvgBtn.addEventListener('click', async () => {
-      const svgContent = await buildBrandedQrSvg({
-        url: WHISKEY_BARREL_CONNECT_CONFIG.connectPageUrl,
-        quietModules: 4,
-        logoData,
-      });
-      const svgBlob = new Blob([svgContent], { type: 'image/svg+xml;charset=utf-8' });
-      triggerBlobDownload(svgBlob, 'whiskey-barrel-connect-qr.svg');
     });
   }
 }
