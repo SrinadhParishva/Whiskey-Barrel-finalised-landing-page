@@ -12,6 +12,7 @@ export default defineConfig({
         experience: resolve(__dirname, 'experience.html'),
         product: resolve(__dirname, 'product.html'),
         visit: resolve(__dirname, 'visit.html'),
+        connect: resolve(__dirname, 'connect/index.html'),
       },
     },
   },

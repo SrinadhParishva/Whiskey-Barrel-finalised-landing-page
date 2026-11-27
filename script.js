@@ -2349,6 +2349,140 @@ const VODKA_PRODUCTS = [
       images: { edges: [{ node: { url: "assets/vodka-99-strawberries-50ml.webp", altText: "99 Brand Strawberries 99 Proof Liqueur 50ml bottle with a shot glass" } }] },
       variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka25", title: "50ml Bottle", price: { amount: "0.99", currencyCode: "USD" }, availableForSale: true } }] }
     }
+  },
+  // Batch 4 Uploaded Vodka Products (B4 Label)
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-26",
+      title: "Burnett's Blue Raspberry Flavored Vodka",
+      handle: "burnetts-blue-raspberry-flavored-vodka",
+      category: "VODKA",
+      country: "United States",
+      composition: "Flavored vodka (35% ABV / 70 Proof)",
+      type: "Blue Raspberry Flavored Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Burnett's Blue Raspberry Flavored Vodka, bottled at 35% alc./vol. (70 proof). Sweet, vibrant blue raspberry flavor crafted for chilled shots and colorful cocktails.",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-burnetts-blue-raspberry.jpg", altText: "Burnett's Blue Raspberry Flavored Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka26", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-27",
+      title: "Barton Charcoal Filtered Premium Vodka - 375 mL",
+      handle: "barton-charcoal-filtered-premium-vodka-375ml",
+      category: "VODKA",
+      country: "Owensboro, Kentucky, USA",
+      composition: "Charcoal filtered vodka with natural flavor",
+      type: "Charcoal Filtered Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Barton Charcoal Filtered Premium Vodka, bottled by Barton Distilling Company in Owensboro, Kentucky at 40% alc./vol. (80 proof). 375 mL bottle.",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-barton-premium-375ml.jpg", altText: "Barton Charcoal Filtered Premium Vodka 375 mL bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka27", title: "375 ml", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-28",
+      title: "Behind Bars Vodka",
+      handle: "behind-bars-vodka",
+      category: "VODKA",
+      country: "See Bottle Label",
+      composition: "Vodka",
+      type: "Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Behind Bars Vodka. Clean, crisp vodka crafted for mixed drinks and classic cocktails. Visit us in store for sizing and pricing.",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-behind-bars.jpg", altText: "Behind Bars Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka28", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-29",
+      title: "Burnett's Cherry Flavored Vodka",
+      handle: "burnetts-cherry-flavored-vodka",
+      category: "VODKA",
+      country: "United States",
+      composition: "Flavored vodka (35% ABV / 70 Proof)",
+      type: "Cherry Flavored Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Burnett's Cherry Flavored Vodka, bottled at 35% alc./vol. (70 proof). Smooth, bright cherry aroma and sweet-tart finish.",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-burnetts-cherry.jpg", altText: "Burnett's Cherry Flavored Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka29", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-30",
+      title: "Burnett's Strawberry Vodka",
+      handle: "burnetts-strawberry-vodka",
+      category: "VODKA",
+      country: "United States",
+      composition: "Vodka infused with natural flavors",
+      type: "Strawberry Infused Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Burnett's Strawberry Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof).",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-burnetts-strawberry.jpg", altText: "Burnett's Strawberry Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka30", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-31",
+      title: "Burnett's Whipped Cream Vodka",
+      handle: "burnetts-whipped-cream-vodka",
+      category: "VODKA",
+      country: "United States",
+      composition: "Vodka infused with natural flavors",
+      type: "Whipped Cream Infused Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Sir Robert Burnett's Whipped Cream Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof).",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-burnetts-whipped-cream.jpg", altText: "Sir Robert Burnett's Whipped Cream Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka31", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
+  },
+  {
+    node: {
+      id: "gid://shopify/Product/custom-vodka-32",
+      title: "Burnett's Strawberry Banana Vodka",
+      handle: "burnetts-strawberry-banana-vodka",
+      category: "VODKA",
+      country: "United States",
+      composition: "Vodka infused with natural flavors",
+      type: "Strawberry Banana Infused Vodka",
+      badges: [],
+      batchLabel: "B4",
+      isBestSeller: false,
+      hasNoDetails: true,
+      description: "Sir Robert Burnett's Strawberry Banana Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof).",
+      priceRange: null,
+      images: { edges: [{ node: { url: "assets/vodka-burnetts-strawberry-banana.jpg", altText: "Sir Robert Burnett's Strawberry Banana Vodka bottle with a shot glass" } }] },
+      variants: { edges: [{ node: { id: "gid://shopify/ProductVariant/vodka32", title: "Available in Store", price: { amount: "0.00", currencyCode: "USD" }, availableForSale: true } }] }
+    }
   }
 ];
 
@@ -4371,7 +4505,15 @@ const NON_BEST_SELLER_HANDLES = new Set([
   "1800-ultimate-strawberry-margarita-175l",
   "1800-ultimate-blood-orange-margarita-175l",
   "1800-ultimate-pineapple-margarita-175l",
-  "bartenders-hot-sex-cocktail-750ml"
+  "bartenders-hot-sex-cocktail-750ml",
+  // Vodka Batch 4
+  "burnetts-blue-raspberry-flavored-vodka",
+  "barton-charcoal-filtered-premium-vodka-375ml",
+  "behind-bars-vodka",
+  "burnetts-cherry-flavored-vodka",
+  "burnetts-strawberry-vodka",
+  "burnetts-whipped-cream-vodka",
+  "burnetts-strawberry-banana-vodka"
 ]);
 
 function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, index = 0) {
@@ -4436,6 +4578,11 @@ function createWineProductCardHTML(p, priceStr, image, ratingBadge, customTags, 
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
             </svg>
             <span>BEST SELLER</span>
+          </span>
+        ` : ""}
+        ${p.batchLabel ? `
+          <span class="product-card-batch-badge" title="Batch ${p.batchLabel}" aria-label="Batch ${p.batchLabel}">
+            ${p.batchLabel}
           </span>
         ` : ""}
         <a href="product.html?handle=${p.handle}" onclick="openProductQuickView('${p.handle}', event)" class="h-full w-full block relative z-10 overflow-hidden" aria-label="${p.title}">
@@ -8843,6 +8990,97 @@ const PRODUCT_QUICKVIEW_DETAILS = {
     abv: "12.5% ABV (25 Proof)",
     volume: "750 ml",
     description: "Bartenders Trading Co. Hot Sex chocolate and ginger cocktail, listed at 25 proof by NC ABC. 750 mL."
+  },
+  "burnetts-blue-raspberry-flavored-vodka": {
+    badge: "FLAVORED VODKA • B4",
+    eyebrow: "BLUE RASPBERRY FLAVORED VODKA",
+    title: "Burnett's Blue Raspberry Flavored Vodka",
+    subtitle: "BURNETT'S BLUE RASPBERRY 35% ALC/VOL",
+    price: "Available in Store",
+    style: "Blue Raspberry Flavored Vodka",
+    ingredients: "Vodka, blue raspberry natural & artificial flavors",
+    origin: "United States",
+    abv: "35% ABV (70 Proof)",
+    volume: "Available in Store",
+    description: "Burnett's Blue Raspberry Flavored Vodka, bottled at 35% alc./vol. (70 proof). Sweet, vibrant blue raspberry flavor crafted for chilled shots and colorful cocktails."
+  },
+  "barton-charcoal-filtered-premium-vodka-375ml": {
+    badge: "CHARCOAL FILTERED VODKA • B4",
+    eyebrow: "PRODUCT OF THE U.S.A.",
+    title: "Barton Charcoal Filtered Premium Vodka - 375 mL",
+    subtitle: "BARTON PREMIUM VODKA 375ML",
+    price: "Available in Store",
+    style: "Charcoal Filtered Vodka",
+    ingredients: "Grain vodka with natural flavor",
+    origin: "Owensboro, Kentucky, USA",
+    abv: "40% ABV (80 Proof)",
+    volume: "375 ml",
+    description: "Barton Charcoal Filtered Premium Vodka, bottled by Barton Distilling Company in Owensboro, Kentucky at 40% alc./vol. (80 proof). 375 mL bottle."
+  },
+  "behind-bars-vodka": {
+    badge: "VODKA • B4",
+    eyebrow: "VODKA SELECTION",
+    title: "Behind Bars Vodka",
+    subtitle: "BEHIND BARS VODKA",
+    price: "Available in Store",
+    style: "Vodka",
+    ingredients: "Distilled vodka",
+    origin: "See Bottle Label",
+    abv: "See Bottle Label",
+    volume: "Available in Store",
+    description: "Behind Bars Vodka. Clean, crisp vodka crafted for mixed drinks and classic cocktails. Visit us in store for bottle size, proof, and pricing."
+  },
+  "burnetts-cherry-flavored-vodka": {
+    badge: "FLAVORED VODKA • B4",
+    eyebrow: "CHERRY FLAVORED VODKA",
+    title: "Burnett's Cherry Flavored Vodka",
+    subtitle: "BURNETT'S CHERRY 35% ALC/VOL",
+    price: "Available in Store",
+    style: "Cherry Flavored Vodka",
+    ingredients: "Vodka, cherry flavor",
+    origin: "United States",
+    abv: "35% ABV (70 Proof)",
+    volume: "Available in Store",
+    description: "Burnett's Cherry Flavored Vodka, bottled at 35% alc./vol. (70 proof). Smooth, bright cherry aroma and sweet-tart finish."
+  },
+  "burnetts-strawberry-vodka": {
+    badge: "INFUSED VODKA • B4",
+    eyebrow: "MADE IN AMERICA",
+    title: "Burnett's Strawberry Vodka",
+    subtitle: "BURNETT'S STRAWBERRY 30% ALC/VOL",
+    price: "Available in Store",
+    style: "Strawberry Infused Vodka",
+    ingredients: "Vodka infused with natural flavors",
+    origin: "United States",
+    abv: "30% ABV (60 Proof)",
+    volume: "Available in Store",
+    description: "Burnett's Strawberry Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof)."
+  },
+  "burnetts-whipped-cream-vodka": {
+    badge: "INFUSED VODKA • B4",
+    eyebrow: "SIR ROBERT BURNETT • MADE IN AMERICA",
+    title: "Burnett's Whipped Cream Vodka",
+    subtitle: "BURNETT'S WHIPPED CREAM 30% ALC/VOL",
+    price: "Available in Store",
+    style: "Whipped Cream Infused Vodka",
+    ingredients: "Vodka infused with natural flavors",
+    origin: "United States",
+    abv: "30% ABV (60 Proof)",
+    volume: "Available in Store",
+    description: "Sir Robert Burnett's Whipped Cream Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof)."
+  },
+  "burnetts-strawberry-banana-vodka": {
+    badge: "INFUSED VODKA • B4",
+    eyebrow: "SIR ROBERT BURNETT • MADE IN AMERICA",
+    title: "Burnett's Strawberry Banana Vodka",
+    subtitle: "BURNETT'S STRAWBERRY BANANA 30% ALC/VOL",
+    price: "Available in Store",
+    style: "Strawberry Banana Infused Vodka",
+    ingredients: "Vodka infused with natural flavors",
+    origin: "United States",
+    abv: "30% ABV (60 Proof)",
+    volume: "Available in Store",
+    description: "Sir Robert Burnett's Strawberry Banana Vodka infused with natural flavors and made in America, bottled at 30% alc./vol. (60 proof)."
   }
 };
 

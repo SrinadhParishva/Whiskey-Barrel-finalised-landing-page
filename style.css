@@ -5404,7 +5404,7 @@ div:has(> .wine-card-pill) {
 
 @media (min-width: 900px) {
   .visit-map-card {
-    grid-template-columns: 7.2fr 2.8fr !important;
+    grid-template-columns: 4.8fr 2.7fr 2.5fr !important;
   }
 }
 
@@ -5417,8 +5417,8 @@ div:has(> .wine-card-pill) {
 
 @media (min-width: 900px) {
   .visit-map-visual {
-    height: 175px !important;
-    min-height: 175px !important;
+    height: 100% !important;
+    min-height: 215px !important;
   }
 }
 
@@ -5523,6 +5523,75 @@ div:has(> .wine-card-pill) {
 .visit-map-card:hover .visit-map-directions-panel {
   background-color: #0f0c09 !important;
   border-color: rgba(212, 168, 106, 0.25) !important;
+}
+
+/* Homepage Branded QR Code Panel beside Get Directions */
+.visit-map-qr-panel {
+  padding: 1.5rem 1.75rem !important;
+  background-color: #080705 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  border-top: 1px solid #1f1913 !important;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease !important;
+}
+
+@media (min-width: 900px) {
+  .visit-map-qr-panel {
+    border-top: none !important;
+    border-left: 1px solid #1f1913 !important;
+    padding: 1.5rem 1.75rem !important;
+  }
+}
+
+.visit-map-card:hover .visit-map-qr-panel {
+  background-color: #0f0c09 !important;
+  border-color: rgba(212, 168, 106, 0.25) !important;
+}
+
+.visit-map-qr-frame {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 7px !important;
+  background: #ffffff !important;
+  border: 1.5px solid #D4A24D !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.65), 0 0 14px rgba(212, 162, 77, 0.16) !important;
+  margin-bottom: 0.75rem !important;
+  transition: transform 0.3s var(--visit-ease-cinematic), box-shadow 0.3s ease !important;
+}
+
+.visit-map-qr-link:hover .visit-map-qr-frame {
+  transform: scale(1.04) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 162, 77, 0.32) !important;
+}
+
+.visit-map-qr-canvas {
+  display: block !important;
+  width: 112px !important;
+  height: 112px !important;
+  border-radius: 3px !important;
+}
+
+.visit-map-qr-title {
+  font-family: var(--font-body, "Hanken Grotesk", sans-serif) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #d4a86a !important;
+  margin: 0 0 0.25rem 0 !important;
+}
+
+.visit-map-qr-sub {
+  font-family: var(--font-body, "Hanken Grotesk", sans-serif) !important;
+  font-size: 0.78rem !important;
+  color: #9c9185 !important;
+  margin: 0 !important;
 }
 
 .visit-map-directions-title {
@@ -7522,6 +7591,32 @@ html.wb-age-verified .age-gate-backdrop {
   color: #d4a86a !important;
   fill: currentColor !important;
   flex-shrink: 0 !important;
+}
+
+/* Batch Indicator Badge (e.g. B4 internal corner badge for newly added batch images) */
+.product-card-batch-badge {
+  position: absolute !important;
+  top: 0.75rem !important;
+  right: 0.75rem !important;
+  z-index: 20 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 2px 7px !important;
+  background: rgba(14, 11, 9, 0.84) !important;
+  border: 1px solid rgba(212, 168, 106, 0.55) !important;
+  border-radius: 9999px !important;
+  font-family: 'Hanken Grotesk', sans-serif !important;
+  font-size: 0.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #e6c68f !important;
+  line-height: 1.2 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  pointer-events: none !important;
 }
 
 /* 3. Product Pill Tag (below title) */
