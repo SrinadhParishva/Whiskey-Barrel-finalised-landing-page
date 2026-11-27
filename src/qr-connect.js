@@ -147,17 +147,6 @@ export async function renderBrandedQrToCanvas(canvas, options = {}) {
   return { matrix, loaded, finalSize };
 }
 
-function triggerBlobDownload(blob, filename) {
-  const objectUrl = URL.createObjectURL(blob);
-  const link = document.createElement('a');
-  link.href = objectUrl;
-  link.download = filename;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(objectUrl), 1500);
-}
-
 async function initWhiskeyBarrelConnect() {
   const logoData = await loadBrandLogo();
 
@@ -187,7 +176,6 @@ async function initWhiskeyBarrelConnect() {
 
   // 3. Configure Google Review button cleanly from central config
   const reviewBtn = document.getElementById('connect-google-review-btn');
-  const reviewNote = document.getElementById('connect-google-review-note');
   if (reviewBtn) {
     const configuredReviewUrl = (WHISKEY_BARREL_CONNECT_CONFIG.googleReviewUrl || '').trim();
     if (configuredReviewUrl) {
@@ -196,35 +184,11 @@ async function initWhiskeyBarrelConnect() {
       reviewBtn.rel = 'noopener noreferrer';
       reviewBtn.removeAttribute('aria-disabled');
       reviewBtn.classList.remove('is-unconfigured');
-      if (reviewNote) reviewNote.hidden = true;
     } else {
       reviewBtn.removeAttribute('href');
       reviewBtn.setAttribute('aria-disabled', 'true');
       reviewBtn.classList.add('is-unconfigured');
-      if (reviewNote) reviewNote.hidden = false;
     }
-  }
-
-  // 4. High-res PNG Download button (1200+ px with center logo + gold frame)
-  const downloadPngBtn = document.getElementById('download-qr-png-btn');
-  if (downloadPngBtn) {
-    downloadPngBtn.addEventListener('click', async () => {
-      const exportCanvas = document.createElement('canvas');
-      await renderBrandedQrToCanvas(exportCanvas, {
-        url: WHISKEY_BARREL_CONNECT_CONFIG.connectPageUrl,
-        pixelSize: 1200,
-        quietModules: 4,
-        includeGoldBorder: true,
-        logoData,
-      });
-      exportCanvas.toBlob(
-        (blob) => {
-          if (blob) triggerBlobDownload(blob, 'whiskey-barrel-connect-qr.png');
-        },
-        'image/png',
-        1.0
-      );
-    });
   }
 }
 

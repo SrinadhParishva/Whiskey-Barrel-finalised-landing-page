@@ -446,7 +446,7 @@ button {
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--wb-gold-soft);
-  margin-bottom: 1.15rem;
+  margin-bottom: 0;
 }
 
 .connect-qr-copy {
